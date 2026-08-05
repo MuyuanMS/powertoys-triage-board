@@ -84,7 +84,7 @@
   <div class="max-w-7xl mx-auto px-6 pb-2 flex flex-wrap items-center gap-3 text-sm">
     <div class="inline-flex rounded-lg border border-slate-300 overflow-hidden">
       <template x-for="k in kindTabs" :key="k.key">
-        <button @click="kindTab=k.key; sub='all'"
+        <button @click="kindTab=k.key; sub='all'; currentPage=1"
           class="px-4 py-1.5 font-semibold"
           :class="kindTab===k.key ? 'bg-sky-600 text-white' : 'bg-white hover:bg-slate-50'">
           <span x-text="k.label"></span>
@@ -183,8 +183,18 @@
   </div>
 
   <!-- item list -->
+  <div class="flex items-center justify-between mb-2 text-xs text-slate-500">
+    <span x-text="visible.length + ' matching items · showing ' + (visible.length ? ((currentPage-1)*pageSize+1) + '–' + Math.min(currentPage*pageSize, visible.length) : 0)"></span>
+    <div class="flex items-center gap-2">
+      <button @click="currentPage=Math.max(1,currentPage-1)" :disabled="currentPage===1"
+        class="px-2 py-1 rounded border disabled:opacity-40">Previous</button>
+      <span x-text="currentPage + ' / ' + pageCount"></span>
+      <button @click="currentPage=Math.min(pageCount,currentPage+1)" :disabled="currentPage>=pageCount"
+        class="px-2 py-1 rounded border disabled:opacity-40">Next</button>
+    </div>
+  </div>
   <div class="space-y-2">
-    <template x-for="it in visible" :key="it.id">
+    <template x-for="it in paged" :key="it.id">
       <div class="bg-white rounded-lg border" :class="it.has_artifact ? 'border-sky-200' : 'border-slate-200'">
         <!-- row header -->
         <div class="p-3 flex items-start gap-3 cursor-pointer" @click="toggle(it)">
@@ -513,6 +523,7 @@ function board(){
     darkMode: localStorage.getItem('pt_dark_mode') === '1',
     dryRun:true, filter:'', authorFilter:'', includeLabels:'', excludeLabels:'', communityOnly:false,
     kindTab:'pr', sub:'all', sortKey:'smart', sortDir:'desc',
+    currentPage:1, pageSize:100,
     open:{}, sel:{}, reviewEvent:{},
     composeOpen:false, composeTitle:'', composeSub:'', composeBody:'', composeCtx:null,
     previewOpen:false, previewTitle:'', previewEndpoint:'', previewJson:'',
@@ -878,6 +889,12 @@ function board(){
       let list=this.items.filter(it=>this.inKind(it,this.kindTab) && this.matchSub(it,this.sub) && this.matchesAdvancedFilters(it));
       if(f) list=list.filter(it=> (it.title||'').toLowerCase().includes(f) || String(it.number).includes(f) || (it.author||'').toLowerCase().includes(f));
       return this.sortItems(list);
+    },
+    get pageCount(){ return Math.max(1, Math.ceil(this.visible.length / this.pageSize)); },
+    get paged(){
+      if(this.currentPage > this.pageCount) this.currentPage = this.pageCount;
+      const start = (this.currentPage - 1) * this.pageSize;
+      return this.visible.slice(start, start + this.pageSize);
     },
 
     // ---------- top stats ----------

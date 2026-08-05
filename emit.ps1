@@ -186,6 +186,45 @@ $OV[49114] = @{
   )
 }
 
+# Fork review-loop results. These mirrors reached a fresh Copilot review with
+# zero new comments; the board exposes them as approval-ready examples.
+$OV[49245] = @{
+  track='review'; stage='awaiting_review_approval'; confidence='High'; owes='maintainer'
+  status = @{ glyph='✅'; label='Review clean — needs approval'; detail='Fork PR 221: Copilot reviewed all changed files and generated no new comments.' }
+  fork_pr=@{ number=221; url="https://github.com/$FORK/pull/221" }; fork_branch='pr-iterate/49245'
+  proposed_comments=@()
+}
+
+$OV[49647] = @{
+  track='review'; stage='awaiting_review_approval'; confidence='High'; owes='maintainer'
+  status = @{ glyph='✅'; label='Review clean — needs approval'; detail='Fork PR 211: Copilot reviewed all 22 changed files and generated no new comments.' }
+  fork_pr=@{ number=211; url="https://github.com/$FORK/pull/211" }; fork_branch='pr-iterate/49647'
+  proposed_comments=@()
+}
+
+$OV[49639] = @{
+  track='review'; stage='awaiting_review_approval'; confidence='High'; owes='maintainer'
+  status = @{ glyph='✅'; label='Review clean — needs approval'; detail='Fork PR 205: Copilot reviewed all 10 changed files and generated no new comments.' }
+  fork_pr=@{ number=205; url="https://github.com/$FORK/pull/205" }; fork_branch='pr-iterate/49639'
+  proposed_comments=@()
+}
+
+$OV[49427] = @{
+  track='review'; stage='awaiting_review_approval'; confidence='Medium'; owes='maintainer'
+  status = @{ glyph='📝'; label='Review drafted — needs approval'; detail='Fork PR 218 converged with zero new Copilot comments and zero unresolved threads; local build remains blocked by unrelated charset/PCH failures.' }
+  fork_pr=@{ number=218; url="https://github.com/$FORK/pull/218" }; fork_branch='pr-iterate/49427'
+  proposed_comments=@(
+    @{ id='c-49427-1'; severity='medium'; disposition='proposed'; in_diff=$false
+       title='Document the non-elevated apply requirement'
+       body='The implementation rejects profile set operations from an elevated process before touching the user-controlled settings tree, but the reference examples do not mention that requirement. Add a note that apply operations must run non-elevated, while read-only operations remain available as appropriate.'
+       path='doc/dsc/profile-resource.md'; line=46 },
+    @{ id='c-49427-2'; severity='medium'; disposition='proposed'; in_diff=$false
+       title='Do not overstate localization coverage'
+       body='The resource localizes the stable error prefix, but validation details and warning text remain invariant English diagnostics. Either move the complete user-facing messages into Resources.resx, or narrow the checklist wording to say that stable prefixes are localized while technical diagnostic details remain invariant.'
+       path='src/dsc/v3/PowerToys.DSC/Properties/Resources.resx'; line=185 }
+  )
+}
+
 # 49136 -- review track, already partially posted. Demonstrates the per-comment
 # "choose which to post" workflow with real dispositions from the last review.
 $OV[49136] = @{
