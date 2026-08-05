@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-05T15:55:53.9384294+08:00",
+  "generated_at": "2026-08-05T16:15:50.3831842+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -82,18 +82,22 @@ window.BOARD_INDEX = {
   },
   "counts": {
     "open_prs": 130,
-    "open_issues": 7337,
-    "community": 6817,
-    "artifacts": 6
+    "open_issues": 7336,
+    "community": 6815,
+    "artifacts": 10
   },
   "impact": {
-    "as_of": "2026-08-05T15:55:53.9384294+08:00",
+    "as_of": "2026-08-05T16:15:50.3831842+08:00",
     "issues_helped": 5,
-    "prs_iterated": 1,
+    "prs_iterated": 5,
     "constructive_comments_posted": 3,
-    "comments_drafted": 10
+    "comments_drafted": 12
   },
   "artifact_numbers": [
+    49647,
+    49639,
+    49427,
+    49245,
     49136,
     49617,
     49604,
@@ -102,6 +106,31 @@ window.BOARD_INDEX = {
     49114
   ],
   "items": [
+    {
+      "id": "pr-49690",
+      "kind": "pr",
+      "number": 49690,
+      "url": "https://github.com/microsoft/PowerToys/pull/49690",
+      "title": "[Settings] Make attribution links localizable",
+      "author": "niels9001",
+      "is_community": false,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": null,
+      "proposed_open": 0,
+      "primary_action": null,
+      "labels": [],
+      "created_at": "2026-08-05T08:09:36Z",
+      "updated_at": "2026-08-05T08:09:36Z",
+      "comments": 0,
+      "priority": null
+    },
     {
       "id": "pr-49687",
       "kind": "pr",
@@ -376,15 +405,18 @@ window.BOARD_INDEX = {
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
+      "track": "review",
+      "stage": "awaiting_review_approval",
+      "owes": "maintainer",
       "pending_author": false,
-      "has_artifact": false,
-      "agent_status": "mirror",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
-      "primary_action": null,
+      "primary_action": {
+        "type": "approve",
+        "label": "Approve"
+      },
       "labels": [],
       "created_at": "2026-08-03T22:37:46Z",
       "updated_at": "2026-08-05T02:58:39Z",
@@ -409,15 +441,18 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
+      "track": "review",
+      "stage": "awaiting_review_approval",
+      "owes": "maintainer",
       "pending_author": false,
-      "has_artifact": false,
-      "agent_status": "mirror",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
-      "primary_action": null,
+      "primary_action": {
+        "type": "approve",
+        "label": "Approve"
+      },
       "labels": [
         "Product-Shortcut Guide",
         "0.101"
@@ -655,33 +690,6 @@ window.BOARD_INDEX = {
       ],
       "created_at": "2026-07-30T14:56:14Z",
       "updated_at": "2026-07-31T10:44:38Z",
-      "comments": 0,
-      "priority": 60
-    },
-    {
-      "id": "pr-49575",
-      "kind": "pr",
-      "number": 49575,
-      "url": "https://github.com/microsoft/PowerToys/pull/49575",
-      "title": "[Build] Fix UTF-8 and output paths for local C++ builds",
-      "author": "gavinzhangth",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
-      "owes": "maintainer",
-      "pending_author": false,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": null,
-      "labels": [
-        "Product-Keyboard Manager"
-      ],
-      "created_at": "2026-07-29T23:23:20Z",
-      "updated_at": "2026-08-05T07:16:00Z",
       "comments": 0,
       "priority": 60
     },
@@ -1101,14 +1109,17 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "awaiting_review_approval",
+      "owes": "maintainer",
       "pending_author": false,
-      "has_artifact": false,
-      "agent_status": "mirror",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": null,
+      "proposed_open": 2,
+      "primary_action": {
+        "type": "review",
+        "label": "Post comments"
+      },
       "labels": [
         "Area-Localization",
         "Product-Keyboard Manager"
@@ -1872,15 +1883,18 @@ window.BOARD_INDEX = {
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
-      "owes": "us",
+      "track": "review",
+      "stage": "awaiting_review_approval",
+      "owes": "maintainer",
       "pending_author": false,
-      "has_artifact": false,
-      "agent_status": "mirror",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
-      "primary_action": null,
+      "primary_action": {
+        "type": "approve",
+        "label": "Approve"
+      },
       "labels": [
         "Product-Shortcut Guide",
         "0.102"
@@ -3391,7 +3405,7 @@ window.BOARD_INDEX = {
         "Product-Image Resizer"
       ],
       "created_at": "2026-05-14T21:01:04Z",
-      "updated_at": "2026-08-05T07:53:46Z",
+      "updated_at": "2026-08-05T07:54:42Z",
       "comments": 0,
       "priority": null
     },
@@ -3920,6 +3934,33 @@ window.BOARD_INDEX = {
       "updated_at": "2026-06-05T18:25:20Z",
       "comments": 0,
       "priority": 60
+    },
+    {
+      "id": "issue-49689",
+      "kind": "issue",
+      "number": 49689,
+      "url": "https://github.com/microsoft/PowerToys/issues/49689",
+      "title": "Integrate Power Display to make a Desktop control brightness like a Laptop",
+      "author": "Simandara",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": null,
+      "labels": [
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-05T08:07:01Z",
+      "updated_at": "2026-08-05T08:07:01Z",
+      "comments": 0,
+      "priority": null
     },
     {
       "id": "issue-49688",
@@ -5256,62 +5297,6 @@ window.BOARD_INDEX = {
       "updated_at": "2026-07-31T23:39:53Z",
       "comments": 0,
       "priority": 60
-    },
-    {
-      "id": "issue-49574",
-      "kind": "issue",
-      "number": 49574,
-      "url": "https://github.com/microsoft/PowerToys/issues/49574",
-      "title": "[Keyboard Manager] Direct project builds use incorrect root and output paths",
-      "author": "gavinzhangth",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "other",
-      "proposed_open": 0,
-      "primary_action": null,
-      "labels": [
-        "Area-Build",
-        "Product-Keyboard Manager"
-      ],
-      "created_at": "2026-07-29T23:17:41Z",
-      "updated_at": "2026-07-30T21:09:59Z",
-      "comments": 0,
-      "priority": null
-    },
-    {
-      "id": "issue-49573",
-      "kind": "issue",
-      "number": 49573,
-      "url": "https://github.com/microsoft/PowerToys/issues/49573",
-      "title": "[Build] C++ projects fail with C4819 on code page 936",
-      "author": "gavinzhangth",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "other",
-      "proposed_open": 0,
-      "primary_action": null,
-      "labels": [
-        "Product-ZoomIt",
-        "Product-Keyboard Manager"
-      ],
-      "created_at": "2026-07-29T23:17:25Z",
-      "updated_at": "2026-07-29T23:17:35Z",
-      "comments": 0,
-      "priority": null
     },
     {
       "id": "issue-49572",

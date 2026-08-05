@@ -1,0 +1,46 @@
+{
+  "number": 49427,
+  "kind": "pr",
+  "track": "review",
+  "stage": "awaiting_review_approval",
+  "owes": "maintainer",
+  "pending_author": false,
+  "generated_at": "2026-08-05T16:15:50.3831842+08:00",
+  "status": {
+    "label": "Review drafted — needs approval",
+    "glyph": "📝",
+    "detail": "Fork PR 218 converged with zero new Copilot comments and zero unresolved threads; local build remains blocked by unrelated charset/PCH failures."
+  },
+  "next_action": null,
+  "actions": [
+    null
+  ],
+  "confidence": "Medium",
+  "proposed_comments": [
+    {
+      "line": 46,
+      "title": "Document the non-elevated apply requirement",
+      "body": "The implementation rejects profile set operations from an elevated process before touching the user-controlled settings tree, but the reference examples do not mention that requirement. Add a note that apply operations must run non-elevated, while read-only operations remain available as appropriate.",
+      "severity": "medium",
+      "id": "c-49427-1",
+      "disposition": "proposed",
+      "in_diff": false,
+      "path": "doc/dsc/profile-resource.md"
+    },
+    {
+      "line": 185,
+      "title": "Do not overstate localization coverage",
+      "body": "The resource localizes the stable error prefix, but validation details and warning text remain invariant English diagnostics. Either move the complete user-facing messages into Resources.resx, or narrow the checklist wording to say that stable prefixes are localized while technical diagnostic details remain invariant.",
+      "severity": "medium",
+      "id": "c-49427-2",
+      "disposition": "proposed",
+      "in_diff": false,
+      "path": "src/dsc/v3/PowerToys.DSC/Properties/Resources.resx"
+    }
+  ],
+  "fork_pr": {
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/218",
+    "number": 218
+  },
+  "fork_branch": "pr-iterate/49427"
+}
