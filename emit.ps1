@@ -251,6 +251,25 @@ $OV[49692] = @{
   proposed_comments=@()
 }
 
+# Additional current fork mirrors whose latest Copilot review reported zero new
+# comments. They remain approval-gated; the board does not infer upstream
+# approval from the clean review alone.
+foreach ($reviewMirror in @(
+  @{ upstream=48816; fork=213; branch='pr-iterate/48816'; detail='Fork PR 213 Copilot review clean; approval remains gated.' },
+  @{ upstream=48904; fork=214; branch='pr-iterate/48904'; detail='Fork PR 214 Copilot review clean; approval remains gated.' },
+  @{ upstream=48700; fork=223; branch='pr-iterate/48700'; detail='Fork PR 223 Copilot review clean; approval remains gated.' },
+  @{ upstream=49034; fork=186; branch='pr-iterate/49034'; detail='Fork PR 186 Copilot review clean; approval remains gated.' },
+  @{ upstream=49615; fork=216; branch='pr-iterate/49615'; detail='Fork PR 216 Copilot review clean; approval remains gated.' },
+  @{ upstream=49597; fork=209; branch='pr-iterate/49597'; detail='Fork PR 209 Copilot review clean; approval remains gated.' }
+)) {
+  $OV[$reviewMirror.upstream] = @{
+    track='review'; stage='awaiting_review_approval'; confidence='Medium'; owes='maintainer'
+    status = @{ glyph='✅'; label='Fork review clean — needs approval'; detail=$reviewMirror.detail }
+    fork_pr=@{ number=$reviewMirror.fork; url="https://github.com/$FORK/pull/$($reviewMirror.fork)" }
+    fork_branch=$reviewMirror.branch; proposed_comments=@()
+  }
+}
+
 # 49136 -- review track, already partially posted. Demonstrates the per-comment
 # "choose which to post" workflow with real dispositions from the last review.
 $OV[49136] = @{

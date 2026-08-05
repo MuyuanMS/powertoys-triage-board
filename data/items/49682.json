@@ -5,55 +5,55 @@
   "stage": "awaiting_design_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-05T22:40:11.5460629+08:00",
+  "generated_at": "2026-08-05T22:45:55.1016058+08:00",
   "status": {
-    "glyph": "🎯",
     "label": "Design ready — needs approval",
-    "detail": "Fork mirror issue 224 converged after adversary review. Root cause is a mixed Windows App SDK deployment mode that can fail during editor startup; runtime confirmation remains desirable."
+    "detail": "Fork mirror issue 224 converged after adversary review. Root cause is a mixed Windows App SDK deployment mode that can fail during editor startup; runtime confirmation remains desirable.",
+    "glyph": "🎯"
   },
   "next_action": null,
   "actions": [
     {
-      "primary": true,
-      "comment": {
-        "body": "Design approved — proceed to build the fix PR in the fork.",
-        "target": "fork_issue",
-        "number": 224
-      },
+      "type": "approve_design",
       "confirm": true,
-      "note": "Posts an approval note on the fork mirror issue; the fix workflow remains fork-only until upstream approval.",
       "id": "approve-design-49682",
       "label": "Start fixing",
-      "type": "approve_design"
+      "note": "Posts an approval note on the fork mirror issue; the fix workflow remains fork-only until upstream approval.",
+      "primary": true,
+      "comment": {
+        "target": "fork_issue",
+        "body": "Design approved — proceed to build the fix PR in the fork.",
+        "number": 224
+      }
     },
     {
       "label": "Not now",
-      "id": "hold-49682",
-      "type": "hold"
+      "type": "hold",
+      "id": "hold-49682"
     }
   ],
   "confidence": "High",
   "design": {
     "root_cause": "KeyboardManagerEditorUI omitted WindowsAppSDKSelfContained=true, allowing machine-wide and app-local Windows App SDK payloads to mix and causing startup fail-fast during title-bar/input initialization.",
-    "verify": [
-      "Compare app-local WinRT manifests and bootstrap references",
-      "Test Store installs on Windows 10 and Windows 11",
-      "Confirm startup logs before and after main-window construction"
-    ],
-    "confidence": "High",
-    "mirror_issue": {
-      "number": 224,
-      "url": "https://github.com/MuyuanMS/PowerToys/issues/224"
-    },
+    "fix_plan": "Enable Windows App SDK self-contained deployment, initialize logging synchronously before window construction, add pre/post-main-window startup logs, and avoid catch-and-continue handling for native fail-fast.",
     "repro": [
       "Install the affected Store build",
       "Open Keyboard Manager Editor from Settings",
       "Observe that the editor silently fails to launch"
     ],
-    "fix_plan": "Enable Windows App SDK self-contained deployment, initialize logging synchronously before window construction, add pre/post-main-window startup logs, and avoid catch-and-continue handling for native fail-fast.",
+    "verify": [
+      "Compare app-local WinRT manifests and bootstrap references",
+      "Test Store installs on Windows 10 and Windows 11",
+      "Confirm startup logs before and after main-window construction"
+    ],
     "adversary": {
       "rounds": 2,
       "status": "signed_off"
+    },
+    "confidence": "High",
+    "mirror_issue": {
+      "url": "https://github.com/MuyuanMS/PowerToys/issues/224",
+      "number": 224
     }
   }
 }

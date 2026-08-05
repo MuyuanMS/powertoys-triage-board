@@ -1,0 +1,24 @@
+{
+  "number": 48904,
+  "kind": "pr",
+  "track": "review",
+  "stage": "awaiting_review_approval",
+  "owes": "maintainer",
+  "pending_author": false,
+  "generated_at": "2026-08-05T22:45:55.1016058+08:00",
+  "status": {
+    "label": "Fork review clean — needs approval",
+    "detail": "Fork PR 214 Copilot review clean; approval remains gated.",
+    "glyph": "✅"
+  },
+  "next_action": null,
+  "actions": [
+    null
+  ],
+  "confidence": "Medium",
+  "fork_pr": {
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/214",
+    "number": 214
+  },
+  "fork_branch": "pr-iterate/48904"
+}
