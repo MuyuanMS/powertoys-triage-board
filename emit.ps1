@@ -225,6 +225,25 @@ $OV[49427] = @{
   )
 }
 
+$OV[49682] = @{
+  track='fix'; stage='awaiting_design_approval'; confidence='High'; owes='maintainer'
+  status = @{ glyph='🎯'; label='Design ready — needs approval'; detail='Fork mirror issue 224 converged after adversary review. Root cause is a mixed Windows App SDK deployment mode that can fail during editor startup; runtime confirmation remains desirable.' }
+  design = @{
+    root_cause='KeyboardManagerEditorUI omitted WindowsAppSDKSelfContained=true, allowing machine-wide and app-local Windows App SDK payloads to mix and causing startup fail-fast during title-bar/input initialization.'
+    fix_plan ='Enable Windows App SDK self-contained deployment, initialize logging synchronously before window construction, add pre/post-main-window startup logs, and avoid catch-and-continue handling for native fail-fast.'
+    confidence='High'; adversary=@{ status='signed_off'; rounds=2 }
+    repro=@('Install the affected Store build','Open Keyboard Manager Editor from Settings','Observe that the editor silently fails to launch')
+    verify=@('Compare app-local WinRT manifests and bootstrap references','Test Store installs on Windows 10 and Windows 11','Confirm startup logs before and after main-window construction')
+    mirror_issue=@{ number=224; url="https://github.com/$FORK/issues/224" }
+  }
+  actions=@(
+    @{ id='approve-design-49682'; type='approve_design'; label='Start fixing'; primary=$true; confirm=$true
+       comment=@{ target='fork_issue'; number=224; body='Design approved — proceed to build the fix PR in the fork.' }
+       note='Posts an approval note on the fork mirror issue; the fix workflow remains fork-only until upstream approval.' }
+    @{ id='hold-49682'; type='hold'; label='Not now' }
+  )
+}
+
 # 49136 -- review track, already partially posted. Demonstrates the per-comment
 # "choose which to post" workflow with real dispositions from the last review.
 $OV[49136] = @{

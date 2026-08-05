@@ -5,11 +5,11 @@
   "stage": "awaiting_review_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-05T16:52:45.7346298+08:00",
+  "generated_at": "2026-08-05T17:02:20.7098204+08:00",
   "status": {
+    "detail": "Fork PR 218 converged with zero new Copilot comments and zero unresolved threads; local build remains blocked by unrelated charset/PCH failures.",
     "glyph": "📝",
-    "label": "Review drafted — needs approval",
-    "detail": "Fork PR 218 converged with zero new Copilot comments and zero unresolved threads; local build remains blocked by unrelated charset/PCH failures."
+    "label": "Review drafted — needs approval"
   },
   "next_action": null,
   "actions": [
@@ -18,23 +18,23 @@
   "confidence": "Medium",
   "proposed_comments": [
     {
-      "severity": "medium",
-      "disposition": "proposed",
-      "line": 46,
       "id": "c-49427-1",
       "body": "The implementation rejects profile set operations from an elevated process before touching the user-controlled settings tree, but the reference examples do not mention that requirement. Add a note that apply operations must run non-elevated, while read-only operations remain available as appropriate.",
+      "severity": "medium",
       "title": "Document the non-elevated apply requirement",
+      "disposition": "proposed",
       "path": "doc/dsc/profile-resource.md",
+      "line": 46,
       "in_diff": false
     },
     {
-      "severity": "medium",
-      "disposition": "proposed",
-      "line": 185,
       "id": "c-49427-2",
       "body": "The resource localizes the stable error prefix, but validation details and warning text remain invariant English diagnostics. Either move the complete user-facing messages into Resources.resx, or narrow the checklist wording to say that stable prefixes are localized while technical diagnostic details remain invariant.",
+      "severity": "medium",
       "title": "Do not overstate localization coverage",
+      "disposition": "proposed",
       "path": "src/dsc/v3/PowerToys.DSC/Properties/Resources.resx",
+      "line": 185,
       "in_diff": false
     }
   ],

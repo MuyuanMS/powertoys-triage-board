@@ -5,11 +5,11 @@
   "stage": "awaiting_review_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-05T16:52:45.7346298+08:00",
+  "generated_at": "2026-08-05T17:02:20.7098204+08:00",
   "status": {
+    "detail": "Fork PR 205: Copilot reviewed all 10 changed files and generated no new comments.",
     "glyph": "✅",
-    "label": "Review clean — needs approval",
-    "detail": "Fork PR 205: Copilot reviewed all 10 changed files and generated no new comments."
+    "label": "Review clean — needs approval"
   },
   "next_action": null,
   "actions": [
