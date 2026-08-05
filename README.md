@@ -30,8 +30,9 @@ different way to obtain the token.
 
 ## Tier A deploy (zero backend)
 
-1. **Create a private repo** for the board, e.g. `MuyuanMS/pt-triage-board`
-   (private so drafted review comments are visible to maintainers only).
+1. **Create a dedicated repo** for the board, e.g. `MuyuanMS/powertoys-triage-board`.
+   On the current GitHub plan, Pages requires this repo to be public. Do not
+   publish tokens, credentials, or information that must remain private.
 2. **Publish the UI** to GitHub Pages from that repo (or any host). Copy this
    folder's `index.html` + `data/` to the repo root / Pages source.
 3. **Regenerate data** with the scheduled agent job:

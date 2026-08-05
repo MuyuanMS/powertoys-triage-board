@@ -1,5 +1,5 @@
-# v3 board data IS meant to be committed to a PRIVATE repo (members fetch it
-# with their own token). Do NOT put this folder in a public repo.
+# v3 board data is committed to the dedicated Pages repository. Never put
+# secrets or token-bearing files in this folder or repository.
 # These are local-only runtime / secret-bearing artifacts — never commit them:
 *.token
 token.txt

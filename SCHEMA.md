@@ -18,7 +18,7 @@ no shared secret.
      comments, PR body, actions). Only written for items an agent has processed.
 2. **Live GitHub (member's token, in-browser)** — current status + staleness.
    The page fetches the upstream PR/issue (and the fork `MuyuanMS/PowerToys`)
-   with the signed-in member's token to show up-to-the-minute state and to
+   with the member's token when available to show up-to-the-minute state and to
    detect when an artifact is **stale** (see below). Lazy: only on card expand
    and manual refresh, to stay within rate limits.
 
