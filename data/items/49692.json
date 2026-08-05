@@ -1,5 +1,5 @@
 {
-  "number": 49639,
+  "number": 49692,
   "kind": "pr",
   "track": "review",
   "stage": "awaiting_review_approval",
@@ -7,7 +7,7 @@
   "pending_author": false,
   "generated_at": "2026-08-05T17:15:23.0878880+08:00",
   "status": {
-    "detail": "Fork PR 205: Copilot reviewed all 10 changed files and generated no new comments.",
+    "detail": "Fork PR 226 converged with zero Copilot comments and zero unresolved threads; Essentials, Runner, and Settings UI Debug builds passed.",
     "glyph": "✅",
     "label": "Review clean — needs approval"
   },
@@ -17,8 +17,8 @@
   ],
   "confidence": "High",
   "fork_pr": {
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/205",
-    "number": 205
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/226",
+    "number": 226
   },
-  "fork_branch": "pr-iterate/49639"
+  "fork_branch": "pr-iterate/49692-v2"
 }
