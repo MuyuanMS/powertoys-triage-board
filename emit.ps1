@@ -13,9 +13,9 @@
   (post a PR review with the comments they select, open the upstream PR, request
   missing info, approve a design, comment).
 
-  Source of truth for the open backlog is the existing v2 latest.json (statuses per
-  item). Tracked items get a hand-authored overlay ($OV) with the drafted content the
-  local agents produced (issue-to-design / design-to-pr / pr-review skills).
+  Source of truth for the open backlog is the live upstream GitHub API. The older
+  v2 latest.json is used only for display metadata and tracked-item hints. Tracked
+  items get a hand-authored overlay ($OV) with drafted agent content.
 #>
 
 $ErrorActionPreference = 'Stop'
@@ -24,10 +24,54 @@ $v2json = Join-Path $here '..\dashboard\data\latest.json'
 $outDir = Join-Path $here 'data'
 New-Item -ItemType Directory -Force -Path $outDir | Out-Null
 
-$src = Get-Content $v2json -Raw | ConvertFrom-Json
 $UP  = 'microsoft/PowerToys'
+# The upstream repository is the source of truth for the open backlog. Keep
+# the older snapshot only for display metadata and tracked-item hints.
+$src = Get-Content $v2json -Raw | ConvertFrom-Json
 $FORK= if ($src.fork) { $src.fork } else { 'MuyuanMS/PowerToys' }
 $ME  = if ($src.me)   { $src.me }   else { 'MuyuanMS' }
+function Get-LiveCollection {
+  param([string]$Endpoint)
+  $pages = gh api --paginate --slurp $Endpoint 2>$null | ConvertFrom-Json
+  @($pages | ForEach-Object { @($_) })
+}
+function Convert-LiveItem {
+  param($Raw, [string]$Kind, $Previous)
+  $labels = @($Raw.labels | ForEach-Object { $_.name })
+  $author = if ($Raw.user.login) { $Raw.user.login } else { 'unknown' }
+  $association = [string]$Raw.author_association
+  $community = $association -notin @('MEMBER','OWNER','COLLABORATOR')
+  [ordered]@{
+    id = "$Kind-$($Raw.number)"; kind = $Kind; number = [int]$Raw.number
+    url = $Raw.html_url; title = $Raw.title; author = $author
+    is_community = [bool]$community; mine = ($author -ieq $ME)
+    is_cmdpal = (($labels -join '|') -match '(?i)Command Palette|CmdPal')
+    labels = $labels; created_at = $Raw.created_at; updated_at = $Raw.updated_at
+    comments = [int]$Raw.comments
+    track = if ($Previous) { $Previous.track } else { $null }
+    stage = if ($Previous) { $Previous.stage } else { $null }
+    owes = if ($Previous) { $Previous.owes } else { 'us' }
+    priority = if ($Previous) { $Previous.priority } else { $null }
+  }
+}
+$previousByNumber = @{}
+foreach ($old in @($src.items)) { $previousByNumber[[int]$old.number] = $old }
+try {
+  $livePrs = Get-LiveCollection "repos/$UP/pulls?state=open&per_page=100"
+  $liveIssues = Get-LiveCollection "repos/$UP/issues?state=open&per_page=100" |
+    Where-Object { -not $_.pull_request }
+  $liveItems = New-Object System.Collections.Generic.List[object]
+  foreach ($raw in $livePrs) {
+    $liveItems.Add([pscustomobject](Convert-LiveItem $raw 'pr' $previousByNumber[[int]$raw.number]))
+  }
+  foreach ($raw in $liveIssues) {
+    $liveItems.Add([pscustomobject](Convert-LiveItem $raw 'issue' $previousByNumber[[int]$raw.number]))
+  }
+  $src.items = $liveItems.ToArray()
+  "live upstream backlog loaded: prs=$($livePrs.Count) issues=$($liveIssues.Count)"
+} catch {
+  Write-Warning "live upstream backlog load failed; using previous snapshot: $($_.Exception.Message)"
+}
 
 # ---- helpers -------------------------------------------------------------
 function Obj { param($h) [pscustomobject]$h }   # hashtable -> object
@@ -275,12 +319,34 @@ foreach ($it in $src.items) {
   if ($o -and $o.proposed_comments) {
     $proposedOpen = @($o.proposed_comments | Where-Object { $_.disposition -eq 'proposed' }).Count
   }
+  $primary = $null
+  if ($hasArtifact -and $it.kind -eq 'pr') {
+    if ($proposedOpen -gt 0) {
+      $primary = [ordered]@{ type='review'; label='Post comments' }
+    } elseif ($iowes -ne 'author') {
+      $primary = [ordered]@{ type='approve'; label='Approve' }
+    }
+  } elseif ($hasArtifact -and $o.actions) {
+    $action = @($o.actions | Where-Object { $_.type -eq 'request_info' }) | Select-Object -First 1
+    if (-not $action) { $action = @($o.actions | Where-Object { $_.type -eq 'open_upstream_pr' }) | Select-Object -First 1 }
+    if (-not $action) { $action = @($o.actions | Where-Object { $_.type -eq 'approve_design' }) | Select-Object -First 1 }
+    if ($action) {
+      $label = switch ($action.type) {
+        'request_info' { 'Reply with suggested comments' }
+        'open_upstream_pr' { 'Create PR' }
+        'approve_design' { 'Start fixing' }
+        default { $action.label }
+      }
+      $primary = [ordered]@{ type=$action.type; label=$label }
+    }
+  }
   $entry = [ordered]@{
     id=$it.id; kind=$it.kind; number=$n; url=$it.url; title=$it.title; author=$it.author
     is_community=[bool]$it.is_community; mine=[bool]$it.mine; is_cmdpal=[bool]$it.is_cmdpal
     track=$track; stage=$stage; owes=$iowes; pending_author=($iowes -eq 'author')
     has_artifact=$hasArtifact; agent_status=$agentStatus; issue_type=$issueType
     proposed_open=$proposedOpen
+    primary_action=if ($primary) { [pscustomobject]$primary } else { $null }
     labels=@($it.labels); created_at=$it.created_at; updated_at=$it.updated_at
     comments=$it.comments; priority=$it.priority
   }

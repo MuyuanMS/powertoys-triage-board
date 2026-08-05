@@ -775,6 +775,7 @@ function board(){
     },
     primaryAction(it){
       const a=this.art(it);
+      if(!a && it.primary_action) return it.primary_action;
       if(!a) return null;
       if(it.kind==='pr'){
         const openComments=(a.proposed_comments||[]).filter(c=>c.disposition==='proposed').length;

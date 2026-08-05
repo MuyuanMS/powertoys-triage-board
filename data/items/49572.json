@@ -5,68 +5,56 @@
   "stage": "awaiting_pr_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-05T15:16:36.5647493+08:00",
+  "generated_at": "2026-08-05T15:55:53.9384294+08:00",
   "status": {
-    "detail": "Fork PR #173 review-clean (2 Copilot rounds).",
     "glyph": "🚀",
+    "detail": "Fork PR #173 review-clean (2 Copilot rounds).",
     "label": "Ready to open upstream PR"
   },
-  "next_action": {
-    "reason": "Fork PR #173 Copilot-review-clean + e2e-style design converged",
-    "glyph": "🚀",
-    "label": "Open upstream PR (approve)"
-  },
+  "next_action": null,
   "actions": [
     {
+      "confirm": true,
+      "label": "Open upstream PR as me",
       "primary": true,
       "pr": {
         "base": "main",
-        "title": "[CmdPal][Dock] Do not close the Dock on ALT+F4",
         "body": "Fixes #49572.\n\nThe Dock WndProc now swallows Dock-targeted SC_CLOSE and self-heals the _docks map on unexpected close. ALT+F4 on the Dock is a no-op; intentional closes still work. Copilot-review-clean in the fork mirror PR.",
-        "head": "MuyuanMS:copilot/fix-dock-closing-with-alt-f4",
-        "draft": false
+        "title": "[CmdPal][Dock] Do not close the Dock on ALT+F4",
+        "draft": false,
+        "head": "MuyuanMS:copilot/fix-dock-closing-with-alt-f4"
       },
       "id": "open-pr-49572",
-      "label": "Open upstream PR as me",
-      "type": "open_upstream_pr",
-      "confirm": true
+      "type": "open_upstream_pr"
     }
   ],
   "confidence": "High",
   "design": {
-    "verify": [
-      "With fix: ALT+F4 on the Dock is a no-op; the Dock survives",
-      "Intentional closes (disable / monitor-removal / quit) still work"
-    ],
-    "adversary": {
-      "status": "signed_off",
-      "rounds": 2
-    },
-    "confidence": "High",
-    "fix_plan": "Dock WndProc swallows Dock-targeted SC_CLOSE and self-heals the _docks map on unexpected close (snapshot enumeration + guarded removal). Deliberate: ALT+F4 = no-op.",
+    "root_cause": "ALT+F4 on the CmdPal Dock forwarded SC_CLOSE and closed it like an app, leaving a stale _docks entry.",
     "mirror_issue": {
       "url": "https://github.com/MuyuanMS/PowerToys/issues/172",
       "number": 172
     },
-    "root_cause": "ALT+F4 on the CmdPal Dock forwarded SC_CLOSE and closed it like an app, leaving a stale _docks entry.",
+    "adversary": {
+      "status": "signed_off",
+      "rounds": 2
+    },
     "repro": [
       "Enable CmdPal Dock",
       "Focus the Dock",
       "Press ALT+F4",
       "Observe the Dock closes like an app (stale _docks entry)"
+    ],
+    "confidence": "High",
+    "fix_plan": "Dock WndProc swallows Dock-targeted SC_CLOSE and self-heals the _docks map on unexpected close (snapshot enumeration + guarded removal). Deliberate: ALT+F4 = no-op.",
+    "verify": [
+      "With fix: ALT+F4 on the Dock is a no-op; the Dock survives",
+      "Intentional closes (disable / monitor-removal / quit) still work"
     ]
-  },
-  "upstream_issue": {
-    "number": 49572,
-    "url": "https://github.com/microsoft/PowerToys/issues/49572"
   },
   "fork_pr": {
     "url": "https://github.com/MuyuanMS/PowerToys/pull/173",
     "number": 173
   },
-  "fork_branch": "copilot/fix-dock-closing-with-alt-f4",
-  "fork_issue": {
-    "number": 172,
-    "url": "https://github.com/MuyuanMS/PowerToys/issues/172"
-  }
+  "fork_branch": "copilot/fix-dock-closing-with-alt-f4"
 }
