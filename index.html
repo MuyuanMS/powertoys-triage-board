@@ -203,9 +203,13 @@
               <span x-text="'@' + it.author"></span>
               <span class="text-slate-300">·</span>
               <span x-text="nextActionText(it)"></span>
-              <button x-show="primaryAction(it)" @click.stop="openPrimary(it)"
-                class="px-2 py-0.5 rounded text-[11px] font-semibold bg-sky-600 text-white hover:bg-sky-700"
-                x-text="primaryAction(it).label"></button>
+              <button @click.stop="primaryAction(it) && openPrimary(it)" :disabled="!primaryAction(it)"
+                class="px-2 py-0.5 rounded text-[11px] font-semibold"
+                :class="primaryAction(it)
+                  ? 'bg-sky-600 text-white hover:bg-sky-700'
+                  : 'bg-slate-100 text-slate-400 cursor-not-allowed'"
+                x-text="primaryAction(it) ? primaryAction(it).label
+                  : (pendingAuthor(it) ? 'Waiting for author' : 'Action not available')"></button>
             </div>
           </div>
           <!-- right chips: only the essentials for the list -->
