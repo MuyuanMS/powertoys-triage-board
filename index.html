@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PowerToys Triage — Member Board</title>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script>tailwind.config={darkMode:'class'}</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Slim backlog index (basic facts). Regenerated each scheduled run. Fallback for file://. -->
+<script src="data/index.js" onerror="window.__NO_INDEX_JS=1"></script>
+<style>
+  [x-cloak]{display:none!important}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  .sev-high{background:#fee2e2;color:#b91c1c}
+  .sev-medium{background:#fef3c7;color:#b45309}
+  .sev-low{background:#e0f2fe;color:#0369a1}
+  pre.diff{white-space:pre-wrap;word-break:break-word}
+  body.dark{background:#0f172a;color:#e2e8f0}
+  .dark .bg-white{background:#1e293b!important}
+  .dark .bg-slate-50{background:#0f172a!important}
+  .dark .bg-slate-100{background:#334155!important}
+  .dark .bg-slate-200{background:#475569!important}
+  .dark .border-slate-200,.dark .border-slate-300{border-color:#334155!important}
+  .dark .border-slate-100{border-color:#334155!important}
+  .dark .text-slate-800,.dark .text-slate-700{color:#e2e8f0!important}
+  .dark .text-slate-600,.dark .text-slate-500{color:#94a3b8!important}
+  .dark .text-slate-400{color:#64748b!important}
+  .dark input,.dark textarea,.dark select{background:#0f172a;color:#e2e8f0;border-color:#475569}
+  .dark .bg-amber-50{background:#451a03!important;color:#fde68a!important;border-color:#92400e!important}
+  .dark .bg-sky-50{background:#082f49!important}
+  .dark .bg-sky-100{background:#164e63!important;color:#bae6fd!important}
+  .dark .bg-indigo-100{background:#312e81!important;color:#c7d2fe!important}
+  .dark .from-sky-50{--tw-gradient-from:#082f49 var(--tw-gradient-from-position);--tw-gradient-to:rgb(8 47 73 / 0) var(--tw-gradient-to-position)}
+  .dark .to-indigo-50{--tw-gradient-to:#1e1b4b var(--tw-gradient-to-position)}
+  .dark .bg-emerald-50{background:#052e16!important}
+  .dark .bg-emerald-100{background:#064e3b!important;color:#a7f3d0!important}
+  .dark .bg-rose-50{background:#4c0519!important}
+  .dark .bg-rose-100{background:#881337!important;color:#fecdd3!important}
+  .dark .bg-violet-100{background:#4c1d95!important;color:#ddd6fe!important}
+  .dark .bg-teal-100{background:#134e4a!important;color:#99f6e4!important}
+  .dark .bg-green-100{background:#14532d!important;color:#bbf7d0!important}
+  .dark .bg-amber-100{background:#78350f!important;color:#fde68a!important}
+  .dark .bg-indigo-50{background:#1e1b4b!important}
+  .dark .bg-white\/70{background:rgb(30 41 59 / .7)!important}
+  .dark .hover\:bg-slate-50:hover{background:#334155!important}
+  .dark .hover\:bg-slate-700:hover{background:#475569!important}
+</style>
+</head>
+<body class="bg-slate-50 text-slate-800" :class="{dark: darkMode}" x-data="board()" x-init="init()" x-cloak>
+
+<!-- ===== Top bar ===== -->
+<header class="bg-white border-b border-slate-200 sticky top-0 z-20">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-3">
+      <h1 class="text-xl font-semibold">🔧 PowerToys Triage — Member Board</h1>
+      <span class="text-xs text-slate-500" x-text="idx.generated_at ? ('index ' + new Date(idx.generated_at).toLocaleString()) : 'no index'"></span>
+    </div>
+    <div class="flex items-center gap-2">
+      <input type="text" x-model="filter" placeholder="Search title / #number / author…" class="px-3 py-1.5 border border-slate-300 rounded text-sm w-56" />
+      <button @click="darkMode=!darkMode; localStorage.setItem('pt_dark_mode',darkMode?'1':'0')"
+        class="px-2.5 py-1.5 rounded border text-sm" :title="darkMode ? 'Use light mode' : 'Use dark mode'"
+        x-text="darkMode ? '☀️' : '🌙'"></button>
+      <!-- Dry-run: preview the exact GitHub API payload without posting anything. -->
+      <label class="flex items-center gap-1.5 text-xs px-2 py-1.5 rounded border"
+        :class="dryRun ? 'bg-amber-50 border-amber-300 text-amber-800' : 'bg-rose-50 border-rose-300 text-rose-700'">
+        <input type="checkbox" x-model="dryRun" class="accent-amber-600" />
+        <span x-text="dryRun ? 'Dry run (preview only)' : 'LIVE — actions post for real'"></span>
+      </label>
+      <!-- Sign in: paste a fine-grained PAT scoped to the two repos (PR/Issue/Contents write). -->
+      <template x-if="!me">
+        <button @click="showToken=true" class="px-3 py-1.5 rounded text-sm font-semibold bg-slate-900 text-white hover:bg-slate-700">Sign in with GitHub token</button>
+      </template>
+      <template x-if="me">
+        <div class="flex items-center gap-2">
+          <img :src="me.avatar_url" class="w-6 h-6 rounded-full" />
+          <span class="text-sm">Acting as <b x-text="me.login"></b></span>
+          <button @click="signOut()" class="text-xs text-slate-500 underline">sign out</button>
+        </div>
+      </template>
+    </div>
+  </div>
+  <!-- primary: PRs | Issues  (secondary filter defaults to All, like GitHub) -->
+  <div class="max-w-7xl mx-auto px-6 pb-2 flex flex-wrap items-center gap-3 text-sm">
+    <div class="inline-flex rounded-lg border border-slate-300 overflow-hidden">
+      <template x-for="k in kindTabs" :key="k.key">
+        <button @click="kindTab=k.key; sub='all'"
+          class="px-4 py-1.5 font-semibold"
+          :class="kindTab===k.key ? 'bg-sky-600 text-white' : 'bg-white hover:bg-slate-50'">
+          <span x-text="k.label"></span>
+          <span class="opacity-70" x-text="'(' + kindCount(k.key) + ')'"></span>
+        </button>
+      </template>
+    </div>
+    <div class="flex flex-wrap gap-1">
+      <template x-for="s in subTabs" :key="s.key">
+        <button @click="sub=s.key"
+          class="px-3 py-1 rounded-full border"
+          :class="sub===s.key ? 'bg-slate-900 text-white border-slate-900' : 'bg-white border-slate-300 hover:bg-slate-50'">
+          <span x-text="s.label"></span>
+          <span class="opacity-70" x-text="'(' + subCount(s.key) + ')'"></span>
+        </button>
+      </template>
+    </div>
+  </div>
+  <!-- GitHub-like filters -->
+  <div class="max-w-7xl mx-auto px-6 pb-2 flex flex-wrap items-center gap-2 text-xs">
+    <input x-model="authorFilter" placeholder="author: login" class="px-2.5 py-1.5 border border-slate-300 rounded w-36" />
+    <input x-model="includeLabels" placeholder="include labels (a,b)" class="px-2.5 py-1.5 border border-slate-300 rounded w-44" />
+    <input x-model="excludeLabels" placeholder="exclude labels (a,b)" class="px-2.5 py-1.5 border border-slate-300 rounded w-44" />
+    <label x-show="kindTab==='pr'" class="flex items-center gap-1.5 px-2.5 py-1.5 border border-slate-300 rounded">
+      <input type="checkbox" x-model="communityOnly" /> community PRs only
+    </label>
+    <button @click="clearFilters()" class="px-2.5 py-1.5 rounded border border-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700">Clear filters</button>
+  </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-6 py-5 space-y-4">
+
+  <!-- ===== AI maintenance impact (leadership view) ===== -->
+  <section class="bg-gradient-to-r from-sky-50 to-indigo-50 rounded-lg border border-sky-200 p-4">
+    <div class="flex items-center justify-between mb-2">
+      <h2 class="text-sm font-semibold text-slate-700">🤖 AI maintenance impact</h2>
+      <span class="text-[11px] text-slate-400" x-text="idx.impact ? ('as of ' + fmtDate(idx.impact.as_of)) : ''"></span>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <template x-for="m in impactTiles" :key="m.label">
+        <div class="bg-white/70 rounded-lg p-3">
+          <div class="text-2xl font-semibold text-slate-800" x-text="m.value"></div>
+          <div class="text-xs text-slate-500" x-text="m.label"></div>
+        </div>
+      </template>
+    </div>
+  </section>
+
+  <!-- ===== selected-kind stats (pies) ===== -->
+  <section class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <template x-for="p in pies" :key="p.title">
+      <div class="bg-white rounded-lg border border-slate-200 p-4 flex items-center gap-4">
+        <div class="w-24 h-24 rounded-full shrink-0" :style="p.css"></div>
+        <div class="min-w-0">
+          <div class="text-sm font-semibold text-slate-700 mb-1" x-text="p.title + ' (' + p.total + ')'"></div>
+          <template x-for="s in p.segments" :key="s.label">
+            <div class="flex items-center gap-2 text-xs text-slate-600">
+              <span class="w-2.5 h-2.5 rounded-sm" :style="'background:'+s.color"></span>
+              <span x-text="s.label"></span>
+              <span class="text-slate-400" x-text="s.value + ' · ' + s.pct + '%'"></span>
+            </div>
+          </template>
+        </div>
+      </div>
+    </template>
+  </section>
+  <section class="grid grid-cols-2 gap-3">
+    <div class="bg-white rounded-lg border border-slate-200 p-3">
+      <div class="text-2xl font-semibold" x-text="idx.counts ? idx.counts.open_prs : 0"></div>
+      <div class="text-xs text-slate-500">overall open PRs</div>
+    </div>
+    <div class="bg-white rounded-lg border border-slate-200 p-3">
+      <div class="text-2xl font-semibold" x-text="idx.counts ? idx.counts.open_issues : 0"></div>
+      <div class="text-xs text-slate-500">overall open issues</div>
+    </div>
+  </section>
+
+  <!-- not-signed-in notice -->
+  <div x-show="!me" class="bg-amber-50 border border-amber-200 rounded-lg p-3 text-sm text-amber-800">
+    You're viewing the board in read-only mode. Agent suggestions and proposed comments are visible;
+    <b>sign in with a GitHub token</b> only when you want to post a review, open a PR, comment, or approve an action as yourself.
+  </div>
+
+  <!-- sort bar -->
+  <div class="flex items-center gap-2 text-sm">
+    <span class="text-slate-500">Sort:</span>
+    <template x-for="s in sortKeys" :key="s.key">
+      <button @click="setSort(s.key)"
+        class="px-2.5 py-1 rounded border"
+        :class="sortKey===s.key ? 'bg-slate-900 text-white border-slate-900' : 'bg-white border-slate-300 hover:bg-slate-50'">
+        <span x-text="s.label"></span>
+        <span x-show="sortKey===s.key" x-text="sortDir==='asc' ? ' ↑' : ' ↓'"></span>
+      </button>
+    </template>
+    <span x-show="sortKey==='comments'" class="text-[11px] text-slate-400">good-to-go first; items awaiting review stay at the bottom</span>
+  </div>
+
+  <!-- item list -->
+  <div class="space-y-2">
+    <template x-for="it in visible" :key="it.id">
+      <div class="bg-white rounded-lg border" :class="it.has_artifact ? 'border-sky-200' : 'border-slate-200'">
+        <!-- row header -->
+        <div class="p-3 flex items-start gap-3 cursor-pointer" @click="toggle(it)">
+          <div class="text-lg" x-text="statusGlyph(it)"></div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="text-xs px-1.5 py-0.5 rounded font-semibold"
+                :class="it.kind==='pr' ? 'bg-violet-100 text-violet-700' : 'bg-emerald-100 text-emerald-700'"
+                x-text="it.kind.toUpperCase()"></span>
+              <span class="mono text-xs text-slate-400" x-text="'#' + it.number"></span>
+              <a :href="it.url" target="_blank" @click.stop class="font-medium hover:underline truncate" x-text="it.title"></a>
+              <span x-show="it.is_cmdpal" class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-100 text-indigo-700">CmdPal</span>
+              <span x-show="it.mine" class="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 text-slate-600">my trace</span>
+            </div>
+            <div class="text-xs text-slate-500 mt-0.5 flex items-center gap-2 flex-wrap">
+              <span x-text="'@' + it.author"></span>
+              <span class="text-slate-300">·</span>
+              <span x-text="nextActionText(it)"></span>
+            </div>
+          </div>
+          <!-- right chips: only the essentials for the list -->
+          <div class="flex items-center gap-2 shrink-0">
+            <span class="text-[11px] px-2 py-0.5 rounded font-medium" :class="disposition(it).cls" x-text="disposition(it).label"></span>
+            <span x-show="live[it.number] && live[it.number].stale" class="text-[11px] px-2 py-0.5 rounded bg-rose-100 text-rose-700">⚠ stale</span>
+            <span class="text-[10px] px-1.5 py-0.5 rounded"
+              :class="it.is_community ? 'bg-teal-100 text-teal-700' : 'bg-slate-100 text-slate-600'"
+              x-text="it.is_community ? 'community' : 'member'"></span>
+            <span class="text-slate-400" x-text="open[it.id] ? '▾' : '▸'"></span>
+          </div>
+        </div>
+
+        <!-- expanded detail -->
+        <div x-show="open[it.id]" x-cloak class="border-t border-slate-100 p-4 space-y-4">
+
+          <!-- live status line -->
+          <div class="text-xs text-slate-500 flex items-center gap-3">
+            <button @click="refreshLive(it)" class="underline">↻ load/refresh live GitHub details</button>
+            <template x-if="live[it.number]">
+              <span>
+                <span x-text="'upstream: ' + (live[it.number].upstream_state || '?')"></span>
+                <template x-if="live[it.number].head_sha">
+                  <span class="mono" x-text="' · head ' + live[it.number].head_sha.slice(0,7)"></span>
+                </template>
+                <template x-if="live[it.number].fork_state">
+                  <span x-text="' · fork PR ' + live[it.number].fork_state"></span>
+                </template>
+              </span>
+            </template>
+            <span x-show="loadingLive[it.number]" class="text-slate-400">loading…</span>
+          </div>
+          <template x-if="live[it.number] && live[it.number].details">
+            <div class="border rounded p-3 space-y-2">
+              <div class="flex items-center justify-between gap-3">
+                <div class="text-xs font-semibold text-slate-700">Live GitHub details</div>
+                <a :href="live[it.number].details.html_url" target="_blank" class="text-xs text-sky-600 underline">open on GitHub ↗</a>
+              </div>
+              <div class="text-sm whitespace-pre-wrap" x-text="live[it.number].details.body || '(no description)'"></div>
+              <div class="flex flex-wrap gap-1" x-show="live[it.number].details.labels && live[it.number].details.labels.length">
+                <template x-for="l in live[it.number].details.labels" :key="l.name">
+                  <span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 text-slate-600" x-text="l.name"></span>
+                </template>
+              </div>
+              <div class="text-xs text-slate-500">
+                <span x-text="'author: @' + (live[it.number].details.user && live[it.number].details.user.login || it.author)"></span>
+                <span x-show="live[it.number].details.assignees && live[it.number].details.assignees.length">
+                  <span> · assignees: </span><span x-text="live[it.number].details.assignees.map(a=>a.login).join(', ')"></span>
+                </span>
+              </div>
+            </div>
+          </template>
+
+          <!-- suggested next action -->
+          <template x-if="art(it)">
+            <div class="bg-sky-50 border border-sky-200 rounded p-3">
+              <div class="text-xs font-semibold text-sky-800 mb-1">Suggested next action</div>
+              <div class="text-sm" x-text="(art(it).status && art(it).status.label) || '—'"></div>
+              <div class="text-xs text-slate-600 mt-0.5" x-text="(art(it).status && art(it).status.detail) || ''"></div>
+              <div x-show="art(it).confidence" class="text-xs mt-1">confidence:
+                <b :class="{'text-emerald-700':art(it).confidence==='High','text-amber-700':art(it).confidence==='Medium','text-rose-700':art(it).confidence==='Low'}" x-text="art(it).confidence"></b>
+              </div>
+            </div>
+          </template>
+
+          <!-- DESIGN panel (fix track) -->
+          <template x-if="art(it) && art(it).design">
+            <div class="border rounded p-3">
+              <div class="text-xs font-semibold text-slate-700 mb-1">🎯 Fix design
+                <span x-show="art(it).design.adversary" class="ml-1 text-[11px] px-1.5 py-0.5 rounded"
+                  :class="art(it).design.adversary.status==='signed_off' ? 'bg-emerald-100 text-emerald-700':'bg-amber-100 text-amber-700'"
+                  x-text="'adversary ' + (art(it).design.adversary.status) + ' · ' + (art(it).design.adversary.rounds) + ' rounds'"></span>
+              </div>
+              <div class="text-sm"><b>Root cause:</b> <span x-text="art(it).design.root_cause"></span></div>
+              <div class="text-sm mt-1"><b>Fix plan:</b> <span x-text="art(it).design.fix_plan"></span></div>
+              <div class="grid sm:grid-cols-2 gap-3 mt-2">
+                <div x-show="art(it).design.repro">
+                  <div class="text-xs font-semibold text-slate-600">Reproduce</div>
+                  <ol class="list-decimal ml-5 text-xs text-slate-600"><template x-for="s in art(it).design.repro"><li x-text="s"></li></template></ol>
+                </div>
+                <div x-show="art(it).design.verify">
+                  <div class="text-xs font-semibold text-slate-600">Verify</div>
+                  <ol class="list-decimal ml-5 text-xs text-slate-600"><template x-for="s in art(it).design.verify"><li x-text="s"></li></template></ol>
+                </div>
+              </div>
+              <div x-show="art(it).design.mirror_issue" class="text-xs mt-2">
+                <a :href="art(it).design.mirror_issue.url" target="_blank" class="text-sky-600 underline">fork mirror issue ↗</a>
+              </div>
+            </div>
+          </template>
+
+          <!-- PROPOSED COMMENTS (review track) -->
+          <template x-if="art(it) && art(it).proposed_comments">
+            <div class="border rounded p-3">
+              <div class="flex items-center justify-between mb-2">
+                <div class="text-xs font-semibold text-slate-700">Proposed review comments — tick the ones to post</div>
+                <div class="text-xs text-slate-500" x-text="selectedComments(it).length + ' selected'"></div>
+              </div>
+              <div class="space-y-2">
+                <template x-for="c in art(it).proposed_comments" :key="c.id">
+                  <div class="border rounded p-2" :class="c.disposition==='withdrawn' ? 'opacity-60 bg-slate-50' : ''">
+                    <div class="flex items-start gap-2">
+                      <input type="checkbox" class="mt-1" :disabled="c.disposition==='withdrawn'"
+                        :checked="sel[it.number] && sel[it.number][c.id]" @change="toggleComment(it, c)" />
+                      <div class="flex-1 min-w-0">
+                        <div class="flex items-center gap-2 flex-wrap">
+                          <span class="text-[10px] px-1.5 py-0.5 rounded font-semibold" :class="'sev-' + c.severity" x-text="c.severity"></span>
+                          <span class="text-sm font-medium" x-text="c.title"></span>
+                          <span x-show="c.disposition==='posted'" class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-700">already posted</span>
+                          <span x-show="c.disposition==='withdrawn'" class="text-[10px] px-1.5 py-0.5 rounded bg-slate-200 text-slate-600">withdrawn</span>
+                          <span x-show="c.in_diff" class="text-[10px] px-1.5 py-0.5 rounded bg-violet-100 text-violet-700">inline · one-click</span>
+                        </div>
+                        <div x-show="c.path" class="mono text-[11px] text-slate-400" x-text="(c.path||'') + (c.line ? (':' + c.line) : '')"></div>
+                        <div class="text-xs text-slate-600 mt-1" x-show="c.body" x-text="c.body"></div>
+                        <div class="text-xs text-rose-600 mt-1" x-show="c.reason" x-text="'withdrawn: ' + c.reason"></div>
+                      </div>
+                    </div>
+                  </div>
+                </template>
+              </div>
+              <div class="flex items-center gap-2 mt-3">
+                <select x-model="reviewEvent[it.number]" class="text-sm border rounded px-2 py-1">
+                  <option value="COMMENT">Comment</option>
+                  <option value="APPROVE">Approve</option>
+                  <option value="REQUEST_CHANGES">Request changes</option>
+                </select>
+                <button @click="postReview(it)" :disabled="!me || selectedComments(it).length===0"
+                  class="px-3 py-1.5 rounded text-sm font-semibold"
+                  :class="(!me || selectedComments(it).length===0) ? 'bg-slate-100 text-slate-400' : 'bg-emerald-600 text-white hover:bg-emerald-700'">
+                  <span x-text="dryRun ? 'Preview review payload' : 'Post selected as me'"></span>
+                </button>
+              </div>
+            </div>
+          </template>
+
+          <!-- ACTION buttons -->
+          <div class="flex flex-wrap gap-2">
+            <template x-for="a in (art(it) ? art(it).actions : [])" :key="a.id">
+              <button @click="runAction(it, a)" :disabled="pendingAuthor(it) && a.type!=='post_comment'"
+                class="px-3 py-1.5 rounded text-sm font-semibold"
+                :class="a.primary ? 'bg-sky-600 text-white hover:bg-sky-700' : 'bg-white border border-slate-300 hover:bg-slate-50'">
+                <span x-text="(dryRun && isWrite(a) ? 'Preview: ' : '') + a.label"></span>
+              </button>
+            </template>
+            <!-- generic member actions, available on any item -->
+            <button @click="openCompose(it)" class="px-3 py-1.5 rounded text-sm border border-slate-300 hover:bg-slate-50">💬 Comment as me…</button>
+            <a :href="it.url" target="_blank" class="px-3 py-1.5 rounded text-sm border border-slate-300 hover:bg-slate-50">Open on GitHub ↗</a>
+            <template x-if="art(it) && art(it).fork_pr">
+              <a :href="art(it).fork_pr.url" target="_blank" class="px-3 py-1.5 rounded text-sm border border-slate-300 hover:bg-slate-50">Fork PR ↗</a>
+            </template>
+          </div>
+
+          <!-- per-action note -->
+          <template x-for="a in (art(it) ? art(it).actions : [])" :key="'note-'+a.id">
+            <div x-show="a.note" class="text-[11px] text-slate-400" x-text="'• ' + a.label + ': ' + a.note"></div>
+          </template>
+        </div>
+      </div>
+    </template>
+    <div x-show="visible.length===0" class="text-center text-slate-400 py-10">No items match this filter.</div>
+  </div>
+</main>
+
+<!-- ===== token modal ===== -->
+<div x-show="showToken" x-cloak class="fixed inset-0 bg-black/40 flex items-center justify-center z-40" @click.self="showToken=false">
+  <div class="bg-white rounded-lg p-5 w-[32rem] max-w-[92vw] space-y-3">
+    <div class="text-lg font-semibold">Sign in with a GitHub token</div>
+    <p class="text-sm text-slate-600">Create a <b>fine-grained personal access token</b> scoped to
+      <span class="mono">microsoft/PowerToys</span> and your fork, with <b>Pull requests: Read &amp; write</b>,
+      <b>Issues: Read &amp; write</b>, <b>Contents: Read &amp; write</b>. It's kept only in this browser
+      (<span class="mono">localStorage</span>) and used to call the GitHub API as you.</p>
+    <input type="password" x-model="tokenInput" placeholder="github_pat_…" class="w-full border rounded px-3 py-2 text-sm mono" />
+    <div class="flex justify-end gap-2">
+      <button @click="showToken=false" class="px-3 py-1.5 rounded text-sm border">Cancel</button>
+      <button @click="saveToken()" class="px-3 py-1.5 rounded text-sm font-semibold bg-slate-900 text-white">Save &amp; verify</button>
+    </div>
+    <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" class="text-xs text-sky-600 underline">Create a fine-grained token ↗</a>
+  </div>
+</div>
+
+<!-- ===== compose / confirm modal ===== -->
+<div x-show="composeOpen" x-cloak class="fixed inset-0 bg-black/40 flex items-center justify-center z-40" @click.self="composeOpen=false">
+  <div class="bg-white rounded-lg p-5 w-[40rem] max-w-[94vw] space-y-3">
+    <div class="text-lg font-semibold" x-text="composeTitle"></div>
+    <div class="text-xs text-slate-500" x-text="composeSub"></div>
+    <textarea x-model="composeBody" rows="8" class="w-full border rounded px-3 py-2 text-sm"></textarea>
+    <div class="flex items-center justify-between">
+      <label class="text-xs flex items-center gap-1.5"><input type="checkbox" x-model="dryRun" class="accent-amber-600" /> dry run (preview only)</label>
+      <div class="flex gap-2">
+        <button @click="composeOpen=false" class="px-3 py-1.5 rounded text-sm border">Cancel</button>
+        <button @click="composeSubmit()" :disabled="!me" class="px-3 py-1.5 rounded text-sm font-semibold" :class="me ? 'bg-emerald-600 text-white' : 'bg-slate-100 text-slate-400'"
+          x-text="dryRun ? 'Preview payload' : 'Post as me'"></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== payload preview modal ===== -->
+<div x-show="previewOpen" x-cloak class="fixed inset-0 bg-black/40 flex items-center justify-center z-50" @click.self="previewOpen=false">
+  <div class="bg-white rounded-lg p-5 w-[46rem] max-w-[94vw] space-y-3">
+    <div class="text-lg font-semibold" x-text="previewTitle"></div>
+    <div class="text-xs text-slate-500 mono" x-text="previewEndpoint"></div>
+    <pre class="diff bg-slate-900 text-slate-100 rounded p-3 text-xs max-h-[60vh] overflow-auto" x-text="previewJson"></pre>
+    <div class="flex justify-end"><button @click="previewOpen=false" class="px-3 py-1.5 rounded text-sm border">Close</button></div>
+  </div>
+</div>
+
+<!-- ===== toast ===== -->
+<div x-show="toast" x-cloak class="fixed bottom-4 right-4 z-50 bg-slate-900 text-white text-sm rounded px-4 py-2 shadow-lg" x-text="toast"></div>
+
+<script>
+function board(){
+  return {
+    idx:{}, items:[], artifacts:{}, live:{}, loadingLive:{},
+    me:null, token:'', tokenInput:'', showToken:false,
+    darkMode: localStorage.getItem('pt_dark_mode') === '1',
+    dryRun:true, filter:'', authorFilter:'', includeLabels:'', excludeLabels:'', communityOnly:false,
+    kindTab:'pr', sub:'all', sortKey:'smart', sortDir:'desc',
+    open:{}, sel:{}, reviewEvent:{},
+    composeOpen:false, composeTitle:'', composeSub:'', composeBody:'', composeCtx:null,
+    previewOpen:false, previewTitle:'', previewEndpoint:'', previewJson:'',
+    toast:'',
+    kindTabs:[
+      {key:'pr',label:'Pull requests'},
+      {key:'issue',label:'Issues'},
+    ],
+    subTabs:[
+      {key:'all',label:'All'},
+      {key:'actionable',label:'Actionable'},
+      {key:'pending',label:'Waiting on author'},
+      {key:'awaiting',label:'Awaiting update'},
+      {key:'community',label:'Community'},
+      {key:'mine',label:'My traces'},
+    ],
+    sortKeys:[
+      {key:'smart',label:'Priority'},
+      {key:'comments',label:'Proposed comments'},
+      {key:'updated',label:'Recently updated'},
+      {key:'created',label:'Newest'},
+      {key:'number',label:'Number'},
+    ],
+
+    async init(){
+      // load index (served JSON, else file:// fallback)
+      try{
+        const r = await fetch('data/index.json',{cache:'no-store'});
+        this.idx = await r.json();
+      }catch(e){ this.idx = window.BOARD_INDEX || {items:[]}; }
+      this.items = this.idx.items || [];
+      this.token = localStorage.getItem('pt_gh_token') || '';
+      if(this.token){ await this.whoami(); }
+      this.darkMode = localStorage.getItem('pt_dark_mode') === '1';
+    },
+
+    // ---------- auth ----------
+    async saveToken(){
+      this.token = this.tokenInput.trim();
+      localStorage.setItem('pt_gh_token', this.token);
+      this.showToken=false; this.tokenInput='';
+      await this.whoami();
+    },
+    signOut(){ this.token=''; this.me=null; localStorage.removeItem('pt_gh_token'); },
+    async whoami(){
+      try{
+        const u = await this.gh('/user');
+        this.me = u;
+        this.flash('Signed in as ' + u.login);
+      }catch(e){ this.me=null; this.flash('Token invalid: ' + e.message); }
+    },
+
+    // ---------- GitHub REST ----------
+    // Writes (POST/PATCH/PUT) are intercepted when dryRun is on: the exact endpoint+payload
+    // are shown instead of being sent. Nothing is posted publicly until dryRun is off.
+    async gh(path, {method='GET', body=null}={}){
+      const isWrite = method!=='GET';
+      if(isWrite && this.dryRun){
+        this.showPreview(method + ' ' + path, body);
+        return {__dry_run:true};
+      }
+      const res = await fetch('https://api.github.com' + path, {
+        method,
+        headers:{
+          'Accept':'application/vnd.github+json',
+          'X-GitHub-Api-Version':'2022-11-28',
+          ...(body?{'Content-Type':'application/json'}:{}),
+          ...(this.token?{'Authorization':'Bearer ' + this.token}:{})
+        },
+        body: body ? JSON.stringify(body) : null
+      });
+      if(!res.ok){
+        let msg = res.status + ' ' + res.statusText;
+        try{ const j = await res.json(); if(j.message) msg = j.message; }catch(_){}
+        throw new Error(msg);
+      }
+      return res.status===204 ? {} : res.json();
+    },
+
+    // ---------- artifacts + live status ----------
+    art(it){ return this.artifacts[it.number] || null; },
+    async loadArtifact(it){
+      if(!it.has_artifact || this.artifacts[it.number]!==undefined) return;
+      try{
+        const r = await fetch('data/items/' + it.number + '.json',{cache:'no-store'});
+        if(!r.ok) throw 0;
+        const a = await r.json();
+        this.artifacts[it.number] = a;
+        // default selection: pre-tick 'posted' inline items? No — leave all unticked, member decides.
+        this.reviewEvent[it.number] = this.reviewEvent[it.number] || 'COMMENT';
+      }catch(e){ this.artifacts[it.number] = null; }
+    },
+    async refreshLive(it){
+      this.loadingLive[it.number]=true;
+      const [up,repo] = this.idx.upstream.split('/');
+      const info = {};
+      try{
+        if(it.kind==='pr'){
+          const p = await this.gh(`/repos/${up}/${repo}/pulls/${it.number}`);
+          info.details = p;
+          info.upstream_state = p.merged ? 'merged' : p.state + (p.draft?' (draft)':'');
+          info.head_sha = p.head && p.head.sha;
+          const a = this.art(it);
+          if(a && a.head_sha && info.head_sha){ info.stale = !info.head_sha.startsWith(a.head_sha); }
+        } else {
+          const i = await this.gh(`/repos/${up}/${repo}/issues/${it.number}`);
+          info.details = i;
+          info.upstream_state = i.state;
+        }
+        const a = this.art(it);
+        if(a && a.fork_pr){
+          const [fo,fr] = this.idx.fork.split('/');
+          try{ const fp = await this.gh(`/repos/${fo}/${fr}/pulls/${a.fork_pr.number}`);
+            info.fork_state = fp.merged ? 'merged' : fp.state; }catch(_){}
+        }
+      }catch(e){ info.upstream_state = 'error: ' + e.message; }
+      this.live[it.number]=info; this.loadingLive[it.number]=false;
+    },
+
+    // ---------- UI ----------
+    async toggle(it){
+      this.open[it.id] = !this.open[it.id];
+      if(this.open[it.id]){
+        await this.loadArtifact(it);
+        this.refreshLive(it);
+      }
+    },
+    statusGlyph(it){ const a=this.art(it); return (a && a.status && a.status.glyph) || (it.kind==='pr'?'🔀':'🐛'); },
+    pendingAuthor(it){ const a=this.art(it); return a ? a.pending_author : (it.pending_author || it.owes==='author' || it.stage==='awaiting_author'); },
+    isWrite(a){ return ['post_review','open_upstream_pr','post_comment','approve_design','request_info'].includes(a.type); },
+
+    // comment selection
+    selectedComments(it){ const s=this.sel[it.number]||{}; const a=this.art(it); if(!a||!a.proposed_comments) return []; return a.proposed_comments.filter(c=>s[c.id]); },
+    toggleComment(it,c){ if(!this.sel[it.number]) this.sel[it.number]={}; this.sel[it.number][c.id]=!this.sel[it.number][c.id]; },
+
+    // ---------- actions ----------
+    async runAction(it,a){
+      if(!this.me && this.isWrite(a)){ this.flash('Sign in first'); return; }
+      switch(a.type){
+        case 'open_upstream_pr': return this.openUpstreamPr(it,a);
+        case 'approve_design':   return this.postCommentAction(it,a,'Design approved');
+        case 'request_info':     return this.postCommentAction(it,a,'Info request');
+        case 'post_comment':     return this.postCommentAction(it,a,'Comment');
+        case 'rerun': case 'start_review': case 'hold':
+          this.flash(a.label + ' — this queues a local agent run (handled by the scheduled job).'); return;
+        default: this.flash('No handler for ' + a.type);
+      }
+    },
+    async postReview(it){
+      const a=this.art(it); const chosen=this.selectedComments(it);
+      const inline = chosen.filter(c=>c.in_diff && c.path && c.line).map(c=>({path:c.path,line:c.line,side:c.side||'RIGHT',body:this.renderComment(c)}));
+      const bodyOnly = chosen.filter(c=>!(c.in_diff && c.path && c.line));
+      const body = bodyOnly.map(c=>'### '+c.title+'\n\n'+(c.body||'')).join('\n\n');
+      const payload = {event:this.reviewEvent[it.number]||'COMMENT', body, comments:inline};
+      const [up,repo]=this.idx.upstream.split('/');
+      try{
+        const r = await this.gh(`/repos/${up}/${repo}/pulls/${it.number}/reviews`,{method:'POST',body:payload});
+        if(r.__dry_run) return;
+        this.flash('Posted review as ' + this.me.login + (r.html_url?'':''));
+      }catch(e){ this.flash('Review failed: ' + e.message); }
+    },
+    renderComment(c){ return '### '+c.title+'\n\n**Severity:** `'+c.severity+'`\n\n'+(c.body||''); },
+    async openUpstreamPr(it,a){
+      const [up,repo]=this.idx.upstream.split('/');
+      try{
+        const r = await this.gh(`/repos/${up}/${repo}/pulls`,{method:'POST',body:{
+          title:a.pr.title, head:a.pr.head, base:a.pr.base, body:a.pr.body, draft:!!a.pr.draft }});
+        if(r.__dry_run) return;
+        this.flash('Opened PR ' + (r.html_url||''));
+      }catch(e){ this.flash('Open PR failed: ' + e.message); }
+    },
+    async postCommentAction(it,a,kind){
+      const c=a.comment; if(!c){ this.flash('No comment payload'); return; }
+      let owner,repo,number;
+      const [up,ur]=this.idx.upstream.split('/'); const [fo,fr]=this.idx.fork.split('/');
+      if(c.target==='fork_issue'){ owner=fo;repo=fr;number=c.number; }
+      else { owner=up;repo=ur;number=c.number; }
+      try{
+        const r = await this.gh(`/repos/${owner}/${repo}/issues/${number}/comments`,{method:'POST',body:{body:c.body}});
+        if(r.__dry_run) return;
+        this.flash(kind + ' posted ' + (r.html_url||''));
+      }catch(e){ this.flash(kind + ' failed: ' + e.message); }
+    },
+
+    // generic compose
+    openCompose(it){
+      this.composeCtx=it; this.composeTitle='Comment on #'+it.number+' as '+(this.me?this.me.login:'…');
+      this.composeSub=it.title; this.composeBody=''; this.composeOpen=true;
+    },
+    async composeSubmit(){
+      const it=this.composeCtx; const [up,repo]=this.idx.upstream.split('/');
+      try{
+        const r = await this.gh(`/repos/${up}/${repo}/issues/${it.number}/comments`,{method:'POST',body:{body:this.composeBody}});
+        if(r.__dry_run){ this.composeOpen=false; return; }
+        this.composeOpen=false; this.flash('Comment posted ' + (r.html_url||''));
+      }catch(e){ this.flash('Comment failed: ' + e.message); }
+    },
+
+    // preview + toast
+    showPreview(endpoint,body){ this.previewTitle='Dry run — nothing was sent'; this.previewEndpoint=endpoint; this.previewJson=JSON.stringify(body,null,2); this.previewOpen=true; },
+    flash(m){ this.toast=m; setTimeout(()=>{ if(this.toast===m) this.toast=''; },4000); },
+
+    // ---------- disposition (the one status that matters on the list) ----------
+    // actionable   : a drafted artifact exists and it's our move -> member can act now
+    // pending      : ball is in the author's court
+    // awaiting     : not yet decided -> waiting for the maintainer's next agent run
+    dispositionKey(it){
+      if(this.pendingAuthor(it)) return 'pending';
+      if(it.has_artifact) return 'actionable';
+      return 'awaiting';
+    },
+    disposition(it){
+      switch(this.dispositionKey(it)){
+        case 'actionable': return {label:'actionable', cls:'bg-green-100 text-green-700'};
+        case 'pending':    return {label:'waiting on author', cls:'bg-amber-100 text-amber-700'};
+        default:           return {label:'awaiting update', cls:'bg-slate-100 text-slate-500'};
+      }
+    },
+    nextActionText(it){
+      const a=this.art(it);
+      if(this.pendingAuthor(it)) return 'Waiting on author to respond';
+      if(a){
+        if(a.next_action && a.next_action.label) return a.next_action.label;
+        const act=(a.actions||[])[0];
+        if(act && act.label) return act.label;
+        return 'Ready for your review';
+      }
+      if(it.mirror) return 'Agent working in fork — awaiting update';
+      return 'Not yet triaged — run next update';
+    },
+
+    // ---------- filtering (two levels: kind tab + sub-filter) ----------
+    matchSub(it,key){
+      const dk=this.dispositionKey(it);
+      switch(key){
+        case 'all': return true;
+        case 'actionable': return dk==='actionable';
+        case 'pending': return dk==='pending';
+        case 'awaiting': return dk==='awaiting';
+        case 'community': return it.is_community;
+        case 'mine': return it.mine;
+      }
+      return true;
+    },
+    labelNames(it){ return Array.isArray(it.labels) ? it.labels.map(x=>String(x && x.name || x).toLowerCase()) : []; },
+    csvValues(value){ return String(value || '').split(',').map(x=>x.trim().toLowerCase()).filter(Boolean); },
+    matchesAdvancedFilters(it){
+      const author=String(this.authorFilter || '').trim().toLowerCase();
+      if(author && String(it.author||'').toLowerCase()!==author) return false;
+      if(this.kindTab==='pr' && this.communityOnly && !it.is_community) return false;
+      const labels=this.labelNames(it);
+      const include=this.csvValues(this.includeLabels);
+      const exclude=this.csvValues(this.excludeLabels);
+      if(include.length && !include.every(x=>labels.includes(x))) return false;
+      if(exclude.some(x=>labels.includes(x))) return false;
+      return true;
+    },
+    clearFilters(){ this.filter=''; this.authorFilter=''; this.includeLabels=''; this.excludeLabels=''; this.communityOnly=false; },
+    inKind(it,k){ return it.kind===k; },
+    kindCount(k){ return this.items.filter(it=>this.inKind(it,k)).length; },
+    subCount(key){ return this.items.filter(it=>this.inKind(it,this.kindTab) && this.matchSub(it,key)).length; },
+
+    // ---------- sorting ----------
+    setSort(key){
+      if(this.sortKey===key){ this.sortDir = this.sortDir==='asc' ? 'desc' : 'asc'; }
+      else { this.sortKey=key; this.sortDir = (key==='comments') ? 'asc' : 'desc'; }
+    },
+    _dispRank(it){ return {actionable:0,pending:1,awaiting:2}[this.dispositionKey(it)]; },
+    sortItems(list){
+      const dir = this.sortDir==='asc' ? 1 : -1;
+      const key = this.sortKey;
+      // For the "proposed comments" sort, items that aren't ready for a member to act
+      // (awaiting our next run, or waiting on the author) are PINNED to the bottom,
+      // regardless of asc/desc — only reviewed/actionable items participate in the ranking.
+      const pinned = it => key==='comments' && this.dispositionKey(it)!=='actionable';
+      return list.slice().sort((a,b)=>{
+        const pa=pinned(a), pb=pinned(b);
+        if(pa!==pb) return pa?1:-1;
+        if(pa&&pb) return (this._dispRank(a)-this._dispRank(b)) || (b.number-a.number);
+        let r=0;
+        switch(key){
+          case 'comments': r=(a.proposed_open||0)-(b.proposed_open||0); break;
+          case 'updated':  r=new Date(a.updated_at||0)-new Date(b.updated_at||0); break;
+          case 'created':  r=new Date(a.created_at||0)-new Date(b.created_at||0); break;
+          case 'number':   r=a.number-b.number; break;
+          default:         return (this._dispRank(a)-this._dispRank(b)) || ((a.priority||99)-(b.priority||99)) || (b.number-a.number);
+        }
+        return (r*dir) || (b.number-a.number);
+      });
+    },
+
+    // ---------- filtering ----------
+    get visible(){
+      const f=String(this.filter || '').trim().toLowerCase();
+      let list=this.items.filter(it=>this.inKind(it,this.kindTab) && this.matchSub(it,this.sub) && this.matchesAdvancedFilters(it));
+      if(f) list=list.filter(it=> (it.title||'').toLowerCase().includes(f) || String(it.number).includes(f) || (it.author||'').toLowerCase().includes(f));
+      return this.sortItems(list);
+    },
+
+    // ---------- top stats ----------
+    fmtDate(s){ try{ return new Date(s).toLocaleDateString(); }catch(e){ return s||''; } },
+    get impactTiles(){
+      const im=this.idx.impact||{};
+      return [
+        {label:'issues helped (triaged + fix)', value:im.issues_helped||0},
+        {label:'PRs iterated (review loop)', value:im.prs_iterated||0},
+        {label:'constructive comments posted', value:im.constructive_comments_posted||0},
+        {label:'review comments drafted', value:im.comments_drafted||0},
+      ];
+    },
+    _pie(title, segs){
+      const total = segs.reduce((s,x)=>s+x.value,0) || 1;
+      let acc=0; const stops=[];
+      for(const s of segs){
+        const start=acc/total*360, end=(acc+s.value)/total*360; acc+=s.value;
+        stops.push(`${s.color} ${start.toFixed(1)}deg ${end.toFixed(1)}deg`);
+        s.pct = Math.round(s.value/total*100);
+      }
+      return { title, total: segs.reduce((s,x)=>s+x.value,0), segments: segs,
+               css: `background: conic-gradient(${stops.join(',')}); mask: radial-gradient(circle 34% at 50% 50%, transparent 98%, #000 100%); -webkit-mask: radial-gradient(circle 34% at 50% 50%, transparent 98%, #000 100%);` };
+    },
+    get pies(){
+      const prs=this.items.filter(i=>i.kind==='pr');
+      const iss=this.items.filter(i=>i.kind==='issue');
+      const cnt=(arr,fn)=>arr.filter(fn).length;
+      if(this.kindTab==='pr') return [this._pie('PRs by author', [
+        {label:'community', value:cnt(prs,i=>i.is_community), color:'#0d9488'},
+        {label:'member',    value:cnt(prs,i=>!i.is_community), color:'#64748b'},
+      ])];
+      return [this._pie('Issues by type', [
+        {label:'bug',     value:cnt(iss,i=>i.issue_type==='bug'), color:'#e11d48'},
+        {label:'feature', value:cnt(iss,i=>i.issue_type==='feature'), color:'#7c3aed'},
+        {label:'other',   value:cnt(iss,i=>!['bug','feature'].includes(i.issue_type)), color:'#cbd5e1'},
+      ])];
+    },
+  };
+}
+</script>
+</body>
+</html>

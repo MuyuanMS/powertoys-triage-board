@@ -1,0 +1,8 @@
+# v3 board data IS meant to be committed to a PRIVATE repo (members fetch it
+# with their own token). Do NOT put this folder in a public repo.
+# These are local-only runtime / secret-bearing artifacts — never commit them:
+*.token
+token.txt
+data/*.local.json
+data/*.local.js
+serve.log

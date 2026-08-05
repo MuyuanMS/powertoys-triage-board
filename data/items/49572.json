@@ -1,0 +1,72 @@
+{
+  "number": 49572,
+  "kind": "issue",
+  "track": "fix",
+  "stage": "awaiting_pr_approval",
+  "owes": "maintainer",
+  "pending_author": false,
+  "generated_at": "2026-08-04T17:23:50.3600423+08:00",
+  "status": {
+    "glyph": "🚀",
+    "detail": "Fork PR #173 review-clean (2 Copilot rounds).",
+    "label": "Ready to open upstream PR"
+  },
+  "next_action": {
+    "glyph": "🚀",
+    "reason": "Fork PR #173 Copilot-review-clean + e2e-style design converged",
+    "label": "Open upstream PR (approve)"
+  },
+  "actions": [
+    {
+      "confirm": true,
+      "primary": true,
+      "label": "Open upstream PR as me",
+      "type": "open_upstream_pr",
+      "pr": {
+        "base": "main",
+        "body": "Fixes #49572.\n\nThe Dock WndProc now swallows Dock-targeted SC_CLOSE and self-heals the _docks map on unexpected close. ALT+F4 on the Dock is a no-op; intentional closes still work. Copilot-review-clean in the fork mirror PR.",
+        "head": "MuyuanMS:copilot/fix-dock-closing-with-alt-f4",
+        "title": "[CmdPal][Dock] Do not close the Dock on ALT+F4",
+        "draft": false
+      },
+      "id": "open-pr-49572"
+    }
+  ],
+  "confidence": "High",
+  "design": {
+    "fix_plan": "Dock WndProc swallows Dock-targeted SC_CLOSE and self-heals the _docks map on unexpected close (snapshot enumeration + guarded removal). Deliberate: ALT+F4 = no-op.",
+    "root_cause": "ALT+F4 on the CmdPal Dock forwarded SC_CLOSE and closed it like an app, leaving a stale _docks entry.",
+    "confidence": "High",
+    "verify": [
+      "With fix: ALT+F4 on the Dock is a no-op; the Dock survives",
+      "Intentional closes (disable / monitor-removal / quit) still work"
+    ],
+    "mirror_issue": {
+      "url": "https://github.com/MuyuanMS/PowerToys/issues/172",
+      "number": 172
+    },
+    "repro": [
+      "Enable CmdPal Dock",
+      "Focus the Dock",
+      "Press ALT+F4",
+      "Observe the Dock closes like an app (stale _docks entry)"
+    ],
+    "adversary": {
+      "rounds": 2,
+      "status": "signed_off"
+    }
+  },
+  "upstream_issue": {
+    "number": 49572,
+    "url": "https://github.com/microsoft/PowerToys/issues/49572"
+  },
+  "fork_pr": {
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/173",
+    "number": 173
+  },
+  "fork_branch": "copilot/fix-dock-closing-with-alt-f4",
+  "fork_issue": {
+    "number": 172,
+    "url": "https://github.com/MuyuanMS/PowerToys/issues/172"
+  }
+}
