@@ -462,9 +462,9 @@
             <option value="APPROVE">Approve</option>
             <option value="REQUEST_CHANGES">Request changes</option>
           </select>
-          <button @click="postReview(focusItem)" :disabled="!me || selectedComments(focusItem).length===0"
+          <button @click="postReview(focusItem)" :disabled="(!dryRun && !me) || selectedComments(focusItem).length===0"
             class="px-3 py-1.5 rounded text-sm font-semibold"
-            :class="(!me || selectedComments(focusItem).length===0) ? 'bg-slate-100 text-slate-400' : 'bg-emerald-600 text-white'">
+            :class="((!dryRun && !me) || selectedComments(focusItem).length===0) ? 'bg-slate-100 text-slate-400' : 'bg-emerald-600 text-white'">
             <span x-text="dryRun ? 'Preview selected comments' : 'Post selected comments'"></span>
           </button>
         </div>
@@ -479,10 +479,15 @@
         </div>
         <div class="flex flex-wrap gap-2">
           <template x-for="a in art(focusItem).actions || []" :key="a.id">
-            <button @click="runAction(focusItem,a)" class="px-3 py-1.5 rounded text-sm font-semibold"
-              :class="a.primary ? 'bg-sky-600 text-white' : 'border'">
-              <span x-text="(dryRun && isWrite(a) ? 'Preview: ' : '') + a.label"></span>
-            </button>
+            <div class="border rounded p-3 w-full">
+              <div class="font-medium" x-text="a.label"></div>
+              <div x-show="a.note || (a.comment && a.comment.body)" class="text-sm mt-1 whitespace-pre-wrap"
+                x-text="a.note || (a.comment && a.comment.body)"></div>
+              <button @click="runAction(focusItem,a)" class="mt-2 px-3 py-1.5 rounded text-sm font-semibold"
+                :class="a.primary ? 'bg-sky-600 text-white' : 'border'">
+                <span x-text="(dryRun && isWrite(a) ? 'Preview: ' : '') + a.label"></span>
+              </button>
+            </div>
           </template>
         </div>
       </div>
@@ -679,7 +684,7 @@ function board(){
 
     // ---------- actions ----------
     async runAction(it,a){
-      if(!this.me && this.isWrite(a)){ this.flash('Sign in first'); return; }
+      if(!this.me && this.isWrite(a) && !this.dryRun){ this.flash('Sign in first'); return; }
       switch(a.type){
         case 'open_upstream_pr': return this.openUpstreamPr(it,a);
         case 'remind_author': return this.postCommentAction(it,a,'Reminder');
@@ -706,7 +711,7 @@ function board(){
       }catch(e){ this.flash('Review failed: ' + e.message); }
     },
     async approveReview(it){
-      if(!this.me){ this.flash('Sign in first'); return; }
+      if(!this.me && !this.dryRun){ this.flash('Sign in first'); return; }
       const [up,repo]=this.idx.upstream.split('/');
       try{
         const r=await this.gh(`/repos/${up}/${repo}/pulls/${it.number}/reviews`,{
@@ -848,9 +853,11 @@ function board(){
         return null;
       }
       const actions=a.actions||[];
-      if(actions.some(x=>x.type==='request_info')) return {type:'request_info',label:'Reply with suggested comments'};
-      if(actions.some(x=>x.type==='open_upstream_pr')) return {type:'open_upstream_pr',label:'Create PR'};
-      if(actions.some(x=>x.type==='approve_design')) return {type:'approve_design',label:'Start fixing'};
+      const first=actions.find(x=>x.primary) || actions[0];
+      if(first) {
+        const labels={request_info:'Reply with suggested comments',open_upstream_pr:'Create PR',approve_design:'Start fixing'};
+        return {type:first.type,label:labels[first.type]||first.label};
+      }
       return null;
     },
     focusTitle(){
