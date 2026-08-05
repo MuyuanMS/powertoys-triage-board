@@ -228,8 +228,8 @@ $OV[49427] = @{
 # 49136 -- review track, already partially posted. Demonstrates the per-comment
 # "choose which to post" workflow with real dispositions from the last review.
 $OV[49136] = @{
-  track='review'; stage='review_posted'; confidence='High'; owes='author'
-  status = @{ glyph='✅'; label='Re-review posted'; detail='review 4841804426 (COMMENT) on head 23987e4b: 1 inline + 2 body follow-ups. Ball is with the author.' }
+  track='review'; stage='review_in_progress'; confidence='High'; owes='us'; needs_revalidation=$true
+  status = @{ glyph='🔄'; label='Needs re-review'; detail='Upstream head changed from 23987e4b to a413b177. The prior review remains historical; fork review must resume on the new head.' }
   upstream_pr=@{ number=49136; url="https://github.com/$UP/pull/49136" }
   fork_pr=@{ number=178; url="https://github.com/$FORK/pull/178" }; fork_branch='pr-iterate/49136-v3'
   head_sha='23987e4b'
@@ -404,6 +404,7 @@ foreach ($it in $src.items) {
     next_action= if ($it.next_action) { Obj @{ glyph=$it.next_action.glyph; label=$it.next_action.label; reason=$it.next_action.reason } } else { $null }
     actions    = @($o.actions | ForEach-Object { Obj $_ })
   }
+  if ($o.needs_revalidation) { $art.needs_revalidation = $true }
   if ($o.confidence)  { $art.confidence  = $o.confidence }
   if ($o.head_sha)    { $art.head_sha    = $o.head_sha }        # staleness anchor vs live PR head
   if ($o.design)      { $art.design      = Obj $o.design }
