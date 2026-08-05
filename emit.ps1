@@ -358,6 +358,33 @@ try {
   Write-Warning "fork mirror scan skipped (gh unavailable?): $($_.Exception.Message)"
 }
 
+# Promote current fork review mirrors whose latest Copilot review is clean.
+# This keeps the board useful between hand-authored agent artifacts without
+# implying that any upstream action has already been approved.
+try {
+  $openUpstream = @{}
+  foreach ($live in @($src.items)) { $openUpstream[[int]$live.number] = $live }
+  foreach ($fp in @($forkPrs)) {
+    if (-not ($fp.headRefName -match '(?i)pr-iterate' -or $fp.title -match '\[PR\s+\d+\]')) { continue }
+    $upNums = @(Get-UpstreamNums $fp.title $fp.headRefName)
+    foreach ($upNum in $upNums) {
+      if (-not $openUpstream.ContainsKey($upNum) -or $OV.ContainsKey($upNum)) { continue }
+      $forkReview = gh pr view $fp.number -R $FORK --json reviews 2>$null | ConvertFrom-Json
+      $latest = @($forkReview.reviews | Sort-Object submittedAt -Descending | Select-Object -First 1)
+      if ($latest -and ([string]$latest[0].body -match '(?i)generated no new comments')) {
+        $OV[$upNum] = @{
+          track='review'; stage='awaiting_review_approval'; confidence='Medium'; owes='maintainer'
+          status = @{ glyph='✅'; label='Fork review clean — needs approval'; detail="Fork PR $($fp.number) latest Copilot review generated no new comments; approval remains gated." }
+          fork_pr=@{ number=[int]$fp.number; url="https://github.com/$FORK/pull/$($fp.number)" }
+          fork_branch=$fp.headRefName; proposed_comments=@()
+        }
+      }
+    }
+  }
+} catch {
+  Write-Warning "clean fork review promotion skipped: $($_.Exception.Message)"
+}
+
 # ---- build: slim index + per-number artifacts ----------------------------
 # Two outputs, matching the "folder per number" model:
 #   data/index.json          slim list of every open item (basic facts + hint + has_artifact)
