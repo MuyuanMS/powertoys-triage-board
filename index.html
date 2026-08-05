@@ -579,7 +579,7 @@ function board(){
       try{
         const r = await this.gh(`/repos/${up}/${repo}/pulls/${it.number}/reviews`,{method:'POST',body:payload});
         if(r.__dry_run) return;
-        this.flash('Posted review as ' + this.me.login + (r.html_url?'':''));
+        this.markReviewPosted(it, chosen);
       }catch(e){ this.flash('Review failed: ' + e.message); }
     },
     renderComment(c){ return '### '+c.title+'\n\n**Severity:** `'+c.severity+'`\n\n'+(c.body||''); },
@@ -601,7 +601,7 @@ function board(){
       try{
         const r = await this.gh(`/repos/${owner}/${repo}/issues/${number}/comments`,{method:'POST',body:{body:c.body}});
         if(r.__dry_run) return;
-        this.flash(kind + ' posted ' + (r.html_url||''));
+        this.markCommentPosted(it);
       }catch(e){ this.flash(kind + ' failed: ' + e.message); }
     },
 
@@ -615,13 +615,34 @@ function board(){
       try{
         const r = await this.gh(`/repos/${up}/${repo}/issues/${it.number}/comments`,{method:'POST',body:{body:this.composeBody}});
         if(r.__dry_run){ this.composeOpen=false; return; }
-        this.composeOpen=false; this.flash('Comment posted ' + (r.html_url||''));
+        this.composeOpen=false; this.markCommentPosted(it);
       }catch(e){ this.flash('Comment failed: ' + e.message); }
     },
 
     // preview + toast
     showPreview(endpoint,body){ this.previewTitle='Dry run — nothing was sent'; this.previewEndpoint=endpoint; this.previewJson=JSON.stringify(body,null,2); this.previewOpen=true; },
     flash(m){ this.toast=m; setTimeout(()=>{ if(this.toast===m) this.toast=''; },4000); },
+    markReviewPosted(it, chosen){
+      const a=this.art(it);
+      if(a && a.proposed_comments){
+        const ids=new Set(chosen.map(c=>c.id));
+        a.proposed_comments.forEach(c=>{ if(ids.has(c.id)) c.disposition='posted'; });
+      }
+      it.pending_author=true;
+      it.owes='author';
+      it.stage='review_posted';
+      it.agent_status='review';
+      it.proposed_open=a && a.proposed_comments
+        ? a.proposed_comments.filter(c=>c.disposition==='proposed').length
+        : 0;
+      this.flash('Review posted as ' + this.me.login + ' · waiting on author');
+    },
+    markCommentPosted(it){
+      it.pending_author=true;
+      it.owes='author';
+      if(!it.stage || it.stage==='awaiting_update') it.stage='review_posted';
+      this.flash('Comment posted as ' + this.me.login + ' · waiting on author');
+    },
 
     // ---------- disposition (the one status that matters on the list) ----------
     // actionable   : a drafted artifact exists and it's our move -> member can act now
