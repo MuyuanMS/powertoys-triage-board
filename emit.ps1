@@ -432,7 +432,7 @@ foreach ($it in $src.items) {
   }
   $primary = $null
   if ($hasArtifact -and $o.needs_revalidation) {
-    $primary = $null
+    $primary = [ordered]@{ type='rerun'; label=if ($it.kind -eq 'pr') { 'Re-run review' } else { 'Re-run triage' } }
   } elseif ($hasArtifact -and $it.kind -eq 'pr') {
     if ($proposedOpen -gt 0) {
       $primary = [ordered]@{ type='review'; label='Post comments' }
@@ -451,6 +451,12 @@ foreach ($it in $src.items) {
         default { $action.label }
       }
       $primary = [ordered]@{ type=$action.type; label=$label }
+    }
+  } elseif (-not ($iowes -eq 'author')) {
+    $primary = if ($it.kind -eq 'pr') {
+      [ordered]@{ type=if ($mt) { 'rerun' } else { 'start_review' }; label=if ($mt) { 'Resume review' } else { 'Start review' } }
+    } else {
+      [ordered]@{ type=if ($mt) { 'rerun' } else { 'start_triage' }; label=if ($mt) { 'Resume triage' } else { 'Start triage' } }
     }
   }
   $entry = [ordered]@{

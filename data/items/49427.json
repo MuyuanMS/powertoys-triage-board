@@ -5,11 +5,11 @@
   "stage": "awaiting_review_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-05T22:49:57.2058560+08:00",
+  "generated_at": "2026-08-05T23:46:11.1493786+08:00",
   "status": {
-    "detail": "Fork PR 218 converged with zero new Copilot comments and zero unresolved threads; local build remains blocked by unrelated charset/PCH failures.",
     "label": "Review drafted — needs approval",
-    "glyph": "📝"
+    "glyph": "📝",
+    "detail": "Fork PR 218 converged with zero new Copilot comments and zero unresolved threads; local build remains blocked by unrelated charset/PCH failures."
   },
   "next_action": null,
   "actions": [
@@ -18,24 +18,24 @@
   "confidence": "Medium",
   "proposed_comments": [
     {
+      "disposition": "proposed",
+      "path": "doc/dsc/profile-resource.md",
+      "title": "Document the non-elevated apply requirement",
       "body": "The implementation rejects profile set operations from an elevated process before touching the user-controlled settings tree, but the reference examples do not mention that requirement. Add a note that apply operations must run non-elevated, while read-only operations remain available as appropriate.",
       "line": 46,
-      "title": "Document the non-elevated apply requirement",
-      "disposition": "proposed",
-      "severity": "medium",
       "id": "c-49427-1",
-      "in_diff": false,
-      "path": "doc/dsc/profile-resource.md"
+      "severity": "medium",
+      "in_diff": false
     },
     {
+      "disposition": "proposed",
+      "path": "src/dsc/v3/PowerToys.DSC/Properties/Resources.resx",
+      "title": "Do not overstate localization coverage",
       "body": "The resource localizes the stable error prefix, but validation details and warning text remain invariant English diagnostics. Either move the complete user-facing messages into Resources.resx, or narrow the checklist wording to say that stable prefixes are localized while technical diagnostic details remain invariant.",
       "line": 185,
-      "title": "Do not overstate localization coverage",
-      "disposition": "proposed",
-      "severity": "medium",
       "id": "c-49427-2",
-      "in_diff": false,
-      "path": "src/dsc/v3/PowerToys.DSC/Properties/Resources.resx"
+      "severity": "medium",
+      "in_diff": false
     }
   ],
   "fork_pr": {

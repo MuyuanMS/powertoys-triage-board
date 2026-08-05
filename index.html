@@ -692,7 +692,7 @@ function board(){
         case 'approve_design':   return this.postCommentAction(it,a,'Design approved');
         case 'request_info':     return this.postCommentAction(it,a,'Info request');
         case 'post_comment':     return this.postCommentAction(it,a,'Comment');
-        case 'rerun': case 'start_review': case 'hold':
+        case 'rerun': case 'start_review': case 'start_triage': case 'hold':
           this.flash(a.label + ' — this queues a local agent run (handled by the scheduled job).'); return;
         default: this.flash('No handler for ' + a.type);
       }

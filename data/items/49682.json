@@ -5,55 +5,55 @@
   "stage": "awaiting_design_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-05T22:49:57.2058560+08:00",
+  "generated_at": "2026-08-05T23:46:11.1493786+08:00",
   "status": {
-    "detail": "Fork mirror issue 224 converged after adversary review. Root cause is a mixed Windows App SDK deployment mode that can fail during editor startup; runtime confirmation remains desirable.",
     "label": "Design ready — needs approval",
-    "glyph": "🎯"
+    "glyph": "🎯",
+    "detail": "Fork mirror issue 224 converged after adversary review. Root cause is a mixed Windows App SDK deployment mode that can fail during editor startup; runtime confirmation remains desirable."
   },
   "next_action": null,
   "actions": [
     {
       "note": "Posts an approval note on the fork mirror issue; the fix workflow remains fork-only until upstream approval.",
-      "comment": {
-        "body": "Design approved — proceed to build the fix PR in the fork.",
-        "number": 224,
-        "target": "fork_issue"
-      },
-      "confirm": true,
       "primary": true,
       "label": "Start fixing",
+      "confirm": true,
       "type": "approve_design",
-      "id": "approve-design-49682"
+      "id": "approve-design-49682",
+      "comment": {
+        "target": "fork_issue",
+        "body": "Design approved — proceed to build the fix PR in the fork.",
+        "number": 224
+      }
     },
     {
-      "label": "Not now",
       "type": "hold",
-      "id": "hold-49682"
+      "id": "hold-49682",
+      "label": "Not now"
     }
   ],
   "confidence": "High",
   "design": {
+    "fix_plan": "Enable Windows App SDK self-contained deployment, initialize logging synchronously before window construction, add pre/post-main-window startup logs, and avoid catch-and-continue handling for native fail-fast.",
+    "mirror_issue": {
+      "number": 224,
+      "url": "https://github.com/MuyuanMS/PowerToys/issues/224"
+    },
+    "adversary": {
+      "rounds": 2,
+      "status": "signed_off"
+    },
+    "root_cause": "KeyboardManagerEditorUI omitted WindowsAppSDKSelfContained=true, allowing machine-wide and app-local Windows App SDK payloads to mix and causing startup fail-fast during title-bar/input initialization.",
     "repro": [
       "Install the affected Store build",
       "Open Keyboard Manager Editor from Settings",
       "Observe that the editor silently fails to launch"
     ],
-    "root_cause": "KeyboardManagerEditorUI omitted WindowsAppSDKSelfContained=true, allowing machine-wide and app-local Windows App SDK payloads to mix and causing startup fail-fast during title-bar/input initialization.",
     "verify": [
       "Compare app-local WinRT manifests and bootstrap references",
       "Test Store installs on Windows 10 and Windows 11",
       "Confirm startup logs before and after main-window construction"
     ],
-    "mirror_issue": {
-      "number": 224,
-      "url": "https://github.com/MuyuanMS/PowerToys/issues/224"
-    },
-    "fix_plan": "Enable Windows App SDK self-contained deployment, initialize logging synchronously before window construction, add pre/post-main-window startup logs, and avoid catch-and-continue handling for native fail-fast.",
-    "adversary": {
-      "rounds": 2,
-      "status": "signed_off"
-    },
     "confidence": "High"
   }
 }
