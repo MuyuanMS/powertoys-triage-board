@@ -203,6 +203,9 @@
               <span x-text="'@' + it.author"></span>
               <span class="text-slate-300">·</span>
               <span x-text="nextActionText(it)"></span>
+              <button x-show="primaryAction(it)" @click.stop="openPrimary(it)"
+                class="px-2 py-0.5 rounded text-[11px] font-semibold bg-sky-600 text-white hover:bg-sky-700"
+                x-text="primaryAction(it).label"></button>
             </div>
           </div>
           <!-- right chips: only the essentials for the list -->
@@ -241,7 +244,10 @@
                 <div class="text-xs font-semibold text-slate-700">Live GitHub details</div>
                 <a :href="live[it.number].details.html_url" target="_blank" class="text-xs text-sky-600 underline">open on GitHub ↗</a>
               </div>
-              <div class="text-sm whitespace-pre-wrap" x-text="live[it.number].details.body || '(no description)'"></div>
+              <details>
+                <summary class="cursor-pointer text-sm font-medium text-slate-600">Show original description</summary>
+                <div class="text-sm whitespace-pre-wrap mt-2" x-text="live[it.number].details.body || '(no description)'"></div>
+              </details>
               <div class="flex flex-wrap gap-1" x-show="live[it.number].details.labels && live[it.number].details.labels.length">
                 <template x-for="l in live[it.number].details.labels" :key="l.name">
                   <span class="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 text-slate-600" x-text="l.name"></span>
@@ -410,6 +416,88 @@
   </div>
 </div>
 
+<!-- ===== focused suggested-action page ===== -->
+<div x-show="focusOpen" x-cloak class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" @click.self="focusOpen=false">
+  <div class="bg-white rounded-lg p-5 w-[58rem] max-w-[96vw] max-h-[90vh] overflow-auto space-y-4">
+    <div class="flex items-start justify-between gap-3">
+      <div>
+        <div class="text-lg font-semibold" x-text="focusTitle()"></div>
+        <div class="text-xs text-slate-500" x-text="focusItem ? ('#' + focusItem.number + ' · ' + disposition(focusItem).label) : ''"></div>
+      </div>
+      <button @click="focusOpen=false" class="px-2 py-1 rounded border">Close</button>
+    </div>
+    <template x-if="focusItem && art(focusItem) && art(focusItem).proposed_comments">
+      <div class="space-y-3">
+        <div class="text-sm text-slate-600">Review each suggested comment, then select the comments to post.</div>
+        <template x-for="c in art(focusItem).proposed_comments" :key="c.id">
+          <div class="border rounded p-3" :class="c.disposition==='withdrawn' ? 'opacity-60 bg-slate-50' : ''">
+            <div class="flex items-start gap-2">
+              <input type="checkbox" class="mt-1" :disabled="c.disposition==='withdrawn'"
+                :checked="sel[focusItem.number] && sel[focusItem.number][c.id]" @change="toggleComment(focusItem,c)" />
+              <div class="flex-1">
+                <div class="font-medium" x-text="c.title"></div>
+                <div class="mono text-xs text-slate-400" x-show="c.path" x-text="c.path + (c.line ? ':' + c.line : '')"></div>
+                <div class="text-sm mt-1 whitespace-pre-wrap" x-text="c.body"></div>
+              </div>
+            </div>
+          </div>
+        </template>
+        <div class="flex items-center gap-2">
+          <select x-model="reviewEvent[focusItem.number]" class="text-sm border rounded px-2 py-1">
+            <option value="COMMENT">Comment</option>
+            <option value="APPROVE">Approve</option>
+            <option value="REQUEST_CHANGES">Request changes</option>
+          </select>
+          <button @click="postReview(focusItem)" :disabled="!me || selectedComments(focusItem).length===0"
+            class="px-3 py-1.5 rounded text-sm font-semibold"
+            :class="(!me || selectedComments(focusItem).length===0) ? 'bg-slate-100 text-slate-400' : 'bg-emerald-600 text-white'">
+            <span x-text="dryRun ? 'Preview selected comments' : 'Post selected comments'"></span>
+          </button>
+        </div>
+      </div>
+    </template>
+    <template x-if="focusItem && art(focusItem) && art(focusItem).design">
+      <div class="space-y-3">
+        <div class="bg-sky-50 border border-sky-200 rounded p-3">
+          <div class="text-sm font-semibold">Proposed design</div>
+          <div class="text-sm mt-2"><b>Root cause:</b> <span x-text="art(focusItem).design.root_cause"></span></div>
+          <div class="text-sm mt-2"><b>Fix plan:</b> <span x-text="art(focusItem).design.fix_plan"></span></div>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <template x-for="a in art(focusItem).actions || []" :key="a.id">
+            <button @click="runAction(focusItem,a)" class="px-3 py-1.5 rounded text-sm font-semibold"
+              :class="a.primary ? 'bg-sky-600 text-white' : 'border'">
+              <span x-text="(dryRun && isWrite(a) ? 'Preview: ' : '') + a.label"></span>
+            </button>
+          </template>
+        </div>
+      </div>
+    </template>
+    <template x-if="focusItem && art(focusItem) && primaryAction(focusItem) && primaryAction(focusItem).type==='approve'">
+      <div class="space-y-3">
+        <div class="text-sm text-slate-600">The review loop has no remaining proposed comments. This PR is ready for maintainer approval.</div>
+        <button @click="approveReview(focusItem)"
+          class="px-3 py-1.5 rounded text-sm font-semibold bg-emerald-600 text-white">Approve</button>
+      </div>
+    </template>
+    <template x-if="focusItem && art(focusItem) && art(focusItem).actions && !art(focusItem).design && !art(focusItem).proposed_comments">
+      <div class="space-y-3">
+        <template x-for="a in art(focusItem).actions" :key="a.id">
+          <div class="border rounded p-3">
+            <div class="font-medium" x-text="a.label"></div>
+            <div class="text-sm mt-1 whitespace-pre-wrap" x-text="a.comment && a.comment.body || a.reason || ''"></div>
+            <button @click="runAction(focusItem,a)" class="mt-2 px-3 py-1.5 rounded text-sm font-semibold bg-sky-600 text-white"
+              x-text="(dryRun && isWrite(a) ? 'Preview: ' : '') + a.label"></button>
+          </div>
+        </template>
+      </div>
+    </template>
+    <template x-if="focusItem && (!art(focusItem) || (!art(focusItem).design && !art(focusItem).proposed_comments && !(art(focusItem).actions && art(focusItem).actions.length)))">
+      <div class="text-sm text-slate-600">No agent suggestion is available yet. The next dashboard update will triage this item.</div>
+    </template>
+  </div>
+</div>
+
 <!-- ===== toast ===== -->
 <div x-show="toast" x-cloak class="fixed bottom-4 right-4 z-50 bg-slate-900 text-white text-sm rounded px-4 py-2 shadow-lg" x-text="toast"></div>
 
@@ -424,6 +512,7 @@ function board(){
     open:{}, sel:{}, reviewEvent:{},
     composeOpen:false, composeTitle:'', composeSub:'', composeBody:'', composeCtx:null,
     previewOpen:false, previewTitle:'', previewEndpoint:'', previewJson:'',
+    focusOpen:false, focusItem:null,
     toast:'',
     kindTabs:[
       {key:'pr',label:'Pull requests'},
@@ -582,6 +671,18 @@ function board(){
         this.markReviewPosted(it, chosen);
       }catch(e){ this.flash('Review failed: ' + e.message); }
     },
+    async approveReview(it){
+      if(!this.me){ this.flash('Sign in first'); return; }
+      const [up,repo]=this.idx.upstream.split('/');
+      try{
+        const r=await this.gh(`/repos/${up}/${repo}/pulls/${it.number}/reviews`,{
+          method:'POST',body:{event:'APPROVE',body:'Approved after the review loop completed with no remaining proposed comments.',comments:[]}
+        });
+        if(r.__dry_run) return;
+        this.focusOpen=false;
+        this.markReviewPosted(it,[]);
+      }catch(e){ this.flash('Approval failed: ' + e.message); }
+    },
     renderComment(c){ return '### '+c.title+'\n\n**Severity:** `'+c.severity+'`\n\n'+(c.body||''); },
     async openUpstreamPr(it,a){
       const [up,repo]=this.idx.upstream.split('/');
@@ -671,6 +772,39 @@ function board(){
       }
       if(it.mirror) return 'Agent working in fork — awaiting update';
       return 'Not yet triaged — run next update';
+    },
+    primaryAction(it){
+      const a=this.art(it);
+      if(!a) return null;
+      if(it.kind==='pr'){
+        const openComments=(a.proposed_comments||[]).filter(c=>c.disposition==='proposed').length;
+        if(openComments) return {type:'review',label:'Post comments'};
+        if(!this.pendingAuthor(it)) return {type:'approve',label:'Approve'};
+        return null;
+      }
+      const actions=a.actions||[];
+      if(actions.some(x=>x.type==='request_info')) return {type:'request_info',label:'Reply with suggested comments'};
+      if(actions.some(x=>x.type==='open_upstream_pr')) return {type:'open_upstream_pr',label:'Create PR'};
+      if(actions.some(x=>x.type==='approve_design')) return {type:'approve_design',label:'Start fixing'};
+      return null;
+    },
+    focusTitle(){
+      const it=this.focusItem, p=it && this.primaryAction(it);
+      return p ? p.label : 'Suggested action';
+    },
+    async openPrimary(it){
+      await this.loadArtifact(it);
+      const p=this.primaryAction(it);
+      if(p && (p.type==='review' || p.type==='approve')){
+        this.focusItem=it; this.focusOpen=true;
+        this.reviewEvent[it.number]=this.reviewEvent[it.number] || (p.type==='approve' ? 'APPROVE' : 'COMMENT');
+        return;
+      }
+      if(p){
+        this.focusItem=it; this.focusOpen=true;
+        return;
+      }
+      this.open[it.id]=true;
     },
 
     // ---------- filtering (two levels: kind tab + sub-filter) ----------
