@@ -210,6 +210,9 @@
               <span x-show="it.mine" class="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 text-slate-600">my trace</span>
             </div>
             <div class="text-xs text-slate-500 mt-0.5 flex items-center gap-2 flex-wrap">
+              <span class="text-[10px] px-1.5 py-0.5 rounded"
+                :class="it.is_community ? 'bg-teal-100 text-teal-700' : 'bg-slate-100 text-slate-600'"
+                x-text="it.is_community ? 'community' : 'member'"></span>
               <span x-text="'@' + it.author"></span>
               <span class="text-slate-300">·</span>
               <span x-text="nextActionText(it)"></span>
@@ -224,11 +227,7 @@
                 : 'bg-slate-100 text-slate-400 cursor-not-allowed'"
               x-text="primaryAction(it) ? primaryAction(it).label
                 : (pendingAuthor(it) ? 'Waiting for author' : 'Action not available')"></button>
-            <span class="text-[11px] px-2 py-0.5 rounded font-medium" :class="disposition(it).cls" x-text="disposition(it).label"></span>
             <span x-show="live[it.number] && live[it.number].stale" class="text-[11px] px-2 py-0.5 rounded bg-rose-100 text-rose-700">⚠ stale</span>
-            <span class="text-[10px] px-1.5 py-0.5 rounded"
-              :class="it.is_community ? 'bg-teal-100 text-teal-700' : 'bg-slate-100 text-slate-600'"
-              x-text="it.is_community ? 'community' : 'member'"></span>
             <span class="text-slate-400" x-text="open[it.id] ? '▾' : '▸'"></span>
           </div>
         </div>
