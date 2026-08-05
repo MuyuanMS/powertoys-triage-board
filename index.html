@@ -203,17 +203,17 @@
               <span x-text="'@' + it.author"></span>
               <span class="text-slate-300">·</span>
               <span x-text="nextActionText(it)"></span>
-              <button @click.stop="primaryAction(it) && openPrimary(it)" :disabled="!primaryAction(it)"
-                class="px-2 py-0.5 rounded text-[11px] font-semibold"
-                :class="primaryAction(it)
-                  ? 'bg-sky-600 text-white hover:bg-sky-700'
-                  : 'bg-slate-100 text-slate-400 cursor-not-allowed'"
-                x-text="primaryAction(it) ? primaryAction(it).label
-                  : (pendingAuthor(it) ? 'Waiting for author' : 'Action not available')"></button>
             </div>
           </div>
           <!-- right chips: only the essentials for the list -->
           <div class="flex items-center gap-2 shrink-0">
+            <button @click.stop="primaryAction(it) && openPrimary(it)" :disabled="!primaryAction(it)"
+              class="w-40 px-2 py-1 rounded text-[11px] font-semibold text-center"
+              :class="primaryAction(it)
+                ? 'bg-sky-600 text-white hover:bg-sky-700'
+                : 'bg-slate-100 text-slate-400 cursor-not-allowed'"
+              x-text="primaryAction(it) ? primaryAction(it).label
+                : (pendingAuthor(it) ? 'Waiting for author' : 'Action not available')"></button>
             <span class="text-[11px] px-2 py-0.5 rounded font-medium" :class="disposition(it).cls" x-text="disposition(it).label"></span>
             <span x-show="live[it.number] && live[it.number].stale" class="text-[11px] px-2 py-0.5 rounded bg-rose-100 text-rose-700">⚠ stale</span>
             <span class="text-[10px] px-1.5 py-0.5 rounded"
