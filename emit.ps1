@@ -121,6 +121,27 @@ $OV[49617] = @{
   )
 }
 
+# 49114 -- real bounded issue-to-design demo run. The design converged in the
+# fork mirror issue #93 and is intentionally waiting for design approval.
+$OV[49114] = @{
+  track='fix'; stage='awaiting_design_approval'; confidence='High'; owes='maintainer'
+  status = @{ glyph='🎯'; label='Design ready — needs approval'; detail='Adversary signed off after 2 rounds. Root cause and fix plan are captured in fork mirror issue 93.' }
+  design = @{
+    root_cause='Clipboard history WinRT APIs are invoked from Task.Run on an MTA thread instead of the required STA/UI thread, causing the application hang.'
+    fix_plan ='Dispatch history loading through the page UI dispatcher while preserving the existing UI-update handling.'
+    confidence='High'; adversary=@{ status='signed_off'; rounds=2 }
+    repro   =@('Open Advanced Paste / clipboard history','Trigger history loading','Observe the application hang')
+    verify  =@('With fix: history loads without hanging','Existing UI updates remain correct','Exercise repeated history loads and empty history')
+    mirror_issue=@{ number=93; url="https://github.com/$FORK/issues/93" }
+  }
+  actions=@(
+    @{ id='approve-design-49114'; type='approve_design'; label='Start fixing'; primary=$true; confirm=$true
+       comment=@{ target='fork_issue'; number=93; body='Design approved — proceed to build the fix PR in the fork.' }
+       note='Posts an approval note on the fork mirror issue; the scheduled job then builds the fix PR in the fork.' }
+    @{ id='hold-49114'; type='hold'; label='Not now' }
+  )
+}
+
 # 49136 -- review track, already partially posted. Demonstrates the per-comment
 # "choose which to post" workflow with real dispositions from the last review.
 $OV[49136] = @{

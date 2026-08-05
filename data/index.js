@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-04T17:23:50.3600423+08:00",
+  "generated_at": "2026-08-05T15:16:36.5647493+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -84,17 +84,18 @@ window.BOARD_INDEX = {
     "open_prs": 112,
     "open_issues": 86,
     "community": 110,
-    "artifacts": 5
+    "artifacts": 6
   },
   "impact": {
-    "as_of": "2026-08-04T17:23:50.3600423+08:00",
-    "issues_helped": 4,
+    "as_of": "2026-08-05T15:16:36.5647493+08:00",
+    "issues_helped": 5,
     "prs_iterated": 1,
     "constructive_comments_posted": 3,
     "comments_drafted": 10
   },
   "artifact_numbers": [
     49136,
+    49114,
     49604,
     49617,
     49572,
@@ -170,7 +171,7 @@ window.BOARD_INDEX = {
       "owes": "us",
       "pending_author": false,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "labels": [
@@ -180,7 +181,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-07-23T03:53:34Z",
       "updated_at": "2026-07-26T18:51:19Z",
       "comments": 3,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 198,
+        "fork_title": "[PR 49460] feat(AdvancedPaste): add Paste as Rich Text option natively",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49460-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/198"
+      }
     },
     {
       "id": "pr-49451",
@@ -197,7 +206,7 @@ window.BOARD_INDEX = {
       "owes": "maintainer",
       "pending_author": false,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "labels": [
@@ -207,7 +216,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-07-22T17:42:27Z",
       "updated_at": "2026-08-02T09:28:13Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 188,
+        "fork_title": "[PR 49451] CmdPal: make dialogs prevent compact mode from being collapsed",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49451",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/188"
+      }
     },
     {
       "id": "pr-49437",
@@ -317,11 +334,11 @@ window.BOARD_INDEX = {
       "priority": 10,
       "mirror": {
         "kind": "pr",
-        "fork_number": 158,
+        "fork_number": 218,
         "fork_title": "[PR 49427] Add DSC v3 profile resource to deploy key and shortcut remappings",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/49427",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/158"
+        "fork_branch": "pr-iterate/49427-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/218"
       }
     },
     {
@@ -633,11 +650,11 @@ window.BOARD_INDEX = {
       "priority": 10,
       "mirror": {
         "kind": "pr",
-        "fork_number": 163,
+        "fork_number": 208,
         "fork_title": "[PR 49350] Add File Explorer thumbnail support for 3MF files",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/49350-v2",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/163"
+        "fork_branch": "pr-iterate/49350-v3",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/208"
       }
     },
     {
@@ -839,7 +856,7 @@ window.BOARD_INDEX = {
       "owes": "us",
       "pending_author": false,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "labels": [
@@ -849,7 +866,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-07-13T03:15:31Z",
       "updated_at": "2026-07-14T10:39:22Z",
       "comments": 2,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 187,
+        "fork_title": "[PR 49291] Feature/fancyzones mouse wheel layout switch",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49291",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/187"
+      }
     },
     {
       "id": "pr-49288",
@@ -997,7 +1022,7 @@ window.BOARD_INDEX = {
       "owes": "us",
       "pending_author": false,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "labels": [
@@ -1006,7 +1031,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-07-10T01:14:26Z",
       "updated_at": "2026-07-10T08:28:16Z",
       "comments": 4,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 221,
+        "fork_title": "[PR 49245] Add Claude Desktop Shortcut Guide manifest",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49245-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/221"
+      }
     },
     {
       "id": "pr-49221",
@@ -1351,7 +1384,7 @@ window.BOARD_INDEX = {
       "owes": "maintainer",
       "pending_author": false,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "labels": [
@@ -1363,7 +1396,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-07-01T21:54:14Z",
       "updated_at": "2026-07-02T18:41:19Z",
       "comments": 1,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 217,
+        "fork_title": "[PR 49077] [Workspaces] Migrate Editor from WPF to WinUI 3",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49077-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/217"
+      }
     },
     {
       "id": "pr-49049",
@@ -1419,11 +1460,11 @@ window.BOARD_INDEX = {
       "priority": 60,
       "mirror": {
         "kind": "pr",
-        "fork_number": 81,
+        "fork_number": 186,
         "fork_title": "[PR 49034] Advanced Paste: Add Python Script Extension Support",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/49034-v2",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/81"
+        "fork_branch": "pr-iterate/49034-v3",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/186"
       }
     },
     {
@@ -1524,7 +1565,7 @@ window.BOARD_INDEX = {
       "owes": "maintainer",
       "pending_author": false,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "labels": [
@@ -1533,7 +1574,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-06-26T10:02:58Z",
       "updated_at": "2026-07-12T14:23:59Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 214,
+        "fork_title": "[PR 48904] Mouse Without Borders reject remote ClipboardHelper paths",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/48904",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/214"
+      }
     },
     {
       "id": "pr-48902",
@@ -1603,7 +1652,7 @@ window.BOARD_INDEX = {
       "owes": "maintainer",
       "pending_author": false,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "labels": [
@@ -1612,7 +1661,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-06-23T13:38:11Z",
       "updated_at": "2026-07-23T07:29:01Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 213,
+        "fork_title": "[PR 48816] Workspaces tamper-resistant settings local service",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/48816",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/213"
+      }
     },
     {
       "id": "pr-48772",
@@ -1629,7 +1686,7 @@ window.BOARD_INDEX = {
       "owes": "us",
       "pending_author": false,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "labels": [
@@ -1639,7 +1696,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-06-21T05:50:29Z",
       "updated_at": "2026-07-10T13:53:14Z",
       "comments": 3,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 200,
+        "fork_title": "[PR 48772] Add FancyZones monitor window rotation",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/48772",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/200"
+      }
     },
     {
       "id": "pr-48769",
@@ -1668,11 +1733,11 @@ window.BOARD_INDEX = {
       "priority": 60,
       "mirror": {
         "kind": "pr",
-        "fork_number": 72,
-        "fork_title": "[PR 48769] Mouse Without Borders: create received files in logged-on user context (v2)",
+        "fork_number": 192,
+        "fork_title": "[PR 48769] Mouse Without Borders: create received files in logged-on user context (v3)",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/48769-v2",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/72"
+        "fork_branch": "pr-iterate/48769-v3",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/192"
       }
     },
     {
@@ -1717,7 +1782,7 @@ window.BOARD_INDEX = {
       "owes": "maintainer",
       "pending_author": false,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "labels": [
@@ -1730,7 +1795,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-06-17T18:30:33Z",
       "updated_at": "2026-07-07T00:32:11Z",
       "comments": 5,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 223,
+        "fork_title": "Review iteration: refreshed Workspaces launcher UI",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/48700-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/223"
+      }
     },
     {
       "id": "pr-48658",
@@ -1759,11 +1832,11 @@ window.BOARD_INDEX = {
       "priority": 60,
       "mirror": {
         "kind": "pr",
-        "fork_number": 43,
-        "fork_title": "[PR 48658] [Installer] Fix terminate_powertoys.cmd hanging on fresh install in Windows Sandbox",
+        "fork_number": 207,
+        "fork_title": "[PR 48658] Installer: fix terminate script hanging on fresh install",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/48658-v2",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/43"
+        "fork_branch": "pr-iterate/48658-v3",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/207"
       }
     },
     {
@@ -1902,11 +1975,11 @@ window.BOARD_INDEX = {
       "priority": 60,
       "mirror": {
         "kind": "pr",
-        "fork_number": 51,
+        "fork_number": 204,
         "fork_title": "[PR 48592] Fix: show Mouse Pointer Crosshairs in Quick Access flyout",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/48592-v2",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/51"
+        "fork_branch": "pr-iterate/48592-v4",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/204"
       }
     },
     {
@@ -1997,11 +2070,11 @@ window.BOARD_INDEX = {
       "priority": 60,
       "mirror": {
         "kind": "pr",
-        "fork_number": 30,
+        "fork_number": 190,
         "fork_title": "[PR 48482] Add Grab And Move edge snap shortcuts",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/48482-v2",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/30"
+        "fork_branch": "pr-iterate/48482-v3",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/190"
       }
     },
     {
@@ -2729,7 +2802,7 @@ window.BOARD_INDEX = {
       "owes": "maintainer",
       "pending_author": false,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "labels": [
@@ -2739,7 +2812,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-04-01T23:06:32Z",
       "updated_at": "2026-07-08T12:45:18Z",
       "comments": 43,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 222,
+        "fork_title": "Review mirror: PowerToys PR 46727 - Advanced Paste Phi Silica",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/46727-v20260804",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/222"
+      }
     },
     {
       "id": "pr-46408",
@@ -2783,7 +2864,7 @@ window.BOARD_INDEX = {
       "owes": "us",
       "pending_author": false,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "labels": [
@@ -2794,7 +2875,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-03-10T20:28:33Z",
       "updated_at": "2026-06-05T18:21:53Z",
       "comments": 23,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 219,
+        "fork_title": "Review mirror: New Shell Integration PowerToy: Copy as UNC (46056)",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/46056-v20260804-2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/219"
+      }
     },
     {
       "id": "pr-45972",
@@ -2811,7 +2900,7 @@ window.BOARD_INDEX = {
       "owes": "us",
       "pending_author": false,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "labels": [
@@ -2820,7 +2909,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-03-07T12:19:01Z",
       "updated_at": "2026-04-29T13:28:35Z",
       "comments": 1,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 201,
+        "fork_title": "[PR 45972] [FancyZones] Add option to not cycle through the end of the zone list + Maximize/Minimize",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/45972-v20260804",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/201"
+      }
     },
     {
       "id": "pr-45846",
@@ -2849,11 +2946,11 @@ window.BOARD_INDEX = {
       "priority": 60,
       "mirror": {
         "kind": "pr",
-        "fork_number": 89,
-        "fork_title": "45846 - SQLite preview for Peek (v4)",
+        "fork_number": 195,
+        "fork_title": "[PR 45846] Add SQLite database preview support to Peek",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/45846-v4",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/89"
+        "fork_branch": "pr-iterate/45846-v20260804-3",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/195"
       }
     },
     {
@@ -2938,11 +3035,11 @@ window.BOARD_INDEX = {
       "priority": 10,
       "mirror": {
         "kind": "pr",
-        "fork_number": 153,
-        "fork_title": "[PR 43741] AdvancedPaste PasteAsKeystrokes (v3 re-review)",
+        "fork_number": 184,
+        "fork_title": "[PR 43741] AdvancedPaste PasteAsKeystrokes (v4 re-review)",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/43741-v3",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/153"
+        "fork_branch": "pr-iterate/43741-v4",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/184"
       }
     },
     {
@@ -3017,11 +3114,11 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": false,
       "track": "fix",
-      "stage": "designing",
-      "owes": "us",
+      "stage": "awaiting_design_approval",
+      "owes": "maintainer",
       "pending_author": false,
-      "has_artifact": false,
-      "agent_status": "mirror",
+      "has_artifact": true,
+      "agent_status": "fix",
       "issue_type": "bug",
       "proposed_open": 0,
       "labels": [
@@ -5348,7 +5445,7 @@ window.BOARD_INDEX = {
       "owes": "maintainer",
       "pending_author": false,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "labels": [
@@ -5357,7 +5454,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-02T12:36:39Z",
       "updated_at": "2026-08-02T17:18:37Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 189,
+        "fork_title": "[PR 49623] CmdPal: Add file and list settings controls (v2)",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49623-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/189"
+      }
     },
     {
       "id": "pr-49615",
@@ -5374,7 +5479,7 @@ window.BOARD_INDEX = {
       "owes": "maintainer",
       "pending_author": false,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "labels": [
@@ -5383,7 +5488,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-01T20:11:36Z",
       "updated_at": "2026-08-02T15:32:26Z",
       "comments": 3,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 216,
+        "fork_title": "Review 49615: Add Brave Browser keyboard shortcuts manifest",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49615",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/216"
+      }
     },
     {
       "id": "pr-49606",
@@ -5426,7 +5539,7 @@ window.BOARD_INDEX = {
       "owes": "maintainer",
       "pending_author": false,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "labels": [
@@ -5435,7 +5548,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-07-31T04:55:20Z",
       "updated_at": "2026-07-31T06:34:25Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 209,
+        "fork_title": "[PR 49597] Upgrade Windows App SDK to 2.3.1",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49597",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/209"
+      }
     },
     {
       "id": "pr-49588",

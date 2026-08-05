@@ -5,66 +5,66 @@
   "stage": "review_posted",
   "owes": "author",
   "pending_author": true,
-  "generated_at": "2026-08-04T17:23:50.3600423+08:00",
+  "generated_at": "2026-08-05T15:16:36.5647493+08:00",
   "status": {
-    "glyph": "✅",
     "detail": "review 4841804426 (COMMENT) on head 23987e4b: 1 inline + 2 body follow-ups. Ball is with the author.",
+    "glyph": "✅",
     "label": "Re-review posted"
   },
   "next_action": {
-    "glyph": "✅",
     "reason": "review 4841804426 (COMMENT) on head 23987e4b: 1 inline (#5 edit-mode conflict) + 2 body follow-ups; other drafts withdrawn on head re-verification",
+    "glyph": "✅",
     "label": "Re-review POSTED upstream"
   },
   "actions": [
     {
-      "confirm": true,
-      "primary": true,
-      "label": "Post selected comments as a review",
-      "type": "post_review",
       "review": {
         "event": "COMMENT",
-        "pr": 49136,
-        "body_prefix": ""
+        "body_prefix": "",
+        "pr": 49136
       },
-      "id": "rereview-49136"
+      "primary": true,
+      "id": "rereview-49136",
+      "label": "Post selected comments as a review",
+      "type": "post_review",
+      "confirm": true
     },
     {
+      "id": "rerun-49136",
       "label": "Re-run review loop (head changed?)",
       "type": "rerun",
-      "note": "If the author pushed new commits since head 23987e4b, re-mirror and re-run the fork review loop before posting again.",
-      "id": "rerun-49136"
+      "note": "If the author pushed new commits since head 23987e4b, re-mirror and re-run the fork review loop before posting again."
     }
   ],
   "confidence": "High",
   "head_sha": "23987e4b",
   "proposed_comments": [
     {
-      "severity": "medium",
-      "title": "Edit-mode conflict check can miss a real duplicate",
-      "body": "`HasConflictingModifierMapping`/`IsDuplicateMapping` gate edit mode with `upperLimit = isEditMode ? 1 : 0` and test `conflictCount > upperLimit`. That count tolerance can't distinguish \"matches the edited row\" from \"collides with one other mapping\" — both give `conflictCount == 1`, so editing a row into a value that duplicates one different existing mapping is accepted. The public `Validate*` methods already thread an `editingRemapping`; could these use it to exclude the edited row by identity instead of by count?",
-      "line": 334,
       "id": "c-m5",
+      "body": "`HasConflictingModifierMapping`/`IsDuplicateMapping` gate edit mode with `upperLimit = isEditMode ? 1 : 0` and test `conflictCount > upperLimit`. That count tolerance can't distinguish \"matches the edited row\" from \"collides with one other mapping\" — both give `conflictCount == 1`, so editing a row into a value that duplicates one different existing mapping is accepted. The public `Validate*` methods already thread an `editingRemapping`; could these use it to exclude the edited row by identity instead of by count?",
+      "in_diff": true,
+      "line": 334,
+      "severity": "medium",
       "side": "RIGHT",
-      "path": "src/modules/keyboardmanager/KeyboardManagerEditorUI/Helpers/ValidationHelper.cs",
+      "title": "Edit-mode conflict check can miss a real duplicate",
       "disposition": "posted",
-      "in_diff": true
+      "path": "src/modules/keyboardmanager/KeyboardManagerEditorUI/Helpers/ValidationHelper.cs"
     },
     {
-      "body": "This revision adds the `condition` field so alone remaps round-trip through `aloneSingleKeyReMap`. A unit test that saves an \"alone\" single-key remap and asserts it reloads into the alone table (and an \"always\" one into the regular table) would lock the contract down.",
+      "severity": "low",
       "in_diff": false,
       "title": "Add load/save round-trip tests for the condition contract",
-      "severity": "low",
-      "disposition": "posted",
-      "id": "c-m10"
+      "id": "c-m10",
+      "body": "This revision adds the `condition` field so alone remaps round-trip through `aloneSingleKeyReMap`. A unit test that saves an \"alone\" single-key remap and asserts it reloads into the alone table (and an \"always\" one into the regular table) would lock the contract down.",
+      "disposition": "posted"
     },
     {
-      "body": "The \"alone\" badge added to the RemappingList rows is not mirrored on the DisabledList rows. If a disabled entry can carry the alone condition, show the badge there too for consistency.",
+      "severity": "low",
       "in_diff": false,
       "title": "Alone badge missing on DisabledList rows",
-      "severity": "low",
-      "disposition": "posted",
-      "id": "c-m9"
+      "id": "c-m9",
+      "body": "The \"alone\" badge added to the RemappingList rows is not mirrored on the DisabledList rows. If a disabled entry can carry the alone condition, show the badge there too for consistency.",
+      "disposition": "posted"
     },
     {
       "title": "Generic-modifier alone sources never fire",

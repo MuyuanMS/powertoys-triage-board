@@ -5,57 +5,57 @@
   "stage": "awaiting_pr_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-04T17:23:50.3600423+08:00",
+  "generated_at": "2026-08-05T15:16:36.5647493+08:00",
   "status": {
-    "glyph": "🚀",
     "detail": "Fork PR #175 review-clean (2 rounds); targeted AoT/SettingsAPI x64 Debug builds pass.",
+    "glyph": "🚀",
     "label": "Ready to open upstream PR"
   },
   "next_action": {
-    "glyph": "🚀",
     "reason": "Fork PR #175 review-clean (2 rounds); targeted AoT builds pass",
+    "glyph": "🚀",
     "label": "Open upstream PR (approve)"
   },
   "actions": [
     {
-      "confirm": true,
       "primary": true,
-      "label": "Open upstream PR as me",
-      "type": "open_upstream_pr",
       "pr": {
         "base": "main",
+        "title": "[Always On Top] Apply settings changes without a restart",
         "body": "Fixes #49599.\n\nset_config() saved settings but never notified the running daemon (FileWatcher suppresses the first write), so changes needed a restart. This broadcasts the existing settings-changed GUID after save; the existing LoadSettings -> SettingsUpdate path re-applies live.",
         "head": "MuyuanMS:copilot/issue-49599-hot-reload-settings",
-        "title": "[Always On Top] Apply settings changes without a restart",
         "draft": false
       },
-      "id": "open-pr-49599"
+      "id": "open-pr-49599",
+      "label": "Open upstream PR as me",
+      "type": "open_upstream_pr",
+      "confirm": true
     }
   ],
   "confidence": "High",
   "design": {
-    "fix_plan": "PostMessage(HWND_BROADCAST) the existing settings-changed GUID after save_to_settings_file(); the existing LoadSettings -> SettingsUpdate path then re-applies live. Optional: harden FileWatcher first-write.",
-    "root_cause": "AlwaysOnTopModuleInterface\\dllmain.cpp set_config() saves settings but never notifies the running daemon; the FileWatcher suppresses the first write, so nothing reloads until restart.",
-    "confidence": "High",
     "verify": [
       "With fix: setting changes take effect immediately, no restart",
       "Hotkey changes still re-register",
       "Border color/thickness/opacity/corners, excluded apps, sound, system menu all live-update"
     ],
+    "adversary": {
+      "status": "signed_off",
+      "rounds": 2
+    },
+    "confidence": "High",
+    "fix_plan": "PostMessage(HWND_BROADCAST) the existing settings-changed GUID after save_to_settings_file(); the existing LoadSettings -> SettingsUpdate path then re-applies live. Optional: harden FileWatcher first-write.",
     "mirror_issue": {
       "url": "https://github.com/MuyuanMS/PowerToys/issues/174",
       "number": 174
     },
+    "root_cause": "AlwaysOnTopModuleInterface\\dllmain.cpp set_config() saves settings but never notifies the running daemon; the FileWatcher suppresses the first write, so nothing reloads until restart.",
     "repro": [
       "Enable Always On Top",
       "Toggle a setting (sound / system-menu / frame / excluded apps)",
       "Pin a window or open its system menu",
       "Observe stale behavior until the module is restarted"
-    ],
-    "adversary": {
-      "rounds": 2,
-      "status": "signed_off"
-    }
+    ]
   },
   "upstream_issue": {
     "number": 49599,
