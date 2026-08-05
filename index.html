@@ -216,6 +216,7 @@
               <span x-text="'@' + it.author"></span>
               <span class="text-slate-300">·</span>
               <span x-text="nextActionText(it)"></span>
+              <span x-show="pendingAuthor(it)" class="text-slate-400" x-text="'· waiting ' + waitingDuration(it)"></span>
             </div>
           </div>
           <!-- right chips: only the essentials for the list -->
@@ -493,6 +494,23 @@
           class="px-3 py-1.5 rounded text-sm font-semibold bg-emerald-600 text-white">Approve</button>
       </div>
     </template>
+    <template x-if="focusItem && waitingActions(focusItem).length">
+      <div class="space-y-3">
+        <div class="text-sm text-slate-600">
+          This item has been waiting for an author response for <b x-text="waitingDuration(focusItem)"></b>.
+          Choose a reminder or close it with a reopen instruction.
+        </div>
+        <template x-for="a in waitingActions(focusItem)" :key="a.id">
+          <div class="border rounded p-3">
+            <div class="font-medium" x-text="a.label"></div>
+            <div class="text-sm mt-1 whitespace-pre-wrap" x-text="a.comment.body"></div>
+            <button @click="runAction(focusItem,a)" class="mt-2 px-3 py-1.5 rounded text-sm font-semibold"
+              :class="a.type==='close_with_comment' ? 'border border-rose-300 text-rose-700' : 'bg-sky-600 text-white'"
+              x-text="(dryRun && isWrite(a) ? 'Preview: ' : '') + a.label"></button>
+          </div>
+        </template>
+      </div>
+    </template>
     <template x-if="focusItem && art(focusItem) && art(focusItem).actions && !art(focusItem).design && !art(focusItem).proposed_comments">
       <div class="space-y-3">
         <template x-for="a in art(focusItem).actions" :key="a.id">
@@ -505,7 +523,7 @@
         </template>
       </div>
     </template>
-    <template x-if="focusItem && (!art(focusItem) || (!art(focusItem).design && !art(focusItem).proposed_comments && !(art(focusItem).actions && art(focusItem).actions.length)))">
+    <template x-if="focusItem && (!art(focusItem) || (!art(focusItem).design && !art(focusItem).proposed_comments && !(art(focusItem).actions && art(focusItem).actions.length) && !waitingActions(focusItem).length))">
       <div class="text-sm text-slate-600">No agent suggestion is available yet. The next dashboard update will triage this item.</div>
     </template>
   </div>
@@ -653,7 +671,7 @@ function board(){
     },
     statusGlyph(it){ const a=this.art(it); return (a && a.status && a.status.glyph) || (it.kind==='pr'?'🔀':'🐛'); },
     pendingAuthor(it){ const a=this.art(it); return a ? a.pending_author : (it.pending_author || it.owes==='author' || it.stage==='awaiting_author'); },
-    isWrite(a){ return ['post_review','open_upstream_pr','post_comment','approve_design','request_info'].includes(a.type); },
+    isWrite(a){ return ['post_review','open_upstream_pr','post_comment','approve_design','request_info','remind_author','close_with_comment'].includes(a.type); },
 
     // comment selection
     selectedComments(it){ const s=this.sel[it.number]||{}; const a=this.art(it); if(!a||!a.proposed_comments) return []; return a.proposed_comments.filter(c=>s[c.id]); },
@@ -664,6 +682,8 @@ function board(){
       if(!this.me && this.isWrite(a)){ this.flash('Sign in first'); return; }
       switch(a.type){
         case 'open_upstream_pr': return this.openUpstreamPr(it,a);
+        case 'remind_author': return this.postCommentAction(it,a,'Reminder');
+        case 'close_with_comment': return this.closeWithComment(it,a);
         case 'approve_design':   return this.postCommentAction(it,a,'Design approved');
         case 'request_info':     return this.postCommentAction(it,a,'Info request');
         case 'post_comment':     return this.postCommentAction(it,a,'Comment');
@@ -718,6 +738,15 @@ function board(){
         if(r.__dry_run) return;
         this.markCommentPosted(it);
       }catch(e){ this.flash(kind + ' failed: ' + e.message); }
+    },
+    async closeWithComment(it,a){
+      const c=a.comment; const [up,repo]=this.idx.upstream.split('/');
+      try{
+        const r=await this.gh(`/repos/${up}/${repo}/issues/${it.number}/comments`,{method:'POST',body:{body:c.body}});
+        if(r.__dry_run) return;
+        await this.gh(`/repos/${up}/${repo}/issues/${it.number}`,{method:'PATCH',body:{state:'closed'}});
+        it.stage='closed'; this.flash('Comment posted and item closed');
+      }catch(e){ this.flash('Close failed: ' + e.message); }
     },
 
     // generic compose
@@ -787,8 +816,29 @@ function board(){
       if(it.mirror) return 'Agent working in fork — awaiting update';
       return 'Not yet triaged — run next update';
     },
+    waitingDays(it){
+      if(!this.pendingAuthor(it)) return 0;
+      const start=it.waiting_since || it.updated_at;
+      const t=Date.parse(start);
+      return Number.isFinite(t) ? Math.max(0, Math.floor((Date.now()-t)/86400000)) : 0;
+    },
+    waitingDuration(it){
+      const days=this.waitingDays(it);
+      return days ? days + (days===1 ? ' day' : ' days') : 'less than a day';
+    },
+    waitingActions(it){
+      if(!this.pendingAuthor(it) || this.waitingDays(it)<7) return [];
+      const body='Closing the ' + (it.kind==='pr' ? 'PR' : 'Issue') + ' due to no active response. Reopen when you are ready to proceed';
+      return [
+        {id:'remind-'+it.number,type:'remind_author',label:'Remind author',primary:true,
+          comment:{target:'issue',number:it.number,body:'Checking in on this ' + (it.kind==='pr' ? 'PR' : 'issue') + '. Please respond when you are ready to continue.'}},
+        {id:'close-'+it.number,type:'close_with_comment',label:'Close with comment',
+          comment:{target:'issue',number:it.number,body}}
+      ];
+    },
     primaryAction(it){
       const a=this.art(it);
+      if(this.pendingAuthor(it) && this.waitingDays(it)>=7) return {type:'remind_author',label:'Remind author'};
       if(!a && it.primary_action) return it.primary_action;
       if(!a) return null;
       if(it.kind==='pr'){

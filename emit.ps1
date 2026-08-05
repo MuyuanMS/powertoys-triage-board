@@ -383,6 +383,7 @@ foreach ($it in $src.items) {
     id=$it.id; kind=$it.kind; number=$n; url=$it.url; title=$it.title; author=$it.author
     is_community=[bool]$it.is_community; mine=[bool]$it.mine; is_cmdpal=[bool]$it.is_cmdpal
     track=$track; stage=$stage; owes=$iowes; pending_author=($iowes -eq 'author')
+    waiting_since=if ($o -and $o.waiting_since) { $o.waiting_since } elseif ($iowes -eq 'author') { $it.updated_at } else { $null }
     has_artifact=$hasArtifact; agent_status=$agentStatus; issue_type=$issueType
     proposed_open=$proposedOpen
     primary_action=if ($primary) { [pscustomobject]$primary } else { $null }
