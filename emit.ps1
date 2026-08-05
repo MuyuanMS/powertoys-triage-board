@@ -385,7 +385,9 @@ foreach ($it in $src.items) {
     $proposedOpen = @($o.proposed_comments | Where-Object { $_.disposition -eq 'proposed' }).Count
   }
   $primary = $null
-  if ($hasArtifact -and $it.kind -eq 'pr') {
+  if ($hasArtifact -and $o.needs_revalidation) {
+    $primary = $null
+  } elseif ($hasArtifact -and $it.kind -eq 'pr') {
     if ($proposedOpen -gt 0) {
       $primary = [ordered]@{ type='review'; label='Post comments' }
     } elseif ($iowes -ne 'author') {

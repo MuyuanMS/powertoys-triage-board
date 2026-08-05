@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-05T17:15:23.0878880+08:00",
+  "generated_at": "2026-08-05T22:40:11.5460629+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -81,13 +81,13 @@ window.BOARD_INDEX = {
     ]
   },
   "counts": {
-    "open_prs": 131,
-    "open_issues": 7333,
-    "community": 6811,
+    "open_prs": 128,
+    "open_issues": 7328,
+    "community": 6806,
     "artifacts": 12
   },
   "impact": {
-    "as_of": "2026-08-05T17:15:23.0878880+08:00",
+    "as_of": "2026-08-05T22:40:11.5460629+08:00",
     "issues_helped": 6,
     "prs_iterated": 6,
     "constructive_comments_posted": 3,
@@ -108,58 +108,6 @@ window.BOARD_INDEX = {
     49114
   ],
   "items": [
-    {
-      "id": "pr-49694",
-      "kind": "pr",
-      "number": 49694,
-      "url": "https://github.com/microsoft/PowerToys/pull/49694",
-      "title": "[Image Resizer] Clarify preset size descriptions",
-      "author": "niels9001",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": null,
-      "labels": [],
-      "created_at": "2026-08-05T08:56:37Z",
-      "updated_at": "2026-08-05T08:56:37Z",
-      "comments": 0,
-      "priority": null
-    },
-    {
-      "id": "pr-49693",
-      "kind": "pr",
-      "number": 49693,
-      "url": "https://github.com/microsoft/PowerToys/pull/49693",
-      "title": "[Mouse Utilities] Fix Traditional Chinese Ctrl translation",
-      "author": "moooyo",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": null,
-      "labels": [],
-      "created_at": "2026-08-05T08:55:20Z",
-      "updated_at": "2026-08-05T08:59:09Z",
-      "comments": 0,
-      "priority": null
-    },
     {
       "id": "pr-49692",
       "kind": "pr",
@@ -185,7 +133,7 @@ window.BOARD_INDEX = {
       },
       "labels": [],
       "created_at": "2026-08-05T08:21:29Z",
-      "updated_at": "2026-08-05T08:21:29Z",
+      "updated_at": "2026-08-05T13:40:34Z",
       "comments": 0,
       "priority": null,
       "mirror": {
@@ -332,32 +280,6 @@ window.BOARD_INDEX = {
       "priority": null
     },
     {
-      "id": "pr-49673",
-      "kind": "pr",
-      "number": 49673,
-      "url": "https://github.com/microsoft/PowerToys/pull/49673",
-      "title": "[Shortcut Guide] Enable AOT",
-      "author": "noraa-junker",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": null,
-      "labels": [],
-      "created_at": "2026-08-04T22:41:06Z",
-      "updated_at": "2026-08-05T02:14:19Z",
-      "comments": 0,
-      "priority": null
-    },
-    {
       "id": "pr-49672",
       "kind": "pr",
       "number": 49672,
@@ -381,7 +303,7 @@ window.BOARD_INDEX = {
         "Product-Command Palette"
       ],
       "created_at": "2026-08-04T21:47:03Z",
-      "updated_at": "2026-08-04T21:47:03Z",
+      "updated_at": "2026-08-05T11:45:25Z",
       "comments": 0,
       "priority": null
     },
@@ -412,7 +334,7 @@ window.BOARD_INDEX = {
         "Product-Peek"
       ],
       "created_at": "2026-08-04T21:08:48Z",
-      "updated_at": "2026-08-04T21:18:37Z",
+      "updated_at": "2026-08-05T09:28:37Z",
       "comments": 0,
       "priority": null
     },
@@ -914,7 +836,7 @@ window.BOARD_INDEX = {
         "Product-Workspaces"
       ],
       "created_at": "2026-07-23T17:57:33Z",
-      "updated_at": "2026-08-05T08:30:04Z",
+      "updated_at": "2026-08-05T09:35:49Z",
       "comments": 0,
       "priority": 60
     },
@@ -1161,7 +1083,7 @@ window.BOARD_INDEX = {
         "Product-Command Palette"
       ],
       "created_at": "2026-07-21T16:54:39Z",
-      "updated_at": "2026-07-21T16:55:01Z",
+      "updated_at": "2026-08-05T13:46:09Z",
       "comments": 0,
       "priority": 90
     },
@@ -1251,7 +1173,7 @@ window.BOARD_INDEX = {
         "Product-Keyboard Manager"
       ],
       "created_at": "2026-07-21T00:41:33Z",
-      "updated_at": "2026-08-05T02:57:38Z",
+      "updated_at": "2026-08-05T14:35:39Z",
       "comments": 0,
       "priority": 10,
       "mirror": {
@@ -1849,11 +1771,10 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": null,
       "labels": [
-        "Product-Command Palette",
-        "Merge conflict 🙀"
+        "Product-Command Palette"
       ],
       "created_at": "2026-07-12T23:58:06Z",
-      "updated_at": "2026-07-21T15:22:01Z",
+      "updated_at": "2026-08-05T13:21:10Z",
       "comments": 0,
       "priority": 60
     },
@@ -2318,7 +2239,7 @@ window.BOARD_INDEX = {
         "Product-Command Palette"
       ],
       "created_at": "2026-07-08T07:02:26Z",
-      "updated_at": "2026-08-04T21:45:48Z",
+      "updated_at": "2026-08-05T11:41:28Z",
       "comments": 0,
       "priority": 60
     },
@@ -2515,10 +2436,7 @@ window.BOARD_INDEX = {
       "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
-      "primary_action": {
-        "type": "approve",
-        "label": "Approve"
-      },
+      "primary_action": null,
       "labels": [
         "Needs-Triage",
         "Product-Keyboard Manager"
@@ -3409,7 +3327,7 @@ window.BOARD_INDEX = {
         "0.101"
       ],
       "created_at": "2026-06-08T22:20:07Z",
-      "updated_at": "2026-07-23T09:39:34Z",
+      "updated_at": "2026-08-05T10:31:23Z",
       "comments": 0,
       "priority": 60
     },
@@ -4138,7 +4056,7 @@ window.BOARD_INDEX = {
       "author": "steven-pribilinskiy",
       "is_community": true,
       "mine": false,
-      "is_cmdpal": false,
+      "is_cmdpal": true,
       "track": null,
       "stage": null,
       "owes": "us",
@@ -4149,9 +4067,11 @@ window.BOARD_INDEX = {
       "issue_type": "other",
       "proposed_open": 0,
       "primary_action": null,
-      "labels": [],
+      "labels": [
+        "Product-Command Palette"
+      ],
       "created_at": "2026-08-05T07:33:49Z",
-      "updated_at": "2026-08-05T07:33:49Z",
+      "updated_at": "2026-08-05T11:37:39Z",
       "comments": 0,
       "priority": null
     },
@@ -4398,7 +4318,7 @@ window.BOARD_INDEX = {
       "author": "gborxxx",
       "is_community": true,
       "mine": false,
-      "is_cmdpal": false,
+      "is_cmdpal": true,
       "track": null,
       "stage": null,
       "owes": "us",
@@ -4411,10 +4331,11 @@ window.BOARD_INDEX = {
       "primary_action": null,
       "labels": [
         "Issue-Bug",
-        "Needs-Author-Feedback"
+        "Needs-Author-Feedback",
+        "Product-Command Palette"
       ],
       "created_at": "2026-08-04T17:11:43Z",
-      "updated_at": "2026-08-04T18:38:59Z",
+      "updated_at": "2026-08-05T11:37:38Z",
       "comments": 2,
       "priority": null
     },
@@ -11479,36 +11400,6 @@ window.BOARD_INDEX = {
       "created_at": "2026-07-01T17:49:16Z",
       "updated_at": "2026-07-11T17:14:44Z",
       "comments": 2,
-      "priority": null
-    },
-    {
-      "id": "issue-49068",
-      "kind": "issue",
-      "number": 49068,
-      "url": "https://github.com/microsoft/PowerToys/issues/49068",
-      "title": "New+ doesn't work with classic right-click menu",
-      "author": "adrianosbarbieri",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "bug",
-      "proposed_open": 0,
-      "primary_action": null,
-      "labels": [
-        "Issue-Bug",
-        "Needs-Triage",
-        "Product-New+"
-      ],
-      "created_at": "2026-07-01T16:51:16Z",
-      "updated_at": "2026-07-01T16:51:29Z",
-      "comments": 0,
       "priority": null
     },
     {
@@ -44477,38 +44368,6 @@ window.BOARD_INDEX = {
       "priority": null
     },
     {
-      "id": "issue-46223",
-      "kind": "issue",
-      "number": 46223,
-      "url": "https://github.com/microsoft/PowerToys/issues/46223",
-      "title": "I have no idea for \"控制鍵\" On Find My Mouse",
-      "author": "AshleyKwan",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "bug",
-      "proposed_open": 0,
-      "primary_action": null,
-      "labels": [
-        "Issue-Bug",
-        "Area-Localization",
-        "Needs-Triage",
-        "Issue-Translation",
-        "Product-Mouse Utilities"
-      ],
-      "created_at": "2026-03-18T11:02:10Z",
-      "updated_at": "2026-08-05T08:32:17Z",
-      "comments": 4,
-      "priority": null
-    },
-    {
       "id": "issue-46216",
       "kind": "issue",
       "number": 46216,
@@ -72747,10 +72606,11 @@ window.BOARD_INDEX = {
         "Issue-Bug",
         "Area-Localization",
         "Needs-Triage",
+        "Loc-Sent To Team",
         "Issue-Translation"
       ],
       "created_at": "2025-09-04T16:50:09Z",
-      "updated_at": "2025-09-04T16:50:09Z",
+      "updated_at": "2026-08-05T10:05:09Z",
       "comments": 0,
       "priority": null
     },
@@ -139092,37 +138952,6 @@ window.BOARD_INDEX = {
       "priority": null
     },
     {
-      "id": "issue-31991",
-      "kind": "issue",
-      "number": 31991,
-      "url": "https://github.com/microsoft/PowerToys/issues/31991",
-      "title": "Right to Lefts",
-      "author": "itaigre",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "bug",
-      "proposed_open": 0,
-      "primary_action": null,
-      "labels": [
-        "Issue-Bug",
-        "Area-Localization",
-        "Needs-Triage",
-        "Issue-Translation"
-      ],
-      "created_at": "2024-03-19T11:27:30Z",
-      "updated_at": "2026-08-05T07:15:44Z",
-      "comments": 1,
-      "priority": null
-    },
-    {
       "id": "issue-31989",
       "kind": "issue",
       "number": 31989,
@@ -174408,37 +174237,6 @@ window.BOARD_INDEX = {
       "priority": null
     },
     {
-      "id": "issue-24414",
-      "kind": "issue",
-      "number": 24414,
-      "url": "https://github.com/microsoft/PowerToys/issues/24414",
-      "title": "The translation does not appear complete, as the program must have a limit on the display!",
-      "author": "maisondasilva",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "other",
-      "proposed_open": 0,
-      "primary_action": null,
-      "labels": [
-        "Product-Settings",
-        "Area-Localization",
-        "Status-In progress",
-        "Needs-Triage"
-      ],
-      "created_at": "2023-03-01T21:23:10Z",
-      "updated_at": "2026-08-05T08:22:20Z",
-      "comments": 5,
-      "priority": null
-    },
-    {
       "id": "issue-24412",
       "kind": "issue",
       "number": 24412,
@@ -184971,8 +184769,8 @@ window.BOARD_INDEX = {
         "Product-PowerToys Run"
       ],
       "created_at": "2022-10-20T06:45:16Z",
-      "updated_at": "2024-10-10T17:57:52Z",
-      "comments": 1,
+      "updated_at": "2026-08-05T12:13:10Z",
+      "comments": 2,
       "priority": null
     },
     {
@@ -196392,38 +196190,6 @@ window.BOARD_INDEX = {
       "created_at": "2022-03-04T20:34:42Z",
       "updated_at": "2026-04-18T15:02:55Z",
       "comments": 2,
-      "priority": null
-    },
-    {
-      "id": "issue-16790",
-      "kind": "issue",
-      "number": 16790,
-      "url": "https://github.com/microsoft/PowerToys/issues/16790",
-      "title": "Adjust Image Resizer string to remove translation clarity issue",
-      "author": "KiwiMonster364",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "other",
-      "proposed_open": 0,
-      "primary_action": null,
-      "labels": [
-        "Area-Localization",
-        "Status-In progress",
-        "Product-Image Resizer",
-        "Cost-Small",
-        "Issue-Translation"
-      ],
-      "created_at": "2022-03-04T20:23:42Z",
-      "updated_at": "2026-08-05T08:57:11Z",
-      "comments": 8,
       "priority": null
     },
     {
