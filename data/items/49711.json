@@ -5,58 +5,58 @@
   "stage": "awaiting_design_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T15:47:04.5204268+08:00",
+  "generated_at": "2026-08-06T16:23:18.1346490+08:00",
   "status": {
-    "glyph": "🎯",
+    "detail": "Fork mirror issue 235 converged on a defensive tray-registration retry. Cold-boot logs are still missing, so confidence is medium.",
     "label": "Design ready — narrow fix",
-    "detail": "Fork mirror issue 235 converged on a defensive tray-registration retry. Cold-boot logs are still missing, so confidence is medium."
+    "glyph": "🎯"
   },
   "next_action": null,
   "actions": [
     {
-      "id": "approve-design-49711",
-      "primary": true,
-      "label": "Start fixing",
       "type": "approve_design",
+      "id": "approve-design-49711",
+      "label": "Start fixing",
+      "primary": true,
       "comment": {
         "body": "Design approved — proceed to build the narrow defensive fix in the fork.",
-        "target": "fork_issue",
-        "number": 235
+        "number": 235,
+        "target": "fork_issue"
       }
     },
     {
+      "type": "request_info",
       "id": "request-info-49711",
       "label": "Request cold-boot logs",
-      "type": "request_info",
       "comment": {
         "body": "Could you provide Power Display logs from a cold boot where the tray icon is missing? We need to confirm the failed Shell_NotifyIcon registration and retry path.",
-        "target": "issue",
-        "number": 49711
+        "number": 49711,
+        "target": "issue"
       }
     }
   ],
   "confidence": "Medium",
   "design": {
+    "mirror_issue": {
+      "url": "https://github.com/MuyuanMS/PowerToys/issues/235",
+      "number": 235
+    },
+    "root_cause": "Shell_NotifyIcon(NIM_ADD) can fail while Explorer is unavailable during cold start; the existing recovery path does not guarantee a retry.",
     "repro": [
       "Enable Power Display tray icon",
       "Cold-boot Windows while Explorer is starting",
       "Observe the icon is missing until PowerToys restarts"
     ],
+    "confidence": "Medium",
+    "fix_plan": "Add a bounded retry for failed tray registration, handle Explorer restart, and verify settings toggles, shutdown, and duplicate prevention.",
     "verify": [
       "Retry succeeds without duplicate icons",
       "Explorer restart recovers the icon",
       "Settings toggles and shutdown remain clean"
     ],
-    "confidence": "Medium",
-    "root_cause": "Shell_NotifyIcon(NIM_ADD) can fail while Explorer is unavailable during cold start; the existing recovery path does not guarantee a retry.",
-    "mirror_issue": {
-      "number": 235,
-      "url": "https://github.com/MuyuanMS/PowerToys/issues/235"
-    },
     "adversary": {
       "status": "signed_off",
       "rounds": 2
-    },
-    "fix_plan": "Add a bounded retry for failed tray registration, handle Explorer restart, and verify settings toggles, shutdown, and duplicate prevention."
+    }
   }
 }

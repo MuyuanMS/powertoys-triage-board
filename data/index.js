@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-06T15:47:04.5204268+08:00",
+  "generated_at": "2026-08-06T16:23:18.1346490+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -84,12 +84,12 @@ window.BOARD_INDEX = {
     "open_prs": 137,
     "open_issues": 7326,
     "community": 6808,
-    "artifacts": 42
+    "artifacts": 44
   },
   "impact": {
-    "as_of": "2026-08-06T15:47:04.5204268+08:00",
+    "as_of": "2026-08-06T16:23:18.1346490+08:00",
     "issues_helped": 10,
-    "prs_iterated": 34,
+    "prs_iterated": 36,
     "constructive_comments_posted": 3,
     "comments_drafted": 24
   },
@@ -97,6 +97,8 @@ window.BOARD_INDEX = {
     49709,
     49707,
     49700,
+    49699,
+    49690,
     49671,
     49647,
     49639,
@@ -171,7 +173,7 @@ window.BOARD_INDEX = {
       "mirror": {
         "kind": "pr",
         "fork_number": 245,
-        "fork_title": "[PR 49709] [Settings] Disable index generation for debug builds",
+        "fork_title": "[PR 49709] [Settings] Incremental search index generation",
         "fork_state": "OPEN",
         "fork_branch": "pr-iterate/49709-v2",
         "url": "https://github.com/MuyuanMS/PowerToys/pull/245"
@@ -201,10 +203,10 @@ window.BOARD_INDEX = {
         "label": "Re-run review"
       },
       "labels": [
-        "Needs-Author-Feedback"
+        "Needs-Triage"
       ],
       "created_at": "2026-08-05T19:09:13Z",
-      "updated_at": "2026-08-06T01:39:17Z",
+      "updated_at": "2026-08-06T08:19:36Z",
       "comments": 0,
       "priority": null,
       "mirror": {
@@ -355,18 +357,18 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "mirror",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
         "type": "rerun",
-        "label": "Resume review"
+        "label": "Re-run review"
       },
       "labels": [],
       "created_at": "2026-08-05T16:46:47Z",
@@ -478,11 +480,11 @@ window.BOARD_INDEX = {
       "priority": null,
       "mirror": {
         "kind": "pr",
-        "fork_number": 248,
+        "fork_number": 249,
         "fork_title": "[PR 49691] [Mouse Utilities] Clarify Gliding Cursor description",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/49691",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/248"
+        "fork_branch": "pr-iterate/49691-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/249"
       }
     },
     {
@@ -495,24 +497,32 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Re-run review"
       },
       "labels": [],
       "created_at": "2026-08-05T08:09:36Z",
       "updated_at": "2026-08-05T15:18:30Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 250,
+        "fork_title": "[PR 49690] [Settings] Make attribution links localizable",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49690-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/250"
+      }
     },
     {
       "id": "pr-49687",
@@ -530,18 +540,26 @@ window.BOARD_INDEX = {
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Resume review"
       },
       "labels": [],
       "created_at": "2026-08-05T07:22:48Z",
       "updated_at": "2026-08-05T16:35:04Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 252,
+        "fork_title": "[PR 49687] [Mouse Without Borders] Fix German ampersand localization",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49687-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/252"
+      }
     },
     {
       "id": "pr-49678",
@@ -1015,18 +1033,26 @@ window.BOARD_INDEX = {
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Resume review"
       },
       "labels": [],
       "created_at": "2026-08-01T00:26:59Z",
       "updated_at": "2026-08-02T21:53:48Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 253,
+        "fork_title": "[PR 49606] FileLocksmith: Fix context menu items are not localized",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49606",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/253"
+      }
     },
     {
       "id": "pr-49597",
@@ -1081,12 +1107,12 @@ window.BOARD_INDEX = {
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Resume review"
       },
       "labels": [
         "Product-Screen Ruler"
@@ -1094,7 +1120,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-07-30T14:56:14Z",
       "updated_at": "2026-07-31T10:44:38Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 255,
+        "fork_title": "[PR 49588] [Screen Ruler] Add DIP as an extra measurement unit",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49588-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/255"
+      }
     },
     {
       "id": "pr-49571",
