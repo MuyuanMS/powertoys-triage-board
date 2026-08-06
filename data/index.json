@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T08:46:34.4627108+08:00",
+  "generated_at": "2026-08-06T08:55:07.2270769+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -81,13 +81,13 @@
     ]
   },
   "counts": {
-    "open_prs": 136,
+    "open_prs": 137,
     "open_issues": 7323,
-    "community": 6804,
+    "community": 6805,
     "artifacts": 31
   },
   "impact": {
-    "as_of": "2026-08-06T08:46:34.4627108+08:00",
+    "as_of": "2026-08-06T08:55:07.2270769+08:00",
     "issues_helped": 6,
     "prs_iterated": 27,
     "constructive_comments_posted": 3,
@@ -2179,6 +2179,37 @@
       "updated_at": "2026-08-05T13:21:10Z",
       "comments": 0,
       "priority": 60
+    },
+    {
+      "id": "pr-49287",
+      "kind": "pr",
+      "number": 49287,
+      "url": "https://github.com/microsoft/PowerToys/pull/49287",
+      "title": "[Keyboard Manager] Search, filter and bulk-delete for the remapping list",
+      "author": "MasaYan24",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": null,
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_review",
+        "label": "Start review"
+      },
+      "labels": [
+        "Product-Keyboard Manager"
+      ],
+      "created_at": "2026-07-12T20:31:37Z",
+      "updated_at": "2026-08-06T00:47:45Z",
+      "comments": 0,
+      "priority": null
     },
     {
       "id": "pr-49279",
