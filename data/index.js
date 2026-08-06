@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-06T16:46:51.0044343+08:00",
+  "generated_at": "2026-08-06T17:01:17.6343341+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -84,12 +84,12 @@ window.BOARD_INDEX = {
     "open_prs": 138,
     "open_issues": 7326,
     "community": 6808,
-    "artifacts": 50
+    "artifacts": 53
   },
   "impact": {
-    "as_of": "2026-08-06T16:46:51.0044343+08:00",
+    "as_of": "2026-08-06T17:01:17.6343341+08:00",
     "issues_helped": 10,
-    "prs_iterated": 37,
+    "prs_iterated": 40,
     "constructive_comments_posted": 3,
     "comments_drafted": 24
   },
@@ -109,9 +109,12 @@ window.BOARD_INDEX = {
     49615,
     49606,
     49597,
+    49588,
+    49571,
     49538,
     49502,
     49474,
+    49472,
     49460,
     49451,
     49431,
@@ -171,7 +174,7 @@ window.BOARD_INDEX = {
       },
       "labels": [],
       "created_at": "2026-08-06T08:32:02Z",
-      "updated_at": "2026-08-06T08:32:02Z",
+      "updated_at": "2026-08-06T08:46:10Z",
       "comments": 0,
       "priority": null
     },
@@ -219,7 +222,7 @@ window.BOARD_INDEX = {
       "kind": "pr",
       "number": 49707,
       "url": "https://github.com/microsoft/PowerToys/pull/49707",
-      "title": " fixed dispay order issue in kbm",
+      "title": "[Keyboard Manager] Fix shortcut modifier display order in the new editor",
       "author": "agbuddy7",
       "is_community": true,
       "mine": false,
@@ -241,7 +244,7 @@ window.BOARD_INDEX = {
         "Needs-Triage"
       ],
       "created_at": "2026-08-05T19:09:13Z",
-      "updated_at": "2026-08-06T08:44:23Z",
+      "updated_at": "2026-08-06T08:53:40Z",
       "comments": 0,
       "priority": null,
       "mirror": {
@@ -1136,18 +1139,18 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
-      "owes": "maintainer",
+      "track": "review",
+      "stage": "review_in_progress",
+      "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "mirror",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
         "type": "rerun",
-        "label": "Resume review"
+        "label": "Re-run review"
       },
       "labels": [
         "Product-Screen Ruler"
@@ -1175,18 +1178,18 @@ window.BOARD_INDEX = {
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
-      "owes": "maintainer",
+      "track": "review",
+      "stage": "review_in_progress",
+      "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "mirror",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
         "type": "rerun",
-        "label": "Resume review"
+        "label": "Re-run review"
       },
       "labels": [
         "Product-Keyboard Manager"
@@ -1315,18 +1318,18 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
-      "owes": "maintainer",
+      "track": "review",
+      "stage": "review_in_progress",
+      "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "mirror",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
         "type": "rerun",
-        "label": "Resume review"
+        "label": "Re-run review"
       },
       "labels": [
         "Product-ZoomIt"
@@ -1337,11 +1340,11 @@ window.BOARD_INDEX = {
       "priority": 60,
       "mirror": {
         "kind": "pr",
-        "fork_number": 257,
+        "fork_number": 260,
         "fork_title": "[PR 49472] ZoomIt: Add DemoMirror to mirror a monitor, region, or window to a second display",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/49472",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/257"
+        "fork_branch": "pr-iterate/49472-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/260"
       }
     },
     {
@@ -1717,11 +1720,11 @@ window.BOARD_INDEX = {
       "priority": 60,
       "mirror": {
         "kind": "pr",
-        "fork_number": 258,
+        "fork_number": 261,
         "fork_title": "[PR 49414] Add preview release versioning and update channel support",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/49414",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/258"
+        "fork_branch": "pr-iterate/49414-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/261"
       }
     },
     {
@@ -1781,12 +1784,12 @@ window.BOARD_INDEX = {
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Resume review"
       },
       "labels": [
         "Area-Localization",
@@ -1795,7 +1798,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-07-18T20:00:15Z",
       "updated_at": "2026-07-19T23:03:02Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 262,
+        "fork_title": "[PR 49400] ZoomIt: Fix silent recording audio on multichannel audio endpoints",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49400-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/262"
+      }
     },
     {
       "id": "pr-49394",
@@ -4092,7 +4103,7 @@ window.BOARD_INDEX = {
         "0.101"
       ],
       "created_at": "2026-06-08T22:20:07Z",
-      "updated_at": "2026-08-06T08:43:31Z",
+      "updated_at": "2026-08-06T08:51:23Z",
       "comments": 0,
       "priority": 60
     },

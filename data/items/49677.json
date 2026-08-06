@@ -5,34 +5,39 @@
   "stage": "needs_reply",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T16:46:51.0044343+08:00",
+  "generated_at": "2026-08-06T17:01:17.6343341+08:00",
   "status": {
-    "glyph": "❓",
     "label": "Needs reproduction details",
-    "detail": "Fork mirror issue 237 converged on a modifier-swap state race, but the clean two-row repro and environment details are still missing."
+    "detail": "Fork mirror issue 237 converged on a modifier-swap state race, but the clean two-row repro and environment details are still missing.",
+    "glyph": "❓"
   },
   "next_action": null,
   "actions": [
     {
       "type": "request_info",
-      "label": "Request clean repro details",
+      "id": "request-info-49677",
       "comment": {
         "number": 49677,
-        "target": "issue",
-        "body": "Could you provide the Windows build, elevation state, a clean two-row repro recording or trace, and whether another remapper is installed? Please include which key combinations fail."
+        "body": "Could you provide the Windows build, elevation state, a clean two-row repro recording or trace, and whether another remapper is installed? Please include which key combinations fail.",
+        "target": "issue"
       },
-      "id": "request-info-49677"
+      "label": "Request clean repro details"
     }
   ],
   "confidence": "Medium-high",
   "design": {
-    "fix_plan": "Add an atomic modifier-swap path with explicit per-source state, paired transitions, injection-failure handling, and engine regression tests.",
-    "mirror_issue": {
-      "url": "https://github.com/MuyuanMS/PowerToys/issues/237",
-      "number": 237
-    },
     "confidence": "Medium-high",
+    "mirror_issue": {
+      "number": 237,
+      "url": "https://github.com/MuyuanMS/PowerToys/issues/237"
+    },
     "root_cause": "Modifier-only remaps are not atomic: the physical source modifier remains visible while the replacement modifier is injected, creating transient or stale Alt+Win state.",
+    "repro": [
+      "Configure Left Alt to Left Win and Left Win to Left Alt",
+      "Tap and hold both keys",
+      "Exercise Start, Alt+Tab, Alt+F4, Win+R/E/M, and repeated keyups"
+    ],
+    "fix_plan": "Add an atomic modifier-swap path with explicit per-source state, paired transitions, injection-failure handling, and engine regression tests.",
     "verify": [
       "Generated events do not recurse",
       "Paired transitions remain balanced",
@@ -41,11 +46,6 @@
     "adversary": {
       "rounds": 2,
       "status": "signed_off"
-    },
-    "repro": [
-      "Configure Left Alt to Left Win and Left Win to Left Alt",
-      "Tap and hold both keys",
-      "Exercise Start, Alt+Tab, Alt+F4, Win+R/E/M, and repeated keyups"
-    ]
+    }
   }
 }

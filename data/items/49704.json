@@ -5,34 +5,39 @@
   "stage": "needs_reply",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T16:46:51.0044343+08:00",
+  "generated_at": "2026-08-06T17:01:17.6343341+08:00",
   "status": {
-    "glyph": "❓",
     "label": "Needs reproduction confirmation",
-    "detail": "Fork mirror issue 236 converged on a Win-key recovery race, but a Windows 11 / PowerToys 0.100.2 trace is still needed before implementation."
+    "detail": "Fork mirror issue 236 converged on a Win-key recovery race, but a Windows 11 / PowerToys 0.100.2 trace is still needed before implementation.",
+    "glyph": "❓"
   },
   "next_action": null,
   "actions": [
     {
       "type": "request_info",
-      "label": "Request trace / repro",
+      "id": "request-info-49704",
       "comment": {
         "number": 49704,
-        "target": "issue",
-        "body": "Could you provide a Windows 11 / PowerToys 0.100.2 trace or a short recording confirming the Win-key recovery race after Grab and Move? Please include which modifier and release order reproduces it."
+        "body": "Could you provide a Windows 11 / PowerToys 0.100.2 trace or a short recording confirming the Win-key recovery race after Grab and Move? Please include which modifier and release order reproduces it.",
+        "target": "issue"
       },
-      "id": "request-info-49704"
+      "label": "Request trace / repro"
     }
   ],
   "confidence": "Medium",
   "design": {
-    "fix_plan": "Preserve explicit drag-completion consumption state through key release, then validate both modifier release orders and foreground transitions.",
-    "mirror_issue": {
-      "url": "https://github.com/MuyuanMS/PowerToys/issues/236",
-      "number": 236
-    },
     "confidence": "Medium-high",
+    "mirror_issue": {
+      "number": 236,
+      "url": "https://github.com/MuyuanMS/PowerToys/issues/236"
+    },
     "root_cause": "Win-key consumption relies on transient drag flags after MouseProc ends the drag; foreground/input recovery can clear the state and forward Win-key up to Explorer.",
+    "repro": [
+      "Hold Win and start Grab and Move",
+      "Release the mouse while holding Win",
+      "Release Win and observe whether Start opens"
+    ],
+    "fix_plan": "Preserve explicit drag-completion consumption state through key release, then validate both modifier release orders and foreground transitions.",
     "verify": [
       "Repeat 20 times with LWIN and RWIN",
       "Test reverse release order and resize",
@@ -41,11 +46,6 @@
     "adversary": {
       "rounds": 2,
       "status": "signed_off"
-    },
-    "repro": [
-      "Hold Win and start Grab and Move",
-      "Release the mouse while holding Win",
-      "Release Win and observe whether Start opens"
-    ]
+    }
   }
 }

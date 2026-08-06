@@ -5,11 +5,11 @@
   "stage": "review_drafted",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T16:46:51.0044343+08:00",
+  "generated_at": "2026-08-06T17:01:17.6343341+08:00",
   "status": {
-    "glyph": "🛑",
     "label": "Review drafted — blockers found",
-    "detail": "Fork PR 233 resolved review threads but the final review found two architectural blockers; build is blocked by an unrelated C4819 encoding failure."
+    "detail": "Fork PR 233 resolved review threads but the final review found two architectural blockers; build is blocked by an unrelated C4819 encoding failure.",
+    "glyph": "🛑"
   },
   "next_action": null,
   "actions": [
@@ -18,25 +18,25 @@
   "confidence": "Medium",
   "proposed_comments": [
     {
-      "id": "c-49194-1",
       "body": "Use immutable fallback label snapshots tagged with the query generation so a slower earlier response cannot overwrite the first-paint result for a newer query.",
       "severity": "high",
-      "title": "Tag fallback label snapshots by query generation",
+      "in_diff": false,
       "disposition": "proposed",
-      "in_diff": false
+      "title": "Tag fallback label snapshots by query generation",
+      "id": "c-49194-1"
     },
     {
-      "id": "c-49194-2",
       "body": "Avoid making newer queries wait behind a blocking RPC gate. A hung extension can otherwise prevent all subsequent queries from completing; prefer cancellation or generation-aware result suppression.",
       "severity": "high",
-      "title": "Do not serialize RPCs behind a blocking gate",
+      "in_diff": false,
       "disposition": "proposed",
-      "in_diff": false
+      "title": "Do not serialize RPCs behind a blocking gate",
+      "id": "c-49194-2"
     }
   ],
   "fork_pr": {
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/233",
-    "number": 233
+    "number": 233,
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/233"
   },
   "fork_branch": "pr-iterate/49194"
 }
