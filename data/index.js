@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-06T09:46:16.6704554+08:00",
+  "generated_at": "2026-08-06T10:07:59.4855209+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -84,16 +84,17 @@ window.BOARD_INDEX = {
     "open_prs": 137,
     "open_issues": 7323,
     "community": 6805,
-    "artifacts": 33
+    "artifacts": 35
   },
   "impact": {
-    "as_of": "2026-08-06T09:46:16.6704554+08:00",
+    "as_of": "2026-08-06T10:07:59.4855209+08:00",
     "issues_helped": 6,
-    "prs_iterated": 29,
+    "prs_iterated": 31,
     "constructive_comments_posted": 3,
-    "comments_drafted": 16
+    "comments_drafted": 18
   },
   "artifact_numbers": [
+    49671,
     49647,
     49639,
     49625,
@@ -109,6 +110,7 @@ window.BOARD_INDEX = {
     49291,
     49245,
     49197,
+    49194,
     49136,
     49077,
     49034,
@@ -248,7 +250,7 @@ window.BOARD_INDEX = {
         "CmdPal - Dock"
       ],
       "created_at": "2026-08-05T17:58:13Z",
-      "updated_at": "2026-08-05T20:08:45Z",
+      "updated_at": "2026-08-06T02:03:47Z",
       "comments": 0,
       "priority": null
     },
@@ -587,18 +589,18 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
+      "track": "review",
+      "stage": "awaiting_review_approval",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "mirror",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "rerun",
-        "label": "Resume review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Area-Tests",
@@ -1160,7 +1162,7 @@ window.BOARD_INDEX = {
         "Product-Workspaces"
       ],
       "created_at": "2026-07-23T17:57:33Z",
-      "updated_at": "2026-08-06T00:02:01Z",
+      "updated_at": "2026-08-06T01:44:50Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -1836,7 +1838,7 @@ window.BOARD_INDEX = {
         "Product-Command Palette"
       ],
       "created_at": "2026-07-16T21:04:00Z",
-      "updated_at": "2026-07-29T17:34:08Z",
+      "updated_at": "2026-08-06T01:56:34Z",
       "comments": 0,
       "priority": 60
     },
@@ -1937,7 +1939,7 @@ window.BOARD_INDEX = {
         "Product-Command Palette"
       ],
       "created_at": "2026-07-15T07:02:59Z",
-      "updated_at": "2026-08-05T02:57:19Z",
+      "updated_at": "2026-08-06T01:56:35Z",
       "comments": 0,
       "priority": 60
     },
@@ -1968,7 +1970,7 @@ window.BOARD_INDEX = {
         "Product-Command Palette"
       ],
       "created_at": "2026-07-15T05:30:46Z",
-      "updated_at": "2026-07-29T17:34:03Z",
+      "updated_at": "2026-08-06T01:56:33Z",
       "comments": 0,
       "priority": 60
     },
@@ -1999,7 +2001,7 @@ window.BOARD_INDEX = {
         "Product-Command Palette"
       ],
       "created_at": "2026-07-15T04:38:04Z",
-      "updated_at": "2026-07-29T17:33:59Z",
+      "updated_at": "2026-08-06T01:56:34Z",
       "comments": 0,
       "priority": 60
     },
@@ -2030,7 +2032,7 @@ window.BOARD_INDEX = {
         "Product-Command Palette"
       ],
       "created_at": "2026-07-15T03:48:43Z",
-      "updated_at": "2026-07-29T17:33:57Z",
+      "updated_at": "2026-08-06T01:56:33Z",
       "comments": 0,
       "priority": 60
     },
@@ -2061,7 +2063,7 @@ window.BOARD_INDEX = {
         "Product-Command Palette"
       ],
       "created_at": "2026-07-15T02:40:33Z",
-      "updated_at": "2026-07-29T17:33:54Z",
+      "updated_at": "2026-08-06T01:56:33Z",
       "comments": 0,
       "priority": 60
     },
@@ -2092,7 +2094,7 @@ window.BOARD_INDEX = {
         "Product-Command Palette"
       ],
       "created_at": "2026-07-15T00:25:55Z",
-      "updated_at": "2026-07-29T17:33:50Z",
+      "updated_at": "2026-08-06T01:56:32Z",
       "comments": 0,
       "priority": 60
     },
@@ -2759,18 +2761,18 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": true,
-      "track": null,
-      "stage": "untracked",
+      "track": "review",
+      "stage": "review_drafted",
       "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "mirror",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
-      "proposed_open": 0,
+      "proposed_open": 2,
       "primary_action": {
-        "type": "rerun",
-        "label": "Resume review"
+        "type": "review",
+        "label": "Post comments"
       },
       "labels": [
         "Product-Command Palette"

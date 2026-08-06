@@ -5,11 +5,11 @@
   "stage": "awaiting_review_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T09:46:16.6704554+08:00",
+  "generated_at": "2026-08-06T10:07:59.4855209+08:00",
   "status": {
     "detail": "Fork PR 188 latest Copilot review generated no new comments; approval remains gated.",
-    "label": "Fork review clean — needs approval",
-    "glyph": "✅"
+    "glyph": "✅",
+    "label": "Fork review clean — needs approval"
   },
   "next_action": null,
   "actions": [

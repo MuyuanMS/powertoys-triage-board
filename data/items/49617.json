@@ -5,26 +5,26 @@
   "stage": "awaiting_design_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T09:46:16.6704554+08:00",
+  "generated_at": "2026-08-06T10:07:59.4855209+08:00",
   "status": {
     "detail": "Adversary signed off (Medium). A crash dump would raise confidence to High.",
-    "label": "Design ready — needs approval",
-    "glyph": "🎯"
+    "glyph": "🎯",
+    "label": "Design ready — needs approval"
   },
   "next_action": null,
   "actions": [
     {
       "label": "Approve design → build fix",
-      "confirm": true,
-      "type": "approve_design",
-      "id": "approve-design-49617",
-      "note": "Posts an approval note on the fork mirror issue; the scheduled job then builds the fix PR in the fork.",
-      "primary": true,
       "comment": {
         "body": "Design approved — proceed to build the fix PR in the fork.",
         "number": 180,
         "target": "fork_issue"
-      }
+      },
+      "primary": true,
+      "type": "approve_design",
+      "id": "approve-design-49617",
+      "confirm": true,
+      "note": "Posts an approval note on the fork mirror issue; the scheduled job then builds the fix PR in the fork."
     },
     {
       "comment": {
@@ -32,39 +32,39 @@
         "number": 49617,
         "target": "issue"
       },
-      "note": "Medium confidence — a dump confirms the AV path before we open a PR.",
-      "type": "request_info",
       "label": "Ask author for a crash dump",
-      "id": "reqinfo-49617"
+      "note": "Medium confidence — a dump confirms the AV path before we open a PR.",
+      "id": "reqinfo-49617",
+      "type": "request_info"
     },
     {
-      "type": "hold",
       "label": "Not now",
-      "id": "hold-49617"
+      "id": "hold-49617",
+      "type": "hold"
     }
   ],
   "confidence": "Medium",
   "design": {
     "root_cause": "App.xaml.cs key-up reads OverlayWindow.AppWindow.IsVisible off the native keyboard-hook thread while the overlay is closing -> access violation across the C++/WinRT boundary.",
-    "adversary": {
-      "status": "signed_off",
-      "rounds": 3
+    "mirror_issue": {
+      "url": "https://github.com/MuyuanMS/PowerToys/issues/180",
+      "number": 180
     },
-    "verify": [
-      "With fix: app activates, guide hides, no crash/dump",
-      "Normal Win long-press/release still works; Esc / click-outside close"
-    ],
     "repro": [
       "Open Shortcut Guide",
       "Wait until the Win+number taskbar labels show",
       "Press Win+1 (or any Win+number)",
       "ShortcutGuide.exe crashes + dump"
     ],
-    "mirror_issue": {
-      "url": "https://github.com/MuyuanMS/PowerToys/issues/180",
-      "number": 180
+    "adversary": {
+      "status": "signed_off",
+      "rounds": 3
     },
-    "fix_plan": "Track visibility with a UI-independent Volatile flag; keep CloseAnimated on the DispatcherQueue.",
-    "confidence": "Medium"
+    "confidence": "Medium",
+    "verify": [
+      "With fix: app activates, guide hides, no crash/dump",
+      "Normal Win long-press/release still works; Esc / click-outside close"
+    ],
+    "fix_plan": "Track visibility with a UI-independent Volatile flag; keep CloseAnimated on the DispatcherQueue."
   }
 }

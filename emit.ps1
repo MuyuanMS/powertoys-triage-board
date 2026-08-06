@@ -290,6 +290,20 @@ $OV[49197] = @{
   )
 }
 
+$OV[49194] = @{
+  track='review'; stage='review_drafted'; confidence='Medium'; owes='maintainer'
+  status = @{ glyph='🛑'; label='Review drafted — blockers found'; detail='Fork PR 233 resolved review threads but the final review found two architectural blockers; build is blocked by an unrelated C4819 encoding failure.' }
+  fork_pr=@{ number=233; url="https://github.com/$FORK/pull/233" }; fork_branch='pr-iterate/49194'
+  proposed_comments=@(
+    @{ id='c-49194-1'; severity='high'; disposition='proposed'; in_diff=$false
+       title='Tag fallback label snapshots by query generation'
+       body='Use immutable fallback label snapshots tagged with the query generation so a slower earlier response cannot overwrite the first-paint result for a newer query.' },
+    @{ id='c-49194-2'; severity='high'; disposition='proposed'; in_diff=$false
+       title='Do not serialize RPCs behind a blocking gate'
+       body='Avoid making newer queries wait behind a blocking RPC gate. A hung extension can otherwise prevent all subsequent queries from completing; prefer cancellation or generation-aware result suppression.' }
+  )
+}
+
 # 49136 -- review track, already partially posted. Demonstrates the per-comment
 # "choose which to post" workflow with real dispositions from the last review.
 $OV[49136] = @{
