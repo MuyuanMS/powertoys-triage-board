@@ -484,9 +484,9 @@ try {
   Write-Warning "fork mirror scan skipped (gh unavailable?): $($_.Exception.Message)"
 }
 
-# Promote current fork review mirrors whose latest Copilot review is clean.
-# This keeps the board useful between hand-authored agent artifacts without
-# implying that any upstream action has already been approved.
+# Record current fork review mirrors whose latest Copilot review is clean.
+# A clean Copilot pass alone is not approval-ready: build, context, spelling,
+# and fresh-review requirements still belong to the review skill.
 try {
   $openUpstream = @{}
   foreach ($live in @($src.items)) { $openUpstream[[int]$live.number] = $live }
@@ -499,8 +499,8 @@ try {
       $latest = @($forkReview.reviews | Sort-Object submittedAt -Descending | Select-Object -First 1)
       if ($latest -and ([string]$latest[0].body -match '(?i)generated no new comments')) {
         $OV[$upNum] = @{
-          track='review'; stage='awaiting_review_approval'; confidence='Medium'; owes='maintainer'
-          status = @{ glyph='✅'; label='Fork review clean — needs approval'; detail="Fork PR $($fp.number) latest Copilot review generated no new comments; approval remains gated." }
+          track='review'; stage='review_in_progress'; confidence='Medium'; owes='us'; needs_revalidation=$true
+          status = @{ glyph='🔄'; label='Copilot clean — validation pending'; detail="Fork PR $($fp.number) latest Copilot review generated no new comments; local build/context validation is still required before approval." }
           fork_pr=@{ number=[int]$fp.number; url="https://github.com/$FORK/pull/$($fp.number)" }
           fork_branch=$fp.headRefName; proposed_comments=@()
         }

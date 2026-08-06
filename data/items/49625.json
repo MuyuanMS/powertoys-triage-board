@@ -2,19 +2,20 @@
   "number": 49625,
   "kind": "pr",
   "track": "review",
-  "stage": "awaiting_review_approval",
-  "owes": "maintainer",
+  "stage": "review_in_progress",
+  "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-06T11:37:12.1581985+08:00",
+  "generated_at": "2026-08-06T11:41:41.6016965+08:00",
   "status": {
-    "label": "Fork review clean — needs approval",
-    "detail": "Fork PR 181 latest Copilot review generated no new comments; approval remains gated.",
-    "glyph": "✅"
+    "label": "Copilot clean — validation pending",
+    "detail": "Fork PR 181 latest Copilot review generated no new comments; local build/context validation is still required before approval.",
+    "glyph": "🔄"
   },
   "next_action": null,
   "actions": [
     null
   ],
+  "needs_revalidation": true,
   "confidence": "Medium",
   "fork_pr": {
     "url": "https://github.com/MuyuanMS/PowerToys/pull/181",

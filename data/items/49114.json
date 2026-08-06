@@ -5,7 +5,7 @@
   "stage": "awaiting_design_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T11:37:12.1581985+08:00",
+  "generated_at": "2026-08-06T11:41:41.6016965+08:00",
   "status": {
     "label": "Design ready — needs approval",
     "detail": "Adversary signed off after 2 rounds. Root cause and fix plan are captured in fork mirror issue 93.",
@@ -14,17 +14,17 @@
   "next_action": null,
   "actions": [
     {
-      "confirm": true,
-      "id": "approve-design-49114",
-      "primary": true,
       "label": "Start fixing",
       "type": "approve_design",
-      "note": "Posts an approval note on the fork mirror issue; the scheduled job then builds the fix PR in the fork.",
       "comment": {
         "body": "Design approved — proceed to build the fix PR in the fork.",
-        "number": 93,
-        "target": "fork_issue"
-      }
+        "target": "fork_issue",
+        "number": 93
+      },
+      "primary": true,
+      "note": "Posts an approval note on the fork mirror issue; the scheduled job then builds the fix PR in the fork.",
+      "confirm": true,
+      "id": "approve-design-49114"
     },
     {
       "label": "Not now",
@@ -34,26 +34,26 @@
   ],
   "confidence": "High",
   "design": {
+    "confidence": "High",
     "repro": [
       "Open Advanced Paste / clipboard history",
       "Trigger history loading",
       "Observe the application hang"
     ],
     "fix_plan": "Dispatch history loading through the page UI dispatcher while preserving the existing UI-update handling.",
-    "verify": [
-      "With fix: history loads without hanging",
-      "Existing UI updates remain correct",
-      "Exercise repeated history loads and empty history"
-    ],
+    "adversary": {
+      "status": "signed_off",
+      "rounds": 2
+    },
+    "root_cause": "Clipboard history WinRT APIs are invoked from Task.Run on an MTA thread instead of the required STA/UI thread, causing the application hang.",
     "mirror_issue": {
       "url": "https://github.com/MuyuanMS/PowerToys/issues/93",
       "number": 93
     },
-    "confidence": "High",
-    "root_cause": "Clipboard history WinRT APIs are invoked from Task.Run on an MTA thread instead of the required STA/UI thread, causing the application hang.",
-    "adversary": {
-      "rounds": 2,
-      "status": "signed_off"
-    }
+    "verify": [
+      "With fix: history loads without hanging",
+      "Existing UI updates remain correct",
+      "Exercise repeated history loads and empty history"
+    ]
   }
 }
