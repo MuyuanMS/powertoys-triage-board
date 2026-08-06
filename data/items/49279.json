@@ -1,5 +1,5 @@
 {
-  "number": 49623,
+  "number": 49279,
   "kind": "pr",
   "track": "review",
   "stage": "review_in_progress",
@@ -8,7 +8,7 @@
   "generated_at": "2026-08-06T18:15:47.4843573+08:00",
   "status": {
     "glyph": "🔄",
-    "detail": "Fork PR 189 latest Copilot review generated no new comments; local build/context validation is still required before approval.",
+    "detail": "Fork PR 268 latest Copilot review generated no new comments; local build/context validation is still required before approval.",
     "label": "Copilot clean — validation pending"
   },
   "next_action": null,
@@ -18,8 +18,8 @@
   "needs_revalidation": true,
   "confidence": "Medium",
   "fork_pr": {
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/189",
-    "number": 189
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/268",
+    "number": 268
   },
-  "fork_branch": "pr-iterate/49623-v2"
+  "fork_branch": "pr-iterate/49279-v2"
 }

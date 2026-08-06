@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T18:11:58.0790503+08:00",
+  "generated_at": "2026-08-06T18:15:47.4843573+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -84,12 +84,12 @@
     "open_prs": 137,
     "open_issues": 7326,
     "community": 6807,
-    "artifacts": 56
+    "artifacts": 58
   },
   "impact": {
-    "as_of": "2026-08-06T18:11:58.0790503+08:00",
+    "as_of": "2026-08-06T18:15:47.4843573+08:00",
     "issues_helped": 10,
-    "prs_iterated": 40,
+    "prs_iterated": 41,
     "constructive_comments_posted": 3,
     "comments_drafted": 24
   },
@@ -125,9 +125,11 @@
     49350,
     49333,
     49291,
+    49279,
     49245,
     49197,
     49194,
+    49174,
     49136,
     49077,
     49034,
@@ -2376,18 +2378,18 @@
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "mirror",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
         "type": "rerun",
-        "label": "Resume review"
+        "label": "Re-run review"
       },
       "labels": [
         "Product-Mouse Utilities"
@@ -3078,18 +3080,18 @@
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "track": "review",
+      "stage": "blocked_step0",
+      "owes": "author",
+      "pending_author": true,
+      "waiting_since": "2026-07-23T01:58:29Z",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Re-run review"
       },
       "labels": [
         "Area-Localization",
