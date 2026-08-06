@@ -5,11 +5,11 @@
   "stage": "awaiting_review_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T17:31:40.2353958+08:00",
+  "generated_at": "2026-08-06T17:41:50.3234854+08:00",
   "status": {
-    "label": "Fork review clean — needs approval",
+    "glyph": "✅",
     "detail": "Fork PR 216 Copilot review clean; approval remains gated.",
-    "glyph": "✅"
+    "label": "Fork review clean — needs approval"
   },
   "next_action": null,
   "actions": [
@@ -17,8 +17,8 @@
   ],
   "confidence": "Medium",
   "fork_pr": {
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/216",
-    "number": 216
+    "number": 216,
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/216"
   },
   "fork_branch": "pr-iterate/49615"
 }

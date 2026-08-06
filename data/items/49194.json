@@ -5,11 +5,11 @@
   "stage": "review_drafted",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T17:31:40.2353958+08:00",
+  "generated_at": "2026-08-06T17:41:50.3234854+08:00",
   "status": {
-    "label": "Review drafted — blockers found",
+    "glyph": "🛑",
     "detail": "Fork PR 233 resolved review threads but the final review found two architectural blockers; build is blocked by an unrelated C4819 encoding failure.",
-    "glyph": "🛑"
+    "label": "Review drafted — blockers found"
   },
   "next_action": null,
   "actions": [
@@ -18,25 +18,25 @@
   "confidence": "Medium",
   "proposed_comments": [
     {
-      "title": "Tag fallback label snapshots by query generation",
       "disposition": "proposed",
+      "title": "Tag fallback label snapshots by query generation",
+      "body": "Use immutable fallback label snapshots tagged with the query generation so a slower earlier response cannot overwrite the first-paint result for a newer query.",
       "in_diff": false,
-      "id": "c-49194-1",
       "severity": "high",
-      "body": "Use immutable fallback label snapshots tagged with the query generation so a slower earlier response cannot overwrite the first-paint result for a newer query."
+      "id": "c-49194-1"
     },
     {
-      "title": "Do not serialize RPCs behind a blocking gate",
       "disposition": "proposed",
+      "title": "Do not serialize RPCs behind a blocking gate",
+      "body": "Avoid making newer queries wait behind a blocking RPC gate. A hung extension can otherwise prevent all subsequent queries from completing; prefer cancellation or generation-aware result suppression.",
       "in_diff": false,
-      "id": "c-49194-2",
       "severity": "high",
-      "body": "Avoid making newer queries wait behind a blocking RPC gate. A hung extension can otherwise prevent all subsequent queries from completing; prefer cancellation or generation-aware result suppression."
+      "id": "c-49194-2"
     }
   ],
   "fork_pr": {
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/233",
-    "number": 233
+    "number": 233,
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/233"
   },
   "fork_branch": "pr-iterate/49194"
 }

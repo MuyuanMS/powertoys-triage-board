@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-06T17:31:40.2353958+08:00",
+  "generated_at": "2026-08-06T17:41:50.3234854+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -87,9 +87,9 @@ window.BOARD_INDEX = {
     "artifacts": 57
   },
   "impact": {
-    "as_of": "2026-08-06T17:31:40.2353958+08:00",
+    "as_of": "2026-08-06T17:41:50.3234854+08:00",
     "issues_helped": 10,
-    "prs_iterated": 41,
+    "prs_iterated": 40,
     "constructive_comments_posted": 3,
     "comments_drafted": 24
   },
@@ -2422,12 +2422,12 @@ window.BOARD_INDEX = {
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Resume review"
       },
       "labels": [
         "Product-Mouse Utilities"
@@ -2435,7 +2435,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-07-12T03:53:18Z",
       "updated_at": "2026-08-01T20:53:05Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 268,
+        "fork_title": "[PR 49279] Add Mouse Button Lock (ClickLock for left, right, and middle mouse buttons)",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49279-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/268"
+      }
     },
     {
       "id": "pr-49278",
