@@ -5,11 +5,11 @@
   "stage": "awaiting_review_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T16:39:34.2061313+08:00",
+  "generated_at": "2026-08-06T16:46:51.0044343+08:00",
   "status": {
-    "detail": "Fork PR 218 converged with zero new Copilot comments and zero unresolved threads; local build remains blocked by unrelated charset/PCH failures.",
     "glyph": "📝",
-    "label": "Review drafted — needs approval"
+    "label": "Review drafted — needs approval",
+    "detail": "Fork PR 218 converged with zero new Copilot comments and zero unresolved threads; local build remains blocked by unrelated charset/PCH failures."
   },
   "next_action": null,
   "actions": [
@@ -18,24 +18,24 @@
   "confidence": "Medium",
   "proposed_comments": [
     {
-      "line": 46,
-      "disposition": "proposed",
-      "path": "doc/dsc/profile-resource.md",
       "severity": "medium",
+      "disposition": "proposed",
       "body": "The implementation rejects profile set operations from an elevated process before touching the user-controlled settings tree, but the reference examples do not mention that requirement. Add a note that apply operations must run non-elevated, while read-only operations remain available as appropriate.",
-      "in_diff": false,
+      "path": "doc/dsc/profile-resource.md",
+      "title": "Document the non-elevated apply requirement",
       "id": "c-49427-1",
-      "title": "Document the non-elevated apply requirement"
+      "in_diff": false,
+      "line": 46
     },
     {
-      "line": 185,
-      "disposition": "proposed",
-      "path": "src/dsc/v3/PowerToys.DSC/Properties/Resources.resx",
       "severity": "medium",
+      "disposition": "proposed",
       "body": "The resource localizes the stable error prefix, but validation details and warning text remain invariant English diagnostics. Either move the complete user-facing messages into Resources.resx, or narrow the checklist wording to say that stable prefixes are localized while technical diagnostic details remain invariant.",
-      "in_diff": false,
+      "path": "src/dsc/v3/PowerToys.DSC/Properties/Resources.resx",
+      "title": "Do not overstate localization coverage",
       "id": "c-49427-2",
-      "title": "Do not overstate localization coverage"
+      "in_diff": false,
+      "line": 185
     }
   ],
   "fork_pr": {

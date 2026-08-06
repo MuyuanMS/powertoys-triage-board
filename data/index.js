@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-06T16:39:34.2061313+08:00",
+  "generated_at": "2026-08-06T16:46:51.0044343+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -84,10 +84,10 @@ window.BOARD_INDEX = {
     "open_prs": 138,
     "open_issues": 7326,
     "community": 6808,
-    "artifacts": 49
+    "artifacts": 50
   },
   "impact": {
-    "as_of": "2026-08-06T16:39:34.2061313+08:00",
+    "as_of": "2026-08-06T16:46:51.0044343+08:00",
     "issues_helped": 10,
     "prs_iterated": 37,
     "constructive_comments_posted": 3,
@@ -114,6 +114,7 @@ window.BOARD_INDEX = {
     49474,
     49460,
     49451,
+    49431,
     49427,
     49412,
     49350,
@@ -240,7 +241,7 @@ window.BOARD_INDEX = {
         "Needs-Triage"
       ],
       "created_at": "2026-08-05T19:09:13Z",
-      "updated_at": "2026-08-06T08:28:13Z",
+      "updated_at": "2026-08-06T08:44:23Z",
       "comments": 0,
       "priority": null,
       "mirror": {
@@ -1320,12 +1321,12 @@ window.BOARD_INDEX = {
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Resume review"
       },
       "labels": [
         "Product-ZoomIt"
@@ -1333,7 +1334,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-07-23T17:40:53Z",
       "updated_at": "2026-07-30T21:14:20Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 257,
+        "fork_title": "[PR 49472] ZoomIt: Add DemoMirror to mirror a monitor, region, or window to a second display",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49472",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/257"
+      }
     },
     {
       "id": "pr-49460",
@@ -1585,19 +1594,16 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "track": "review",
+      "stage": "ineligible_draft",
+      "owes": "author",
+      "pending_author": true,
+      "waiting_since": "2026-08-04T08:13:22Z",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
-      "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
-      },
+      "primary_action": null,
       "labels": [
         "Area-Localization",
         "Product-Text Extractor"
@@ -1695,12 +1701,12 @@ window.BOARD_INDEX = {
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Resume review"
       },
       "labels": [
         "Area-Setup/Install"
@@ -1708,7 +1714,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-07-20T08:03:25Z",
       "updated_at": "2026-08-06T05:40:06Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 258,
+        "fork_title": "[PR 49414] Add preview release versioning and update channel support",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49414",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/258"
+      }
     },
     {
       "id": "pr-49412",
@@ -4078,7 +4092,7 @@ window.BOARD_INDEX = {
         "0.101"
       ],
       "created_at": "2026-06-08T22:20:07Z",
-      "updated_at": "2026-08-05T10:31:23Z",
+      "updated_at": "2026-08-06T08:43:31Z",
       "comments": 0,
       "priority": 60
     },

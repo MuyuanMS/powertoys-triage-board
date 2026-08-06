@@ -5,11 +5,11 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-06T16:39:34.2061313+08:00",
+  "generated_at": "2026-08-06T16:46:51.0044343+08:00",
   "status": {
-    "detail": "Fork PR 231 built the changed UI-test projects and has zero unresolved threads, but the fresh Copilot re-request timed out. Draft concerns include documentation, exception cleanup, test coverage, AMD support, and UIA accessibility.",
     "glyph": "🔄",
-    "label": "Review incomplete — fresh Copilot pass needed"
+    "label": "Review incomplete — fresh Copilot pass needed",
+    "detail": "Fork PR 231 built the changed UI-test projects and has zero unresolved threads, but the fresh Copilot re-request timed out. Draft concerns include documentation, exception cleanup, test coverage, AMD support, and UIA accessibility."
   },
   "next_action": null,
   "actions": [
@@ -19,52 +19,52 @@
   "confidence": "Medium",
   "proposed_comments": [
     {
+      "id": "c-49671-1",
       "body": "The Sandbox documentation path and instructions do not match the implementation. Please update the documented setup and verification steps.",
-      "in_diff": false,
       "severity": "medium",
       "title": "Fix broken Sandbox documentation",
       "disposition": "proposed",
-      "id": "c-49671-1"
+      "in_diff": false
     },
     {
+      "id": "c-49671-2",
       "body": "Ensure temporary certificates are removed when setup fails partway through so retries do not inherit stale credentials.",
-      "in_diff": false,
       "severity": "medium",
       "title": "Clean up certificates on exception paths",
       "disposition": "proposed",
-      "id": "c-49671-2"
+      "in_diff": false
     },
     {
+      "id": "c-49671-3",
       "body": "The test filters do not cover the AltWindowCycle path introduced by this change. Add the missing project or narrow the stated coverage.",
-      "in_diff": false,
       "severity": "medium",
       "title": "Cover AltWindowCycle in the test scope",
       "disposition": "proposed",
-      "id": "c-49671-3"
+      "in_diff": false
     },
     {
+      "id": "c-49671-4",
       "body": "The current filters imply broader coverage than the selected test projects actually provide. Align the filters and documentation with the executed tests.",
-      "in_diff": false,
       "severity": "low",
       "title": "Correct the test filters",
       "disposition": "proposed",
-      "id": "c-49671-4"
+      "in_diff": false
     },
     {
+      "id": "c-49671-5",
       "body": "Please confirm the AMD svm capability is handled consistently with the supported virtualization configurations.",
-      "in_diff": false,
       "severity": "low",
       "title": "Handle AMD svm capability",
       "disposition": "proposed",
-      "id": "c-49671-5"
+      "in_diff": false
     },
     {
+      "id": "c-49671-6",
       "body": "Ensure the new UI elements do not add unintended UI Automation nodes or duplicate accessible content.",
-      "in_diff": false,
       "severity": "medium",
       "title": "Avoid UIA accessibility pollution",
       "disposition": "proposed",
-      "id": "c-49671-6"
+      "in_diff": false
     }
   ],
   "fork_pr": {
