@@ -5,10 +5,10 @@
   "stage": "awaiting_review_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-05T23:46:11.1493786+08:00",
+  "generated_at": "2026-08-06T08:46:34.4627108+08:00",
   "status": {
-    "label": "Review clean — needs approval",
     "glyph": "✅",
+    "label": "Review clean — needs approval",
     "detail": "Fork PR 205: Copilot reviewed all 10 changed files and generated no new comments."
   },
   "next_action": null,
@@ -17,8 +17,8 @@
   ],
   "confidence": "High",
   "fork_pr": {
-    "number": 205,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/205"
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/205",
+    "number": 205
   },
   "fork_branch": "pr-iterate/49639"
 }
