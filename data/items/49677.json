@@ -5,43 +5,43 @@
   "stage": "needs_reply",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T16:23:18.1346490+08:00",
+  "generated_at": "2026-08-06T16:28:06.3815500+08:00",
   "status": {
-    "detail": "Fork mirror issue 237 converged on a modifier-swap state race, but the clean two-row repro and environment details are still missing.",
+    "glyph": "❓",
     "label": "Needs reproduction details",
-    "glyph": "❓"
+    "detail": "Fork mirror issue 237 converged on a modifier-swap state race, but the clean two-row repro and environment details are still missing."
   },
   "next_action": null,
   "actions": [
     {
-      "type": "request_info",
-      "id": "request-info-49677",
       "label": "Request clean repro details",
+      "id": "request-info-49677",
+      "type": "request_info",
       "comment": {
-        "body": "Could you provide the Windows build, elevation state, a clean two-row repro recording or trace, and whether another remapper is installed? Please include which key combinations fail.",
         "number": 49677,
+        "body": "Could you provide the Windows build, elevation state, a clean two-row repro recording or trace, and whether another remapper is installed? Please include which key combinations fail.",
         "target": "issue"
       }
     }
   ],
   "confidence": "Medium-high",
   "design": {
+    "confidence": "Medium-high",
     "mirror_issue": {
       "url": "https://github.com/MuyuanMS/PowerToys/issues/237",
       "number": 237
     },
-    "root_cause": "Modifier-only remaps are not atomic: the physical source modifier remains visible while the replacement modifier is injected, creating transient or stale Alt+Win state.",
-    "repro": [
-      "Configure Left Alt to Left Win and Left Win to Left Alt",
-      "Tap and hold both keys",
-      "Exercise Start, Alt+Tab, Alt+F4, Win+R/E/M, and repeated keyups"
-    ],
-    "confidence": "Medium-high",
     "fix_plan": "Add an atomic modifier-swap path with explicit per-source state, paired transitions, injection-failure handling, and engine regression tests.",
     "verify": [
       "Generated events do not recurse",
       "Paired transitions remain balanced",
       "Injection failure leaves no stale modifier state"
+    ],
+    "root_cause": "Modifier-only remaps are not atomic: the physical source modifier remains visible while the replacement modifier is injected, creating transient or stale Alt+Win state.",
+    "repro": [
+      "Configure Left Alt to Left Win and Left Win to Left Alt",
+      "Tap and hold both keys",
+      "Exercise Start, Alt+Tab, Alt+F4, Win+R/E/M, and repeated keyups"
     ],
     "adversary": {
       "status": "signed_off",

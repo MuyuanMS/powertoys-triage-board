@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T16:23:18.1346490+08:00",
+  "generated_at": "2026-08-06T16:28:06.3815500+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -84,10 +84,10 @@
     "open_prs": 137,
     "open_issues": 7326,
     "community": 6808,
-    "artifacts": 44
+    "artifacts": 46
   },
   "impact": {
-    "as_of": "2026-08-06T16:23:18.1346490+08:00",
+    "as_of": "2026-08-06T16:28:06.3815500+08:00",
     "issues_helped": 10,
     "prs_iterated": 36,
     "constructive_comments_posted": 3,
@@ -98,7 +98,9 @@
     49707,
     49700,
     49699,
+    49691,
     49690,
+    49687,
     49671,
     49647,
     49639,
@@ -460,18 +462,18 @@
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
+      "track": "review",
+      "stage": "review_ready",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "mirror",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "rerun",
-        "label": "Resume review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [],
       "created_at": "2026-08-05T08:18:26Z",
@@ -534,18 +536,18 @@
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
+      "track": "review",
+      "stage": "review_ready",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "mirror",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "rerun",
-        "label": "Resume review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [],
       "created_at": "2026-08-05T07:22:48Z",
@@ -1146,12 +1148,12 @@
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Resume review"
       },
       "labels": [
         "Product-Keyboard Manager"
@@ -1159,7 +1161,15 @@
       "created_at": "2026-07-29T21:59:49Z",
       "updated_at": "2026-07-29T22:00:11Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 256,
+        "fork_title": "[PR 49571] [Keyboard Manager] Honor normal elevation when launching programs",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49571-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/256"
+      }
     },
     {
       "id": "pr-49538",

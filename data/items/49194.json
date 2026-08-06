@@ -5,11 +5,11 @@
   "stage": "review_drafted",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T16:23:18.1346490+08:00",
+  "generated_at": "2026-08-06T16:28:06.3815500+08:00",
   "status": {
-    "detail": "Fork PR 233 resolved review threads but the final review found two architectural blockers; build is blocked by an unrelated C4819 encoding failure.",
+    "glyph": "🛑",
     "label": "Review drafted — blockers found",
-    "glyph": "🛑"
+    "detail": "Fork PR 233 resolved review threads but the final review found two architectural blockers; build is blocked by an unrelated C4819 encoding failure."
   },
   "next_action": null,
   "actions": [
@@ -18,20 +18,20 @@
   "confidence": "Medium",
   "proposed_comments": [
     {
-      "disposition": "proposed",
+      "body": "Use immutable fallback label snapshots tagged with the query generation so a slower earlier response cannot overwrite the first-paint result for a newer query.",
       "id": "c-49194-1",
       "in_diff": false,
-      "severity": "high",
       "title": "Tag fallback label snapshots by query generation",
-      "body": "Use immutable fallback label snapshots tagged with the query generation so a slower earlier response cannot overwrite the first-paint result for a newer query."
+      "disposition": "proposed",
+      "severity": "high"
     },
     {
-      "disposition": "proposed",
+      "body": "Avoid making newer queries wait behind a blocking RPC gate. A hung extension can otherwise prevent all subsequent queries from completing; prefer cancellation or generation-aware result suppression.",
       "id": "c-49194-2",
       "in_diff": false,
-      "severity": "high",
       "title": "Do not serialize RPCs behind a blocking gate",
-      "body": "Avoid making newer queries wait behind a blocking RPC gate. A hung extension can otherwise prevent all subsequent queries from completing; prefer cancellation or generation-aware result suppression."
+      "disposition": "proposed",
+      "severity": "high"
     }
   ],
   "fork_pr": {
