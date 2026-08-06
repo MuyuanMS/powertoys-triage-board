@@ -5,66 +5,66 @@
   "stage": "awaiting_design_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T10:31:45.4609562+08:00",
+  "generated_at": "2026-08-06T10:36:00.2607012+08:00",
   "status": {
-    "detail": "Adversary signed off (Medium). A crash dump would raise confidence to High.",
+    "glyph": "🎯",
     "label": "Design ready — needs approval",
-    "glyph": "🎯"
+    "detail": "Adversary signed off (Medium). A crash dump would raise confidence to High."
   },
   "next_action": null,
   "actions": [
     {
-      "id": "approve-design-49617",
+      "comment": {
+        "body": "Design approved — proceed to build the fix PR in the fork.",
+        "number": 180,
+        "target": "fork_issue"
+      },
+      "note": "Posts an approval note on the fork mirror issue; the scheduled job then builds the fix PR in the fork.",
       "primary": true,
       "confirm": true,
       "label": "Approve design → build fix",
-      "comment": {
-        "body": "Design approved — proceed to build the fix PR in the fork.",
-        "target": "fork_issue",
-        "number": 180
-      },
-      "note": "Posts an approval note on the fork mirror issue; the scheduled job then builds the fix PR in the fork.",
+      "id": "approve-design-49617",
       "type": "approve_design"
     },
     {
-      "id": "reqinfo-49617",
+      "note": "Medium confidence — a dump confirms the AV path before we open a PR.",
+      "type": "request_info",
       "comment": {
         "body": "Thanks for the report! To confirm the root cause, could you attach the crash dump (`%LOCALAPPDATA%\\Microsoft\\PowerToys\\...` or the Windows Error Reporting `.dmp`) from when ShortcutGuide.exe crashed on Win+number? That will let us verify the fix against the exact fault.",
-        "target": "issue",
-        "number": 49617
+        "number": 49617,
+        "target": "issue"
       },
-      "type": "request_info",
-      "note": "Medium confidence — a dump confirms the AV path before we open a PR.",
-      "label": "Ask author for a crash dump"
+      "label": "Ask author for a crash dump",
+      "id": "reqinfo-49617"
     },
     {
-      "id": "hold-49617",
       "type": "hold",
-      "label": "Not now"
+      "label": "Not now",
+      "id": "hold-49617"
     }
   ],
   "confidence": "Medium",
   "design": {
-    "root_cause": "App.xaml.cs key-up reads OverlayWindow.AppWindow.IsVisible off the native keyboard-hook thread while the overlay is closing -> access violation across the C++/WinRT boundary.",
+    "mirror_issue": {
+      "url": "https://github.com/MuyuanMS/PowerToys/issues/180",
+      "number": 180
+    },
+    "confidence": "Medium",
+    "adversary": {
+      "status": "signed_off",
+      "rounds": 3
+    },
     "repro": [
       "Open Shortcut Guide",
       "Wait until the Win+number taskbar labels show",
       "Press Win+1 (or any Win+number)",
       "ShortcutGuide.exe crashes + dump"
     ],
-    "adversary": {
-      "rounds": 3,
-      "status": "signed_off"
-    },
-    "fix_plan": "Track visibility with a UI-independent Volatile flag; keep CloseAnimated on the DispatcherQueue.",
-    "mirror_issue": {
-      "number": 180,
-      "url": "https://github.com/MuyuanMS/PowerToys/issues/180"
-    },
     "verify": [
       "With fix: app activates, guide hides, no crash/dump",
       "Normal Win long-press/release still works; Esc / click-outside close"
     ],
-    "confidence": "Medium"
+    "root_cause": "App.xaml.cs key-up reads OverlayWindow.AppWindow.IsVisible off the native keyboard-hook thread while the overlay is closing -> access violation across the C++/WinRT boundary.",
+    "fix_plan": "Track visibility with a UI-independent Volatile flag; keep CloseAnimated on the DispatcherQueue."
   }
 }

@@ -1,0 +1,51 @@
+{
+  "number": 49704,
+  "kind": "issue",
+  "track": "fix",
+  "stage": "needs_reply",
+  "owes": "maintainer",
+  "pending_author": false,
+  "generated_at": "2026-08-06T10:36:00.2607012+08:00",
+  "status": {
+    "glyph": "❓",
+    "label": "Needs reproduction confirmation",
+    "detail": "Fork mirror issue 236 converged on a Win-key recovery race, but a Windows 11 / PowerToys 0.100.2 trace is still needed before implementation."
+  },
+  "next_action": null,
+  "actions": [
+    {
+      "type": "request_info",
+      "comment": {
+        "body": "Could you provide a Windows 11 / PowerToys 0.100.2 trace or a short recording confirming the Win-key recovery race after Grab and Move? Please include which modifier and release order reproduces it.",
+        "number": 49704,
+        "target": "issue"
+      },
+      "label": "Request trace / repro",
+      "id": "request-info-49704"
+    }
+  ],
+  "confidence": "Medium",
+  "design": {
+    "mirror_issue": {
+      "url": "https://github.com/MuyuanMS/PowerToys/issues/236",
+      "number": 236
+    },
+    "confidence": "Medium-high",
+    "adversary": {
+      "status": "signed_off",
+      "rounds": 2
+    },
+    "repro": [
+      "Hold Win and start Grab and Move",
+      "Release the mouse while holding Win",
+      "Release Win and observe whether Start opens"
+    ],
+    "verify": [
+      "Repeat 20 times with LWIN and RWIN",
+      "Test reverse release order and resize",
+      "Verify click-only passthrough and foreground transitions"
+    ],
+    "root_cause": "Win-key consumption relies on transient drag flags after MouseProc ends the drag; foreground/input recovery can clear the state and forward Win-key up to Explorer.",
+    "fix_plan": "Preserve explicit drag-completion consumption state through key release, then validate both modifier release orders and foreground transitions."
+  }
+}

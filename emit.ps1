@@ -329,6 +329,59 @@ $OV[49669] = @{
   )
 }
 
+$OV[49711] = @{
+  track='fix'; stage='awaiting_design_approval'; confidence='Medium'; owes='maintainer'
+  status = @{ glyph='🎯'; label='Design ready — narrow fix'; detail='Fork mirror issue 235 converged on a defensive tray-registration retry. Cold-boot logs are still missing, so confidence is medium.' }
+  design = @{
+    root_cause='Shell_NotifyIcon(NIM_ADD) can fail while Explorer is unavailable during cold start; the existing recovery path does not guarantee a retry.'
+    fix_plan ='Add a bounded retry for failed tray registration, handle Explorer restart, and verify settings toggles, shutdown, and duplicate prevention.'
+    confidence='Medium'; adversary=@{ status='signed_off'; rounds=2 }
+    repro=@('Enable Power Display tray icon','Cold-boot Windows while Explorer is starting','Observe the icon is missing until PowerToys restarts')
+    verify=@('Retry succeeds without duplicate icons','Explorer restart recovers the icon','Settings toggles and shutdown remain clean')
+    mirror_issue=@{ number=235; url="https://github.com/$FORK/issues/235" }
+  }
+  actions=@(
+    @{ id='approve-design-49711'; type='approve_design'; label='Start fixing'; primary=$true
+       comment=@{ target='fork_issue'; number=235; body='Design approved — proceed to build the narrow defensive fix in the fork.' } }
+    @{ id='request-info-49711'; type='request_info'; label='Request cold-boot logs'
+       comment=@{ target='issue'; number=49711; body='Could you provide Power Display logs from a cold boot where the tray icon is missing? We need to confirm the failed Shell_NotifyIcon registration and retry path.' } }
+  )
+}
+
+$OV[49704] = @{
+  track='fix'; stage='needs_reply'; confidence='Medium'; owes='maintainer'
+  status = @{ glyph='❓'; label='Needs reproduction confirmation'; detail='Fork mirror issue 236 converged on a Win-key recovery race, but a Windows 11 / PowerToys 0.100.2 trace is still needed before implementation.' }
+  design = @{
+    root_cause='Win-key consumption relies on transient drag flags after MouseProc ends the drag; foreground/input recovery can clear the state and forward Win-key up to Explorer.'
+    fix_plan ='Preserve explicit drag-completion consumption state through key release, then validate both modifier release orders and foreground transitions.'
+    confidence='Medium-high'; adversary=@{ status='signed_off'; rounds=2 }
+    repro=@('Hold Win and start Grab and Move','Release the mouse while holding Win','Release Win and observe whether Start opens')
+    verify=@('Repeat 20 times with LWIN and RWIN','Test reverse release order and resize','Verify click-only passthrough and foreground transitions')
+    mirror_issue=@{ number=236; url="https://github.com/$FORK/issues/236" }
+  }
+  actions=@(
+    @{ id='request-info-49704'; type='request_info'; label='Request trace / repro'
+       comment=@{ target='issue'; number=49704; body='Could you provide a Windows 11 / PowerToys 0.100.2 trace or a short recording confirming the Win-key recovery race after Grab and Move? Please include which modifier and release order reproduces it.' } }
+  )
+}
+
+$OV[49677] = @{
+  track='fix'; stage='needs_reply'; confidence='Medium-high'; owes='maintainer'
+  status = @{ glyph='❓'; label='Needs reproduction details'; detail='Fork mirror issue 237 converged on a modifier-swap state race, but the clean two-row repro and environment details are still missing.' }
+  design = @{
+    root_cause='Modifier-only remaps are not atomic: the physical source modifier remains visible while the replacement modifier is injected, creating transient or stale Alt+Win state.'
+    fix_plan ='Add an atomic modifier-swap path with explicit per-source state, paired transitions, injection-failure handling, and engine regression tests.'
+    confidence='Medium-high'; adversary=@{ status='signed_off'; rounds=2 }
+    repro=@('Configure Left Alt to Left Win and Left Win to Left Alt','Tap and hold both keys','Exercise Start, Alt+Tab, Alt+F4, Win+R/E/M, and repeated keyups')
+    verify=@('Generated events do not recurse','Paired transitions remain balanced','Injection failure leaves no stale modifier state')
+    mirror_issue=@{ number=237; url="https://github.com/$FORK/issues/237" }
+  }
+  actions=@(
+    @{ id='request-info-49677'; type='request_info'; label='Request clean repro details'
+       comment=@{ target='issue'; number=49677; body='Could you provide the Windows build, elevation state, a clean two-row repro recording or trace, and whether another remapper is installed? Please include which key combinations fail.' } }
+  )
+}
+
 # 49136 -- review track, already partially posted. Demonstrates the per-comment
 # "choose which to post" workflow with real dispositions from the last review.
 $OV[49136] = @{

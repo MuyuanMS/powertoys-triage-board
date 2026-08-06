@@ -5,55 +5,55 @@
   "stage": "awaiting_pr_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T10:31:45.4609562+08:00",
+  "generated_at": "2026-08-06T10:36:00.2607012+08:00",
   "status": {
-    "detail": "Fork PR #177 review-clean (8 rounds); DockMultiMonitorTests 42/42 green.",
+    "glyph": "🚀",
     "label": "Ready to open upstream PR",
-    "glyph": "🚀"
+    "detail": "Fork PR #177 review-clean (8 rounds); DockMultiMonitorTests 42/42 green."
   },
   "next_action": null,
   "actions": [
     {
-      "id": "open-pr-49604",
-      "primary": true,
-      "confirm": true,
-      "label": "Open upstream PR as me",
       "pr": {
-        "base": "main",
         "body": "Fixes #49604.\n\nSecondary-monitor Dock configs were created as customized with empty band lists, so the resolvers returned empty bands instead of the global defaults. This leaves the secondary configs uncustomized and migrates legacy empty-band configs; DockMultiMonitorTests extended to cover the secondary + mixed-DPI arrangements (42/42 green).",
         "draft": false,
         "head": "MuyuanMS:copilot/fix-dock-secondary-blank",
-        "title": "[CmdPal][Dock] Fix blank dock on secondary monitor"
+        "title": "[CmdPal][Dock] Fix blank dock on secondary monitor",
+        "base": "main"
       },
+      "primary": true,
+      "confirm": true,
+      "label": "Open upstream PR as me",
+      "id": "open-pr-49604",
       "type": "open_upstream_pr"
     }
   ],
   "confidence": "High",
   "design": {
-    "root_cause": "MonitorConfigReconciler creates secondary-monitor configs with IsCustomized=true but empty band lists; the DockSettings resolvers then return the empty custom bands instead of the global defaults -> blank bar.",
+    "mirror_issue": {
+      "url": "https://github.com/MuyuanMS/PowerToys/issues/176",
+      "number": 176
+    },
+    "confidence": "High",
+    "adversary": {
+      "status": "signed_off",
+      "rounds": 8
+    },
     "repro": [
       "Enable CmdPal Dock (Preview)",
       "Enable dock for a secondary monitor",
       "Secondary shows an empty bar at the top; content indents down"
     ],
-    "adversary": {
-      "rounds": 8,
-      "status": "signed_off"
-    },
-    "fix_plan": "Leave secondary configs uncustomized and migrate legacy empty-band configs; extend DockMultiMonitorTests to cover secondary + mixed-DPI + all edge arrangements.",
-    "mirror_issue": {
-      "number": 176,
-      "url": "https://github.com/MuyuanMS/PowerToys/issues/176"
-    },
     "verify": [
       "With fix: secondary dock renders default bands/stats",
       "Multi-monitor + mixed-DPI + top/bottom/left/right arrangements"
     ],
-    "confidence": "High"
+    "root_cause": "MonitorConfigReconciler creates secondary-monitor configs with IsCustomized=true but empty band lists; the DockSettings resolvers then return the empty custom bands instead of the global defaults -> blank bar.",
+    "fix_plan": "Leave secondary configs uncustomized and migrate legacy empty-band configs; extend DockMultiMonitorTests to cover secondary + mixed-DPI + all edge arrangements."
   },
   "fork_pr": {
-    "number": 177,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/177"
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/177",
+    "number": 177
   },
   "fork_branch": "copilot/fix-dock-secondary-blank"
 }
