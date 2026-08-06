@@ -5,55 +5,55 @@
   "stage": "awaiting_design_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T17:41:50.3234854+08:00",
+  "generated_at": "2026-08-06T18:11:58.0790503+08:00",
   "status": {
     "glyph": "🎯",
-    "detail": "Adversary signed off after 2 rounds. Root cause and fix plan are captured in fork mirror issue 93.",
-    "label": "Design ready — needs approval"
+    "label": "Design ready — needs approval",
+    "detail": "Adversary signed off after 2 rounds. Root cause and fix plan are captured in fork mirror issue 93."
   },
   "next_action": null,
   "actions": [
     {
-      "note": "Posts an approval note on the fork mirror issue; the scheduled job then builds the fix PR in the fork.",
       "comment": {
-        "body": "Design approved — proceed to build the fix PR in the fork.",
         "target": "fork_issue",
-        "number": 93
+        "number": 93,
+        "body": "Design approved — proceed to build the fix PR in the fork."
       },
       "label": "Start fixing",
+      "primary": true,
       "confirm": true,
       "type": "approve_design",
-      "primary": true,
-      "id": "approve-design-49114"
+      "id": "approve-design-49114",
+      "note": "Posts an approval note on the fork mirror issue; the scheduled job then builds the fix PR in the fork."
     },
     {
-      "type": "hold",
       "id": "hold-49114",
-      "label": "Not now"
+      "label": "Not now",
+      "type": "hold"
     }
   ],
   "confidence": "High",
   "design": {
-    "fix_plan": "Dispatch history loading through the page UI dispatcher while preserving the existing UI-update handling.",
     "repro": [
       "Open Advanced Paste / clipboard history",
       "Trigger history loading",
       "Observe the application hang"
     ],
+    "confidence": "High",
     "verify": [
       "With fix: history loads without hanging",
       "Existing UI updates remain correct",
       "Exercise repeated history loads and empty history"
     ],
-    "confidence": "High",
+    "adversary": {
+      "rounds": 2,
+      "status": "signed_off"
+    },
     "mirror_issue": {
       "number": 93,
       "url": "https://github.com/MuyuanMS/PowerToys/issues/93"
     },
     "root_cause": "Clipboard history WinRT APIs are invoked from Task.Run on an MTA thread instead of the required STA/UI thread, causing the application hang.",
-    "adversary": {
-      "status": "signed_off",
-      "rounds": 2
-    }
+    "fix_plan": "Dispatch history loading through the page UI dispatcher while preserving the existing UI-update handling."
   }
 }

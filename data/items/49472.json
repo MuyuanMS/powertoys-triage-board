@@ -5,11 +5,11 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-06T17:41:50.3234854+08:00",
+  "generated_at": "2026-08-06T18:11:58.0790503+08:00",
   "status": {
     "glyph": "🔄",
-    "detail": "Fork PR 260 latest Copilot review generated no new comments; local build/context validation is still required before approval.",
-    "label": "Copilot clean — validation pending"
+    "label": "Copilot clean — validation pending",
+    "detail": "Fork PR 260 latest Copilot review generated no new comments; local build/context validation is still required before approval."
   },
   "next_action": null,
   "actions": [

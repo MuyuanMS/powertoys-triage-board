@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-06T17:41:50.3234854+08:00",
+  "generated_at": "2026-08-06T18:11:58.0790503+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -81,13 +81,13 @@ window.BOARD_INDEX = {
     ]
   },
   "counts": {
-    "open_prs": 138,
-    "open_issues": 7327,
-    "community": 6809,
-    "artifacts": 57
+    "open_prs": 137,
+    "open_issues": 7326,
+    "community": 6807,
+    "artifacts": 56
   },
   "impact": {
-    "as_of": "2026-08-06T17:41:50.3234854+08:00",
+    "as_of": "2026-08-06T18:11:58.0790503+08:00",
     "issues_helped": 10,
     "prs_iterated": 40,
     "constructive_comments_posted": 3,
@@ -95,7 +95,6 @@ window.BOARD_INDEX = {
   },
   "artifact_numbers": [
     49709,
-    49707,
     49700,
     49699,
     49691,
@@ -219,45 +218,6 @@ window.BOARD_INDEX = {
         "fork_state": "OPEN",
         "fork_branch": "pr-iterate/49709-v2",
         "url": "https://github.com/MuyuanMS/PowerToys/pull/245"
-      }
-    },
-    {
-      "id": "pr-49707",
-      "kind": "pr",
-      "number": 49707,
-      "url": "https://github.com/microsoft/PowerToys/pull/49707",
-      "title": "[Keyboard Manager] Fix shortcut modifier display order in the new editor",
-      "author": "agbuddy7",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": true,
-      "agent_status": "review",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "rerun",
-        "label": "Re-run review"
-      },
-      "labels": [
-        "Needs-Triage"
-      ],
-      "created_at": "2026-08-05T19:09:13Z",
-      "updated_at": "2026-08-06T08:53:40Z",
-      "comments": 0,
-      "priority": null,
-      "mirror": {
-        "kind": "pr",
-        "fork_number": 242,
-        "fork_title": "[PR 49707] fixed dispay order issue in kbm",
-        "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/49707-v2",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/242"
       }
     },
     {
@@ -2815,12 +2775,12 @@ window.BOARD_INDEX = {
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Resume review"
       },
       "labels": [
         "Product-Settings",
@@ -2829,7 +2789,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-07-08T20:33:18Z",
       "updated_at": "2026-07-20T19:57:11Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 270,
+        "fork_title": "[PR 49221] [Common] Add theme-adaptive tray icon helpers for module tray icons",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49221-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/270"
+      }
     },
     {
       "id": "pr-49211",
@@ -15385,39 +15353,6 @@ window.BOARD_INDEX = {
       "created_at": "2026-06-27T03:54:13Z",
       "updated_at": "2026-06-27T03:54:25Z",
       "comments": 0,
-      "priority": null
-    },
-    {
-      "id": "issue-48943",
-      "kind": "issue",
-      "number": 48943,
-      "url": "https://github.com/microsoft/PowerToys/issues/48943",
-      "title": "Keyboard Manager: Does not display keys in the standard order (Win, Ctrl, Alt, Shift then the other keys) (New Editor only)",
-      "author": "ReginaldTang",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "bug",
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_triage",
-        "label": "Start triage"
-      },
-      "labels": [
-        "Issue-Bug",
-        "Needs-Triage",
-        "Product-Keyboard Manager"
-      ],
-      "created_at": "2026-06-27T03:19:39Z",
-      "updated_at": "2026-06-29T08:58:22Z",
-      "comments": 2,
       "priority": null
     },
     {
