@@ -304,6 +304,13 @@ $OV[49194] = @{
   )
 }
 
+$OV[49474] = @{
+  track='review'; stage='awaiting_author'; confidence='High'; owes='author'
+  status = @{ glyph='⏳'; label='Waiting for author'; detail='Fork PR 232 review converged with zero Copilot comments and the build passed. Upstream PR has a merge conflict and Needs-Author-Feedback; request a short demo and validation confirmation.' }
+  fork_pr=@{ number=232; url="https://github.com/$FORK/pull/232" }; fork_branch='pr-iterate/49474'
+  proposed_comments=@()
+}
+
 # 49136 -- review track, already partially posted. Demonstrates the per-comment
 # "choose which to post" workflow with real dispositions from the last review.
 $OV[49136] = @{

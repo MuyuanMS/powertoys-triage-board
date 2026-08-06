@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T10:07:59.4855209+08:00",
+  "generated_at": "2026-08-06T10:11:35.4355210+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -84,17 +84,16 @@
     "open_prs": 137,
     "open_issues": 7323,
     "community": 6805,
-    "artifacts": 35
+    "artifacts": 34
   },
   "impact": {
-    "as_of": "2026-08-06T10:07:59.4855209+08:00",
+    "as_of": "2026-08-06T10:11:35.4355210+08:00",
     "issues_helped": 6,
-    "prs_iterated": 31,
+    "prs_iterated": 30,
     "constructive_comments_posted": 3,
     "comments_drafted": 18
   },
   "artifact_numbers": [
-    49671,
     49647,
     49639,
     49625,
@@ -589,18 +588,18 @@
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": "review",
-      "stage": "awaiting_review_approval",
-      "owes": "maintainer",
+      "track": null,
+      "stage": null,
+      "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": true,
-      "agent_status": "review",
+      "has_artifact": false,
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "approve",
-        "label": "Approve"
+        "type": "rerun",
+        "label": "Resume review"
       },
       "labels": [
         "Area-Tests",
@@ -1143,18 +1142,15 @@
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "awaiting_review_approval",
-      "owes": "maintainer",
-      "pending_author": false,
-      "waiting_since": null,
+      "stage": "awaiting_author",
+      "owes": "author",
+      "pending_author": true,
+      "waiting_since": "2026-08-06T01:44:50Z",
       "has_artifact": true,
       "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
-      "primary_action": {
-        "type": "approve",
-        "label": "Approve"
-      },
+      "primary_action": null,
       "labels": [
         "Needs-Author-Feedback",
         "Product-Settings",
