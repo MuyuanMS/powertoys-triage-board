@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-06T17:01:17.6343341+08:00",
+  "generated_at": "2026-08-06T17:31:40.2353958+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -82,14 +82,14 @@ window.BOARD_INDEX = {
   },
   "counts": {
     "open_prs": 138,
-    "open_issues": 7326,
-    "community": 6808,
-    "artifacts": 53
+    "open_issues": 7327,
+    "community": 6809,
+    "artifacts": 57
   },
   "impact": {
-    "as_of": "2026-08-06T17:01:17.6343341+08:00",
+    "as_of": "2026-08-06T17:31:40.2353958+08:00",
     "issues_helped": 10,
-    "prs_iterated": 40,
+    "prs_iterated": 41,
     "constructive_comments_posted": 3,
     "comments_drafted": 24
   },
@@ -120,7 +120,11 @@ window.BOARD_INDEX = {
     49431,
     49427,
     49412,
+    49400,
+    49394,
+    49388,
     49350,
+    49333,
     49291,
     49245,
     49197,
@@ -1778,18 +1782,18 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
+      "track": "review",
+      "stage": "awaiting_review_approval",
       "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "mirror",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
-      "proposed_open": 0,
+      "proposed_open": 1,
       "primary_action": {
-        "type": "rerun",
-        "label": "Resume review"
+        "type": "review",
+        "label": "Post comments"
       },
       "labels": [
         "Area-Localization",
@@ -1818,26 +1822,35 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
-      "owes": "maintainer",
+      "track": "review",
+      "stage": "review_in_progress",
+      "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Re-run review"
       },
       "labels": [
-        "Product-Quick Accent"
+        "Product-Quick Accent",
+        "DO NOT MERGE"
       ],
       "created_at": "2026-07-18T02:45:03Z",
-      "updated_at": "2026-08-05T07:35:43Z",
+      "updated_at": "2026-08-06T09:22:10Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 264,
+        "fork_title": "[PR 49394] [Quick Accent] New character reference guide to show language set contents",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49394-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/264"
+      }
     },
     {
       "id": "pr-49388",
@@ -1849,24 +1862,24 @@ window.BOARD_INDEX = {
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "track": "review",
+      "stage": "author_waiting",
+      "owes": "author",
+      "pending_author": true,
+      "waiting_since": "2026-08-06T09:11:32Z",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Re-run review"
       },
       "labels": [
         "Product-Awake"
       ],
       "created_at": "2026-07-17T18:26:24Z",
-      "updated_at": "2026-07-22T08:08:57Z",
+      "updated_at": "2026-08-06T09:11:32Z",
       "comments": 0,
       "priority": 60
     },
@@ -2046,19 +2059,16 @@ window.BOARD_INDEX = {
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "track": "review",
+      "stage": "held",
+      "owes": "author",
+      "pending_author": true,
+      "waiting_since": "2026-07-17T06:11:56Z",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
-      "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
-      },
+      "primary_action": null,
       "labels": [
         "Product-Advanced Paste"
       ],
@@ -2269,12 +2279,12 @@ window.BOARD_INDEX = {
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Resume review"
       },
       "labels": [
         "Area-Localization",
@@ -2284,7 +2294,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-07-13T14:47:37Z",
       "updated_at": "2026-07-14T19:32:39Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 266,
+        "fork_title": "[PR 49301] [SvgThumbnailProvider] Preserve alpha transparency",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49301-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/266"
+      }
     },
     {
       "id": "pr-49291",
@@ -4428,7 +4446,7 @@ window.BOARD_INDEX = {
         "Product-Advanced Paste"
       ],
       "created_at": "2026-04-30T08:04:20Z",
-      "updated_at": "2026-08-05T08:35:54Z",
+      "updated_at": "2026-08-06T09:19:10Z",
       "comments": 0,
       "priority": 60
     },
@@ -4860,6 +4878,38 @@ window.BOARD_INDEX = {
       "updated_at": "2026-06-05T18:25:20Z",
       "comments": 0,
       "priority": 60
+    },
+    {
+      "id": "issue-49717",
+      "kind": "issue",
+      "number": 49717,
+      "url": "https://github.com/microsoft/PowerToys/issues/49717",
+      "title": "Possible typo on PowerToys Run page",
+      "author": "ReginaldTang",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Check bug"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-06T09:17:38Z",
+      "updated_at": "2026-08-06T09:17:38Z",
+      "comments": 0,
+      "priority": null
     },
     {
       "id": "issue-49715",
@@ -7570,8 +7620,8 @@ window.BOARD_INDEX = {
         "Product-Mouse Without Borders"
       ],
       "created_at": "2026-07-27T22:33:11Z",
-      "updated_at": "2026-08-05T23:38:26Z",
-      "comments": 8,
+      "updated_at": "2026-08-06T09:17:50Z",
+      "comments": 9,
       "priority": null
     },
     {

@@ -5,7 +5,7 @@
   "stage": "awaiting_review_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T17:01:17.6343341+08:00",
+  "generated_at": "2026-08-06T17:31:40.2353958+08:00",
   "status": {
     "label": "Review drafted — needs approval",
     "detail": "Fork PR 218 converged with zero new Copilot comments and zero unresolved threads; local build remains blocked by unrelated charset/PCH failures.",
@@ -20,27 +20,27 @@
     {
       "in_diff": false,
       "disposition": "proposed",
-      "body": "The implementation rejects profile set operations from an elevated process before touching the user-controlled settings tree, but the reference examples do not mention that requirement. Add a note that apply operations must run non-elevated, while read-only operations remain available as appropriate.",
       "line": 46,
+      "severity": "medium",
       "title": "Document the non-elevated apply requirement",
       "id": "c-49427-1",
-      "severity": "medium",
-      "path": "doc/dsc/profile-resource.md"
+      "path": "doc/dsc/profile-resource.md",
+      "body": "The implementation rejects profile set operations from an elevated process before touching the user-controlled settings tree, but the reference examples do not mention that requirement. Add a note that apply operations must run non-elevated, while read-only operations remain available as appropriate."
     },
     {
       "in_diff": false,
       "disposition": "proposed",
-      "body": "The resource localizes the stable error prefix, but validation details and warning text remain invariant English diagnostics. Either move the complete user-facing messages into Resources.resx, or narrow the checklist wording to say that stable prefixes are localized while technical diagnostic details remain invariant.",
       "line": 185,
+      "severity": "medium",
       "title": "Do not overstate localization coverage",
       "id": "c-49427-2",
-      "severity": "medium",
-      "path": "src/dsc/v3/PowerToys.DSC/Properties/Resources.resx"
+      "path": "src/dsc/v3/PowerToys.DSC/Properties/Resources.resx",
+      "body": "The resource localizes the stable error prefix, but validation details and warning text remain invariant English diagnostics. Either move the complete user-facing messages into Resources.resx, or narrow the checklist wording to say that stable prefixes are localized while technical diagnostic details remain invariant."
     }
   ],
   "fork_pr": {
-    "number": 218,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/218"
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/218",
+    "number": 218
   },
   "fork_branch": "pr-iterate/49427"
 }

@@ -5,7 +5,7 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-06T17:01:17.6343341+08:00",
+  "generated_at": "2026-08-06T17:31:40.2353958+08:00",
   "status": {
     "label": "Copilot clean — validation pending",
     "detail": "Fork PR 162 latest Copilot review generated no new comments; local build/context validation is still required before approval.",
@@ -18,8 +18,8 @@
   "needs_revalidation": true,
   "confidence": "Medium",
   "fork_pr": {
-    "number": 162,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/162"
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/162",
+    "number": 162
   },
   "fork_branch": "pr-iterate/49412-v2"
 }

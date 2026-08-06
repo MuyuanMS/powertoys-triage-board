@@ -1,0 +1,34 @@
+{
+  "number": 49400,
+  "kind": "pr",
+  "track": "review",
+  "stage": "awaiting_review_approval",
+  "owes": "maintainer",
+  "pending_author": false,
+  "generated_at": "2026-08-06T17:31:40.2353958+08:00",
+  "status": {
+    "label": "Review drafted — needs approval",
+    "detail": "Fork review PR 262 converged after 2 Copilot reviews: the fresh review returned zero new published comments and zero unresolved Copilot threads. Debug essentials, ZoomItBreak, ZoomIt, ZoomItModuleInterface, and ZoomItSettingsInterop builds passed.",
+    "glyph": "📝"
+  },
+  "next_action": null,
+  "actions": [],
+  "confidence": "High",
+  "proposed_comments": [
+    {
+      "id": "c-49400-1",
+      "title": "Consider separating the layout-only cleanup",
+      "severity": "low",
+      "in_diff": false,
+      "disposition": "proposed",
+      "body": "The audio-format fix and the record-options layout cleanup are independent changes. Consider separating the layout-only resource edits into a follow-up PR so each change can be reviewed and reverted independently.",
+      "path": "src/modules/ZoomIt/ZoomIt/ZoomIt.rc",
+      "line": 281
+    }
+  ],
+  "fork_pr": {
+    "number": 262,
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/262"
+  },
+  "fork_branch": "pr-iterate/49400-v2"
+}

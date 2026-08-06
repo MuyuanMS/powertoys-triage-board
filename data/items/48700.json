@@ -5,7 +5,7 @@
   "stage": "awaiting_review_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T17:01:17.6343341+08:00",
+  "generated_at": "2026-08-06T17:31:40.2353958+08:00",
   "status": {
     "label": "Fork review clean — needs approval",
     "detail": "Fork PR 223 Copilot review clean; approval remains gated.",
@@ -17,8 +17,8 @@
   ],
   "confidence": "Medium",
   "fork_pr": {
-    "number": 223,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/223"
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/223",
+    "number": 223
   },
   "fork_branch": "pr-iterate/48700"
 }
