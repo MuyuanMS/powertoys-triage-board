@@ -1,5 +1,5 @@
 {
-  "number": 48592,
+  "number": 49474,
   "kind": "pr",
   "track": "review",
   "stage": "awaiting_review_approval",
@@ -7,7 +7,7 @@
   "pending_author": false,
   "generated_at": "2026-08-06T09:46:16.6704554+08:00",
   "status": {
-    "detail": "Fork PR 204 latest Copilot review generated no new comments; approval remains gated.",
+    "detail": "Fork PR 232 latest Copilot review generated no new comments; approval remains gated.",
     "label": "Fork review clean — needs approval",
     "glyph": "✅"
   },
@@ -17,8 +17,8 @@
   ],
   "confidence": "Medium",
   "fork_pr": {
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/204",
-    "number": 204
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/232",
+    "number": 232
   },
-  "fork_branch": "pr-iterate/48592-v4"
+  "fork_branch": "pr-iterate/49474-v2"
 }

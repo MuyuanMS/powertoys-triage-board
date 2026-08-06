@@ -5,11 +5,11 @@
   "stage": "awaiting_review_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T08:55:07.2270769+08:00",
+  "generated_at": "2026-08-06T09:46:16.6704554+08:00",
   "status": {
-    "glyph": "✅",
     "detail": "Fork PR 207 latest Copilot review generated no new comments; approval remains gated.",
-    "label": "Fork review clean — needs approval"
+    "label": "Fork review clean — needs approval",
+    "glyph": "✅"
   },
   "next_action": null,
   "actions": [
@@ -17,8 +17,8 @@
   ],
   "confidence": "Medium",
   "fork_pr": {
-    "number": 207,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/207"
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/207",
+    "number": 207
   },
   "fork_branch": "pr-iterate/48658-v3"
 }

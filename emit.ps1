@@ -270,6 +270,26 @@ foreach ($reviewMirror in @(
   }
 }
 
+$OV[49197] = @{
+  track='review'; stage='review_drafted'; confidence='Medium'; owes='maintainer'
+  status = @{ glyph='📝'; label='Review drafted — needs approval'; detail='Fork PR 227 converged after 3 Copilot rounds with zero new comments and zero unresolved threads. Spelling remains pending; local builds are blocked by an unrelated encoding warning.' }
+  fork_pr=@{ number=227; url="https://github.com/$FORK/pull/227" }; fork_branch='pr-iterate/49197'
+  proposed_comments=@(
+    @{ id='c-49197-1'; severity='high'; disposition='proposed'; in_diff=$false
+       title='Hold merge until dependency PR 49246 lands'
+       body='This telemetry path depends on the API and behavior introduced by PR 49246. Please either wait for that dependency to merge or document the compatibility contract and validation plan for the current base.' },
+    @{ id='c-49197-2'; severity='medium'; disposition='proposed'; in_diff=$false
+       title='Add a concrete telemetry analysis plan'
+       body='Please describe the target graph or analysis plan for the new telemetry snapshots, including which decisions the data will support and how sampling/privacy constraints will be evaluated.' },
+    @{ id='c-49197-3'; severity='low'; disposition='proposed'; in_diff=$false
+       title='Clarify the LatencyMs metric name'
+       body='The recorded value appears to measure filtering duration rather than end-to-end latency. Consider renaming it to FilterDurationMs or documenting the exact start and end events.' },
+    @{ id='c-49197-4'; severity='low'; disposition='proposed'; in_diff=$false
+       title='Correlate abandoned searches'
+       body='Consider recording SearchAbandoned together with a stable event correlation ID so abandoned and completed searches can be analyzed as one interaction.' }
+  )
+}
+
 # 49136 -- review track, already partially posted. Demonstrates the per-comment
 # "choose which to post" workflow with real dispositions from the last review.
 $OV[49136] = @{
