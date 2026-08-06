@@ -1,5 +1,5 @@
 {
-  "number": 48772,
+  "number": 49709,
   "kind": "pr",
   "track": "review",
   "stage": "review_in_progress",
@@ -9,7 +9,7 @@
   "status": {
     "glyph": "🔄",
     "label": "Copilot clean — validation pending",
-    "detail": "Fork PR 200 latest Copilot review generated no new comments; local build/context validation is still required before approval."
+    "detail": "Fork PR 245 latest Copilot review generated no new comments; local build/context validation is still required before approval."
   },
   "next_action": null,
   "actions": [
@@ -18,8 +18,8 @@
   "needs_revalidation": true,
   "confidence": "Medium",
   "fork_pr": {
-    "number": 200,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/200"
+    "number": 245,
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/245"
   },
-  "fork_branch": "pr-iterate/48772"
+  "fork_branch": "pr-iterate/49709-v2"
 }

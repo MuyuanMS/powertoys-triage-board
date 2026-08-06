@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T11:41:41.6016965+08:00",
+  "generated_at": "2026-08-06T15:47:04.5204268+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -82,18 +82,21 @@
   },
   "counts": {
     "open_prs": 137,
-    "open_issues": 7323,
-    "community": 6805,
-    "artifacts": 39
+    "open_issues": 7326,
+    "community": 6808,
+    "artifacts": 42
   },
   "impact": {
-    "as_of": "2026-08-06T11:41:41.6016965+08:00",
+    "as_of": "2026-08-06T15:47:04.5204268+08:00",
     "issues_helped": 10,
-    "prs_iterated": 31,
+    "prs_iterated": 34,
     "constructive_comments_posted": 3,
     "comments_drafted": 24
   },
   "artifact_numbers": [
+    49709,
+    49707,
+    49700,
     49671,
     49647,
     49639,
@@ -145,24 +148,34 @@
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Re-run review"
       },
-      "labels": [],
+      "labels": [
+        "Needs-Author-Feedback"
+      ],
       "created_at": "2026-08-05T20:17:28Z",
-      "updated_at": "2026-08-05T20:20:58Z",
+      "updated_at": "2026-08-06T07:38:14Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 245,
+        "fork_title": "[PR 49709] [Settings] Disable index generation for debug builds",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49709-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/245"
+      }
     },
     {
       "id": "pr-49707",
@@ -174,18 +187,18 @@
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Re-run review"
       },
       "labels": [
         "Needs-Author-Feedback"
@@ -193,7 +206,15 @@
       "created_at": "2026-08-05T19:09:13Z",
       "updated_at": "2026-08-06T01:39:17Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 242,
+        "fork_title": "[PR 49707] fixed dispay order issue in kbm",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49707-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/242"
+      }
     },
     {
       "id": "pr-49705",
@@ -297,24 +318,32 @@
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Re-run review"
       },
       "labels": [],
       "created_at": "2026-08-05T16:47:10Z",
       "updated_at": "2026-08-05T16:47:10Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 243,
+        "fork_title": "[PR 49700] [Always On Top] Fix delayed sound cues",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49700-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/243"
+      }
     },
     {
       "id": "pr-49699",
@@ -332,18 +361,26 @@
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Resume review"
       },
       "labels": [],
       "created_at": "2026-08-05T16:46:47Z",
       "updated_at": "2026-08-05T16:46:47Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 244,
+        "fork_title": "[PR 49699] [Mouse Highlighter] Keep ripple work off the low-level hook",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49699-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/244"
+      }
     },
     {
       "id": "pr-49698",
@@ -390,18 +427,26 @@
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Resume review"
       },
       "labels": [],
       "created_at": "2026-08-05T16:12:06Z",
       "updated_at": "2026-08-05T16:12:16Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 247,
+        "fork_title": "[PR 49697] Add DevDocs plugin to third-party plugins list",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49697-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/247"
+      }
     },
     {
       "id": "pr-49691",
@@ -419,18 +464,26 @@
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": false,
-      "agent_status": "none",
+      "agent_status": "mirror",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Resume review"
       },
       "labels": [],
       "created_at": "2026-08-05T08:18:26Z",
       "updated_at": "2026-08-05T15:17:42Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 248,
+        "fork_title": "[PR 49691] [Mouse Utilities] Clarify Gliding Cursor description",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49691",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/248"
+      }
     },
     {
       "id": "pr-49690",
@@ -740,7 +793,7 @@
       },
       "labels": [],
       "created_at": "2026-08-03T22:37:46Z",
-      "updated_at": "2026-08-06T02:25:18Z",
+      "updated_at": "2026-08-06T06:46:32Z",
       "comments": 0,
       "priority": null,
       "mirror": {
@@ -1577,7 +1630,7 @@
         "Area-Setup/Install"
       ],
       "created_at": "2026-07-20T08:03:25Z",
-      "updated_at": "2026-08-06T03:37:08Z",
+      "updated_at": "2026-08-06T05:40:06Z",
       "comments": 0,
       "priority": 60
     },
@@ -3783,7 +3836,7 @@
         "Needs-Team-Response"
       ],
       "created_at": "2026-06-13T21:55:45Z",
-      "updated_at": "2026-08-06T02:23:55Z",
+      "updated_at": "2026-08-06T06:33:58Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -4706,6 +4759,101 @@
       "updated_at": "2026-06-05T18:25:20Z",
       "comments": 0,
       "priority": 60
+    },
+    {
+      "id": "issue-49715",
+      "kind": "issue",
+      "number": 49715,
+      "url": "https://github.com/microsoft/PowerToys/issues/49715",
+      "title": "The PowerToys do not work",
+      "author": "sylvaprerostova",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Check bug"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-06T07:12:04Z",
+      "updated_at": "2026-08-06T07:12:04Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
+      "id": "issue-49714",
+      "kind": "issue",
+      "number": 49714,
+      "url": "https://github.com/microsoft/PowerToys/issues/49714",
+      "title": "电脑同时控制，为何只能两台",
+      "author": "yixin67786-netizen",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-06T05:36:05Z",
+      "updated_at": "2026-08-06T05:36:05Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
+      "id": "issue-49713",
+      "kind": "issue",
+      "number": 49713,
+      "url": "https://github.com/microsoft/PowerToys/issues/49713",
+      "title": "Environment Variables module didn't work with Administrator right",
+      "author": "stEve0x33",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Check bug"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-06T05:36:02Z",
+      "updated_at": "2026-08-06T05:36:02Z",
+      "comments": 0,
+      "priority": null
     },
     {
       "id": "issue-49711",
@@ -20036,7 +20184,7 @@
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Check bug"
+        "label": "Start triage"
       },
       "labels": [
         "Issue-Bug",

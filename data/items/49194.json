@@ -5,11 +5,11 @@
   "stage": "review_drafted",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T11:41:41.6016965+08:00",
+  "generated_at": "2026-08-06T15:47:04.5204268+08:00",
   "status": {
+    "glyph": "🛑",
     "label": "Review drafted — blockers found",
-    "detail": "Fork PR 233 resolved review threads but the final review found two architectural blockers; build is blocked by an unrelated C4819 encoding failure.",
-    "glyph": "🛑"
+    "detail": "Fork PR 233 resolved review threads but the final review found two architectural blockers; build is blocked by an unrelated C4819 encoding failure."
   },
   "next_action": null,
   "actions": [
@@ -18,25 +18,25 @@
   "confidence": "Medium",
   "proposed_comments": [
     {
-      "severity": "high",
       "disposition": "proposed",
-      "body": "Use immutable fallback label snapshots tagged with the query generation so a slower earlier response cannot overwrite the first-paint result for a newer query.",
-      "title": "Tag fallback label snapshots by query generation",
+      "severity": "high",
       "in_diff": false,
-      "id": "c-49194-1"
+      "title": "Tag fallback label snapshots by query generation",
+      "id": "c-49194-1",
+      "body": "Use immutable fallback label snapshots tagged with the query generation so a slower earlier response cannot overwrite the first-paint result for a newer query."
     },
     {
-      "severity": "high",
       "disposition": "proposed",
-      "body": "Avoid making newer queries wait behind a blocking RPC gate. A hung extension can otherwise prevent all subsequent queries from completing; prefer cancellation or generation-aware result suppression.",
-      "title": "Do not serialize RPCs behind a blocking gate",
+      "severity": "high",
       "in_diff": false,
-      "id": "c-49194-2"
+      "title": "Do not serialize RPCs behind a blocking gate",
+      "id": "c-49194-2",
+      "body": "Avoid making newer queries wait behind a blocking RPC gate. A hung extension can otherwise prevent all subsequent queries from completing; prefer cancellation or generation-aware result suppression."
     }
   ],
   "fork_pr": {
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/233",
-    "number": 233
+    "number": 233,
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/233"
   },
   "fork_branch": "pr-iterate/49194"
 }

@@ -10,6 +10,10 @@ backend, no shared secret.
 - **Data contract** → see [`SCHEMA.md`](./SCHEMA.md).
 - **Live details** → full issue/PR descriptions are fetched on expansion from
   GitHub; they are not copied into generated artifacts.
+- **Project tracking** → the daily updater synchronizes Microsoft project 2445:
+  eligible PRs start in `To triage`, completed fork reviews move to
+  `To manually review`, recognized member decisions move to `In Review` (or a
+  named reviewer option), and closed/merged items move to `Done`.
 
 ## Why not "just log in with GitHub"?
 
@@ -51,6 +55,10 @@ different way to obtain the token.
 
 Nothing is posted until a member turns **off** the dry-run toggle (ON by
 default) and clicks an action; every write shows a payload preview first.
+
+Project synchronization is performed by the updater, not by the static page.
+It requires GitHub project permissions and never posts comments or reviews as
+part of the synchronization.
 
 ## Run locally
 

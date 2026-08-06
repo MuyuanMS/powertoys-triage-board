@@ -5,52 +5,52 @@
   "stage": "needs_reply",
   "owes": "author",
   "pending_author": true,
-  "generated_at": "2026-08-06T11:41:41.6016965+08:00",
+  "generated_at": "2026-08-06T15:47:04.5204268+08:00",
   "status": {
+    "glyph": "❓",
     "label": "Needs diagnostic information",
-    "detail": "Fork mirror issue 234 found the report non-diagnostic: it contains a separate PowerToys Run crash but no CmdPal activation, package, AppX, or crash evidence.",
-    "glyph": "❓"
+    "detail": "Fork mirror issue 234 found the report non-diagnostic: it contains a separate PowerToys Run crash but no CmdPal activation, package, AppX, or crash evidence."
   },
   "next_action": null,
   "actions": [
     {
-      "label": "Reply with diagnostic request",
+      "id": "request-info-49669",
       "primary": true,
+      "label": "Reply with diagnostic request",
+      "type": "request_info",
       "comment": {
         "body": "Could you provide CmdPal ModuleInterface logs, the installed package registration/version, relevant AppX event entries, Microsoft.CmdPal.UI.exe exit or crash data, and a CmdPal-specific reproduction? The current report appears to contain a separate PowerToys Run crash, so these details are needed to identify the CmdPal failure.",
         "target": "issue",
         "number": 49669
-      },
-      "id": "request-info-49669",
-      "type": "request_info"
+      }
     },
     {
-      "label": "Wait for diagnostics",
       "id": "hold-49669",
+      "label": "Wait for diagnostics",
       "type": "hold"
     }
   ],
   "confidence": "Low",
   "design": {
-    "confidence": "Low",
     "repro": [
       "Attempt to start CmdPal",
       "Capture the exact failure and timestamp",
       "Collect the requested CmdPal and AppX diagnostics"
     ],
-    "fix_plan": "Collect CmdPal ModuleInterface logs, package registration/version, AppX events, Microsoft.CmdPal.UI.exe exit/crash data, and a CmdPal-specific reproduction.",
+    "verify": [
+      "Confirm the logs correspond to the affected package/version",
+      "Reproduce the startup failure with CmdPal-specific evidence"
+    ],
+    "confidence": "Low",
+    "root_cause": "Unconfirmed — the supplied evidence does not identify a CmdPal startup failure.",
+    "mirror_issue": {
+      "number": 234,
+      "url": "https://github.com/MuyuanMS/PowerToys/issues/234"
+    },
     "adversary": {
       "status": "diagnostic_only",
       "rounds": 1
     },
-    "root_cause": "Unconfirmed — the supplied evidence does not identify a CmdPal startup failure.",
-    "mirror_issue": {
-      "url": "https://github.com/MuyuanMS/PowerToys/issues/234",
-      "number": 234
-    },
-    "verify": [
-      "Confirm the logs correspond to the affected package/version",
-      "Reproduce the startup failure with CmdPal-specific evidence"
-    ]
+    "fix_plan": "Collect CmdPal ModuleInterface logs, package registration/version, AppX events, Microsoft.CmdPal.UI.exe exit/crash data, and a CmdPal-specific reproduction."
   }
 }

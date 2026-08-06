@@ -186,6 +186,23 @@ On live refresh the page compares the upstream head SHA to the artifact
 the item is **stale** → "new commits since last agent run — re-run before
 posting." Prevents members from posting a review against an outdated diff.
 
+## Microsoft project synchronization
+
+The daily updater synchronizes project `microsoft/2445` separately from the
+static artifact data. Project status is live workflow state, not a dashboard
+artifact field:
+
+- eligible open non-draft non-CmdPal PRs are added to `To triage`;
+- a completed fork review with suggested comments is moved to
+  `To manually review`;
+- a recognized member decision is moved to `In Review` or a matching named
+  status option;
+- closed or merged items are moved to `Done`.
+
+The updater preserves existing status when no transition is justified. Project
+writes require project permissions and do not create upstream comments,
+reviews, labels, or pull requests.
+
 ## Safety
 - **Dry-run is ON by default.** Every non-GET is intercepted and shown as an
   endpoint + payload preview instead of being sent. Members opt in per session.
