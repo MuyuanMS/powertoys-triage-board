@@ -812,6 +812,8 @@ function board(){
     nextActionText(it){
       const a=this.art(it);
       if(this.pendingAuthor(it)) return 'Waiting on author to respond';
+      const p=this.primaryAction(it);
+      if(p) return p.label;
       if(a){
         if(a.next_action && a.next_action.label) return a.next_action.label;
         const act=(a.actions||[])[0];
