@@ -5,31 +5,31 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-06T10:11:35.4355210+08:00",
+  "generated_at": "2026-08-06T10:25:56.4051616+08:00",
   "status": {
-    "label": "Needs re-review",
+    "glyph": "🔄",
     "detail": "Upstream head changed from 23987e4b to a413b177. The prior review remains historical; fork review must resume on the new head.",
-    "glyph": "🔄"
+    "label": "Needs re-review"
   },
   "next_action": null,
   "actions": [
     {
-      "id": "rereview-49136",
-      "confirm": true,
-      "type": "post_review",
-      "label": "Post selected comments as a review",
       "review": {
         "pr": 49136,
         "event": "COMMENT",
         "body_prefix": ""
       },
+      "id": "rereview-49136",
+      "label": "Post selected comments as a review",
+      "type": "post_review",
+      "confirm": true,
       "primary": true
     },
     {
       "note": "If the author pushed new commits since head 23987e4b, re-mirror and re-run the fork review loop before posting again.",
+      "id": "rerun-49136",
       "type": "rerun",
-      "label": "Re-run review loop (head changed?)",
-      "id": "rerun-49136"
+      "label": "Re-run review loop (head changed?)"
     }
   ],
   "needs_revalidation": true,
@@ -37,80 +37,80 @@
   "head_sha": "23987e4b",
   "proposed_comments": [
     {
-      "severity": "medium",
-      "line": 334,
-      "disposition": "posted",
-      "in_diff": true,
-      "title": "Edit-mode conflict check can miss a real duplicate",
       "side": "RIGHT",
       "body": "`HasConflictingModifierMapping`/`IsDuplicateMapping` gate edit mode with `upperLimit = isEditMode ? 1 : 0` and test `conflictCount > upperLimit`. That count tolerance can't distinguish \"matches the edited row\" from \"collides with one other mapping\" — both give `conflictCount == 1`, so editing a row into a value that duplicates one different existing mapping is accepted. The public `Validate*` methods already thread an `editingRemapping`; could these use it to exclude the edited row by identity instead of by count?",
       "path": "src/modules/keyboardmanager/KeyboardManagerEditorUI/Helpers/ValidationHelper.cs",
-      "id": "c-m5"
+      "disposition": "posted",
+      "severity": "medium",
+      "title": "Edit-mode conflict check can miss a real duplicate",
+      "id": "c-m5",
+      "in_diff": true,
+      "line": 334
     },
     {
+      "severity": "low",
       "id": "c-m10",
-      "title": "Add load/save round-trip tests for the condition contract",
-      "severity": "low",
       "in_diff": false,
+      "body": "This revision adds the `condition` field so alone remaps round-trip through `aloneSingleKeyReMap`. A unit test that saves an \"alone\" single-key remap and asserts it reloads into the alone table (and an \"always\" one into the regular table) would lock the contract down.",
       "disposition": "posted",
-      "body": "This revision adds the `condition` field so alone remaps round-trip through `aloneSingleKeyReMap`. A unit test that saves an \"alone\" single-key remap and asserts it reloads into the alone table (and an \"always\" one into the regular table) would lock the contract down."
+      "title": "Add load/save round-trip tests for the condition contract"
     },
     {
+      "severity": "low",
       "id": "c-m9",
-      "title": "Alone badge missing on DisabledList rows",
-      "severity": "low",
       "in_diff": false,
+      "body": "The \"alone\" badge added to the RemappingList rows is not mirrored on the DisabledList rows. If a disabled entry can carry the alone condition, show the badge there too for consistency.",
       "disposition": "posted",
-      "body": "The \"alone\" badge added to the RemappingList rows is not mirrored on the DisabledList rows. If a disabled entry can carry the alone condition, show the badge there too for consistency."
+      "title": "Alone badge missing on DisabledList rows"
     },
     {
-      "disposition": "withdrawn",
+      "severity": "medium",
+      "id": "c-m1",
       "title": "Generic-modifier alone sources never fire",
       "reason": "Undercut on head re-verification: the validator already blocks generic-vs-sided as ambiguous, so a generic alone source cannot be persisted unnoticed.",
-      "id": "c-m1",
-      "severity": "medium"
+      "disposition": "withdrawn"
     },
     {
-      "disposition": "withdrawn",
+      "severity": "medium",
+      "id": "c-m2",
       "title": "Stuck key when combination key-up injection fails",
       "reason": "Key-up paths clear alone state unconditionally (no state corruption) and a failed release has no clean recovery — no useful one-click fix.",
-      "id": "c-m2",
-      "severity": "medium"
+      "disposition": "withdrawn"
     },
     {
-      "disposition": "withdrawn",
+      "severity": "medium",
+      "id": "c-m3",
       "title": "Promotion failure still lets release fire alone action",
       "reason": "Author documented the pending-on-failure continue as deliberate.",
-      "id": "c-m3",
-      "severity": "medium"
+      "disposition": "withdrawn"
     },
     {
-      "disposition": "withdrawn",
+      "severity": "medium",
+      "id": "c-m4",
       "title": "Editor-suspension leaves stale alone state",
       "reason": "Anchor was wrong: those lines are the alone->single dispatch, not the editor-suspension guard.",
-      "id": "c-m4",
-      "severity": "medium"
+      "disposition": "withdrawn"
     },
     {
-      "disposition": "withdrawn",
+      "severity": "medium",
+      "id": "c-m6",
       "title": "Duplicate collapse ignores IsActive",
       "reason": "Premise wrong: dedup compares the full mapping value (condition+target+op), so duplicates are exact-equal and which copy is kept is irrelevant.",
-      "id": "c-m6",
-      "severity": "medium"
+      "disposition": "withdrawn"
     },
     {
-      "disposition": "withdrawn",
+      "severity": "medium",
+      "id": "c-m7",
       "title": "HasOtherHeldAloneKey ignores a normal key held first",
       "reason": "Already an open comment of mine on this PR (HasOtherHeldAloneKey).",
-      "id": "c-m7",
-      "severity": "medium"
+      "disposition": "withdrawn"
     },
     {
-      "disposition": "withdrawn",
+      "severity": "low",
+      "id": "c-m8",
       "title": "Promoted non-modifier alone key loses auto-repeat",
       "reason": "Author documented the auto-repeat suppression while in a combination as deliberate.",
-      "id": "c-m8",
-      "severity": "low"
+      "disposition": "withdrawn"
     }
   ],
   "upstream_pr": {

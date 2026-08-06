@@ -5,31 +5,31 @@
   "stage": "awaiting_design_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T10:11:35.4355210+08:00",
+  "generated_at": "2026-08-06T10:25:56.4051616+08:00",
   "status": {
-    "label": "Design ready — needs approval",
+    "glyph": "🎯",
     "detail": "Adversary signed off after 2 rounds. Root cause and fix plan are captured in fork mirror issue 93.",
-    "glyph": "🎯"
+    "label": "Design ready — needs approval"
   },
   "next_action": null,
   "actions": [
     {
-      "id": "approve-design-49114",
-      "confirm": true,
-      "type": "approve_design",
-      "label": "Start fixing",
-      "comment": {
-        "target": "fork_issue",
-        "number": 93,
-        "body": "Design approved — proceed to build the fix PR in the fork."
-      },
       "note": "Posts an approval note on the fork mirror issue; the scheduled job then builds the fix PR in the fork.",
+      "comment": {
+        "body": "Design approved — proceed to build the fix PR in the fork.",
+        "number": 93,
+        "target": "fork_issue"
+      },
+      "id": "approve-design-49114",
+      "label": "Start fixing",
+      "type": "approve_design",
+      "confirm": true,
       "primary": true
     },
     {
+      "id": "hold-49114",
       "type": "hold",
-      "label": "Not now",
-      "id": "hold-49114"
+      "label": "Not now"
     }
   ],
   "confidence": "High",
@@ -39,21 +39,21 @@
       "Trigger history loading",
       "Observe the application hang"
     ],
-    "mirror_issue": {
-      "url": "https://github.com/MuyuanMS/PowerToys/issues/93",
-      "number": 93
-    },
-    "adversary": {
-      "rounds": 2,
-      "status": "signed_off"
-    },
+    "confidence": "High",
     "verify": [
       "With fix: history loads without hanging",
       "Existing UI updates remain correct",
       "Exercise repeated history loads and empty history"
     ],
     "fix_plan": "Dispatch history loading through the page UI dispatcher while preserving the existing UI-update handling.",
-    "confidence": "High",
+    "adversary": {
+      "status": "signed_off",
+      "rounds": 2
+    },
+    "mirror_issue": {
+      "url": "https://github.com/MuyuanMS/PowerToys/issues/93",
+      "number": 93
+    },
     "root_cause": "Clipboard history WinRT APIs are invoked from Task.Run on an MTA thread instead of the required STA/UI thread, causing the application hang."
   }
 }

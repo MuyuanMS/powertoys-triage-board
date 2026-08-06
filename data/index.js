@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-06T10:11:35.4355210+08:00",
+  "generated_at": "2026-08-06T10:25:56.4051616+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -87,7 +87,7 @@ window.BOARD_INDEX = {
     "artifacts": 34
   },
   "impact": {
-    "as_of": "2026-08-06T10:11:35.4355210+08:00",
+    "as_of": "2026-08-06T10:25:56.4051616+08:00",
     "issues_helped": 6,
     "prs_iterated": 30,
     "constructive_comments_posted": 3,
@@ -735,7 +735,7 @@ window.BOARD_INDEX = {
       },
       "labels": [],
       "created_at": "2026-08-03T22:37:46Z",
-      "updated_at": "2026-08-05T02:58:39Z",
+      "updated_at": "2026-08-06T02:21:57Z",
       "comments": 0,
       "priority": null,
       "mirror": {
@@ -929,7 +929,7 @@ window.BOARD_INDEX = {
       },
       "labels": [],
       "created_at": "2026-08-01T20:11:36Z",
-      "updated_at": "2026-08-05T02:58:20Z",
+      "updated_at": "2026-08-06T02:21:54Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -1533,7 +1533,7 @@ window.BOARD_INDEX = {
         "Product-Keyboard Manager"
       ],
       "created_at": "2026-07-21T00:41:33Z",
-      "updated_at": "2026-08-05T14:35:39Z",
+      "updated_at": "2026-08-06T02:21:53Z",
       "comments": 0,
       "priority": 10,
       "mirror": {
@@ -1865,7 +1865,7 @@ window.BOARD_INDEX = {
         "Product-File Explorer"
       ],
       "created_at": "2026-07-16T07:23:43Z",
-      "updated_at": "2026-08-05T03:04:28Z",
+      "updated_at": "2026-08-06T02:23:36Z",
       "comments": 0,
       "priority": 10,
       "mirror": {
@@ -1935,7 +1935,7 @@ window.BOARD_INDEX = {
         "Product-Command Palette"
       ],
       "created_at": "2026-07-15T07:02:59Z",
-      "updated_at": "2026-08-06T01:56:35Z",
+      "updated_at": "2026-08-06T02:23:29Z",
       "comments": 0,
       "priority": 60
     },
@@ -2155,7 +2155,7 @@ window.BOARD_INDEX = {
         "has-proof"
       ],
       "created_at": "2026-07-13T03:15:31Z",
-      "updated_at": "2026-08-05T02:57:14Z",
+      "updated_at": "2026-08-06T02:23:35Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -3224,7 +3224,7 @@ window.BOARD_INDEX = {
         "Product-Mouse Without Borders"
       ],
       "created_at": "2026-06-26T10:02:58Z",
-      "updated_at": "2026-08-05T02:56:56Z",
+      "updated_at": "2026-08-06T02:23:26Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -3359,7 +3359,7 @@ window.BOARD_INDEX = {
         "Product-Workspaces"
       ],
       "created_at": "2026-06-23T13:38:11Z",
-      "updated_at": "2026-08-05T02:56:42Z",
+      "updated_at": "2026-08-06T02:23:24Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -3428,7 +3428,7 @@ window.BOARD_INDEX = {
         "0.101"
       ],
       "created_at": "2026-06-21T05:50:29Z",
-      "updated_at": "2026-08-05T02:55:49Z",
+      "updated_at": "2026-08-06T02:23:34Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -3467,7 +3467,7 @@ window.BOARD_INDEX = {
         "Product-Mouse Without Borders"
       ],
       "created_at": "2026-06-21T02:43:58Z",
-      "updated_at": "2026-08-05T02:55:26Z",
+      "updated_at": "2026-08-06T02:18:18Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -3612,7 +3612,7 @@ window.BOARD_INDEX = {
         "Area-Setup/Install"
       ],
       "created_at": "2026-06-15T18:31:43Z",
-      "updated_at": "2026-08-05T02:55:22Z",
+      "updated_at": "2026-08-06T02:18:15Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -3778,7 +3778,7 @@ window.BOARD_INDEX = {
         "Needs-Team-Response"
       ],
       "created_at": "2026-06-13T21:55:45Z",
-      "updated_at": "2026-08-05T02:55:17Z",
+      "updated_at": "2026-08-06T02:23:32Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -3875,7 +3875,7 @@ window.BOARD_INDEX = {
       },
       "labels": [],
       "created_at": "2026-06-11T09:35:01Z",
-      "updated_at": "2026-08-05T02:55:11Z",
+      "updated_at": "2026-08-06T02:23:31Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -4619,7 +4619,7 @@ window.BOARD_INDEX = {
         "Product-Advanced Paste"
       ],
       "created_at": "2025-11-20T10:37:39Z",
-      "updated_at": "2026-08-05T03:03:52Z",
+      "updated_at": "2026-08-06T02:23:30Z",
       "comments": 0,
       "priority": 10,
       "mirror": {
@@ -4723,7 +4723,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -4815,7 +4815,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -4878,7 +4878,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -5004,7 +5004,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -5100,7 +5100,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -5132,7 +5132,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -5164,7 +5164,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -5196,7 +5196,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -5228,7 +5228,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -5261,7 +5261,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -5293,7 +5293,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -5326,7 +5326,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -5359,7 +5359,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -5392,7 +5392,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -5425,7 +5425,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -5520,7 +5520,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -5552,7 +5552,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -5615,7 +5615,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -5647,7 +5647,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -5708,7 +5708,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -5741,7 +5741,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -5964,7 +5964,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -6036,7 +6036,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -6170,7 +6170,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -6203,7 +6203,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -6235,7 +6235,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -6298,7 +6298,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -6331,7 +6331,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -6363,7 +6363,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -6396,7 +6396,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -6589,7 +6589,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -6622,7 +6622,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -6654,7 +6654,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -6687,7 +6687,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -6723,7 +6723,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -6789,7 +6789,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -6822,7 +6822,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -6855,7 +6855,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -6928,7 +6928,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -6992,7 +6992,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -7025,7 +7025,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -7057,7 +7057,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -7249,7 +7249,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -7283,7 +7283,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -7317,7 +7317,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -7415,7 +7415,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -7480,7 +7480,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -7545,7 +7545,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -7705,7 +7705,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -7897,7 +7897,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -7994,7 +7994,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -8091,7 +8091,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -8257,7 +8257,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -8322,7 +8322,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -8387,7 +8387,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -8550,7 +8550,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -8583,7 +8583,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -8616,7 +8616,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -8649,7 +8649,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -8715,7 +8715,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -8876,7 +8876,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -8910,7 +8910,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -8975,7 +8975,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -9041,7 +9041,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -9107,7 +9107,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -9139,7 +9139,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -9236,7 +9236,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -9334,7 +9334,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -9431,7 +9431,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -9464,7 +9464,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -9593,7 +9593,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -9722,7 +9722,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -9755,7 +9755,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -9788,7 +9788,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -9853,7 +9853,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -9951,7 +9951,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -10017,7 +10017,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -10050,7 +10050,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -10115,7 +10115,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -10148,7 +10148,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -10181,7 +10181,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -10281,7 +10281,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -10380,7 +10380,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -10412,7 +10412,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -10445,7 +10445,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -10543,7 +10543,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -10576,7 +10576,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -10641,7 +10641,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -10737,7 +10737,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -10770,7 +10770,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -10803,7 +10803,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -10902,7 +10902,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -10935,7 +10935,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -10969,7 +10969,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -11036,7 +11036,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -11069,7 +11069,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -11134,7 +11134,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -11169,7 +11169,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -11202,7 +11202,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "rerun",
-        "label": "Resume triage"
+        "label": "Resume bug triage"
       },
       "labels": [
         "Issue-Bug",
@@ -11242,7 +11242,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -11276,7 +11276,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -11308,7 +11308,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -11405,7 +11405,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -11438,7 +11438,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -11504,7 +11504,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -11537,7 +11537,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -12120,7 +12120,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "rerun",
-        "label": "Resume triage"
+        "label": "Resume bug triage"
       },
       "labels": [
         "Issue-Bug",
@@ -12161,7 +12161,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -12292,7 +12292,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -12724,7 +12724,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -12917,7 +12917,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -13150,7 +13150,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -13546,7 +13546,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -14001,7 +14001,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -14557,7 +14557,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -15793,7 +15793,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -15927,7 +15927,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -16188,7 +16188,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -16773,7 +16773,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -17166,7 +17166,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -17364,7 +17364,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -18703,7 +18703,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -20007,7 +20007,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -20432,7 +20432,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -20694,7 +20694,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -21120,7 +21120,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -21219,7 +21219,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -21546,7 +21546,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -21878,7 +21878,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -21945,7 +21945,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -22077,7 +22077,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -22177,7 +22177,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -22537,7 +22537,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -22604,7 +22604,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -22836,7 +22836,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -23336,7 +23336,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -23956,7 +23956,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -24833,7 +24833,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -24966,7 +24966,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -26282,7 +26282,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -27177,7 +27177,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -27891,7 +27891,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -28286,7 +28286,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -28611,7 +28611,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -28740,7 +28740,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -29145,7 +29145,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -29214,7 +29214,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -29281,7 +29281,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -29679,7 +29679,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -31005,7 +31005,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -31525,7 +31525,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -31622,7 +31622,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -31721,7 +31721,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -31756,7 +31756,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -32276,7 +32276,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -32378,7 +32378,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -32638,7 +32638,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -32865,7 +32865,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -33581,7 +33581,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -33645,7 +33645,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -33710,7 +33710,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -34202,7 +34202,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -34752,7 +34752,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "rerun",
-        "label": "Resume triage"
+        "label": "Resume bug triage"
       },
       "labels": [
         "Issue-Bug",
@@ -35406,7 +35406,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -35635,7 +35635,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -36518,7 +36518,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -37849,7 +37849,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -38743,7 +38743,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -40179,7 +40179,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -40244,7 +40244,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -41068,7 +41068,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -42351,7 +42351,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -44509,7 +44509,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -45236,7 +45236,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -46235,7 +46235,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -46366,7 +46366,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -46400,7 +46400,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -46468,7 +46468,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -47626,7 +47626,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -47728,7 +47728,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -48104,7 +48104,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -48770,7 +48770,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -48901,7 +48901,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -49104,7 +49104,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -49879,7 +49879,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -49949,7 +49949,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -51451,7 +51451,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -51747,7 +51747,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -54026,7 +54026,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -54059,7 +54059,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -54690,7 +54690,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -55052,7 +55052,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -55487,7 +55487,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -55520,7 +55520,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -57977,7 +57977,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -58277,7 +58277,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -58544,7 +58544,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -59142,7 +59142,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -60718,7 +60718,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -61949,7 +61949,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -63143,7 +63143,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -63574,7 +63574,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -70190,7 +70190,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "rerun",
-        "label": "Resume triage"
+        "label": "Resume bug triage"
       },
       "labels": [
         "Issue-Bug",
@@ -72362,7 +72362,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -72531,7 +72531,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -75141,7 +75141,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -80123,7 +80123,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -82409,7 +82409,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -82544,7 +82544,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -82742,7 +82742,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -84434,7 +84434,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -84633,7 +84633,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -85855,7 +85855,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -86486,7 +86486,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -87852,7 +87852,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -88511,7 +88511,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -89142,7 +89142,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -89371,7 +89371,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -92052,7 +92052,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -94835,7 +94835,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -94901,7 +94901,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -95625,7 +95625,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -96020,7 +96020,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -96220,7 +96220,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -96890,7 +96890,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -96923,7 +96923,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -101211,7 +101211,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -103387,7 +103387,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -103652,7 +103652,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -106425,7 +106425,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -106791,7 +106791,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -107816,7 +107816,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -108475,7 +108475,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -108975,7 +108975,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -109207,7 +109207,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -110597,7 +110597,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -111814,7 +111814,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -111949,7 +111949,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -113299,7 +113299,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -113334,7 +113334,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -114232,7 +114232,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -114331,7 +114331,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -114433,7 +114433,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -116311,7 +116311,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -119766,7 +119766,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -120628,7 +120628,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -121786,7 +121786,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -122757,7 +122757,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -123624,7 +123624,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -127248,7 +127248,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -128808,7 +128808,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -128905,7 +128905,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -129927,7 +129927,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -131283,7 +131283,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -132343,7 +132343,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -132541,7 +132541,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -132576,7 +132576,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -133374,7 +133374,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -133440,7 +133440,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -133538,7 +133538,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -134067,7 +134067,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -134366,7 +134366,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -135623,7 +135623,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -136087,7 +136087,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -139151,7 +139151,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -139718,7 +139718,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -142109,7 +142109,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -142701,7 +142701,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -142868,7 +142868,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -143565,7 +143565,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -143700,7 +143700,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -143965,7 +143965,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -145154,7 +145154,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -147008,7 +147008,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -147173,7 +147173,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -147468,7 +147468,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -148827,7 +148827,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -151077,7 +151077,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -153816,7 +153816,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -153851,7 +153851,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -154650,7 +154650,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -155282,7 +155282,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -156419,7 +156419,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -160219,7 +160219,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -161845,7 +161845,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -163859,7 +163859,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -165929,7 +165929,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -167418,7 +167418,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -167649,7 +167649,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -172140,7 +172140,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -174056,7 +174056,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -175132,7 +175132,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -176860,7 +176860,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -176992,7 +176992,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -177026,7 +177026,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -179007,7 +179007,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -179073,7 +179073,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -187711,7 +187711,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -190581,7 +190581,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -191074,7 +191074,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -192960,7 +192960,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -201343,7 +201343,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -202827,7 +202827,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -203622,7 +203622,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -206921,7 +206921,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -207486,7 +207486,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -210671,7 +210671,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -213737,7 +213737,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -223007,7 +223007,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -223363,7 +223363,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -226800,7 +226800,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -227255,7 +227255,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -228086,7 +228086,7 @@ window.BOARD_INDEX = {
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",

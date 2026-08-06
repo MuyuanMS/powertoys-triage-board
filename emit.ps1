@@ -497,7 +497,13 @@ foreach ($it in $src.items) {
     $primary = if ($it.kind -eq 'pr') {
       [ordered]@{ type=if ($mt) { 'rerun' } else { 'start_review' }; label=if ($mt) { 'Resume review' } else { 'Start review' } }
     } else {
-      [ordered]@{ type=if ($mt) { 'rerun' } else { 'start_triage' }; label=if ($mt) { 'Resume triage' } else { 'Start triage' } }
+      $recentBug = $false
+      try { $recentBug = ($issueType -eq 'bug' -and ([datetime]$it.updated_at -ge (Get-Date).ToUniversalTime().AddDays(-30))) } catch {}
+      [ordered]@{
+        type=if ($mt) { 'rerun' } else { 'start_triage' }
+        label=if ($mt) { if ($recentBug) { 'Resume bug triage' } else { 'Resume triage' } }
+              else { if ($recentBug) { 'Check bug' } else { 'Start triage' } }
+      }
     }
   }
   $entry = [ordered]@{
