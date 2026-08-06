@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T10:36:00.2607012+08:00",
+  "generated_at": "2026-08-06T11:37:12.1581985+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -84,16 +84,17 @@
     "open_prs": 137,
     "open_issues": 7323,
     "community": 6805,
-    "artifacts": 38
+    "artifacts": 39
   },
   "impact": {
-    "as_of": "2026-08-06T10:36:00.2607012+08:00",
+    "as_of": "2026-08-06T11:37:12.1581985+08:00",
     "issues_helped": 10,
-    "prs_iterated": 30,
+    "prs_iterated": 31,
     "constructive_comments_posted": 3,
-    "comments_drafted": 18
+    "comments_drafted": 24
   },
   "artifact_numbers": [
+    49671,
     49647,
     49639,
     49625,
@@ -592,18 +593,18 @@
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "mirror",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
-      "proposed_open": 0,
+      "proposed_open": 6,
       "primary_action": {
         "type": "rerun",
-        "label": "Resume review"
+        "label": "Re-run review"
       },
       "labels": [
         "Area-Tests",
@@ -710,7 +711,7 @@
       },
       "labels": [],
       "created_at": "2026-08-04T06:57:24Z",
-      "updated_at": "2026-08-04T07:08:16Z",
+      "updated_at": "2026-08-06T03:23:20Z",
       "comments": 0,
       "priority": null
     },
@@ -1576,7 +1577,7 @@
         "Area-Setup/Install"
       ],
       "created_at": "2026-07-20T08:03:25Z",
-      "updated_at": "2026-08-05T03:21:49Z",
+      "updated_at": "2026-08-06T03:31:05Z",
       "comments": 0,
       "priority": 60
     },
@@ -3197,7 +3198,7 @@
         "Product-Workspaces"
       ],
       "created_at": "2026-06-26T10:06:24Z",
-      "updated_at": "2026-08-04T00:56:08Z",
+      "updated_at": "2026-08-06T03:05:13Z",
       "comments": 0,
       "priority": 60
     },

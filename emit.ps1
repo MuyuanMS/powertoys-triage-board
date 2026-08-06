@@ -382,6 +382,20 @@ $OV[49677] = @{
   )
 }
 
+$OV[49671] = @{
+  track='review'; stage='review_in_progress'; confidence='Medium'; owes='us'; needs_revalidation=$true
+  status = @{ glyph='🔄'; label='Review incomplete — fresh Copilot pass needed'; detail='Fork PR 231 built the changed UI-test projects and has zero unresolved threads, but the fresh Copilot re-request timed out. Draft concerns include documentation, exception cleanup, test coverage, AMD support, and UIA accessibility.' }
+  fork_pr=@{ number=231; url="https://github.com/$FORK/pull/231" }; fork_branch='pr-iterate/49671-v2'
+  proposed_comments=@(
+    @{ id='c-49671-1'; severity='medium'; disposition='proposed'; in_diff=$false; title='Fix broken Sandbox documentation'; body='The Sandbox documentation path and instructions do not match the implementation. Please update the documented setup and verification steps.' },
+    @{ id='c-49671-2'; severity='medium'; disposition='proposed'; in_diff=$false; title='Clean up certificates on exception paths'; body='Ensure temporary certificates are removed when setup fails partway through so retries do not inherit stale credentials.' },
+    @{ id='c-49671-3'; severity='medium'; disposition='proposed'; in_diff=$false; title='Cover AltWindowCycle in the test scope'; body='The test filters do not cover the AltWindowCycle path introduced by this change. Add the missing project or narrow the stated coverage.' },
+    @{ id='c-49671-4'; severity='low'; disposition='proposed'; in_diff=$false; title='Correct the test filters'; body='The current filters imply broader coverage than the selected test projects actually provide. Align the filters and documentation with the executed tests.' },
+    @{ id='c-49671-5'; severity='low'; disposition='proposed'; in_diff=$false; title='Handle AMD svm capability'; body='Please confirm the AMD svm capability is handled consistently with the supported virtualization configurations.' },
+    @{ id='c-49671-6'; severity='medium'; disposition='proposed'; in_diff=$false; title='Avoid UIA accessibility pollution'; body='Ensure the new UI elements do not add unintended UI Automation nodes or duplicate accessible content.' }
+  )
+}
+
 # 49136 -- review track, already partially posted. Demonstrates the per-comment
 # "choose which to post" workflow with real dispositions from the last review.
 $OV[49136] = @{

@@ -5,11 +5,11 @@
   "stage": "awaiting_author",
   "owes": "author",
   "pending_author": true,
-  "generated_at": "2026-08-06T10:36:00.2607012+08:00",
+  "generated_at": "2026-08-06T11:37:12.1581985+08:00",
   "status": {
-    "glyph": "⏳",
     "label": "Waiting for author",
-    "detail": "Fork PR 232 review converged with zero Copilot comments and the build passed. Upstream PR has a merge conflict and Needs-Author-Feedback; request a short demo and validation confirmation."
+    "detail": "Fork PR 232 review converged with zero Copilot comments and the build passed. Upstream PR has a merge conflict and Needs-Author-Feedback; request a short demo and validation confirmation.",
+    "glyph": "⏳"
   },
   "next_action": null,
   "actions": [

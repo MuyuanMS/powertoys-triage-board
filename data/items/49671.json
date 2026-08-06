@@ -1,0 +1,75 @@
+{
+  "number": 49671,
+  "kind": "pr",
+  "track": "review",
+  "stage": "review_in_progress",
+  "owes": "us",
+  "pending_author": false,
+  "generated_at": "2026-08-06T11:37:12.1581985+08:00",
+  "status": {
+    "label": "Review incomplete — fresh Copilot pass needed",
+    "detail": "Fork PR 231 built the changed UI-test projects and has zero unresolved threads, but the fresh Copilot re-request timed out. Draft concerns include documentation, exception cleanup, test coverage, AMD support, and UIA accessibility.",
+    "glyph": "🔄"
+  },
+  "next_action": null,
+  "actions": [
+    null
+  ],
+  "needs_revalidation": true,
+  "confidence": "Medium",
+  "proposed_comments": [
+    {
+      "in_diff": false,
+      "id": "c-49671-1",
+      "disposition": "proposed",
+      "body": "The Sandbox documentation path and instructions do not match the implementation. Please update the documented setup and verification steps.",
+      "title": "Fix broken Sandbox documentation",
+      "severity": "medium"
+    },
+    {
+      "in_diff": false,
+      "id": "c-49671-2",
+      "disposition": "proposed",
+      "body": "Ensure temporary certificates are removed when setup fails partway through so retries do not inherit stale credentials.",
+      "title": "Clean up certificates on exception paths",
+      "severity": "medium"
+    },
+    {
+      "in_diff": false,
+      "id": "c-49671-3",
+      "disposition": "proposed",
+      "body": "The test filters do not cover the AltWindowCycle path introduced by this change. Add the missing project or narrow the stated coverage.",
+      "title": "Cover AltWindowCycle in the test scope",
+      "severity": "medium"
+    },
+    {
+      "in_diff": false,
+      "id": "c-49671-4",
+      "disposition": "proposed",
+      "body": "The current filters imply broader coverage than the selected test projects actually provide. Align the filters and documentation with the executed tests.",
+      "title": "Correct the test filters",
+      "severity": "low"
+    },
+    {
+      "in_diff": false,
+      "id": "c-49671-5",
+      "disposition": "proposed",
+      "body": "Please confirm the AMD svm capability is handled consistently with the supported virtualization configurations.",
+      "title": "Handle AMD svm capability",
+      "severity": "low"
+    },
+    {
+      "in_diff": false,
+      "id": "c-49671-6",
+      "disposition": "proposed",
+      "body": "Ensure the new UI elements do not add unintended UI Automation nodes or duplicate accessible content.",
+      "title": "Avoid UIA accessibility pollution",
+      "severity": "medium"
+    }
+  ],
+  "fork_pr": {
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/231",
+    "number": 231
+  },
+  "fork_branch": "pr-iterate/49671-v2"
+}
