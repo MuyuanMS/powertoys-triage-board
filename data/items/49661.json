@@ -1,0 +1,24 @@
+{
+  "number": 49661,
+  "kind": "pr",
+  "track": "review",
+  "stage": "awaiting_review_approval",
+  "owes": "maintainer",
+  "pending_author": false,
+  "generated_at": "2026-08-06T22:08:03.4397689+08:00",
+  "status": {
+    "glyph": "✅",
+    "label": "Fork review clean — needs approval",
+    "detail": "Live Step 0 eligibility passed: microsoft/PowerToys PR 49661 is OPEN, ready for review, collaborator-authored, Shortcut Guide-related, and not CmdPal-related or otherwise ineligible. The fork mirror and review PR 276 reached a fresh Copilot review with zero new published comments and zero unresolved Copilot threads. Latest fork commit e86004c02 fixes early Windows-key Start suppression, release-sensitive delayed activation, and pressed-key timer cleanup. Debug builds of runner, Shortcut Guide ModuleInterface, and Shortcut Guide UI passed with SpectreMitigation=false; the existing Shortcut Guide unit tests had previously passed 7/7, while a dotnet test retry in this environment could not import Visual C++ targets. No upstream comments, reviews, labels, approvals, or other actions were posted. Awaiting explicit approval before any Step 10 upstream action."
+  },
+  "next_action": null,
+  "actions": [],
+  "needs_revalidation": true,
+  "confidence": "High",
+  "head_sha": "e86004c0222076186bef8bfe6892e0051e5f1042",
+  "fork_pr": {
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/276",
+    "number": 276
+  },
+  "fork_branch": "pr-iterate/49661-v2"
+}

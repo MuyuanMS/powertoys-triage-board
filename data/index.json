@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T18:15:47.4843573+08:00",
+  "generated_at": "2026-08-06T22:08:03.4397689+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -81,15 +81,15 @@
     ]
   },
   "counts": {
-    "open_prs": 137,
+    "open_prs": 135,
     "open_issues": 7326,
     "community": 6807,
-    "artifacts": 58
+    "artifacts": 72
   },
   "impact": {
-    "as_of": "2026-08-06T18:15:47.4843573+08:00",
+    "as_of": "2026-08-06T22:08:03.4397689+08:00",
     "issues_helped": 10,
-    "prs_iterated": 41,
+    "prs_iterated": 48,
     "constructive_comments_posted": 3,
     "comments_drafted": 24
   },
@@ -97,10 +97,11 @@
     49709,
     49700,
     49699,
-    49691,
-    49690,
     49687,
     49671,
+    49662,
+    49661,
+    49655,
     49647,
     49639,
     49625,
@@ -118,12 +119,16 @@
     49451,
     49431,
     49427,
+    49414,
     49412,
     49400,
     49394,
     49388,
+    49378,
+    49377,
     49350,
     49333,
+    49301,
     49291,
     49279,
     49245,
@@ -133,12 +138,21 @@
     49136,
     49077,
     49034,
+    48980,
+    48905,
     48904,
+    48902,
+    48876,
     48816,
+    48815,
     48772,
     48769,
+    48755,
     48700,
     48658,
+    48631,
+    48627,
+    48602,
     48592,
     48482,
     43741,
@@ -179,7 +193,7 @@
       },
       "labels": [],
       "created_at": "2026-08-06T08:32:02Z",
-      "updated_at": "2026-08-06T08:46:10Z",
+      "updated_at": "2026-08-06T10:45:09Z",
       "comments": 0,
       "priority": null
     },
@@ -249,7 +263,7 @@
         "Product-Command Palette"
       ],
       "created_at": "2026-08-05T18:50:42Z",
-      "updated_at": "2026-08-05T18:50:42Z",
+      "updated_at": "2026-08-06T13:46:03Z",
       "comments": 0,
       "priority": null
     },
@@ -442,7 +456,7 @@
       },
       "labels": [],
       "created_at": "2026-08-05T16:12:06Z",
-      "updated_at": "2026-08-05T16:12:16Z",
+      "updated_at": "2026-08-06T13:48:01Z",
       "comments": 0,
       "priority": null,
       "mirror": {
@@ -452,80 +466,6 @@
         "fork_state": "OPEN",
         "fork_branch": "pr-iterate/49697-v2",
         "url": "https://github.com/MuyuanMS/PowerToys/pull/247"
-      }
-    },
-    {
-      "id": "pr-49691",
-      "kind": "pr",
-      "number": 49691,
-      "url": "https://github.com/microsoft/PowerToys/pull/49691",
-      "title": "[Mouse Utilities] Clarify Gliding Cursor description",
-      "author": "niels9001",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": "review",
-      "stage": "review_ready",
-      "owes": "maintainer",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": true,
-      "agent_status": "review",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "approve",
-        "label": "Approve"
-      },
-      "labels": [],
-      "created_at": "2026-08-05T08:18:26Z",
-      "updated_at": "2026-08-05T15:17:42Z",
-      "comments": 0,
-      "priority": null,
-      "mirror": {
-        "kind": "pr",
-        "fork_number": 249,
-        "fork_title": "[PR 49691] [Mouse Utilities] Clarify Gliding Cursor description",
-        "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/49691-v2",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/249"
-      }
-    },
-    {
-      "id": "pr-49690",
-      "kind": "pr",
-      "number": 49690,
-      "url": "https://github.com/microsoft/PowerToys/pull/49690",
-      "title": "[Settings] Make attribution links localizable",
-      "author": "niels9001",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": true,
-      "agent_status": "review",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "rerun",
-        "label": "Re-run review"
-      },
-      "labels": [],
-      "created_at": "2026-08-05T08:09:36Z",
-      "updated_at": "2026-08-05T15:18:30Z",
-      "comments": 0,
-      "priority": null,
-      "mirror": {
-        "kind": "pr",
-        "fork_number": 250,
-        "fork_title": "[PR 49690] [Settings] Make attribution links localizable",
-        "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/49690-v2",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/250"
       }
     },
     {
@@ -710,24 +650,32 @@
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Re-run review"
       },
       "labels": [],
       "created_at": "2026-08-04T14:54:58Z",
       "updated_at": "2026-08-05T03:00:36Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 274,
+        "fork_title": "[PR 49662] [UI] Fix abnormal blinking when keep pressing a non-modifier key or windows key when setting a new hotkey shortcut",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49662-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/274"
+      }
     },
     {
       "id": "pr-49661",
@@ -739,18 +687,18 @@
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
+      "track": "review",
+      "stage": "awaiting_review_approval",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Re-run review"
       },
       "labels": [
         "Product-Shortcut Guide",
@@ -759,7 +707,15 @@
       "created_at": "2026-08-04T14:48:28Z",
       "updated_at": "2026-08-04T22:16:22Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 276,
+        "fork_title": "[PR 49661] [Shortcut Guide] Add Windows key hold activation options",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49661-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/276"
+      }
     },
     {
       "id": "pr-49655",
@@ -771,18 +727,18 @@
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "track": "review",
+      "stage": "blocked_step0",
+      "owes": "author",
+      "pending_author": true,
+      "waiting_since": "2026-08-06T03:23:20Z",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Re-run review"
       },
       "labels": [],
       "created_at": "2026-08-04T06:57:24Z",
@@ -895,7 +851,7 @@
         "0.101"
       ],
       "created_at": "2026-08-03T13:09:22Z",
-      "updated_at": "2026-08-04T15:33:58Z",
+      "updated_at": "2026-08-06T13:52:04Z",
       "comments": 0,
       "priority": null,
       "mirror": {
@@ -1009,7 +965,7 @@
       },
       "labels": [],
       "created_at": "2026-08-01T20:11:36Z",
-      "updated_at": "2026-08-06T02:25:16Z",
+      "updated_at": "2026-08-06T13:52:42Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -1664,24 +1620,24 @@
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
+      "track": "review",
+      "stage": "awaiting_review_approval",
       "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "mirror",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "rerun",
-        "label": "Resume review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Area-Setup/Install"
       ],
       "created_at": "2026-07-20T08:03:25Z",
-      "updated_at": "2026-08-06T05:40:06Z",
+      "updated_at": "2026-08-06T10:14:43Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -1855,18 +1811,18 @@
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
-      "owes": "maintainer",
+      "track": "review",
+      "stage": "review_in_progress",
+      "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Re-run review"
       },
       "labels": [
         "dependencies",
@@ -1875,7 +1831,15 @@
       "created_at": "2026-07-17T08:52:45Z",
       "updated_at": "2026-07-20T17:29:39Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 278,
+        "fork_title": "[PR 49378] Build(deps): Bump actions/setup-dotnet from 5 to 6",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49378-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/278"
+      }
     },
     {
       "id": "pr-49377",
@@ -1887,18 +1851,18 @@
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
-      "owes": "maintainer",
+      "track": "review",
+      "stage": "review_in_progress",
+      "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Re-run review"
       },
       "labels": [
         "dependencies",
@@ -1907,7 +1871,15 @@
       "created_at": "2026-07-17T08:52:38Z",
       "updated_at": "2026-07-20T17:29:30Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 280,
+        "fork_title": "[PR 49377] Build(deps): Bump actions/setup-node from 6 to 7",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49377-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/280"
+      }
     },
     {
       "id": "pr-49375",
@@ -2235,18 +2207,18 @@
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "mirror",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
         "type": "rerun",
-        "label": "Resume review"
+        "label": "Re-run review"
       },
       "labels": [
         "Area-Localization",
@@ -2364,7 +2336,7 @@
         "Product-Keyboard Manager"
       ],
       "created_at": "2026-07-12T20:31:37Z",
-      "updated_at": "2026-08-06T00:47:45Z",
+      "updated_at": "2026-08-06T13:03:53Z",
       "comments": 0,
       "priority": null
     },
@@ -2558,7 +2530,7 @@
         "Product-Command Palette"
       ],
       "created_at": "2026-07-10T03:59:55Z",
-      "updated_at": "2026-08-04T21:45:48Z",
+      "updated_at": "2026-08-06T12:01:04Z",
       "comments": 0,
       "priority": 60
     },
@@ -3297,18 +3269,18 @@
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
-      "owes": "maintainer",
+      "track": "review",
+      "stage": "review_in_progress",
+      "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Re-run review"
       },
       "labels": [
         "Product-Settings",
@@ -3318,7 +3290,15 @@
       "created_at": "2026-06-28T12:05:51Z",
       "updated_at": "2026-08-06T08:36:25Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 272,
+        "fork_title": "[PR 48980] Add progress/result window to the Bug Report flow with a GitHub issue shortcut",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/48980-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/272"
+      }
     },
     {
       "id": "pr-48905",
@@ -3330,25 +3310,25 @@
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
+      "track": "review",
+      "stage": "blocked_step0",
       "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Re-run review"
       },
       "labels": [
         "Product-Settings",
         "Product-Workspaces"
       ],
       "created_at": "2026-06-26T10:06:24Z",
-      "updated_at": "2026-08-06T03:05:13Z",
+      "updated_at": "2026-08-06T14:04:16Z",
       "comments": 0,
       "priority": 60
     },
@@ -3401,18 +3381,18 @@
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
-      "owes": "maintainer",
+      "track": "review",
+      "stage": "review_in_progress",
+      "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Re-run review"
       },
       "labels": [
         "Product-Settings"
@@ -3420,7 +3400,15 @@
       "created_at": "2026-06-26T09:31:53Z",
       "updated_at": "2026-08-04T01:20:38Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 282,
+        "fork_title": "[PR 48902] Detect named pipe startup collisions",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/48902-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/282"
+      }
     },
     {
       "id": "pr-48876",
@@ -3432,19 +3420,16 @@
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
-      "owes": "maintainer",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "track": "review",
+      "stage": "ready",
+      "owes": "author",
+      "pending_author": true,
+      "waiting_since": "2026-07-27T10:22:12Z",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
-      "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
-      },
+      "primary_action": null,
       "labels": [
         "Product-Keyboard Manager",
         "0.101"
@@ -3452,7 +3437,15 @@
       "created_at": "2026-06-25T17:59:27Z",
       "updated_at": "2026-07-27T10:22:12Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 284,
+        "fork_title": "[PR 48876] Fix Keyboard Manager editor file picker not opening when elevated",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/48876-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/284"
+      }
     },
     {
       "id": "pr-48863",
@@ -3536,19 +3529,16 @@
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "track": "review",
+      "stage": "ineligible",
+      "owes": "author",
+      "pending_author": true,
+      "waiting_since": "2026-06-24T12:40:21Z",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
-      "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
-      },
+      "primary_action": null,
       "labels": [],
       "created_at": "2026-06-23T11:37:03Z",
       "updated_at": "2026-06-24T12:40:21Z",
@@ -3644,19 +3634,16 @@
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "track": "review",
+      "stage": "ineligible",
+      "owes": "author",
+      "pending_author": true,
+      "waiting_since": "2026-06-20T21:21:27Z",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
-      "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
-      },
+      "primary_action": null,
       "labels": [
         "Product-ZoomIt"
       ],
@@ -3820,18 +3807,18 @@
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
-      "owes": "maintainer",
+      "track": "review",
+      "stage": "review_in_progress",
+      "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Re-run review"
       },
       "labels": [
         "Area-Setup/Install",
@@ -3842,7 +3829,15 @@
       "created_at": "2026-06-15T06:17:28Z",
       "updated_at": "2026-08-03T05:29:52Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 286,
+        "fork_title": "[PR 48631] Add native CLI shims for PowerToys command-line tools",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/48631-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/286"
+      }
     },
     {
       "id": "pr-48627",
@@ -3854,18 +3849,18 @@
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Re-run review"
       },
       "labels": [
         "Needs-Team-Response",
@@ -3874,7 +3869,15 @@
       "created_at": "2026-06-15T04:21:22Z",
       "updated_at": "2026-07-09T07:32:08Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 288,
+        "fork_title": "[PR 48627] Add Keyboard Manager text replacements",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/48627-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/288"
+      }
     },
     {
       "id": "pr-48602",
@@ -3886,24 +3889,32 @@
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": "untracked",
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "rerun",
+        "label": "Re-run review"
       },
       "labels": [],
       "created_at": "2026-06-14T07:02:56Z",
       "updated_at": "2026-07-23T14:24:19Z",
       "comments": 0,
-      "priority": 60
+      "priority": 60,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 290,
+        "fork_title": "[PR 48602] Fix WebView2 launch issues under AppContainer ACLs",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/48602-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/290"
+      }
     },
     {
       "id": "pr-48592",
@@ -4856,6 +4867,37 @@
       "updated_at": "2026-06-05T18:25:20Z",
       "comments": 0,
       "priority": 60
+    },
+    {
+      "id": "issue-49718",
+      "kind": "issue",
+      "number": 49718,
+      "url": "https://github.com/microsoft/PowerToys/issues/49718",
+      "title": "Translation Utility",
+      "author": "pcooper329",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-06T13:55:01Z",
+      "updated_at": "2026-08-06T13:55:01Z",
+      "comments": 0,
+      "priority": null
     },
     {
       "id": "issue-49717",
@@ -11810,7 +11852,7 @@
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Check bug"
+        "label": "Start triage"
       },
       "labels": [
         "Issue-Bug",
@@ -11843,7 +11885,7 @@
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Check bug"
+        "label": "Start triage"
       },
       "labels": [
         "Issue-Bug",
@@ -12476,8 +12518,8 @@
         "Product-Keyboard Manager"
       ],
       "created_at": "2026-07-04T03:00:48Z",
-      "updated_at": "2026-08-05T02:03:54Z",
-      "comments": 2,
+      "updated_at": "2026-08-06T12:05:26Z",
+      "comments": 3,
       "priority": null
     },
     {
@@ -13852,7 +13894,7 @@
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Check bug"
+        "label": "Start triage"
       },
       "labels": [
         "Issue-Bug",
@@ -29554,7 +29596,7 @@
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Check bug"
+        "label": "Start triage"
       },
       "labels": [
         "Issue-Bug",
@@ -132659,40 +132701,6 @@
       ],
       "created_at": "2024-10-06T03:49:50Z",
       "updated_at": "2026-04-16T16:11:38Z",
-      "comments": 0,
-      "priority": null
-    },
-    {
-      "id": "issue-35272",
-      "kind": "issue",
-      "number": 35272,
-      "url": "https://github.com/microsoft/PowerToys/issues/35272",
-      "title": "Not translated Turkish phrases.",
-      "author": "ahmetcanaydemir",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "bug",
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_triage",
-        "label": "Start triage"
-      },
-      "labels": [
-        "Issue-Bug",
-        "Area-Localization",
-        "Needs-Triage",
-        "Issue-Translation"
-      ],
-      "created_at": "2024-10-05T19:40:53Z",
-      "updated_at": "2024-10-10T17:40:27Z",
       "comments": 0,
       "priority": null
     },

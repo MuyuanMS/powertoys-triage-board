@@ -5,58 +5,58 @@
   "stage": "awaiting_design_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T18:15:47.4843573+08:00",
+  "generated_at": "2026-08-06T22:08:03.4397689+08:00",
   "status": {
-    "glyph": "🎯",
     "detail": "Fork mirror issue 235 converged on a defensive tray-registration retry. Cold-boot logs are still missing, so confidence is medium.",
-    "label": "Design ready — narrow fix"
+    "label": "Design ready — narrow fix",
+    "glyph": "🎯"
   },
   "next_action": null,
   "actions": [
     {
-      "primary": true,
-      "type": "approve_design",
-      "comment": {
-        "number": 235,
-        "target": "fork_issue",
-        "body": "Design approved — proceed to build the narrow defensive fix in the fork."
-      },
+      "id": "approve-design-49711",
       "label": "Start fixing",
-      "id": "approve-design-49711"
+      "primary": true,
+      "comment": {
+        "target": "fork_issue",
+        "body": "Design approved — proceed to build the narrow defensive fix in the fork.",
+        "number": 235
+      },
+      "type": "approve_design"
     },
     {
-      "type": "request_info",
-      "comment": {
-        "number": 49711,
-        "target": "issue",
-        "body": "Could you provide Power Display logs from a cold boot where the tray icon is missing? We need to confirm the failed Shell_NotifyIcon registration and retry path."
-      },
+      "id": "request-info-49711",
       "label": "Request cold-boot logs",
-      "id": "request-info-49711"
+      "comment": {
+        "target": "issue",
+        "body": "Could you provide Power Display logs from a cold boot where the tray icon is missing? We need to confirm the failed Shell_NotifyIcon registration and retry path.",
+        "number": 49711
+      },
+      "type": "request_info"
     }
   ],
   "confidence": "Medium",
   "design": {
     "adversary": {
-      "status": "signed_off",
-      "rounds": 2
+      "rounds": 2,
+      "status": "signed_off"
     },
+    "root_cause": "Shell_NotifyIcon(NIM_ADD) can fail while Explorer is unavailable during cold start; the existing recovery path does not guarantee a retry.",
+    "fix_plan": "Add a bounded retry for failed tray registration, handle Explorer restart, and verify settings toggles, shutdown, and duplicate prevention.",
     "repro": [
       "Enable Power Display tray icon",
       "Cold-boot Windows while Explorer is starting",
       "Observe the icon is missing until PowerToys restarts"
     ],
+    "confidence": "Medium",
     "verify": [
       "Retry succeeds without duplicate icons",
       "Explorer restart recovers the icon",
       "Settings toggles and shutdown remain clean"
     ],
     "mirror_issue": {
-      "url": "https://github.com/MuyuanMS/PowerToys/issues/235",
-      "number": 235
-    },
-    "confidence": "Medium",
-    "root_cause": "Shell_NotifyIcon(NIM_ADD) can fail while Explorer is unavailable during cold start; the existing recovery path does not guarantee a retry.",
-    "fix_plan": "Add a bounded retry for failed tray registration, handle Explorer restart, and verify settings toggles, shutdown, and duplicate prevention."
+      "number": 235,
+      "url": "https://github.com/MuyuanMS/PowerToys/issues/235"
+    }
   }
 }

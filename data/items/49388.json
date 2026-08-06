@@ -5,7 +5,7 @@
   "stage": "author_waiting",
   "owes": "author",
   "pending_author": true,
-  "generated_at": "2026-08-06T18:15:47.4843573+08:00",
+  "generated_at": "2026-08-06T22:08:03.4397689+08:00",
   "status": {
     "label": "Stopped at Step 0 — author waiting",
     "detail": "Ineligible for review workflow because upstream PR 49388 is open but has CHANGES_REQUESTED from maintainer moooyo at 2026-08-06T09:11:32Z. Two unresolved correctness requests are pending author action: initialize IsScreenLocked from current session state at registration, and serialize session-lock callbacks with mode setters/state queue updates. No fork mirroring, fork PR, comments, reviews, approvals, or builds were performed.",

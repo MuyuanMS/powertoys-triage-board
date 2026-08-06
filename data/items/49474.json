@@ -5,11 +5,11 @@
   "stage": "awaiting_author",
   "owes": "author",
   "pending_author": true,
-  "generated_at": "2026-08-06T18:15:47.4843573+08:00",
+  "generated_at": "2026-08-06T22:08:03.4397689+08:00",
   "status": {
-    "glyph": "⏳",
     "detail": "Fork PR 232 review converged with zero Copilot comments and the build passed. Upstream PR has a merge conflict and Needs-Author-Feedback; request a short demo and validation confirmation.",
-    "label": "Waiting for author"
+    "label": "Waiting for author",
+    "glyph": "⏳"
   },
   "next_action": null,
   "actions": [
@@ -17,8 +17,8 @@
   ],
   "confidence": "High",
   "fork_pr": {
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/232",
-    "number": 232
+    "number": 232,
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/232"
   },
   "fork_branch": "pr-iterate/49474"
 }
