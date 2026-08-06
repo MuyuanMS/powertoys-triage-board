@@ -311,6 +311,24 @@ $OV[49474] = @{
   proposed_comments=@()
 }
 
+$OV[49669] = @{
+  track='fix'; stage='needs_reply'; confidence='Low'; owes='author'
+  status = @{ glyph='❓'; label='Needs diagnostic information'; detail='Fork mirror issue 234 found the report non-diagnostic: it contains a separate PowerToys Run crash but no CmdPal activation, package, AppX, or crash evidence.' }
+  design = @{
+    root_cause='Unconfirmed — the supplied evidence does not identify a CmdPal startup failure.'
+    fix_plan ='Collect CmdPal ModuleInterface logs, package registration/version, AppX events, Microsoft.CmdPal.UI.exe exit/crash data, and a CmdPal-specific reproduction.'
+    confidence='Low'; adversary=@{ status='diagnostic_only'; rounds=1 }
+    repro=@('Attempt to start CmdPal','Capture the exact failure and timestamp','Collect the requested CmdPal and AppX diagnostics')
+    verify=@('Confirm the logs correspond to the affected package/version','Reproduce the startup failure with CmdPal-specific evidence')
+    mirror_issue=@{ number=234; url="https://github.com/$FORK/issues/234" }
+  }
+  actions=@(
+    @{ id='request-info-49669'; type='request_info'; label='Reply with diagnostic request'; primary=$true
+       comment=@{ target='issue'; number=49669; body='Could you provide CmdPal ModuleInterface logs, the installed package registration/version, relevant AppX event entries, Microsoft.CmdPal.UI.exe exit or crash data, and a CmdPal-specific reproduction? The current report appears to contain a separate PowerToys Run crash, so these details are needed to identify the CmdPal failure.' } }
+    @{ id='hold-49669'; type='hold'; label='Wait for diagnostics' }
+  )
+}
+
 # 49136 -- review track, already partially posted. Demonstrates the per-comment
 # "choose which to post" workflow with real dispositions from the last review.
 $OV[49136] = @{
