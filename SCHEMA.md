@@ -144,13 +144,38 @@ The page treats `stage` as a label; **actionability** is driven by
 {
   "number": 49136, "kind": "pr", "track": "review",
   "generated_at": "…", "confidence": "high",   // high | medium | low
+  "evaluated_at": "…",          // last substantive agent judgment
+  "source_updated_at": "…",     // upstream updatedAt covered by that judgment
   "pending_author": true,
   "head_sha": "abc123…",        // upstream head the agent last reviewed against
   "fork": { "pr": 178, "branch": "pr-iterate/49136-v3" },
   "summary": "one-line human summary of current state",
   "next_action": "Waiting on author to address the posted review.",
-  "design": "markdown design proposal (fix track) — else omitted",
-  "verify": ["repro / verification steps"],
+  "judgment": {                 // issue track: cheap judgment before full design
+    "status": "actionable_design",
+    "rationale": "why this classification is appropriate",
+    "evidence": ["issue/comment/link evidence"],
+    "recommended_action": "Design the fix"
+  },
+  "design": {                   // implementation-grade fix design; issue track only
+    "root_cause": "specific failing mechanism and flow",
+    "evidence": ["observed/inferred issue, log, and code evidence"],
+    "affected_files": [
+      { "path": "src/…/File.cpp", "purpose": "role in the fix",
+        "symbols": ["Type::Method"] }
+    ],
+    "implementation_steps": [
+      { "order": 1, "file": "src/…/File.cpp", "symbols": ["Type::Method"],
+        "current_behavior": "current control/data flow",
+        "change": "new control/data flow",
+        "code_block": "focused pseudo-diff or key code sketch",
+        "edge_cases": ["lifetime/threading/error/state concern"],
+        "tests": ["test proving this step"] }
+    ],
+    "verify": ["build/test and exact E2E verification steps"],
+    "risks": ["blast radius or compatibility concern"],
+    "alternatives": ["rejected alternative and rationale"]
+  },
   "proposed_comments": [        // review track
     {
       "id": "c-m5", "title": "…", "severity": "medium",
@@ -185,6 +210,12 @@ On live refresh the page compares the upstream head SHA to the artifact
 `head_sha`. If the live head does **not** `startsWith` the artifact `head_sha`,
 the item is **stale** → "new commits since last agent run — re-run before
 posting." Prevents members from posting a review against an outdated diff.
+
+The scheduled updater additionally compares upstream `updatedAt` with
+`source_updated_at`. An unchanged PR head with newer discussion receives a
+focused context revalidation; a changed head always receives a full review.
+Changed bug issues receive a new lightweight `judgment` even when they are not
+selected for the bounded full-design batch.
 
 ## Microsoft project synchronization
 

@@ -618,7 +618,10 @@ foreach ($it in $src.items) {
   }
   if ($o.needs_revalidation) { $art.needs_revalidation = $true }
   if ($o.confidence)  { $art.confidence  = $o.confidence }
+  if ($o.evaluated_at) { $art.evaluated_at = $o.evaluated_at }
+  if ($o.source_updated_at) { $art.source_updated_at = $o.source_updated_at }
   if ($o.head_sha)    { $art.head_sha    = $o.head_sha }        # staleness anchor vs live PR head
+  if ($o.judgment)    { $art.judgment    = Obj $o.judgment }
   if ($o.design)      { $art.design      = Obj $o.design }
   if ($o.proposed_comments) { $art.proposed_comments = @($o.proposed_comments | ForEach-Object { Obj $_ }) }
   if ($o.upstream_pr) { $art.upstream_pr = Obj $o.upstream_pr } elseif ($it.upstream_pr) { $art.upstream_pr = $it.upstream_pr }
