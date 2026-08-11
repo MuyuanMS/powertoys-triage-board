@@ -14,6 +14,9 @@ backend, no shared secret.
   eligible PRs start in `To triage`, completed fork reviews move to
   `To manually review`, recognized member decisions move to `In Review` (or a
   named reviewer option), and closed/merged items move to `Done`.
+- **Shared agent workflow** → the complete reusable skill suite lives under
+  [`.github/skills`](./.github/skills), so another maintainer can run the
+  updater from a clone without copying user-profile skill files.
 
 ## Why not "just log in with GitHub"?
 
@@ -79,6 +82,7 @@ but serving over HTTP is recommended so `fetch` of `data/items/*.json` works.
 | `data/index.json` / `.js` | slim backlog list (all items) |
 | `data/items/<n>.json` | latest agent artifact per issue/PR number |
 | `SCHEMA.md` | full data contract + action semantics |
+| `.github/skills/` | portable updater, PR-review, issue-design, and design-to-PR skills |
 
 ## Safety model
 

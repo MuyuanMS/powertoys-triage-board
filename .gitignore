@@ -6,3 +6,4 @@ token.txt
 data/*.local.json
 data/*.local.js
 serve.log
+.github/skills/**/config.local.psd1
