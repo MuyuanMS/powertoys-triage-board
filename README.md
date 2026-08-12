@@ -20,6 +20,8 @@ backend, no shared secret.
 - **Dashboard controls** → **Copy update prompt** copies the current canonical
   maintenance prompt; action ratings create public issues in the skills
   repository.
+- **Preview examples** → quick filters highlight a reviewed PR, an author-waiting
+  PR, a detailed issue design, and a targeted information request.
 
 ## Why not "just log in with GitHub"?
 
@@ -50,6 +52,9 @@ different way to obtain the token.
    pwsh -File emit.ps1        # writes data/index.json(+.js) and data/items/<n>.json
    ```
    Commit the `data/` changes. That's the only thing the schedule pushes.
+   In a standalone dashboard clone, the emitter uses the current index as its
+   backlog seed and preserves existing per-item artifacts while adding worker
+   artifacts that carry freshness timestamps.
 4. **Each member** creates a **fine-grained PAT**:
    - Resource owner: `microsoft` (for PowerToys) **and** their fork if they open
      upstream PRs from it; or just `microsoft/PowerToys` for review/comment only.
