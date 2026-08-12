@@ -811,10 +811,10 @@ ${note.trim() || '_No additional feedback provided._'}
 
 _Submitted from the PowerToys triage dashboard._`;
       const title=`[Dashboard feedback] ${rating}: ${it.kind.toUpperCase()} ${it.number} - ${actionLabel}`;
-      const url='https://github.com/MuyuanMS/powertoys-dashboard-skills/issues/new?title='+
+      const url='https://github.com/MuyuanMS/powertoys-dashboard-skills/issues/new?labels=dashboard-feedback&title='+
         encodeURIComponent(title)+'&body='+encodeURIComponent(body);
       window.open(url,'_blank','noopener');
-      this.flash('Opened the public feedback issue form');
+      this.flash('Opened the public feedback issue composer');
     },
 
     // generic compose
