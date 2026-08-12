@@ -16,6 +16,10 @@ no shared secret.
    - `data/items/<number>.json` — the *latest agent artifact* for a single
      issue/PR number: the drafted, approvable content (design, proposed review
      comments, PR body, actions). Only written for items an agent has processed.
+   In a standalone dashboard clone, `emit.ps1` seeds from the current index and
+   preserves existing per-number files. Fresh worker artifacts are recognized by
+   `evaluated_at` plus `source_updated_at`; regenerating the backlog must not erase
+   valid worker output.
 2. **Live GitHub (member's token, in-browser)** — current status + staleness.
    The page fetches the upstream PR/issue (and the fork `MuyuanMS/PowerToys`)
    with the member's token when available to show up-to-the-minute state and to
