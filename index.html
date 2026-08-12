@@ -794,7 +794,6 @@ function board(){
       }catch(e){ this.flash('Close failed: ' + e.message); }
     },
     async submitActionFeedback(it,a,rating){
-      if(!this.me && !this.dryRun){ this.flash('Sign in first to submit feedback'); return; }
       const note=window.prompt('Optional feedback for improving this suggested action:','');
       if(note===null) return;
       const actionLabel=(a && a.label) || 'Suggested action';
@@ -811,14 +810,11 @@ function board(){
 ${note.trim() || '_No additional feedback provided._'}
 
 _Submitted from the PowerToys triage dashboard._`;
-      try{
-        const r=await this.gh('/repos/MuyuanMS/powertoys-dashboard-skills/issues',{
-          method:'POST',
-          body:{title:`[Dashboard feedback] ${rating}: ${it.kind.toUpperCase()} ${it.number} - ${actionLabel}`,body}
-        });
-        if(r.__dry_run) return;
-        this.flash('Feedback issue created');
-      }catch(e){ this.flash('Feedback failed: ' + e.message); }
+      const title=`[Dashboard feedback] ${rating}: ${it.kind.toUpperCase()} ${it.number} - ${actionLabel}`;
+      const url='https://github.com/MuyuanMS/powertoys-dashboard-skills/issues/new?title='+
+        encodeURIComponent(title)+'&body='+encodeURIComponent(body);
+      window.open(url,'_blank','noopener');
+      this.flash('Opened the public feedback issue form');
     },
 
     // generic compose
