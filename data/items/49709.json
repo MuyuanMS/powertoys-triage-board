@@ -2,21 +2,29 @@
   "number": 49709,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
-  "pending_author": false,
-  "generated_at": "2026-08-06T22:08:03.4397689+08:00",
+  "stage": "awaiting_author",
+  "owes": "author",
+  "pending_author": true,
+  "generated_at": "2026-08-12T15:38:04.4862761+08:00",
   "status": {
-    "detail": "Fork PR 245 latest Copilot review generated no new comments; local build/context validation is still required before approval.",
-    "label": "Copilot clean — validation pending",
-    "glyph": "🔄"
+    "glyph": "⏳",
+    "label": "Waiting on author",
+    "detail": "A maintainer tested the latest head and reported that it still does not work, with PR 49822 linked as the working direction. Do not rerun the agent review until the author responds or pushes another head."
   },
-  "next_action": null,
-  "actions": [
-    null
-  ],
-  "needs_revalidation": true,
-  "confidence": "Medium",
+  "next_action": {
+    "glyph": "⏳",
+    "label": "Wait for an author response or new commits",
+    "reason": "The latest upstream activity is a maintainer request after testing the current head."
+  },
+  "actions": [],
+  "confidence": "High",
+  "evaluated_at": "2026-08-12T06:40:00Z",
+  "source_updated_at": "2026-08-11T08:31:27Z",
+  "head_sha": "a4eea759a6eff8b355b5f2fdb8b1a816a726190a",
+  "upstream_pr": {
+    "number": 49709,
+    "url": "https://github.com/microsoft/PowerToys/pull/49709"
+  },
   "fork_pr": {
     "number": 245,
     "url": "https://github.com/MuyuanMS/PowerToys/pull/245"

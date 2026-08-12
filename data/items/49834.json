@@ -1,0 +1,53 @@
+{
+  "number": 49834,
+  "kind": "issue",
+  "track": "fix",
+  "stage": "needs_reply",
+  "owes": "maintainer",
+  "pending_author": false,
+  "generated_at": "2026-08-12T15:38:04.4862761+08:00",
+  "status": {
+    "glyph": "💬",
+    "label": "Needs reproduction details",
+    "detail": "The report identifies a Windows 10 title-bar hit-target symptom, but it has no screenshot or recording, display-scale details, or bug-report archive to distinguish a layout issue from a non-client hit-test issue."
+  },
+  "next_action": {
+    "glyph": "💬",
+    "label": "Request focused UI evidence",
+    "reason": "The missing evidence is specific and can be collected without speculative code investigation."
+  },
+  "actions": [
+    {
+      "id": "request-info-49834",
+      "type": "request_info",
+      "label": "Ask for title-bar reproduction details",
+      "primary": true,
+      "confirm": true,
+      "comment": {
+        "target": "issue",
+        "number": 49834,
+        "body": "Thanks for reporting this. Could you attach a short screen recording with the pointer visible while clicking across the full Close button, and confirm: (1) which PowerToys window this is, (2) whether it is maximized, (3) your display resolution and scaling percentage, and (4) whether it changes after moving the window to another monitor? Please also attach a PowerToys bug-report ZIP from Settings > General > Bug report. That will help us distinguish a title-bar layout/drag-region problem from Windows non-client hit testing."
+      },
+      "note": "Draft only; the dashboard remains in dry-run mode until a maintainer explicitly sends it."
+    },
+    {
+      "id": "hold-49834",
+      "type": "hold",
+      "label": "Not now"
+    }
+  ],
+  "confidence": "High",
+  "evaluated_at": "2026-08-12T06:40:00Z",
+  "source_updated_at": "2026-08-12T00:00:08Z",
+  "judgment": {
+    "status": "needs_information",
+    "rationale": "The symptom is actionable to investigate, but the current report does not establish which PowerToys window is affected, its maximize state, DPI/display configuration, or the exact clickable region. Those details determine whether the failure is in XAML layout, custom title-bar drag regions, or Windows non-client hit testing.",
+    "evidence": [
+      "The report reproduces on PowerToys 0.100.2 and Windows 10 build 19045.",
+      "The author says only the extreme upper-right quarter of the close button responds.",
+      "No screenshot, screen recording, bug-report ZIP, display scaling, resolution, or maximize-state information is attached.",
+      "There are no comments, assignees, linked fixes, or duplicate references yet."
+    ],
+    "recommended_action": "Ask for a short recording with the pointer visible, the exact PowerToys window and maximize state, display resolution/scaling, and a PowerToys bug-report ZIP."
+  }
+}

@@ -21,6 +21,11 @@
 $ErrorActionPreference = 'Stop'
 $here   = Split-Path -Parent $MyInvocation.MyCommand.Path
 $v2json = Join-Path $here '..\dashboard\data\latest.json'
+$currentIndex = Join-Path $here 'data\index.json'
+$standaloneMode = -not (Test-Path $v2json) -and (Test-Path $currentIndex)
+if ($standaloneMode) {
+  $v2json = $currentIndex
+}
 $outDir = Join-Path $here 'data'
 New-Item -ItemType Directory -Force -Path $outDir | Out-Null
 
@@ -520,7 +525,21 @@ try {
 $enc      = New-Object System.Text.UTF8Encoding($false)
 $itemsDir = Join-Path $outDir 'items'
 New-Item -ItemType Directory -Force -Path $itemsDir | Out-Null
-Get-ChildItem $itemsDir -Filter '*.json' -ErrorAction SilentlyContinue | Remove-Item -Force
+$existingArtifacts = @{}
+$workerArtifacts = @{}
+foreach ($path in Get-ChildItem $itemsDir -Filter '*.json' -ErrorAction SilentlyContinue) {
+  try {
+    $artifact = Get-Content $path.FullName -Raw | ConvertFrom-Json
+    if ([int]$artifact.number -eq [int]$path.BaseName) {
+      $existingArtifacts[[int]$artifact.number] = $artifact
+      if ($artifact.evaluated_at -and $artifact.source_updated_at) {
+        $workerArtifacts[[int]$artifact.number] = $artifact
+      }
+    }
+  } catch {
+    Write-Warning "Ignoring invalid existing artifact $($path.Name): $($_.Exception.Message)"
+  }
+}
 
 $now       = (Get-Date).ToString('o')
 $indexList = New-Object System.Collections.Generic.List[object]
@@ -528,7 +547,15 @@ $artifactNumbers = New-Object System.Collections.Generic.List[int]
 
 foreach ($it in $src.items) {
   $n = [int]$it.number
-  $o = $OV[$n]
+  $o = if ($existingArtifacts.ContainsKey($n)) {
+    $existingArtifacts[$n]
+  } elseif (-not $standaloneMode) {
+    $OV[$n]
+  } else {
+    $null
+  }
+  $writeArtifact = $workerArtifacts.ContainsKey($n) -or
+    (-not $standaloneMode -and -not $existingArtifacts.ContainsKey($n) -and $OV.ContainsKey($n))
   $hasArtifact = ($o -ne $null)
   $track = if ($o -and $o.track) { $o.track } elseif ($it.track) { $it.track } else { $null }
   $stage = if ($o -and $o.stage) { $o.stage } else { $it.stage }
@@ -613,7 +640,7 @@ foreach ($it in $src.items) {
     number=$n; kind=$it.kind; track=$track; stage=$stage; owes=$owes
     pending_author=($owes -eq 'author'); generated_at=$now
     status     = Obj $o.status
-    next_action= if ($it.next_action) { Obj @{ glyph=$it.next_action.glyph; label=$it.next_action.label; reason=$it.next_action.reason } } else { $null }
+    next_action= if ($o.next_action) { Obj $o.next_action } elseif ($it.next_action) { Obj @{ glyph=$it.next_action.glyph; label=$it.next_action.label; reason=$it.next_action.reason } } else { $null }
     actions    = @($o.actions | ForEach-Object { Obj $_ })
   }
   if ($o.needs_revalidation) { $art.needs_revalidation = $true }
@@ -628,10 +655,12 @@ foreach ($it in $src.items) {
   if ($it.upstream_issue) { $art.upstream_issue = $it.upstream_issue }
   if ($o.fork_pr)     { $art.fork_pr     = Obj $o.fork_pr }
   if ($o.fork_branch) { $art.fork_branch = $o.fork_branch }
-  if ($it.fork_issue) { $art.fork_issue  = $it.fork_issue }
+  if ($o.fork_issue)  { $art.fork_issue  = Obj $o.fork_issue } elseif ($it.fork_issue) { $art.fork_issue = $it.fork_issue }
 
-  $aj = ([pscustomobject]$art) | ConvertTo-Json -Depth 20
-  [System.IO.File]::WriteAllText((Join-Path $itemsDir "$n.json"), $aj, $enc)
+  if ($writeArtifact) {
+    $aj = ([pscustomobject]$art) | ConvertTo-Json -Depth 20
+    [System.IO.File]::WriteAllText((Join-Path $itemsDir "$n.json"), $aj, $enc)
+  }
   $artifactNumbers.Add($n)
 }
 
