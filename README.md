@@ -17,6 +17,12 @@ backend, no shared secret.
 - **Shared agent workflow** → the complete reusable skill suite lives under
   [`.github/skills`](./.github/skills), so another maintainer can run the
   updater from a clone without copying user-profile skill files.
+- **Public skill distribution** →
+  [`MuyuanMS/powertoys-dashboard-skills`](https://github.com/MuyuanMS/powertoys-dashboard-skills)
+  provides an installer and canonical update prompt.
+- **Dashboard controls** → **Copy update prompt** copies the current canonical
+  maintenance prompt; action ratings create public issues in the skills
+  repository.
 
 ## Why not "just log in with GitHub"?
 

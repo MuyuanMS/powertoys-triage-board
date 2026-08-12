@@ -58,6 +58,11 @@
     </div>
     <div class="flex items-center gap-2">
       <input type="text" x-model="filter" placeholder="Search title / #number / author…" class="px-3 py-1.5 border border-slate-300 rounded text-sm w-56" />
+      <button @click="copyUpdatePrompt()" class="px-3 py-1.5 rounded border border-sky-300 text-sm font-semibold text-sky-700 hover:bg-sky-50">
+        Copy update prompt
+      </button>
+      <a href="https://github.com/MuyuanMS/powertoys-dashboard-skills/issues/new?template=action-feedback.yml"
+        target="_blank" class="px-3 py-1.5 rounded border border-slate-300 text-sm hover:bg-slate-50">Feedback ↗</a>
       <button @click="darkMode=!darkMode; localStorage.setItem('pt_dark_mode',darkMode?'1':'0')"
         class="px-2.5 py-1.5 rounded border text-sm" :title="darkMode ? 'Use light mode' : 'Use dark mode'"
         x-text="darkMode ? '☀️' : '🌙'"></button>
@@ -379,6 +384,14 @@
           <template x-for="a in (art(it) ? art(it).actions : [])" :key="'note-'+a.id">
             <div x-show="a.note" class="text-[11px] text-slate-400" x-text="'• ' + a.label + ': ' + a.note"></div>
           </template>
+          <div x-show="primaryAction(it)" class="flex flex-wrap items-center gap-2 border-t border-slate-200 pt-2 text-xs text-slate-500">
+            <span>Was this suggested action useful?</span>
+            <button @click="submitActionFeedback(it, primaryAction(it), 'Helpful')"
+              class="px-2 py-1 rounded border border-slate-300 hover:bg-emerald-50">👍 Helpful</button>
+            <button @click="submitActionFeedback(it, primaryAction(it), 'Not helpful')"
+              class="px-2 py-1 rounded border border-slate-300 hover:bg-rose-50">👎 Not helpful</button>
+            <span>Feedback is stored publicly in the dashboard skills repository.</span>
+          </div>
         </div>
       </div>
     </template>
@@ -538,6 +551,15 @@
 <div x-show="toast" x-cloak class="fixed bottom-4 right-4 z-50 bg-slate-900 text-white text-sm rounded px-4 py-2 shadow-lg" x-text="toast"></div>
 
 <script>
+const UPDATE_PROMPT_URL = 'https://raw.githubusercontent.com/MuyuanMS/powertoys-dashboard-skills/main/UPDATE_DASHBOARD_PROMPT.md';
+const UPDATE_PROMPT_FALLBACK = `Update the PowerToys maintenance dashboard end-to-end. Work autonomously until the dashboard data is regenerated, validated, committed, pushed, and the deployment is verified.
+
+Before starting, confirm gh, git, PowerShell 7, and GitHub authentication. Check that powertoys-dashboard-update, powertoys-pr-review, powertoys-issue-to-design, and powertoys-design-to-pr exist in the current repository's .github/skills directory or under $HOME/.copilot/skills. If any are missing, clone https://github.com/MuyuanMS/powertoys-dashboard-skills and run pwsh -NoProfile -File .\\powertoys-dashboard-skills\\Install-Skills.ps1, then reload skills or restart Copilot CLI.
+
+Locate or clone https://github.com/MuyuanMS/powertoys-triage-board and use powertoys-dashboard-update as the orchestrator. Follow all dependency, freshness, artifact-schema, validation, publication, and approval rules. Review every eligible PR lacking a current clean result for its latest head; judge every new or changed bug issue; run the bounded highest-confidence issue batch through detailed design; preserve existing fork work; validate and publish the board.
+
+Never post or modify anything in microsoft/PowerToys without explicit human approval. At completion report coverage, issue judgments/designs, workflow state, board counts, deployment URL, and whether any upstream action occurred.`;
+
 function board(){
   return {
     idx:{}, items:[], artifacts:{}, live:{}, loadingLive:{},
@@ -550,6 +572,7 @@ function board(){
     composeOpen:false, composeTitle:'', composeSub:'', composeBody:'', composeCtx:null,
     previewOpen:false, previewTitle:'', previewEndpoint:'', previewJson:'',
     focusOpen:false, focusItem:null,
+    updatePrompt:UPDATE_PROMPT_FALLBACK,
     toast:'',
     kindTabs:[
       {key:'pr',label:'Pull requests'},
@@ -581,6 +604,14 @@ function board(){
       this.token = localStorage.getItem('pt_gh_token') || '';
       if(this.token){ await this.whoami(); }
       this.darkMode = localStorage.getItem('pt_dark_mode') === '1';
+      try{
+        const promptResponse = await fetch(UPDATE_PROMPT_URL,{cache:'no-store'});
+        if(promptResponse.ok){
+          const markdown = await promptResponse.text();
+          const match = markdown.match(/```text\s*([\s\S]*?)```/);
+          if(match && match[1].trim()) this.updatePrompt = match[1].trim();
+        }
+      }catch(_){}
     },
 
     // ---------- auth ----------
@@ -597,6 +628,15 @@ function board(){
         this.me = u;
         this.flash('Signed in as ' + u.login);
       }catch(e){ this.me=null; this.flash('Token invalid: ' + e.message); }
+    },
+
+    async copyUpdatePrompt(){
+      try{
+        await navigator.clipboard.writeText(this.updatePrompt);
+        this.flash('Dashboard update prompt copied');
+      }catch(e){
+        this.showPreview('Copy this dashboard update prompt', this.updatePrompt);
+      }
     },
 
     // ---------- GitHub REST ----------
@@ -752,6 +792,33 @@ function board(){
         await this.gh(`/repos/${up}/${repo}/issues/${it.number}`,{method:'PATCH',body:{state:'closed'}});
         it.stage='closed'; this.flash('Comment posted and item closed');
       }catch(e){ this.flash('Close failed: ' + e.message); }
+    },
+    async submitActionFeedback(it,a,rating){
+      if(!this.me && !this.dryRun){ this.flash('Sign in first to submit feedback'); return; }
+      const note=window.prompt('Optional feedback for improving this suggested action:','');
+      if(note===null) return;
+      const actionLabel=(a && a.label) || 'Suggested action';
+      const body=`## Dashboard action feedback
+
+- **Target:** [${it.kind.toUpperCase()} ${it.number}](${it.url})
+- **Suggested action:** ${actionLabel}
+- **Rating:** ${rating}
+- **Artifact generated:** ${(this.art(it) && this.art(it).generated_at) || 'unknown'}
+- **Agent status:** ${it.agent_status || 'unknown'}
+
+## Feedback
+
+${note.trim() || '_No additional feedback provided._'}
+
+_Submitted from the PowerToys triage dashboard._`;
+      try{
+        const r=await this.gh('/repos/MuyuanMS/powertoys-dashboard-skills/issues',{
+          method:'POST',
+          body:{title:`[Dashboard feedback] ${rating}: ${it.kind.toUpperCase()} ${it.number} - ${actionLabel}`,body}
+        });
+        if(r.__dry_run) return;
+        this.flash('Feedback issue created');
+      }catch(e){ this.flash('Feedback failed: ' + e.message); }
     },
 
     // generic compose
