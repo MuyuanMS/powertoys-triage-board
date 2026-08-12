@@ -14,6 +14,12 @@ backend, no shared secret.
   eligible PRs start in `To triage`, completed fork reviews move to
   `To manually review`, recognized member decisions move to `In Review` (or a
   named reviewer option), and closed/merged items move to `Done`.
+- **Public skill distribution** →
+  [`MuyuanMS/powertoys-dashboard-skills`](https://github.com/MuyuanMS/powertoys-dashboard-skills)
+  provides an installer and canonical update prompt.
+- **Dashboard controls** → **Copy update prompt** copies the current canonical
+  maintenance prompt; action ratings create public issues in the skills
+  repository.
 
 ## Why not "just log in with GitHub"?
 
