@@ -1,0 +1,48 @@
+{
+  "number": 49842,
+  "kind": "issue",
+  "track": "fix",
+  "stage": "needs_reply",
+  "owes": "maintainer",
+  "pending_author": false,
+  "generated_at": "2026-08-13T10:19:32.3243304+08:00",
+  "status": {
+    "glyph": "💬",
+    "label": "Reproducible symptom; diagnostics needed",
+    "detail": "Alt-based Keyboard Manager remaps miss the first chord after Alt is released, while Ctrl and Shift mappings work. The report lacks the exact Windows build and a bug-report archive needed to distinguish an OS input change from PowerToys state handling."
+  },
+  "next_action": {
+    "glyph": "💬",
+    "label": "Collect input-state diagnostics",
+    "reason": "The symptom is specific, but implementation design would be speculative without exact OS and remap configuration evidence."
+  },
+  "actions": [
+    {
+      "id": "request-info-49842",
+      "type": "request_info",
+      "label": "Ask for Keyboard Manager diagnostics",
+      "primary": true,
+      "confirm": true,
+      "comment": {
+        "target": "issue",
+        "number": 49842,
+        "body": "Thanks for the detailed Alt-key reproduction. Could you attach a PowerToys bug-report ZIP and confirm your exact Windows build (`winver`), whether the problem affects Left Alt, Right Alt, or both, and whether it reproduces in Notepad? Please also include a screenshot of one affected remap and say whether PowerToys or the target app is running elevated. If practical, confirm whether uninstalling the suspected Windows update changes the behavior."
+      },
+      "note": "Draft only; no upstream comment is posted without explicit approval."
+    }
+  ],
+  "confidence": "High",
+  "evaluated_at": "2026-08-13T02:20:00Z",
+  "source_updated_at": "2026-08-12T16:49:51Z",
+  "judgment": {
+    "status": "needs_information",
+    "rationale": "The first-chord-only failure after releasing Alt is a strong, testable symptom, but the current evidence does not identify whether it is limited to one Alt key, an elevation boundary, a target application, or a specific Windows input-stack update.",
+    "evidence": [
+      "Alt+H/J/K/L remaps reportedly worked before a recent Windows update.",
+      "The first Alt chord passes through unchanged; subsequent chords work until Alt is released.",
+      "Equivalent Ctrl or Shift mappings reportedly work.",
+      "No bug-report ZIP, exact Windows build, remap screenshot, elevation state, or neutral-app reproduction is attached."
+    ],
+    "recommended_action": "Collect the exact Windows build, affected Alt side, neutral-app and elevation results, remap configuration, and PowerToys diagnostics before investigating Keyboard Manager input-state code."
+  }
+}

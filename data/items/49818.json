@@ -1,0 +1,35 @@
+{
+  "number": 49818,
+  "kind": "issue",
+  "track": "fix",
+  "stage": "dropped",
+  "owes": "maintainer",
+  "pending_author": false,
+  "generated_at": "2026-08-13T10:19:32.3243304+08:00",
+  "status": {
+    "glyph": "🔗",
+    "label": "Owned maintainer/platform follow-up",
+    "detail": "The issue is assigned and maintainers identified Phi Silica regional availability as the likely cause while discussing a graceful PowerToys error experience."
+  },
+  "next_action": {
+    "glyph": "👀",
+    "label": "Monitor maintainer-owned work",
+    "reason": "The platform limitation and proposed UX response are already being handled by the owning maintainers."
+  },
+  "actions": [],
+  "confidence": "High",
+  "evaluated_at": "2026-08-13T02:20:00Z",
+  "source_updated_at": "2026-08-12T16:13:28Z",
+  "judgment": {
+    "status": "duplicate_or_handled",
+    "rationale": "This is not an unowned bug needing agent design. The issue is assigned, maintainers investigated the Windows AI component state, identified a documented regional availability limitation, and are already considering graceful handling.",
+    "evidence": [
+      "The issue is assigned to khmyznikov.",
+      "Maintainers asked the reporter to inspect Windows AI components and reboot.",
+      "The reporter's screenshot established the component state.",
+      "A maintainer linked Microsoft documentation stating Phi Silica is unavailable in China.",
+      "Maintainers are discussing a dialog or deep link for graceful handling."
+    ],
+    "recommended_action": "Track the maintainer-owned UX follow-up; do not duplicate investigation or claim a PowerToys model-readiness root cause."
+  }
+}

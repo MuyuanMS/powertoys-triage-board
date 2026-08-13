@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T15:38:04.4862761+08:00",
+  "generated_at": "2026-08-13T10:19:32.3243304+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -81,15 +81,15 @@
     ]
   },
   "counts": {
-    "open_prs": 134,
-    "open_issues": 7318,
-    "community": 6796,
-    "artifacts": 61
+    "open_prs": 122,
+    "open_issues": 7324,
+    "community": 6803,
+    "artifacts": 62
   },
   "impact": {
-    "as_of": "2026-08-12T15:38:04.4862761+08:00",
+    "as_of": "2026-08-13T10:19:32.3243304+08:00",
     "issues_helped": 10,
-    "prs_iterated": 45,
+    "prs_iterated": 43,
     "constructive_comments_posted": 3,
     "comments_drafted": 24
   },
@@ -101,7 +101,6 @@
     49647,
     49639,
     49625,
-    49623,
     49597,
     49588,
     49571,
@@ -123,8 +122,6 @@
     49301,
     49291,
     49279,
-    49197,
-    49194,
     49174,
     49136,
     49077,
@@ -132,7 +129,6 @@
     48904,
     48816,
     48815,
-    48772,
     48769,
     48755,
     48700,
@@ -144,7 +140,12 @@
     48482,
     43741,
     41656,
+    49850,
+    49842,
+    49839,
     49834,
+    49829,
+    49818,
     49805,
     49711,
     49704,
@@ -158,12 +159,12 @@
   ],
   "items": [
     {
-      "id": "pr-49835",
+      "id": "pr-49848",
       "kind": "pr",
-      "number": 49835,
-      "url": "https://github.com/microsoft/PowerToys/pull/49835",
-      "title": "ci: pin .NET 10 SDK to runtime package version",
-      "author": "moooyo",
+      "number": 49848,
+      "url": "https://github.com/microsoft/PowerToys/pull/49848",
+      "title": "Pin GitHub Actions to full-length commit SHAs",
+      "author": "danfiedler-msft",
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
@@ -181,8 +182,37 @@
         "label": "Start review"
       },
       "labels": [],
-      "created_at": "2026-08-12T06:13:23Z",
-      "updated_at": "2026-08-12T07:02:30Z",
+      "created_at": "2026-08-12T20:26:24Z",
+      "updated_at": "2026-08-12T20:35:02Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
+      "id": "pr-49840",
+      "kind": "pr",
+      "number": 49840,
+      "url": "https://github.com/microsoft/PowerToys/pull/49840",
+      "title": "[Advanced Paste] Don't hardcode reasoning_effort=minimal for OpenAI p…",
+      "author": "yeelam-gordon",
+      "is_community": false,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": null,
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_review",
+        "label": "Start review"
+      },
+      "labels": [],
+      "created_at": "2026-08-12T10:12:58Z",
+      "updated_at": "2026-08-12T16:26:00Z",
       "comments": 0,
       "priority": null
     },
@@ -209,38 +239,11 @@
         "type": "start_review",
         "label": "Start review"
       },
-      "labels": [],
+      "labels": [
+        "0.101"
+      ],
       "created_at": "2026-08-11T21:52:07Z",
-      "updated_at": "2026-08-12T04:32:41Z",
-      "comments": 0,
-      "priority": null
-    },
-    {
-      "id": "pr-49832",
-      "kind": "pr",
-      "number": 49832,
-      "url": "https://github.com/microsoft/PowerToys/pull/49832",
-      "title": "[CmdPal] Consolidate search ranking changes",
-      "author": "michaeljolley",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
-      },
-      "labels": [],
-      "created_at": "2026-08-11T21:40:21Z",
-      "updated_at": "2026-08-12T00:55:40Z",
+      "updated_at": "2026-08-12T19:12:57Z",
       "comments": 0,
       "priority": null
     },
@@ -389,7 +392,7 @@
         "Product-Command Palette"
       ],
       "created_at": "2026-08-10T21:30:41Z",
-      "updated_at": "2026-08-12T00:44:01Z",
+      "updated_at": "2026-08-12T22:37:11Z",
       "comments": 0,
       "priority": null
     },
@@ -737,39 +740,7 @@
         "CmdPal - Dock"
       ],
       "created_at": "2026-08-07T05:02:27Z",
-      "updated_at": "2026-08-09T19:37:14Z",
-      "comments": 0,
-      "priority": null
-    },
-    {
-      "id": "pr-49739",
-      "kind": "pr",
-      "number": 49739,
-      "url": "https://github.com/microsoft/PowerToys/pull/49739",
-      "title": "CmdPal: Fix dock band activation lifecycle",
-      "author": "jiripolasek",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": true,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
-      },
-      "labels": [
-        "Product-Command Palette",
-        "CmdPal - Dock"
-      ],
-      "created_at": "2026-08-07T03:35:27Z",
-      "updated_at": "2026-08-09T18:56:42Z",
+      "updated_at": "2026-08-12T22:38:57Z",
       "comments": 0,
       "priority": null
     },
@@ -1130,7 +1101,7 @@
         "0.101"
       ],
       "created_at": "2026-08-04T14:48:28Z",
-      "updated_at": "2026-08-11T08:03:02Z",
+      "updated_at": "2026-08-12T08:47:00Z",
       "comments": 0,
       "priority": null,
       "mirror": {
@@ -1254,46 +1225,6 @@
         "fork_state": "OPEN",
         "fork_branch": "pr-iterate/49625",
         "url": "https://github.com/MuyuanMS/PowerToys/pull/181"
-      }
-    },
-    {
-      "id": "pr-49623",
-      "kind": "pr",
-      "number": 49623,
-      "url": "https://github.com/microsoft/PowerToys/pull/49623",
-      "title": "CmdPal: Add file and list settings controls",
-      "author": "jiripolasek",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": true,
-      "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": true,
-      "agent_status": "review",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "rerun",
-        "label": "Re-run review"
-      },
-      "labels": [
-        "Product-Command Palette",
-        "0.102"
-      ],
-      "created_at": "2026-08-02T12:36:39Z",
-      "updated_at": "2026-08-04T14:17:16Z",
-      "comments": 0,
-      "priority": 60,
-      "mirror": {
-        "kind": "pr",
-        "fork_number": 189,
-        "fork_title": "[PR 49623] CmdPal: Add file and list settings controls (v2)",
-        "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/49623-v2",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/189"
       }
     },
     {
@@ -1539,7 +1470,7 @@
         "Product-ZoomIt"
       ],
       "created_at": "2026-07-23T17:40:53Z",
-      "updated_at": "2026-07-30T21:14:20Z",
+      "updated_at": "2026-08-12T08:44:13Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -1808,7 +1739,7 @@
         "0.102"
       ],
       "created_at": "2026-07-21T03:56:38Z",
-      "updated_at": "2026-08-04T21:07:10Z",
+      "updated_at": "2026-08-12T20:16:42Z",
       "comments": 0,
       "priority": 60
     },
@@ -2143,7 +2074,7 @@
         "Product-Command Palette"
       ],
       "created_at": "2026-07-16T21:04:00Z",
-      "updated_at": "2026-08-06T01:56:34Z",
+      "updated_at": "2026-08-12T20:59:24Z",
       "comments": 0,
       "priority": 60
     },
@@ -2241,7 +2172,7 @@
         "Product-Command Palette"
       ],
       "created_at": "2026-07-15T07:02:59Z",
-      "updated_at": "2026-08-06T02:23:29Z",
+      "updated_at": "2026-08-12T20:59:24Z",
       "comments": 0,
       "priority": 60
     },
@@ -2272,7 +2203,7 @@
         "Product-Command Palette"
       ],
       "created_at": "2026-07-15T05:30:46Z",
-      "updated_at": "2026-08-06T01:56:33Z",
+      "updated_at": "2026-08-12T20:59:24Z",
       "comments": 0,
       "priority": 60
     },
@@ -2303,7 +2234,7 @@
         "Product-Command Palette"
       ],
       "created_at": "2026-07-15T04:38:04Z",
-      "updated_at": "2026-08-06T01:56:34Z",
+      "updated_at": "2026-08-12T20:59:23Z",
       "comments": 0,
       "priority": 60
     },
@@ -2334,7 +2265,7 @@
         "Product-Command Palette"
       ],
       "created_at": "2026-07-15T03:48:43Z",
-      "updated_at": "2026-08-06T01:56:33Z",
+      "updated_at": "2026-08-12T20:59:24Z",
       "comments": 0,
       "priority": 60
     },
@@ -2365,7 +2296,7 @@
         "Product-Command Palette"
       ],
       "created_at": "2026-07-15T02:40:33Z",
-      "updated_at": "2026-08-06T01:56:33Z",
+      "updated_at": "2026-08-12T20:59:22Z",
       "comments": 0,
       "priority": 60
     },
@@ -2396,7 +2327,7 @@
         "Product-Command Palette"
       ],
       "created_at": "2026-07-15T00:25:55Z",
-      "updated_at": "2026-08-06T01:56:32Z",
+      "updated_at": "2026-08-12T20:59:22Z",
       "comments": 0,
       "priority": 60
     },
@@ -2429,7 +2360,7 @@
         "has-proof"
       ],
       "created_at": "2026-07-13T14:47:37Z",
-      "updated_at": "2026-08-11T08:38:26Z",
+      "updated_at": "2026-08-12T10:15:12Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -2645,99 +2576,6 @@
       "priority": null
     },
     {
-      "id": "pr-49249",
-      "kind": "pr",
-      "number": 49249,
-      "url": "https://github.com/microsoft/PowerToys/pull/49249",
-      "title": "[CmdPal] Phase 7c: early-frame relevance (withhold weak fuzzy tail on ultra-short queries)",
-      "author": "michaeljolley",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": true,
-      "track": null,
-      "stage": "untracked",
-      "owes": "maintainer",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
-      },
-      "labels": [
-        "Product-Command Palette"
-      ],
-      "created_at": "2026-07-10T05:35:51Z",
-      "updated_at": "2026-08-11T20:34:24Z",
-      "comments": 0,
-      "priority": 60
-    },
-    {
-      "id": "pr-49247",
-      "kind": "pr",
-      "number": 49247,
-      "url": "https://github.com/microsoft/PowerToys/pull/49247",
-      "title": "[CmdPal] Phase 7b: parallel + off-lock search scoring throughput",
-      "author": "michaeljolley",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": true,
-      "track": null,
-      "stage": "untracked",
-      "owes": "maintainer",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
-      },
-      "labels": [
-        "Product-Command Palette"
-      ],
-      "created_at": "2026-07-10T04:53:44Z",
-      "updated_at": "2026-08-11T20:34:19Z",
-      "comments": 0,
-      "priority": 60
-    },
-    {
-      "id": "pr-49246",
-      "kind": "pr",
-      "number": 49246,
-      "url": "https://github.com/microsoft/PowerToys/pull/49246",
-      "title": "[CmdPal] Search perf phase 7a: scoring throughput harness and settle-time attribution",
-      "author": "michaeljolley",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": true,
-      "track": null,
-      "stage": "untracked",
-      "owes": "maintainer",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
-      },
-      "labels": [
-        "Product-Command Palette"
-      ],
-      "created_at": "2026-07-10T03:59:55Z",
-      "updated_at": "2026-08-11T20:34:13Z",
-      "comments": 0,
-      "priority": 60
-    },
-    {
       "id": "pr-49226",
       "kind": "pr",
       "number": 49226,
@@ -2937,214 +2775,6 @@
       }
     },
     {
-      "id": "pr-49211",
-      "kind": "pr",
-      "number": 49211,
-      "url": "https://github.com/microsoft/PowerToys/pull/49211",
-      "title": "CmdPal: Fix stale fallback scores by re-scoring global fallbacks at read time",
-      "author": "jiripolasek",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": true,
-      "track": null,
-      "stage": "untracked",
-      "owes": "maintainer",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
-      },
-      "labels": [
-        "Product-Command Palette",
-        "0.101"
-      ],
-      "created_at": "2026-07-08T16:06:30Z",
-      "updated_at": "2026-08-06T18:36:04Z",
-      "comments": 0,
-      "priority": 60
-    },
-    {
-      "id": "pr-49197",
-      "kind": "pr",
-      "number": 49197,
-      "url": "https://github.com/microsoft/PowerToys/pull/49197",
-      "title": "[CmdPal] Opt-in, privacy-safe search telemetry",
-      "author": "michaeljolley",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": true,
-      "track": "review",
-      "stage": "review_drafted",
-      "owes": "maintainer",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": true,
-      "agent_status": "review",
-      "issue_type": null,
-      "proposed_open": 4,
-      "primary_action": {
-        "type": "review",
-        "label": "Post comments"
-      },
-      "labels": [
-        "Product-Command Palette",
-        "0.101"
-      ],
-      "created_at": "2026-07-08T07:42:32Z",
-      "updated_at": "2026-08-11T20:34:07Z",
-      "comments": 0,
-      "priority": 60,
-      "mirror": {
-        "kind": "pr",
-        "fork_number": 227,
-        "fork_title": "[PR 49197] [CmdPal] Opt-in, privacy-safe search telemetry",
-        "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/49197",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/227"
-      }
-    },
-    {
-      "id": "pr-49195",
-      "kind": "pr",
-      "number": 49195,
-      "url": "https://github.com/microsoft/PowerToys/pull/49195",
-      "title": "[CmdPal] Golden-set relevance test harness for main-page ranking",
-      "author": "michaeljolley",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": true,
-      "track": null,
-      "stage": "untracked",
-      "owes": "maintainer",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
-      },
-      "labels": [
-        "Product-Command Palette",
-        "0.101"
-      ],
-      "created_at": "2026-07-08T07:02:26Z",
-      "updated_at": "2026-08-11T20:34:01Z",
-      "comments": 0,
-      "priority": 60
-    },
-    {
-      "id": "pr-49194",
-      "kind": "pr",
-      "number": 49194,
-      "url": "https://github.com/microsoft/PowerToys/pull/49194",
-      "title": "[CmdPal] Fix existing issue with fallback scoring ",
-      "author": "michaeljolley",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": true,
-      "track": "review",
-      "stage": "review_drafted",
-      "owes": "maintainer",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": true,
-      "agent_status": "review",
-      "issue_type": null,
-      "proposed_open": 2,
-      "primary_action": {
-        "type": "review",
-        "label": "Post comments"
-      },
-      "labels": [
-        "Product-Command Palette",
-        "0.101"
-      ],
-      "created_at": "2026-07-08T06:31:01Z",
-      "updated_at": "2026-08-11T20:33:56Z",
-      "comments": 0,
-      "priority": 60,
-      "mirror": {
-        "kind": "pr",
-        "fork_number": 233,
-        "fork_title": "[PR 49194] [CmdPal] Fix existing issue with fallback scoring",
-        "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/49194-v2",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/233"
-      }
-    },
-    {
-      "id": "pr-49191",
-      "kind": "pr",
-      "number": 49191,
-      "url": "https://github.com/microsoft/PowerToys/pull/49191",
-      "title": "[CmdPal] Per-provider search weight (Lower/Normal/Higher)",
-      "author": "michaeljolley",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": true,
-      "track": null,
-      "stage": "untracked",
-      "owes": "maintainer",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
-      },
-      "labels": [
-        "Product-Command Palette",
-        "0.101"
-      ],
-      "created_at": "2026-07-08T05:50:05Z",
-      "updated_at": "2026-08-11T20:33:50Z",
-      "comments": 0,
-      "priority": 60
-    },
-    {
-      "id": "pr-49190",
-      "kind": "pr",
-      "number": 49190,
-      "url": "https://github.com/microsoft/PowerToys/pull/49190",
-      "title": "[CmdPal] Time-decayed frecency signal for main-page ranking",
-      "author": "michaeljolley",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": true,
-      "track": null,
-      "stage": "untracked",
-      "owes": "maintainer",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
-      },
-      "labels": [
-        "Product-Command Palette",
-        "0.101"
-      ],
-      "created_at": "2026-07-08T05:16:33Z",
-      "updated_at": "2026-08-11T20:33:44Z",
-      "comments": 0,
-      "priority": 60
-    },
-    {
       "id": "pr-49187",
       "kind": "pr",
       "number": 49187,
@@ -3305,11 +2935,10 @@
         "label": "Start review"
       },
       "labels": [
-        "Area-Localization",
         "Product-Command Palette"
       ],
       "created_at": "2026-07-02T21:59:18Z",
-      "updated_at": "2026-07-31T22:42:28Z",
+      "updated_at": "2026-08-12T22:44:14Z",
       "comments": 0,
       "priority": 60
     },
@@ -3532,46 +3161,6 @@
       "priority": null
     },
     {
-      "id": "pr-48772",
-      "kind": "pr",
-      "number": 48772,
-      "url": "https://github.com/microsoft/PowerToys/pull/48772",
-      "title": "Add FancyZones monitor window rotation",
-      "author": "APONTES19",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": true,
-      "agent_status": "review",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "rerun",
-        "label": "Re-run review"
-      },
-      "labels": [
-        "Product-FancyZones",
-        "0.101"
-      ],
-      "created_at": "2026-06-21T05:50:29Z",
-      "updated_at": "2026-08-12T05:56:08Z",
-      "comments": 0,
-      "priority": 60,
-      "mirror": {
-        "kind": "pr",
-        "fork_number": 312,
-        "fork_title": "[PR 48772] Add FancyZones monitor window rotation",
-        "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/48772-v3",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/312"
-      }
-    },
-    {
       "id": "pr-48769",
       "kind": "pr",
       "number": 48769,
@@ -3662,11 +3251,10 @@
         "label": "Start review"
       },
       "labels": [
-        "Area-Localization",
         "Product-Command Palette"
       ],
       "created_at": "2026-06-19T14:24:57Z",
-      "updated_at": "2026-08-12T00:33:12Z",
+      "updated_at": "2026-08-12T19:57:25Z",
       "comments": 0,
       "priority": 60
     },
@@ -4132,7 +3720,7 @@
         "CmdPal - Dock"
       ],
       "created_at": "2026-05-24T23:01:07Z",
-      "updated_at": "2026-07-07T08:35:21Z",
+      "updated_at": "2026-08-12T20:54:28Z",
       "comments": 0,
       "priority": 60
     },
@@ -4734,6 +4322,285 @@
       "priority": 60
     },
     {
+      "id": "issue-49851",
+      "kind": "issue",
+      "number": 49851,
+      "url": "https://github.com/microsoft/PowerToys/issues/49851",
+      "title": "Command Palette Feature Requirements",
+      "author": "dasu88",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-13T01:28:38Z",
+      "updated_at": "2026-08-13T01:28:38Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
+      "id": "issue-49850",
+      "kind": "issue",
+      "number": 49850,
+      "url": "https://github.com/microsoft/PowerToys/issues/49850",
+      "title": "IMAGE RESIZER NOT WORKING",
+      "author": "SMcCann-ux",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": "fix",
+      "stage": "needs_reply",
+      "owes": "maintainer",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": true,
+      "agent_status": "fix",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "request_info",
+        "label": "Reply with suggested comments"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-13T00:15:07Z",
+      "updated_at": "2026-08-13T00:15:07Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
+      "id": "issue-49849",
+      "kind": "issue",
+      "number": 49849,
+      "url": "https://github.com/microsoft/PowerToys/issues/49849",
+      "title": "Add native \"Convert to UPPERCASE/lowercase\" shortcut for selected text",
+      "author": "D3NAK7",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-12T22:45:30Z",
+      "updated_at": "2026-08-12T22:52:11Z",
+      "comments": 1,
+      "priority": null
+    },
+    {
+      "id": "issue-49843",
+      "kind": "issue",
+      "number": 49843,
+      "url": "https://github.com/microsoft/PowerToys/issues/49843",
+      "title": "Add English searching capability in Command Palette",
+      "author": "CrazyComputer2008",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-12T13:02:42Z",
+      "updated_at": "2026-08-12T16:47:08Z",
+      "comments": 3,
+      "priority": null
+    },
+    {
+      "id": "issue-49842",
+      "kind": "issue",
+      "number": 49842,
+      "url": "https://github.com/microsoft/PowerToys/issues/49842",
+      "title": "Alt-Bindings in Keyboard Manager bugged after windows update",
+      "author": "sssssy",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": "fix",
+      "stage": "needs_reply",
+      "owes": "maintainer",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": true,
+      "agent_status": "fix",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "request_info",
+        "label": "Reply with suggested comments"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Product-Keyboard Shortcut Manager",
+        "Needs-Triage",
+        "Product-Keyboard Manager"
+      ],
+      "created_at": "2026-08-12T11:54:41Z",
+      "updated_at": "2026-08-12T16:49:51Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
+      "id": "issue-49841",
+      "kind": "issue",
+      "number": 49841,
+      "url": "https://github.com/microsoft/PowerToys/issues/49841",
+      "title": "Intelligent enablement or disabling options",
+      "author": "ghnicole",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-12T11:09:31Z",
+      "updated_at": "2026-08-12T11:09:31Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
+      "id": "issue-49839",
+      "kind": "issue",
+      "number": 49839,
+      "url": "https://github.com/microsoft/PowerToys/issues/49839",
+      "title": "Something went wrong",
+      "author": "syamsgit",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": "fix",
+      "stage": "dropped",
+      "owes": "author",
+      "pending_author": true,
+      "waiting_since": "2026-08-12T16:50:36Z",
+      "has_artifact": true,
+      "agent_status": "fix",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": null,
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-12T09:16:42Z",
+      "updated_at": "2026-08-12T16:50:36Z",
+      "comments": 1,
+      "priority": null
+    },
+    {
+      "id": "issue-49838",
+      "kind": "issue",
+      "number": 49838,
+      "url": "https://github.com/microsoft/PowerToys/issues/49838",
+      "title": "[Advanced Paste] Hardcoded reasoning_effort=minimal breaks all OpenAI/Azure OpenAI custom actions with HTTP 400",
+      "author": "yeelam-gordon",
+      "is_community": false,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [],
+      "created_at": "2026-08-12T09:03:41Z",
+      "updated_at": "2026-08-12T09:05:37Z",
+      "comments": 1,
+      "priority": null
+    },
+    {
+      "id": "issue-49836",
+      "kind": "issue",
+      "number": 49836,
+      "url": "https://github.com/microsoft/PowerToys/issues/49836",
+      "title": "Add history to command palette",
+      "author": "Anakha",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-12T07:42:13Z",
+      "updated_at": "2026-08-12T07:42:13Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
       "id": "issue-49834",
       "kind": "issue",
       "number": 49834,
@@ -4806,18 +4673,18 @@
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
+      "track": "fix",
+      "stage": "needs_reply",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "fix",
       "issue_type": "bug",
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_triage",
-        "label": "Check bug"
+        "type": "request_info",
+        "label": "Reply with suggested comments"
       },
       "labels": [
         "Issue-Bug",
@@ -4900,13 +4767,13 @@
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
+      "track": "fix",
+      "stage": "dropped",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "fix",
       "issue_type": "bug",
       "proposed_open": 0,
       "primary_action": {
@@ -4918,8 +4785,8 @@
         "Needs-Triage"
       ],
       "created_at": "2026-08-11T04:01:56Z",
-      "updated_at": "2026-08-11T23:56:05Z",
-      "comments": 4,
+      "updated_at": "2026-08-12T16:13:28Z",
+      "comments": 5,
       "priority": null
     },
     {
@@ -6481,8 +6348,8 @@
         "Product-Command Palette"
       ],
       "created_at": "2026-08-05T07:33:49Z",
-      "updated_at": "2026-08-05T20:30:02Z",
-      "comments": 1,
+      "updated_at": "2026-08-12T19:25:16Z",
+      "comments": 2,
       "priority": null
     },
     {
@@ -7267,38 +7134,6 @@
       ],
       "created_at": "2026-08-02T13:33:48Z",
       "updated_at": "2026-08-02T13:33:48Z",
-      "comments": 0,
-      "priority": null
-    },
-    {
-      "id": "issue-49622",
-      "kind": "issue",
-      "number": 49622,
-      "url": "https://github.com/microsoft/PowerToys/issues/49622",
-      "title": "CmdPal: File and list settings control",
-      "author": "jiripolasek",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": true,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "other",
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_triage",
-        "label": "Start triage"
-      },
-      "labels": [
-        "Needs-Triage",
-        "Product-Command Palette"
-      ],
-      "created_at": "2026-08-02T12:28:52Z",
-      "updated_at": "2026-08-02T12:28:52Z",
       "comments": 0,
       "priority": null
     },
@@ -11605,7 +11440,7 @@
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Check bug"
+        "label": "Start triage"
       },
       "labels": [
         "Issue-Bug",
@@ -27445,7 +27280,7 @@
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Check bug"
+        "label": "Start triage"
       },
       "labels": [
         "Issue-Bug",
@@ -47248,40 +47083,6 @@
       "priority": null
     },
     {
-      "id": "issue-46547",
-      "kind": "issue",
-      "number": 46547,
-      "url": "https://github.com/microsoft/PowerToys/issues/46547",
-      "title": "CmdPal: Stale fallback score",
-      "author": "jiripolasek",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": true,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "bug",
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_triage",
-        "label": "Start triage"
-      },
-      "labels": [
-        "Issue-Bug",
-        "Status-In progress",
-        "Needs-Triage",
-        "Product-Command Palette"
-      ],
-      "created_at": "2026-03-26T22:12:57Z",
-      "updated_at": "2026-07-08T13:40:09Z",
-      "comments": 0,
-      "priority": null
-    },
-    {
       "id": "issue-46542",
       "kind": "issue",
       "number": 46542,
@@ -48809,38 +48610,6 @@
       "priority": null
     },
     {
-      "id": "issue-46365",
-      "kind": "issue",
-      "number": 46365,
-      "url": "https://github.com/microsoft/PowerToys/issues/46365",
-      "title": "CmdPal: missing fallback result",
-      "author": "jiripolasek",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": true,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "other",
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_triage",
-        "label": "Start triage"
-      },
-      "labels": [
-        "Product-Command Palette",
-        "CmdPal-3p Extensions"
-      ],
-      "created_at": "2026-03-21T11:17:38Z",
-      "updated_at": "2026-03-22T15:21:28Z",
-      "comments": 1,
-      "priority": null
-    },
-    {
       "id": "issue-46364",
       "kind": "issue",
       "number": 46364,
@@ -49906,7 +49675,7 @@
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
         "Issue-Bug",
@@ -49915,8 +49684,8 @@
         "cmdpal-PowertoysExtension"
       ],
       "created_at": "2026-03-18T12:10:41Z",
-      "updated_at": "2026-03-18T12:34:44Z",
-      "comments": 0,
+      "updated_at": "2026-08-12T22:39:12Z",
+      "comments": 1,
       "priority": null
     },
     {
@@ -62718,7 +62487,7 @@
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Check bug"
+        "label": "Start triage"
       },
       "labels": [
         "Issue-Bug",
@@ -98173,7 +97942,7 @@
       "number": 39358,
       "url": "https://github.com/microsoft/PowerToys/issues/39358",
       "title": "New+ Context Menu Item remains despite being disabled",
-      "author": "Kai-Denzel-Jane",
+      "author": "FastBoot3DS",
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
@@ -218592,7 +218361,7 @@
       "number": 15507,
       "url": "https://github.com/microsoft/PowerToys/issues/15507",
       "title": "Mousetools - Mousemarker feature request: Shrinking outline circle on click",
-      "author": "elchupete",
+      "author": "Br4thering",
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,

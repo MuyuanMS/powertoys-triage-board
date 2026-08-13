@@ -1,0 +1,48 @@
+{
+  "number": 49850,
+  "kind": "issue",
+  "track": "fix",
+  "stage": "needs_reply",
+  "owes": "maintainer",
+  "pending_author": false,
+  "generated_at": "2026-08-13T10:19:32.3243304+08:00",
+  "status": {
+    "glyph": "💬",
+    "label": "Needs reproduction details",
+    "detail": "A bug-report archive is attached, but the report does not describe the Image Resizer entry point, selected settings, expected output, actual result, or whether an error is shown."
+  },
+  "next_action": {
+    "glyph": "💬",
+    "label": "Request a concrete Image Resizer reproduction",
+    "reason": "The missing interaction and outcome details must be known before selecting an Image Resizer code path to investigate."
+  },
+  "actions": [
+    {
+      "id": "request-info-49850",
+      "type": "request_info",
+      "label": "Ask for Image Resizer reproduction details",
+      "primary": true,
+      "confirm": true,
+      "comment": {
+        "target": "issue",
+        "number": 49850,
+        "body": "Thanks for the report and bug-report ZIP. Could you describe the exact steps you take after selecting an image, including whether you launch Image Resizer from the Explorer context menu, which size/settings you select, and what happens after you click Resize? Please include any visible error and a sample image type/extension. Also confirm whether Image Resizer is enabled in PowerToys Settings and whether the context-menu entry appears."
+      },
+      "note": "Draft only; no upstream comment is posted without explicit approval."
+    }
+  ],
+  "confidence": "High",
+  "evaluated_at": "2026-08-13T02:20:00Z",
+  "source_updated_at": "2026-08-13T00:15:07Z",
+  "judgment": {
+    "status": "needs_information",
+    "rationale": "The report establishes the affected utility and version but contains no observable failure behavior. The attached archive may provide diagnostics, but it cannot establish which UI or shell-extension path failed without the user's steps and outcome.",
+    "evidence": [
+      "The report targets Image Resizer on PowerToys v0.101.2241 installed from GitHub.",
+      "A PowerToys report ZIP is linked.",
+      "Expected behavior, actual behavior, and detailed reproduction steps are empty.",
+      "No error message, image format, context-menu behavior, or resize settings are supplied."
+    ],
+    "recommended_action": "Ask for the exact entry point, resize settings, sample image type, visible result or error, and whether the Explorer context-menu entry appears."
+  }
+}
