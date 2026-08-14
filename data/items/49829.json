@@ -5,7 +5,7 @@
   "stage": "needs_reply",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-13T10:19:32.3243304+08:00",
+  "generated_at": "2026-08-13T22:33:53.4392071+08:00",
   "status": {
     "glyph": "💬",
     "label": "Needs affected-remap details",
@@ -32,17 +32,17 @@
     }
   ],
   "confidence": "High",
-  "evaluated_at": "2026-08-13T02:20:00Z",
-  "source_updated_at": "2026-08-11T14:55:04Z",
+  "evaluated_at": "2026-08-14T00:05:43.6608691Z",
+  "source_updated_at": "2026-08-11T14:55:04.0000000Z",
   "judgment": {
     "status": "needs_information",
-    "rationale": "The editor retaining a mapping while runtime behavior stops is useful, but no concrete mapping, application, trigger, or recovery behavior is provided. Multiple unrelated Keyboard Manager paths could produce that symptom.",
+    "rationale": "Keyboard Manager still displays the configured mappings, but an unspecified subset stops applying. The report lacks the affected keys, target applications, timing, elevation state, and diagnostics.",
     "evidence": [
-      "The report says some mappings reverted behavior while remaining visible in the editor.",
-      "The affected source and destination keys are not identified.",
-      "No application scope, elevation state, triggering event, or temporary recovery behavior is given.",
-      "No bug-report ZIP or configuration screenshot is attached."
+      "Keyboard Manager still displays the configured mappings, but an unspecified subset stops applying. The report lacks the affected keys, target applications, timing, elevation state, and diagnostics.",
+      "Draft only; no upstream comment is posted without explicit approval."
     ],
-    "recommended_action": "Collect one exact failing mapping, neutral-app and elevation results, trigger and recovery timing, a configuration screenshot, and a PowerToys bug-report ZIP."
+    "recommended_action": "The current description cannot distinguish configuration loading, application targeting, elevation, hook lifetime, or a specific key-handling regression.",
+    "evaluated_at": "2026-08-14T00:05:43.6608691Z",
+    "source_updated_at": "2026-08-11T14:55:04.0000000Z"
   }
 }

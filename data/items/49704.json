@@ -2,29 +2,30 @@
   "number": 49704,
   "kind": "issue",
   "track": "fix",
-  "stage": "needs_reply",
+  "stage": "triaged",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T22:08:03.4397689+08:00",
+  "generated_at": "2026-08-13T22:33:53.4392071+08:00",
   "status": {
-    "detail": "Fork mirror issue 236 converged on a Win-key recovery race, but a Windows 11 / PowerToys 0.100.2 trace is still needed before implementation.",
-    "label": "Needs reproduction confirmation",
-    "glyph": "❓"
+    "glyph": "🔁",
+    "label": "Handled elsewhere / already owned",
+    "detail": "An open PR and prior local investigation already own this Win-modifier fix."
   },
-  "next_action": null,
+  "next_action": {
+    "glyph": "🔁",
+    "label": "Track existing ownership",
+    "reason": "Linked work or existing ownership signals already cover the next step."
+  },
   "actions": [
     {
-      "id": "request-info-49704",
-      "label": "Request trace / repro",
-      "comment": {
-        "target": "issue",
-        "body": "Could you provide a Windows 11 / PowerToys 0.100.2 trace or a short recording confirming the Win-key recovery race after Grab and Move? Please include which modifier and release order reproduces it.",
-        "number": 49704
-      },
-      "type": "request_info"
+      "id": "track-49704",
+      "type": "hold",
+      "label": "Track linked work / ownership",
+      "primary": true,
+      "note": "No upstream action. Follow the linked PR, issue, assignment, localization queue, or existing fork work."
     }
   ],
-  "confidence": "Medium",
+  "confidence": "High",
   "design": {
     "adversary": {
       "rounds": 2,
@@ -47,5 +48,18 @@
       "number": 236,
       "url": "https://github.com/MuyuanMS/PowerToys/issues/236"
     }
+  },
+  "evaluated_at": "2026-08-14T00:05:43.6608691Z",
+  "source_updated_at": "2026-08-10T05:51:29.0000000Z",
+  "judgment": {
+    "status": "duplicate_or_handled",
+    "rationale": "An open PR and prior local investigation already own this Win-modifier fix.",
+    "evidence": [
+      "An open PR and prior local investigation already own this Win-modifier fix.",
+      "No upstream action. Follow the linked PR, issue, assignment, localization queue, or existing fork work."
+    ],
+    "recommended_action": "Linked work or existing ownership signals already cover the next step.",
+    "evaluated_at": "2026-08-14T00:05:43.6608691Z",
+    "source_updated_at": "2026-08-10T05:51:29.0000000Z"
   }
 }

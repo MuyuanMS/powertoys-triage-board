@@ -2,30 +2,40 @@
   "number": 49400,
   "kind": "pr",
   "track": "review",
-  "stage": "awaiting_review_approval",
+  "stage": "owned_elsewhere",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T22:08:03.4397689+08:00",
+  "generated_at": "2026-08-13T22:33:53.4392071+08:00",
+  "evaluated_at": "2026-08-14T00:19:14Z",
+  "source_updated_at": "2026-07-19T23:03:02Z",
   "status": {
-    "label": "Review drafted — needs approval",
-    "detail": "Fork review PR 262 converged after 2 Copilot reviews: the fresh review returned zero new published comments and zero unresolved Copilot threads. Debug essentials, ZoomItBreak, ZoomIt, ZoomItModuleInterface, and ZoomItSettingsInterop builds passed.",
-    "glyph": "📝"
+    "glyph": "✅",
+    "label": "Maintainer-approved",
+    "detail": "A recognized maintainer approved the current head and 4 reported check(s) are green."
   },
-  "next_action": null,
-  "actions": [],
-  "confidence": "High",
-  "proposed_comments": [
+  "next_action": {
+    "glyph": "👀",
+    "label": "Monitor maintainer-owned finish line",
+    "reason": "The current decision and any remaining merge work already belong to maintainers or CI."
+  },
+  "actions": [
     {
-      "id": "c-49400-1",
-      "title": "Consider separating the layout-only cleanup",
-      "severity": "low",
-      "in_diff": false,
-      "disposition": "proposed",
-      "body": "The audio-format fix and the record-options layout cleanup are independent changes. Consider separating the layout-only resource edits into a follow-up PR so each change can be reviewed and reverted independently.",
-      "path": "src/modules/ZoomIt/ZoomIt/ZoomIt.rc",
-      "line": 281
+      "id": "recheck-49400",
+      "type": "rerun",
+      "label": "Recheck live PR state"
+    },
+    {
+      "id": "hold-49400",
+      "type": "hold",
+      "label": "Hold while review is owned elsewhere"
     }
   ],
+  "confidence": "High",
+  "head_sha": "227ce95cd5a08301afeef826c3eb30f3a30a843b",
+  "upstream_pr": {
+    "number": 49400,
+    "url": "https://github.com/microsoft/PowerToys/pull/49400"
+  },
   "fork_pr": {
     "number": 262,
     "url": "https://github.com/MuyuanMS/PowerToys/pull/262"

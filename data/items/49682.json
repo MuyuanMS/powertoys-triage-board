@@ -2,58 +2,41 @@
   "number": 49682,
   "kind": "issue",
   "track": "fix",
-  "stage": "awaiting_design_approval",
+  "stage": "owned_elsewhere",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T22:08:03.4397689+08:00",
+  "generated_at": "2026-08-14T00:25:39.6245114Z",
   "status": {
-    "detail": "Fork mirror issue 224 converged after adversary review. Root cause is a mixed Windows App SDK deployment mode that can fail during editor startup; runtime confirmation remains desirable.",
-    "label": "Design ready — needs approval",
-    "glyph": "🎯"
+    "glyph": "🔗",
+    "label": "Handled by the existing Keyboard Manager editor track",
+    "detail": "The symptom matches issue #49434: the Keyboard Manager editor process starts and exits without opening, and the upstream tracker already has logs plus a current dashboard design for the missing-wrapper / fallback startup path."
   },
-  "next_action": null,
+  "next_action": {
+    "glyph": "👀",
+    "label": "Cluster this report with issue #49434",
+    "reason": "Use the existing Keyboard Manager editor startup investigation instead of opening a second parallel design track for the same failure mode."
+  },
   "actions": [
     {
-      "note": "Posts an approval note on the fork mirror issue; the fix workflow remains fork-only until upstream approval.",
-      "label": "Start fixing",
-      "id": "approve-design-49682",
-      "type": "approve_design",
-      "confirm": true,
-      "comment": {
-        "target": "fork_issue",
-        "body": "Design approved — proceed to build the fix PR in the fork.",
-        "number": 224
-      },
-      "primary": true
-    },
-    {
       "id": "hold-49682",
-      "label": "Not now",
-      "type": "hold"
+      "type": "hold",
+      "label": "Monitor issue #49434 / existing design track",
+      "note": "Local-only dashboard signal; no upstream action is posted."
     }
   ],
-  "confidence": "High",
-  "design": {
-    "adversary": {
-      "rounds": 2,
-      "status": "signed_off"
-    },
-    "root_cause": "KeyboardManagerEditorUI omitted WindowsAppSDKSelfContained=true, allowing machine-wide and app-local Windows App SDK payloads to mix and causing startup fail-fast during title-bar/input initialization.",
-    "fix_plan": "Enable Windows App SDK self-contained deployment, initialize logging synchronously before window construction, add pre/post-main-window startup logs, and avoid catch-and-continue handling for native fail-fast.",
-    "repro": [
-      "Install the affected Store build",
-      "Open Keyboard Manager Editor from Settings",
-      "Observe that the editor silently fails to launch"
+  "confidence": "Medium",
+  "evaluated_at": "2026-08-14T00:25:39.6245114Z",
+  "source_updated_at": "2026-08-13T19:04:26.0000000Z",
+  "judgment": {
+    "status": "duplicate_or_handled",
+    "rationale": "A fresh confirming comment arrived, but the failure mode is already tracked by issue #49434, which covers the same editor-starts-then-exits symptom and already has concrete startup/fallback investigation.",
+    "evidence": [
+      "Issue #49682 reports that clicking the Keyboard Manager Open Editor button briefly shows the busy cursor and then nothing happens.",
+      "A new 2026-08-13 comment from sp4rd4 says they have the same problem and attaches a PowerToys report ZIP, so the earlier missing-info request is no longer the only live signal.",
+      "Open issue #49434 describes the same new Keyboard Manager editor process appearing and then exiting, with logs showing the native wrapper DLL (or a dependency) could not be loaded and no UI stayed open."
     ],
-    "confidence": "High",
-    "verify": [
-      "Compare app-local WinRT manifests and bootstrap references",
-      "Test Store installs on Windows 10 and Windows 11",
-      "Confirm startup logs before and after main-window construction"
-    ],
-    "mirror_issue": {
-      "number": 224,
-      "url": "https://github.com/MuyuanMS/PowerToys/issues/224"
-    }
+    "recommended_action": "Keep this clustered under #49434 and reuse that existing Keyboard Manager editor startup/fallback work instead of duplicating design effort here.",
+    "evaluated_at": "2026-08-14T00:25:39.6245114Z",
+    "source_updated_at": "2026-08-13T19:04:26.0000000Z"
   }
 }

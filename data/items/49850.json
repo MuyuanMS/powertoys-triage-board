@@ -5,16 +5,16 @@
   "stage": "needs_reply",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-13T10:19:32.3243304+08:00",
+  "generated_at": "2026-08-14T00:25:39.6245114Z",
   "status": {
     "glyph": "💬",
-    "label": "Needs reproduction details",
-    "detail": "A bug-report archive is attached, but the report does not describe the Image Resizer entry point, selected settings, expected output, actual result, or whether an error is shown."
+    "label": "Needs focused Image Resizer repro",
+    "detail": "The report only attaches a bug-report ZIP; it does not say how Image Resizer was launched, which preset or file type was used, what result appeared, or whether the shell entry itself failed."
   },
   "next_action": {
     "glyph": "💬",
     "label": "Request a concrete Image Resizer reproduction",
-    "reason": "The missing interaction and outcome details must be known before selecting an Image Resizer code path to investigate."
+    "reason": "Without the entry point, resize settings, sample file type, and visible failure, triage cannot isolate whether the bug is in shell integration, settings, or the resize pipeline."
   },
   "actions": [
     {
@@ -26,23 +26,28 @@
       "comment": {
         "target": "issue",
         "number": 49850,
-        "body": "Thanks for the report and bug-report ZIP. Could you describe the exact steps you take after selecting an image, including whether you launch Image Resizer from the Explorer context menu, which size/settings you select, and what happens after you click Resize? Please include any visible error and a sample image type/extension. Also confirm whether Image Resizer is enabled in PowerToys Settings and whether the context-menu entry appears."
+        "body": "Thanks for attaching the bug-report ZIP. Could you add the exact Image Resizer steps too: how you launch it (Explorer context menu, drag/drop, etc.), the file type you test with, which preset or custom size you choose, and what happens after you click Resize? Please also say whether the Image Resizer context-menu entry appears at all and whether you see any visible error dialog or output file."
       },
       "note": "Draft only; no upstream comment is posted without explicit approval."
+    },
+    {
+      "id": "hold-49850",
+      "type": "hold",
+      "label": "Wait for focused repro details"
     }
   ],
   "confidence": "High",
-  "evaluated_at": "2026-08-13T02:20:00Z",
-  "source_updated_at": "2026-08-13T00:15:07Z",
+  "evaluated_at": "2026-08-14T00:25:39.6245114Z",
+  "source_updated_at": "2026-08-13T20:00:50.0000000Z",
   "judgment": {
     "status": "needs_information",
-    "rationale": "The report establishes the affected utility and version but contains no observable failure behavior. The attached archive may provide diagnostics, but it cannot establish which UI or shell-extension path failed without the user's steps and outcome.",
+    "rationale": "The attached ZIP may contain logs, but the issue body still omits the concrete Image Resizer interaction, selected settings, file type, expected result, and actual failure.",
     "evidence": [
-      "The report targets Image Resizer on PowerToys v0.101.2241 installed from GitHub.",
-      "A PowerToys report ZIP is linked.",
-      "Expected behavior, actual behavior, and detailed reproduction steps are empty.",
-      "No error message, image format, context-menu behavior, or resize settings are supplied."
+      "The issue body lists only a PowerToysReport ZIP under Steps to reproduce and leaves Expected Behavior, Actual Behavior, Additional Information, and Other Software blank.",
+      "The live issue has no comments, assignees, or linked PRs/issues that would narrow the failing Image Resizer code path."
     ],
-    "recommended_action": "Ask for the exact entry point, resize settings, sample image type, visible result or error, and whether the Explorer context-menu entry appears."
+    "recommended_action": "Ask for the exact launch path, sample file type, selected resize preset/custom size, and the visible failure before spending engineering time on a speculative investigation.",
+    "evaluated_at": "2026-08-14T00:25:39.6245114Z",
+    "source_updated_at": "2026-08-13T20:00:50.0000000Z"
   }
 }

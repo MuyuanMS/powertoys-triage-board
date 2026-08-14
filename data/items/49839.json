@@ -5,7 +5,7 @@
   "stage": "dropped",
   "owes": "author",
   "pending_author": true,
-  "generated_at": "2026-08-13T10:19:32.3243304+08:00",
+  "generated_at": "2026-08-13T22:33:53.4392071+08:00",
   "status": {
     "glyph": "🔗",
     "label": "Duplicate and outdated version",
@@ -18,17 +18,16 @@
   },
   "actions": [],
   "confidence": "High",
-  "evaluated_at": "2026-08-13T02:20:00Z",
-  "source_updated_at": "2026-08-12T16:50:36Z",
+  "evaluated_at": "2026-08-14T00:05:43.6608691Z",
+  "source_updated_at": "2026-08-12T16:50:36.0000000Z",
   "judgment": {
-    "status": "duplicate_or_handled",
-    "rationale": "The report has no described behavior and targets a substantially outdated PowerToys version. A PowerToys collaborator already linked the canonical issue and requested an update.",
+    "status": "waiting_on_author",
+    "rationale": "A collaborator linked issue 31226 and asked the reporter to update from PowerToys 0.83.0 to the latest stable release.",
     "evidence": [
-      "The report uses PowerToys 0.83.0 and provides no expected or actual behavior.",
-      "The only attachment is a text file; no current-version reproduction is described.",
-      "Collaborator jiripolasek requested an update to the latest stable version.",
-      "The collaborator marked issue 31226 as the duplicate target."
+      "A collaborator linked issue 31226 and asked the reporter to update from PowerToys 0.83.0 to the latest stable release."
     ],
-    "recommended_action": "Do not start duplicate investigation. Wait for a current-version reproduction that differs from issue 31226."
+    "recommended_action": "No separate agent investigation is warranted unless the problem reproduces on a current release with new evidence.",
+    "evaluated_at": "2026-08-14T00:05:43.6608691Z",
+    "source_updated_at": "2026-08-12T16:50:36.0000000Z"
   }
 }

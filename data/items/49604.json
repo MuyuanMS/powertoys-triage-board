@@ -2,30 +2,27 @@
   "number": 49604,
   "kind": "issue",
   "track": "fix",
-  "stage": "awaiting_pr_approval",
+  "stage": "triaged",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T22:08:03.4397689+08:00",
+  "generated_at": "2026-08-13T22:33:53.4392071+08:00",
   "status": {
-    "detail": "Fork PR #177 review-clean (8 rounds); DockMultiMonitorTests 42/42 green.",
-    "label": "Ready to open upstream PR",
-    "glyph": "🚀"
+    "glyph": "🔁",
+    "label": "Handled elsewhere / already owned",
+    "detail": "The dashboard already carries a converged local design/fork fix for this dock issue."
   },
-  "next_action": null,
+  "next_action": {
+    "glyph": "🔁",
+    "label": "Track existing ownership",
+    "reason": "Linked work or existing ownership signals already cover the next step."
+  },
   "actions": [
     {
-      "label": "Open upstream PR as me",
-      "id": "open-pr-49604",
-      "type": "open_upstream_pr",
-      "confirm": true,
-      "pr": {
-        "body": "Fixes #49604.\n\nSecondary-monitor Dock configs were created as customized with empty band lists, so the resolvers returned empty bands instead of the global defaults. This leaves the secondary configs uncustomized and migrates legacy empty-band configs; DockMultiMonitorTests extended to cover the secondary + mixed-DPI arrangements (42/42 green).",
-        "head": "MuyuanMS:copilot/fix-dock-secondary-blank",
-        "draft": false,
-        "title": "[CmdPal][Dock] Fix blank dock on secondary monitor",
-        "base": "main"
-      },
-      "primary": true
+      "id": "track-49604",
+      "type": "hold",
+      "label": "Track linked work / ownership",
+      "primary": true,
+      "note": "No upstream action. Follow the linked PR, issue, assignment, localization queue, or existing fork work."
     }
   ],
   "confidence": "High",
@@ -55,5 +52,18 @@
     "number": 177,
     "url": "https://github.com/MuyuanMS/PowerToys/pull/177"
   },
-  "fork_branch": "copilot/fix-dock-secondary-blank"
+  "fork_branch": "copilot/fix-dock-secondary-blank",
+  "evaluated_at": "2026-08-14T00:05:43.6608691Z",
+  "source_updated_at": "2026-08-07T15:48:34.0000000Z",
+  "judgment": {
+    "status": "duplicate_or_handled",
+    "rationale": "The dashboard already carries a converged local design/fork fix for this dock issue.",
+    "evidence": [
+      "The dashboard already carries a converged local design/fork fix for this dock issue.",
+      "No upstream action. Follow the linked PR, issue, assignment, localization queue, or existing fork work."
+    ],
+    "recommended_action": "Linked work or existing ownership signals already cover the next step.",
+    "evaluated_at": "2026-08-14T00:05:43.6608691Z",
+    "source_updated_at": "2026-08-07T15:48:34.0000000Z"
+  }
 }

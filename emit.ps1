@@ -554,7 +554,10 @@ foreach ($it in $src.items) {
   } else {
     $null
   }
-  $writeArtifact = $workerArtifacts.ContainsKey($n) -or
+  # Worker artifacts are the durable source of truth. Rebuild the index around
+  # them, but never project them through the smaller overlay schema and drop
+  # freshness, judgment, review, or design evidence.
+  $writeArtifact =
     (-not $standaloneMode -and -not $existingArtifacts.ContainsKey($n) -and $OV.ContainsKey($n))
   $hasArtifact = ($o -ne $null)
   $track = if ($o -and $o.track) { $o.track } elseif ($it.track) { $it.track } else { $null }
@@ -584,7 +587,11 @@ foreach ($it in $src.items) {
     $proposedOpen = @($o.proposed_comments | Where-Object { $_.disposition -eq 'proposed' }).Count
   }
   $primary = $null
-  if ($hasArtifact -and $o.needs_revalidation) {
+  if ($hasArtifact -and $stage -eq 'owned_elsewhere') {
+    $primary = [ordered]@{ type='monitor'; label='Owned elsewhere' }
+  } elseif ($hasArtifact -and $stage -eq 'ci_blocked') {
+    $primary = [ordered]@{ type='monitor'; label='Wait for CI' }
+  } elseif ($hasArtifact -and $o.needs_revalidation) {
     $primary = [ordered]@{ type='rerun'; label=if ($it.kind -eq 'pr') { 'Re-run review' } else { 'Re-run triage' } }
   } elseif ($hasArtifact -and $it.kind -eq 'pr') {
     if ($proposedOpen -gt 0) {

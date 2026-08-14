@@ -5,13 +5,17 @@
   "stage": "awaiting_pr_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-06T22:08:03.4397689+08:00",
+  "generated_at": "2026-08-13T22:33:53.4392071+08:00",
   "status": {
-    "detail": "Fork PR #175 review-clean (2 rounds); targeted AoT/SettingsAPI x64 Debug builds pass.",
-    "label": "Ready to open upstream PR",
-    "glyph": "🚀"
+    "glyph": "🚀",
+    "label": "Fork fix already prepared",
+    "detail": "The dashboard already has a reviewed fork PR ready for maintainer approval."
   },
-  "next_action": null,
+  "next_action": {
+    "glyph": "👀",
+    "label": "Use existing fork PR",
+    "reason": "This issue already has a prepared fix path and does not need another fast-triage investigation."
+  },
   "actions": [
     {
       "label": "Open upstream PR as me",
@@ -57,5 +61,17 @@
     "number": 175,
     "url": "https://github.com/MuyuanMS/PowerToys/pull/175"
   },
-  "fork_branch": "copilot/issue-49599-hot-reload-settings"
+  "fork_branch": "copilot/issue-49599-hot-reload-settings",
+  "evaluated_at": "2026-08-14T00:05:43.6608691Z",
+  "source_updated_at": "2026-07-31T23:35:39.0000000Z",
+  "judgment": {
+    "status": "actionable_design",
+    "rationale": "The dashboard already has a reviewed fork PR ready for maintainer approval.",
+    "evidence": [
+      "The dashboard already has a reviewed fork PR ready for maintainer approval."
+    ],
+    "recommended_action": "This issue already has a prepared fix path and does not need another fast-triage investigation.",
+    "evaluated_at": "2026-08-14T00:05:43.6608691Z",
+    "source_updated_at": "2026-07-31T23:35:39.0000000Z"
+  }
 }

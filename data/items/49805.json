@@ -5,7 +5,7 @@
   "stage": "awaiting_design_approval",
   "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-13T10:19:32.3243304+08:00",
+  "generated_at": "2026-08-13T22:33:53.4392071+08:00",
   "status": {
     "glyph": "🎯",
     "label": "Design ready — needs approval",
@@ -37,18 +37,6 @@
     }
   ],
   "confidence": "High",
-  "evaluated_at": "2026-08-12T07:32:59.3412352Z",
-  "source_updated_at": "2026-08-10T18:19:06Z",
-  "judgment": {
-    "status": "actionable_design",
-    "rationale": "The reproduction maps directly to a regression in bare-Space hotkey consumption. Exact production and test symbols are identified; no missing evidence blocks implementation.",
-    "evidence": [
-      "The open issue is labeled Issue-Bug and Product-Peek, with no assignees, comments, linked work, or duplicate found.",
-      "The bare-Space feature commit introduced the non-swallowing branch.",
-      "Earlier eligible Peek shortcuts were swallowed by the centralized keyboard hook."
-    ],
-    "recommended_action": "Approve the converged design and build the fix in the fork."
-  },
   "design": {
     "root_cause": "Peek::on_hotkey handles an eligible bare-Space activation, signals Peek, and then returns false. PowertoyModuleIface::on_hotkey defines true as consuming the key, so CentralizedKeyboardHook lets the handled keydown continue. Foreground activation or hide timing can deliver that key to the newly focused or closing Peek window, where the initially focused PinButton invokes TitleBar.Pin and toggles the pinned state.",
     "fix_plan": "Return true after every eligible, successfully handled Peek activation while retaining false for disabled or ineligible paths. Add a bare-Space UI regression that alternates differently sized images and proves repeated open/close cycles never retain pinned bounds.",
@@ -167,5 +155,21 @@
   "fork_issue": {
     "number": 324,
     "url": "https://github.com/MuyuanMS/PowerToys/issues/324"
+  },
+  "evaluated_at": "2026-08-14T00:05:43.6608691Z",
+  "source_updated_at": "2026-08-10T18:19:06.0000000Z",
+  "judgment": {
+    "status": "actionable_design",
+    "rationale": "The investigator/adversary loop converged after two rounds. The fix consumes handled bare-Space keydowns in Peek and adds focused regression coverage.",
+    "evidence": [
+      "The investigator/adversary loop converged after two rounds. The fix consumes handled bare-Space keydowns in Peek and adds focused regression coverage.",
+      "Peek::on_hotkey currently returns false only for the handled bare-Space branch.",
+      "PowertoyModuleIface::on_hotkey and CentralizedKeyboardHook::KeyboardHookProc use true to swallow keydown.",
+      "PinButton invokes TitleBar.Pin, which toggles the Pinned state.",
+      "Peek's MainWindow.Toggle path can close the visible window on Space, making the leak possible on both open and close timing."
+    ],
+    "recommended_action": "The production and test symbols are identified and no missing evidence blocks implementation.",
+    "evaluated_at": "2026-08-14T00:05:43.6608691Z",
+    "source_updated_at": "2026-08-10T18:19:06.0000000Z"
   }
 }

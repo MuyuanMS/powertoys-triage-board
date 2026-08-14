@@ -1,25 +1,558 @@
 {
-  "number": 48627,
+  "schemaVersion": 3,
+  "id": "pr-48627",
   "kind": "pr",
-  "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
-  "pending_author": false,
-  "generated_at": "2026-08-06T22:08:03.4397689+08:00",
-  "status": {
-    "detail": "Fork PR 288 latest Copilot review generated no new comments; local build/context validation is still required before approval.",
-    "label": "Copilot clean — validation pending",
-    "glyph": "🔄"
-  },
-  "next_action": null,
-  "actions": [
-    null
+  "number": 48627,
+  "url": "https://github.com/microsoft/PowerToys/pull/48627",
+  "title": "Add Keyboard Manager text replacements",
+  "author": "illgitthat",
+  "authorAssociation": "FIRST_TIME_CONTRIBUTOR",
+  "isCommunity": true,
+  "isMine": false,
+  "state": "OPEN",
+  "draft": false,
+  "createdAt": "2026-06-15T04:21:22Z",
+  "updatedAt": "2026-07-09T07:32:08Z",
+  "labels": [
+    "Needs-Team-Response",
+    "Product-Keyboard Manager"
   ],
-  "needs_revalidation": true,
-  "confidence": "Medium",
-  "fork_pr": {
-    "number": 288,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/288"
+  "stage": "awaiting_author",
+  "owes": "author",
+  "processVerdict": "proceed",
+  "source": {
+    "repository": "microsoft/PowerToys",
+    "headRefOid": "19e053aabb26af8098fb6951550b5f28e6de8a99",
+    "baseRefOid": "f740d0b3e5ed8708077004bca5dbe56de76e3f76",
+    "updatedAt": "2026-07-09T07:32:08Z"
   },
-  "fork_branch": "pr-iterate/48627-v2"
+  "refresh": {
+    "generatedAt": "2026-08-13T13:33:37Z",
+    "sourceUpdatedAt": "2026-07-09T07:32:08Z",
+    "sourceHeadRefOid": "19e053aabb26af8098fb6951550b5f28e6de8a99",
+    "latestCommitAt": "2026-07-08T15:36:47Z",
+    "latestIssueCommentAt": "2026-07-09T07:32:08Z",
+    "latestReviewCommentAt": "2026-07-09T07:26:49Z",
+    "latestReviewAt": "2026-07-09T07:26:49Z",
+    "checkedAt": "2026-08-13T13:26:47Z"
+  },
+  "signalCounts": {
+    "issueComments": 4,
+    "reviewComments": 15,
+    "reviews": 6,
+    "commits": 7,
+    "changedFiles": 29,
+    "unresolvedThreads": 1
+  },
+  "status": {
+    "glyph": "⏳",
+    "label": "Waiting on the author",
+    "detail": "The current head still matches the converged artifact. Visible checks remain green, but one upstream review thread plus the July 9 Keyboard Manager product feedback still await an author response or update; no new commits have landed since 2026-07-08."
+  },
+  "nextAction": "Wait for an upstream author reply or new push before reopening the review loop.",
+  "process": {
+    "summary": "Proceed. The first-time contributor supplied a linked issue, screenshots, a recording, and Windows 11 validation; CLA and all visible checks pass. No duplicate, provenance, scope, or template blocker was found.",
+    "asks": [],
+    "evidence": [
+      "The PR description explains the Keyboard Manager text-replacement feature and links issue 5074.",
+      "The description includes two UI screenshots and a user-attachment recording demonstrating the feature.",
+      "The author reported validation on Windows 11 in the review discussion.",
+      "The license/cla check passed.",
+      "The linked issue remains open and tracks the same text-expander feature; no competing implementation PR was found.",
+      "A maintainer described the idea as good, targeted it for 0.102, and said a detailed review would follow."
+    ],
+    "blockers": []
+  },
+  "phase0": {
+    "verdict": "proceed",
+    "processAsks": [],
+    "notes": [
+      "The open product discussion about optional trigger keys is not duplicated in the draft review.",
+      "The existing unresolved CapsLock/toggle-state review thread remains a code blocker and is referenced rather than reposted."
+    ],
+    "gateEvidence": {
+      "P1_cla": {
+        "status": "pass",
+        "evidence": "license/cla completed successfully."
+      },
+      "P2_demo": {
+        "status": "pass",
+        "evidence": "Two screenshots and one recording are embedded in the PR description."
+      },
+      "P3_validation": {
+        "status": "pass",
+        "evidence": "The author confirmed Windows 11 validation; the deep review additionally completed local x64 Debug builds and targeted tests."
+      },
+      "P4_provenance": {
+        "status": "pass",
+        "evidence": "No suspicious copied-work or undisclosed-generation signal was found."
+      },
+      "P5_duplicate": {
+        "status": "pass",
+        "evidence": "Issue 5074 is the canonical linked feature request; no duplicate implementation PR was found."
+      },
+      "P6_scope": {
+        "status": "pass",
+        "evidence": "The change is in scope for Keyboard Manager and is labeled Product-Keyboard Manager."
+      },
+      "P7_ci": {
+        "status": "pass_with_note",
+        "evidence": "All 3 visible checks passed: label, detect-telemetry-events, and license/cla. The current rollup does not include the full Windows build matrix."
+      },
+      "P8_template": {
+        "status": "pass",
+        "evidence": "The description states the feature, links the issue, and provides visual validation."
+      },
+      "P9_staleness": {
+        "status": "pass",
+        "evidence": "The PR is awaiting team review rather than missing author-supplied process evidence; Needs-Team-Response is applied."
+      }
+    }
+  },
+  "freshness": {
+    "headRefOid": "19e053aabb26af8098fb6951550b5f28e6de8a99",
+    "updatedAt": "2026-07-09T07:32:08Z",
+    "latestCommitAt": "2026-07-08T15:36:47Z",
+    "latestCommentAt": "2026-07-09T07:32:08Z",
+    "latestReviewAt": "2026-07-09T07:26:49Z",
+    "latestReviewCommentAt": "2026-07-09T07:26:49Z",
+    "lastMeaningfulEventAt": "2026-07-09T07:32:08Z",
+    "lastMeaningfulEvent": "Maintainer said the idea is good, targeted 0.102, and promised a detailed follow-up review.",
+    "headCommitCount": 7,
+    "changedFileCount": 29,
+    "unresolvedReviewThreadCount": 1,
+    "reviewDecision": "REVIEW_REQUIRED",
+    "mergeable": "UNKNOWN",
+    "checkSummary": "3/3 visible checks succeeded; 0 failed and 0 are pending. Full Windows build CI is not present in the current check rollup.",
+    "checkedAt": "2026-08-13T13:26:47Z"
+  },
+  "responsibility": {
+    "party": "maintainer",
+    "reason": "Phase 0 is clear and the deep review is complete; the next action is maintainer approval, editing, or holding of the drafted review. Upstream posting remains prohibited until explicit written approval."
+  },
+  "proposedComments": [
+    {
+      "id": "c-48627-1",
+      "kind": "companion",
+      "severity": "high",
+      "disposition": "proposed",
+      "title": "Make replacement injection and key pairing failure-safe",
+      "body": "### Make replacement injection and key pairing failure-safe\n\n**Severity:** `high`\n\nThe replacement path currently releases and then re-synthesizes Shift, ignores SendInput failures, suppresses the trigger key-down without its matching key-up, and has no way to preserve multiple overlapping suppressed releases. This can leave modifiers stuck, expose unmatched key-up events, or partially delete the trigger when injection fails. Please release held text modifiers once, propagate injection success, suppress each matching physical key-up, preserve pending releases across settings reloads, and add held-Shift, failure, overlap, and reload regression tests.",
+      "inDiff": false,
+      "path": "src/modules/keyboardmanager/KeyboardManagerEngineLibrary/KeyboardEventHandlers.cpp"
+    },
+    {
+      "id": "c-48627-2",
+      "kind": "companion",
+      "severity": "high",
+      "disposition": "proposed",
+      "title": "Keep the matcher synchronized with the text users actually see",
+      "body": "### Keep the matcher synchronized with the text users actually see\n\n**Severity:** `high`\n\nThe GeneratedByKBM early return means text replacement does not observe single-key-remap output or other Keyboard Manager text injection, while the buffered physical prefix remains live. The handler also runs before OS-level shortcut remaps. These paths let the buffer diverge from visible text and can backspace unrelated characters. Please give shortcut remaps priority and either feed downstream remap output into the matcher or clear the prefix whenever injected output cannot be represented, with regression coverage for key-to-key and key-to-text remaps.",
+      "inDiff": false,
+      "path": "src/modules/keyboardmanager/KeyboardManagerEngineLibrary/KeyboardManager.cpp"
+    },
+    {
+      "id": "c-48627-3",
+      "kind": "companion",
+      "severity": "high",
+      "disposition": "proposed",
+      "title": "Make text-replacement edits transactional",
+      "body": "### Make text-replacement edits transactional\n\n**Severity:** `high`\n\nEditing deletes the original native mapping and editor record before the replacement add/save succeeds. If either operation fails, the original is lost and retrying can fail because the old trigger is already gone. Please retain or restore the original mapping and settings on failure, remove the old editor record only after the replacement is committed, and surface enable/save failures instead of leaving UI and engine state inconsistent.",
+      "inDiff": false,
+      "path": "src/modules/keyboardmanager/KeyboardManagerEditorUI/Pages/MainPage.xaml.cs"
+    },
+    {
+      "id": "c-48627-4",
+      "kind": "companion",
+      "severity": "medium",
+      "disposition": "proposed",
+      "title": "Reject unreachable trigger combinations and bound input sizes",
+      "body": "### Reject unreachable trigger combinations and bound input sizes\n\n**Severity:** `medium`\n\nA trigger that is a prefix of another trigger makes the longer mapping unreachable because replacement fires as soon as the shorter suffix matches. The editor and native loader should reject prefix conflicts consistently. Please also impose shared trigger/replacement length limits in both UI and native validation so persisted settings cannot create unbounded backspace or injection batches.",
+      "inDiff": false,
+      "path": "src/modules/keyboardmanager/common/MappingConfiguration.cpp"
+    },
+    {
+      "id": "c-48627-5",
+      "kind": "companion",
+      "severity": "high",
+      "disposition": "proposed",
+      "title": "Rebase onto current main and rerun the x64 Debug chain",
+      "body": "### Rebase onto current main and rerun the x64 Debug chain\n\n**Severity:** `high`\n\nThe branch contains merge commits from an older main and needs a current-main rebase before merge. In particular, the current Helpers::SendTextInput API requires the KeyboardManager input interface, so the replayed replacement call must pass it. Please resolve current-main API drift and rerun the PowerToys essentials, Keyboard Manager module/editor, and targeted test projects.",
+      "inDiff": false,
+      "path": "src/modules/keyboardmanager/KeyboardManagerEngineLibrary/KeyboardEventHandlers.cpp"
+    }
+  ],
+  "safeActions": [
+    {
+      "id": "post-review-48627",
+      "type": "post_review",
+      "label": "Post REQUEST_CHANGES review",
+      "primary": true,
+      "requiresApproval": true,
+      "review": {
+        "repository": "microsoft/PowerToys",
+        "pullRequest": 48627,
+        "event": "REQUEST_CHANGES",
+        "body": "Thanks for the detailed implementation, screenshots, and recording. Before this can merge, please address the following correctness issues:\n\n- **[High] Current-main compatibility:** rebase onto current `main` and resolve the `Helpers::SendTextInput` API change by passing the Keyboard Manager input interface, then rerun the x64 Debug essentials/module/editor/test chain.\n- **[High] Injection and key pairing:** do not re-synthesize Shift after replacement; propagate `SendInput` failure; suppress the physical key-up matching every suppressed trigger key-down; and preserve overlapping/pending releases across settings reloads.\n- **[High] Matcher consistency:** keep the replacement buffer synchronized with single-key remap and key-to-text output, and give OS-level shortcut remaps priority so visible text cannot diverge from the buffered prefix.\n- **[High] Transactional editing:** do not permanently delete the original replacement until the new native mapping and settings save succeed; restore it and surface an error on failure.\n- **[Medium] Trigger validation:** reject prefix conflicts that make longer mappings unreachable, and enforce shared trigger/replacement length limits in UI and native settings loading.\n\nPlease also address the existing CapsLock/toggle-state thread. Regression coverage should include multi-character deletion, held Shift, injected/remapped output, failed injection, overlapping key releases, settings reload, edit rollback, and prefix conflicts."
+      },
+      "note": "Approval-gated. Validate the pinned head and current diff again immediately before publishing."
+    },
+    {
+      "id": "open-pr-48627",
+      "type": "open_pr",
+      "label": "Open upstream PR",
+      "primary": false,
+      "requiresApproval": false,
+      "url": "https://github.com/microsoft/PowerToys/pull/48627"
+    }
+  ],
+  "reviewData": {
+    "schemaVersion": 2,
+    "repository": "microsoft/PowerToys",
+    "pullRequest": 48627,
+    "stage": "awaiting_review_approval",
+    "processVerdict": "proceed",
+    "owes": "maintainer",
+    "pendingReviewBody": "Thanks for the detailed implementation, screenshots, and recording. Before this can merge, please address the following correctness issues:\n\n- **[High] Current-main compatibility:** rebase onto current `main` and resolve the `Helpers::SendTextInput` API change by passing the Keyboard Manager input interface, then rerun the x64 Debug essentials/module/editor/test chain.\n- **[High] Injection and key pairing:** do not re-synthesize Shift after replacement; propagate `SendInput` failure; suppress the physical key-up matching every suppressed trigger key-down; and preserve overlapping/pending releases across settings reloads.\n- **[High] Matcher consistency:** keep the replacement buffer synchronized with single-key remap and key-to-text output, and give OS-level shortcut remaps priority so visible text cannot diverge from the buffered prefix.\n- **[High] Transactional editing:** do not permanently delete the original replacement until the new native mapping and settings save succeed; restore it and surface an error on failure.\n- **[Medium] Trigger validation:** reject prefix conflicts that make longer mappings unreachable, and enforce shared trigger/replacement length limits in UI and native settings loading.\n\nPlease also address the existing CapsLock/toggle-state thread. Regression coverage should include multi-character deletion, held Shift, injected/remapped output, failed injection, overlapping key releases, settings reload, edit rollback, and prefix conflicts.",
+    "proposedComments": [
+      {
+        "id": "c-48627-1",
+        "kind": "companion",
+        "severity": "high",
+        "title": "Make replacement injection and key pairing failure-safe",
+        "body": "### Make replacement injection and key pairing failure-safe\n\n**Severity:** `high`\n\nThe replacement path currently releases and then re-synthesizes Shift, ignores SendInput failures, suppresses the trigger key-down without its matching key-up, and has no way to preserve multiple overlapping suppressed releases. This can leave modifiers stuck, expose unmatched key-up events, or partially delete the trigger when injection fails. Please release held text modifiers once, propagate injection success, suppress each matching physical key-up, preserve pending releases across settings reloads, and add held-Shift, failure, overlap, and reload regression tests.",
+        "path": "src/modules/keyboardmanager/KeyboardManagerEngineLibrary/KeyboardEventHandlers.cpp"
+      },
+      {
+        "id": "c-48627-2",
+        "kind": "companion",
+        "severity": "high",
+        "title": "Keep the matcher synchronized with the text users actually see",
+        "body": "### Keep the matcher synchronized with the text users actually see\n\n**Severity:** `high`\n\nThe GeneratedByKBM early return means text replacement does not observe single-key-remap output or other Keyboard Manager text injection, while the buffered physical prefix remains live. The handler also runs before OS-level shortcut remaps. These paths let the buffer diverge from visible text and can backspace unrelated characters. Please give shortcut remaps priority and either feed downstream remap output into the matcher or clear the prefix whenever injected output cannot be represented, with regression coverage for key-to-key and key-to-text remaps.",
+        "path": "src/modules/keyboardmanager/KeyboardManagerEngineLibrary/KeyboardManager.cpp"
+      },
+      {
+        "id": "c-48627-3",
+        "kind": "companion",
+        "severity": "high",
+        "title": "Make text-replacement edits transactional",
+        "body": "### Make text-replacement edits transactional\n\n**Severity:** `high`\n\nEditing deletes the original native mapping and editor record before the replacement add/save succeeds. If either operation fails, the original is lost and retrying can fail because the old trigger is already gone. Please retain or restore the original mapping and settings on failure, remove the old editor record only after the replacement is committed, and surface enable/save failures instead of leaving UI and engine state inconsistent.",
+        "path": "src/modules/keyboardmanager/KeyboardManagerEditorUI/Pages/MainPage.xaml.cs"
+      },
+      {
+        "id": "c-48627-4",
+        "kind": "companion",
+        "severity": "medium",
+        "title": "Reject unreachable trigger combinations and bound input sizes",
+        "body": "### Reject unreachable trigger combinations and bound input sizes\n\n**Severity:** `medium`\n\nA trigger that is a prefix of another trigger makes the longer mapping unreachable because replacement fires as soon as the shorter suffix matches. The editor and native loader should reject prefix conflicts consistently. Please also impose shared trigger/replacement length limits in both UI and native validation so persisted settings cannot create unbounded backspace or injection batches.",
+        "path": "src/modules/keyboardmanager/common/MappingConfiguration.cpp"
+      },
+      {
+        "id": "c-48627-5",
+        "kind": "companion",
+        "severity": "high",
+        "title": "Rebase onto current main and rerun the x64 Debug chain",
+        "body": "### Rebase onto current main and rerun the x64 Debug chain\n\n**Severity:** `high`\n\nThe branch contains merge commits from an older main and needs a current-main rebase before merge. In particular, the current Helpers::SendTextInput API requires the KeyboardManager input interface, so the replayed replacement call must pass it. Please resolve current-main API drift and rerun the PowerToys essentials, Keyboard Manager module/editor, and targeted test projects.",
+        "path": "src/modules/keyboardmanager/KeyboardManagerEngineLibrary/KeyboardEventHandlers.cpp"
+      }
+    ],
+    "publicPayloads": [
+      {
+        "id": "review-48627",
+        "type": "review",
+        "event": "REQUEST_CHANGES",
+        "body": "Thanks for the detailed implementation, screenshots, and recording. Before this can merge, please address the following correctness issues:\n\n- **[High] Current-main compatibility:** rebase onto current `main` and resolve the `Helpers::SendTextInput` API change by passing the Keyboard Manager input interface, then rerun the x64 Debug essentials/module/editor/test chain.\n- **[High] Injection and key pairing:** do not re-synthesize Shift after replacement; propagate `SendInput` failure; suppress the physical key-up matching every suppressed trigger key-down; and preserve overlapping/pending releases across settings reloads.\n- **[High] Matcher consistency:** keep the replacement buffer synchronized with single-key remap and key-to-text output, and give OS-level shortcut remaps priority so visible text cannot diverge from the buffered prefix.\n- **[High] Transactional editing:** do not permanently delete the original replacement until the new native mapping and settings save succeed; restore it and surface an error on failure.\n- **[Medium] Trigger validation:** reject prefix conflicts that make longer mappings unreachable, and enforce shared trigger/replacement length limits in UI and native settings loading.\n\nPlease also address the existing CapsLock/toggle-state thread. Regression coverage should include multi-character deletion, held Shift, injected/remapped output, failed injection, overlapping key releases, settings reload, edit rollback, and prefix conflicts."
+      }
+    ],
+    "decisions": {
+      "review-48627": "pending",
+      "c-48627-1": "pending",
+      "c-48627-2": "pending",
+      "c-48627-3": "pending",
+      "c-48627-4": "pending",
+      "c-48627-5": "pending"
+    },
+    "pinnedFreshness": {
+      "headRefOid": "19e053aabb26af8098fb6951550b5f28e6de8a99",
+      "updatedAt": "2026-07-09T07:32:08Z",
+      "latestCommitAt": "2026-07-08T15:36:47Z",
+      "latestCommentAt": "2026-07-09T07:32:08Z",
+      "latestReviewAt": "2026-07-09T07:26:49Z",
+      "latestReviewCommentAt": "2026-07-09T07:26:49Z",
+      "commitCount": 7,
+      "changedFileCount": 29,
+      "issueCommentCount": 4,
+      "reviewCommentCount": 15,
+      "reviewCount": 6,
+      "unresolvedReviewThreadCount": 1,
+      "checkedAt": "2026-08-13T13:26:47Z"
+    },
+    "internalEvidence": {
+      "phase0": {
+        "verdict": "proceed",
+        "authorAssociation": "FIRST_TIME_CONTRIBUTOR",
+        "linkedIssue": {
+          "number": 5074,
+          "title": "Text Replacement / expander",
+          "state": "OPEN",
+          "updatedAt": "2026-08-04T02:57:39Z",
+          "commentCount": 63,
+          "url": "https://github.com/microsoft/PowerToys/issues/5074"
+        },
+        "demo": "Two screenshots and one recording are embedded in the PR description.",
+        "authorValidation": "Author confirmed Windows 11 validation in review discussion.",
+        "cla": "SUCCESS",
+        "visibleChecks": {
+          "total": 3,
+          "success": 3,
+          "failed": 0,
+          "pending": 0,
+          "names": [
+            "label",
+            "detect-telemetry-events",
+            "license/cla"
+          ]
+        },
+        "maintainerDiscussion": "Optional trigger-key behavior remains under discussion; the maintainer called the idea good, targeted 0.102, and said detailed review would follow."
+      },
+      "resumeAndSync": {
+        "forkRepository": "MuyuanMS/PowerToys",
+        "forkPullRequest": 352,
+        "forkPullRequestUrl": "https://github.com/MuyuanMS/PowerToys/pull/352",
+        "forkBranch": "pr-iterate/48627-v3",
+        "worktree": "C:\\PowerToys-88fc",
+        "supersededForkPullRequest": 288,
+        "supersededForkBranch": "pr-iterate/48627-v2",
+        "supersededForkPullRequestClosed": true,
+        "forcePushBlockedByForkRules": true,
+        "latestMainOid": "5193a1e49729bf8d9a8553e352e7c0c285e50188",
+        "rebasedHeadOid": "e062ab5e71b7d25b7534d8a97e53e96cb96c13b7",
+        "upstreamHeadOid": "19e053aabb26af8098fb6951550b5f28e6de8a99",
+        "forkUpdatedAt": "2026-08-13T13:13:32Z",
+        "forkCommitCount": 19
+      },
+      "scopeValidation": {
+        "originalChangedFileCount": 29,
+        "reviewChangedFileCount": 31,
+        "allOriginalFilesPresent": true,
+        "missingOriginalFiles": [],
+        "extraFiles": [
+          "src/modules/keyboardmanager/common/Helpers.cpp",
+          "src/modules/keyboardmanager/common/Helpers.h"
+        ],
+        "extraFileRationale": "Tightly coupled SendTextInput result propagation required to make replacement injection failure-safe.",
+        "reviewFixCommitCount": 14,
+        "reviewFixNetDiff": {
+          "files": 17,
+          "additions": 324,
+          "deletions": 56
+        }
+      },
+      "reviewConvergence": {
+        "latestReviewHeadOid": "e062ab5e71b7d25b7534d8a97e53e96cb96c13b7",
+        "latestFreshReviewAt": "2026-08-13T13:10:55Z",
+        "latestFreshReviewResult": "Copilot reviewed 31 of 31 changed files and generated no new comments.",
+        "forkCopilotReviewCount": 9,
+        "currentHeadCopilotReviewCount": 1,
+        "publishedCopilotThreadCount": 9,
+        "resolvedCopilotThreadCount": 9,
+        "unresolvedCopilotThreadCount": 0,
+        "unresolvedAllThreadCount": 0,
+        "suppressedCommentCountOnFinalReview": 2,
+        "suppressedCommentPolicy": "Ignored after the fresh zero-comment review per the review-loop policy.",
+        "reviewFixCommits": [
+          "1066d8e3861b258587d68d380fb2e20ce4da0baf",
+          "2efc2731c7973641bcf3bfecbe9014914eda613c",
+          "148e7a411d1cc4feb43d35837105a236f8ce417f",
+          "3479de6ad0e1bebe87bfda4578e8b420441c0b32",
+          "28a6e60348024d977c0e6313e53aaa8f261e319d",
+          "f8d7114a6d3378fba3cc228d99887b54cc6559ba",
+          "e383a54f1e9ad8b8c25a4b28010d9d1bcd101a03",
+          "a9af7fe06de0836695b40a85fc1c9828941f347f",
+          "6bd6d75d849b257cf2b410948bc995042c3de839",
+          "e21c29cf4d5e97ae8677b4dbb1d571936d901f15",
+          "13f5e790790f32db5a0bdc24b6ba9e699e59cb74",
+          "72052a7e3a8700baeeb21fd444209685851865ea",
+          "1bd7cd69d5527ff2dfd7d620dc988fc1e4749495",
+          "e062ab5e71b7d25b7534d8a97e53e96cb96c13b7"
+        ]
+      },
+      "verification": {
+        "configuration": "x64 Debug",
+        "builds": [
+          {
+            "target": "PowerToys essentials",
+            "command": "build-essentials.cmd",
+            "result": "passed"
+          },
+          {
+            "target": "Keyboard Manager engine/module DLL",
+            "result": "passed",
+            "output": "C:\\PowerToys-88fc\\x64\\Debug\\PowerToys.KeyboardManager.dll",
+            "outputTimestampUtc": "2026-08-13T13:17:09.590813Z"
+          },
+          {
+            "target": "Keyboard Manager Editor UI and host chain",
+            "result": "passed",
+            "output": "C:\\PowerToys-88fc\\x64\\Debug\\WinUI3Apps\\PowerToys.KeyboardManagerEditorUI.exe",
+            "outputTimestampUtc": "2026-08-13T13:17:36.5110161Z"
+          },
+          {
+            "target": "PowerToys executable",
+            "result": "passed",
+            "output": "C:\\PowerToys-88fc\\x64\\Debug\\PowerToys.exe",
+            "outputTimestampUtc": "2026-08-13T13:14:16.5601253Z"
+          }
+        ],
+        "tests": [
+          {
+            "suite": "KeyboardManager.Engine.UnitTests",
+            "passed": 109,
+            "failed": 0,
+            "total": 109
+          },
+          {
+            "suite": "KeyboardManager.Editor.UnitTests",
+            "passed": 91,
+            "failed": 0,
+            "total": 91
+          },
+          {
+            "suite": "KeyboardManager.Editor.UI.Tests",
+            "passed": 9,
+            "failed": 0,
+            "total": 9
+          }
+        ],
+        "totalTestsPassed": 209,
+        "totalTestsFailed": 0,
+        "localOnlyBuildOverrides": [
+          "Cpp.Build.props",
+          "Directory.Build.props"
+        ],
+        "localOnlyBuildOverridesCommitted": false,
+        "localOnlyBuildOverridesPushed": false
+      },
+      "upstreamFreshness": {
+        "state": "OPEN",
+        "draft": false,
+        "headRefOid": "19e053aabb26af8098fb6951550b5f28e6de8a99",
+        "baseRefOid": "f740d0b3e5ed8708077004bca5dbe56de76e3f76",
+        "updatedAt": "2026-07-09T07:32:08Z",
+        "latestCommitAt": "2026-07-08T15:36:47Z",
+        "issueCommentCount": 4,
+        "latestIssueCommentAt": "2026-07-09T07:32:08Z",
+        "reviewCommentCount": 15,
+        "latestReviewCommentAt": "2026-07-09T07:26:49Z",
+        "reviewCount": 6,
+        "latestReviewAt": "2026-07-09T07:26:49Z",
+        "unresolvedReviewThreadCount": 1,
+        "unresolvedThread": {
+          "path": "src/modules/keyboardmanager/KeyboardManagerEngineLibrary/KeyboardEventHandlers.cpp",
+          "line": 174,
+          "author": "moooyo",
+          "topic": "CapsLock/NumLock/ScrollLock toggle state is stale before ToUnicodeEx."
+        },
+        "reviewDecision": "REVIEW_REQUIRED",
+        "mergeable": "UNKNOWN"
+      },
+      "posting": {
+        "upstreamWritesPerformed": false,
+        "approvalRequired": true,
+        "publisherRequired": "Publish-ApprovedReview.ps1",
+        "validatorRequired": "Test-ReviewData.ps1"
+      },
+      "artifactValidation": {
+        "jsonParse": "pass",
+        "gitDiffCheck": "pass",
+        "reviewPayloadValidator": "pass",
+        "checkGitHub": true,
+        "validatedAt": "2026-08-13T13:33:37Z"
+      }
+    }
+  },
+  "verification": [
+    {
+      "name": "PowerToys essentials x64 Debug build",
+      "status": "pass",
+      "detail": "build-essentials.cmd completed successfully."
+    },
+    {
+      "name": "Keyboard Manager module/editor x64 Debug build chain",
+      "status": "pass",
+      "detail": "PowerToys.KeyboardManager.dll, Keyboard Manager Editor UI/host, and PowerToys.exe built successfully."
+    },
+    {
+      "name": "Keyboard Manager Engine tests",
+      "status": "pass",
+      "detail": "109/109 passed."
+    },
+    {
+      "name": "Keyboard Manager Editor tests",
+      "status": "pass",
+      "detail": "91/91 passed."
+    },
+    {
+      "name": "Keyboard Manager Editor UI tests",
+      "status": "pass",
+      "detail": "9/9 passed."
+    },
+    {
+      "name": "Fresh Copilot convergence",
+      "status": "pass",
+      "detail": "Fresh review at e062ab5e71b7d25b7534d8a97e53e96cb96c13b7 generated zero new comments; all 9 fork review threads are resolved."
+    },
+    {
+      "name": "Upstream posting guard",
+      "status": "pass",
+      "detail": "No comments, reviews, labels, approvals, or close actions were posted to microsoft/PowerToys."
+    },
+    {
+      "name": "Dashboard and review payload validation",
+      "status": "pass",
+      "detail": "Artifact JSON parsed, git diff checks passed, and Test-ReviewData.ps1 -CheckGitHub validated the schema-version-2 public payload against the pinned upstream head."
+    }
+  ],
+  "blockers": [
+    "Explicit written approval is required before the drafted upstream review can be published.",
+    "After publication, the author must address current-main compatibility, runtime input-state correctness, transactional editor persistence, validation gaps, and the existing CapsLock thread."
+  ],
+  "track": "review",
+  "pending_author": true,
+  "generated_at": "2026-08-14T00:17:06Z",
+  "evaluated_at": "2026-08-14T00:17:06Z",
+  "source_updated_at": "2026-07-09T07:32:08Z",
+  "head_sha": "19e053aabb26af8098fb6951550b5f28e6de8a99",
+  "next_action": {
+    "glyph": "⏳",
+    "label": "Wait for the author to update the PR",
+    "reason": "Wait for the author to answer the existing Keyboard Manager feedback or push a new head; rerun only after that change."
+  },
+  "actions": [
+    {
+      "id": "rerun-review",
+      "type": "rerun",
+      "label": "Continue review after the author updates the PR"
+    },
+    {
+      "id": "hold-review",
+      "type": "hold",
+      "label": "Keep waiting"
+    }
+  ],
+  "confidence": "High",
+  "assoc": "FIRST_TIME_CONTRIBUTOR",
+  "upstream_pr": {
+    "number": 48627,
+    "url": "https://github.com/microsoft/PowerToys/pull/48627"
+  },
+  "snapshot": {
+    "updatedAt": "2026-07-09T07:32:08Z",
+    "issueCommentCount": 4,
+    "reviewCount": 6,
+    "unresolvedThreads": 1,
+    "checkState": "SUCCESS"
+  },
+  "summary": "Current head matches the reviewed artifact, but existing upstream feedback still awaits the author.",
+  "recommendedNextAction": "Wait for an author reply or new push on the current head before reopening the review loop."
 }
