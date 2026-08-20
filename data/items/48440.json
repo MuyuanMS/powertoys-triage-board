@@ -33,7 +33,7 @@
   ],
   "confidence": "High",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-07-21T12:28:34.0000000Z",
+  "source_updated_at": "2026-07-21T12:28:34Z",
   "judgment": {
     "status": "actionable_design",
     "rationale": "CmdPal accepts system-reserved activation chords like Alt+Space but only reacts on the second press.",
@@ -43,6 +43,6 @@
     ],
     "recommended_action": "The repro is specific enough to justify targeted code investigation without waiting on more reporter input.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-07-21T12:28:34.0000000Z"
+    "source_updated_at": "2026-07-21T12:28:34Z"
   }
 }

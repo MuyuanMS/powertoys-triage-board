@@ -27,7 +27,7 @@
   ],
   "confidence": "Medium",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-07-19T17:58:22.0000000Z",
+  "source_updated_at": "2026-07-19T17:58:22Z",
   "judgment": {
     "status": "not_actionable",
     "rationale": "The problem is confined to a VMware/guest-display environment rather than a normal local MWB topology.",
@@ -37,6 +37,6 @@
     ],
     "recommended_action": "Current evidence points outside a PowerToys-owned implementation change.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-07-19T17:58:22.0000000Z"
+    "source_updated_at": "2026-07-19T17:58:22Z"
   }
 }

@@ -29,7 +29,7 @@
   ],
   "confidence": "High",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-08-09T14:30:13.0000000Z",
+  "source_updated_at": "2026-08-09T14:30:13Z",
   "judgment": {
     "status": "needs_information",
     "rationale": "Peek stops responding after an unspecified period and recovers after toggling the module. The report archive is useful, but the triggering lifecycle transition is not identified.",
@@ -39,6 +39,6 @@
     ],
     "recommended_action": "Hold for maintainer review.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-08-09T14:30:13.0000000Z"
+    "source_updated_at": "2026-08-09T14:30:13Z"
   }
 }

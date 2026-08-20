@@ -26,7 +26,7 @@
   ],
   "confidence": "Medium",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-07-29T17:17:15.0000000Z",
+  "source_updated_at": "2026-07-29T17:17:15Z",
   "judgment": {
     "status": "duplicate_or_handled",
     "rationale": "The timeline already links an open issue for disabling Alt+Space, and the latest follow-up asks for a cleaner current repro before doing anything else.",
@@ -36,6 +36,6 @@
     ],
     "recommended_action": "There is already a linked ticket for the same Windows-menu disable gap.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-07-29T17:17:15.0000000Z"
+    "source_updated_at": "2026-07-29T17:17:15Z"
   }
 }

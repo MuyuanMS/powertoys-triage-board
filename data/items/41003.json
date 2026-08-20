@@ -194,17 +194,17 @@
       }
     ],
     "outputs": [
-      "C:\\PowerToys-77a6\\x64\\Debug\\PowerToys.exe",
-      "C:\\PowerToys-77a6\\x64\\Debug\\PowerToys.ClipPingModuleInterface.dll",
-      "C:\\PowerToys-77a6\\x64\\Debug\\WinUI3Apps\\PowerToys.ClipPing.exe",
-      "C:\\PowerToys-77a6\\x64\\Debug\\WinUI3Apps\\PowerToys.Settings.exe",
-      "C:\\PowerToys-77a6\\x64\\Debug\\tests\\ClipPing.FuzzTests\\net10.0-windows10.0.26100.0\\ClipPing.FuzzTests.dll"
+      "<PowerToysCheckout>\\x64\\Debug\\PowerToys.exe",
+      "<PowerToysCheckout>\\x64\\Debug\\PowerToys.ClipPingModuleInterface.dll",
+      "<PowerToysCheckout>\\x64\\Debug\\WinUI3Apps\\PowerToys.ClipPing.exe",
+      "<PowerToysCheckout>\\x64\\Debug\\WinUI3Apps\\PowerToys.Settings.exe",
+      "<PowerToysCheckout>\\x64\\Debug\\tests\\ClipPing.FuzzTests\\net10.0-windows10.0.26100.0\\ClipPing.FuzzTests.dll"
     ],
     "latest_targeted_validation": "The definitive post-rebase run built the module interface, WinUI process, fuzz target, Settings, Quick Access, Runner, Settings unit tests, and Settings UI smoke project; 21 targeted ClipPing/OOBE tests passed.",
-    "build_note": "The machine lacks Spectre-mitigated libraries. Validation used the local-only /p:SpectreMitigation=false property; no Spectre override was committed or pushed. The worktree is clean."
+    "build_note": "The machine lacks Spectre-mitigated libraries. Validation used the local-only /p:SpectreMitigation=false property; no Spectre override was committed or pushed. The local checkout is clean."
   },
   "test_instructions": [
-    "Launch C:\\PowerToys-77a6\\x64\\Debug\\PowerToys.exe and enable ClipPing.",
+    "Launch <PowerToysCheckout>\\x64\\Debug\\PowerToys.exe and enable ClipPing.",
     "Copy text, images, and files; verify both top-edge and border overlays and a custom color on multiple DPI-scaled monitors.",
     "Switch virtual desktops and copy again; verify the overlay appears on the active desktop and does not appear in Alt+Tab or the taskbar.",
     "Start ClipPing detached, then enable, disable, and rapidly re-enable the module; verify one owned process remains and the enabled state never points to a missing process.",
@@ -225,65 +225,5 @@
     "commit_count": 24,
     "changed_file_count": 86
   },
-  "fork_branch": "pr-iterate/41003-v3",
-  "internalEvidence": {
-    "status": "reviewed-pending-approval",
-    "worktree": "C:\\PowerToys-77a6",
-    "upstream_head_sha": "ef24095ab852a5865a7678cf7f3f09a406aaf4f0",
-    "review_head_sha": "e3daeec99abb4de92fb2dcd3872f59e0b9761bfa",
-    "review_base_sha": "b7891108fad39459fcbf7f45c0a32030568a02a1",
-    "final_patch_id": "a8142b3de8ba59dbabc451a4acbb772b333cbd68",
-    "freshness": {
-      "evaluated_at": "2026-08-13T20:25:45.0272621Z",
-      "upstream_updated_at": "2026-06-05T18:25:20Z",
-      "upstream_commit_count": 9,
-      "upstream_issue_comment_count": 16,
-      "upstream_review_comment_count": 5,
-      "upstream_review_count": 2,
-      "upstream_unresolved_review_threads": 1,
-      "upstream_unresolved_copilot_threads": 0
-    },
-    "resume_and_mirror": {
-      "resume_action": "resume-rebase-and-reconverge",
-      "original_fork_pr": 368,
-      "previous_fork_pr": 370,
-      "current_fork_pr": 378,
-      "replacement_reason": "The durable v2 review was resumed. Fork branch protection prevented rewriting the rebased branch, so the candidate moved first to v2 and then to v3 when main advanced during the review. Superseded fork PRs 368 and 370 were closed; all upstream state remained untouched.",
-      "current_main_sync": "Both microsoft/PowerToys main and MuyuanMS/PowerToys main were b7891108fad39459fcbf7f45c0a32030568a02a1 at final validation.",
-      "patch_identity": "Before the final v3 review fixes, the cumulative v2 diff and its rebase onto b7891108fad39459fcbf7f45c0a32030568a02a1 had the same stable patch-id aa7686d939e3822e0de1635f4a630ec4a480a892. Subsequent whitespace cleanup and review-driven fixes intentionally changed the final patch-id to a8142b3de8ba59dbabc451a4acbb772b333cbd68.",
-      "scope_note": "The upstream PR adds ClipPing. The additional candidate files are limited to the current PowerToys integration, distribution, policy, privacy, attribution, documentation, OOBE, fuzzing, and regression coverage required to ship that utility.",
-      "sanitization": "Fork PR titles and descriptions use plain PR numbers and contain no upstream-notifying number syntax."
-    },
-    "review_loop": {
-      "previous_fork_pr": 370,
-      "previous_copilot_reviews": 16,
-      "previous_published_comments_processed": 13,
-      "current_fork_pr": 378,
-      "current_copilot_reviews": 5,
-      "current_published_comments_processed": 3,
-      "latest_review_id": 4931234429,
-      "latest_fresh_review": "2026-08-13T20:17:49Z on e3daeec99abb4de92fb2dcd3872f59e0b9761bfa — reviewed 76 of 86 changed files and generated no comments.",
-      "latest_fresh_review_comments": 0,
-      "latest_suppressed_comments": 0,
-      "unresolved_threads": 0,
-      "unresolved_copilot_threads": 0
-    },
-    "fixes": [
-      "Rebased the original contribution onto the exact current main and adapted the solution, Runner, Settings, serialization, deep-link, Quick Access, GPO, OOBE, installer, signing, and packaging integrations.",
-      "Removed obsolete managed/native package references and completed the x64/ARM64 native project configurations.",
-      "Hardened process ownership, duplicate-instance handling, graceful and forced shutdown, restart races, and event/process handle cleanup.",
-      "Moved overlay work to the UI dispatcher, preserved existing extended styles, retained the Focus Assist one-pixel adjustment, and recreated overlays across virtual desktops.",
-      "Added bounded settings reload retries, Created-event recovery, null/malformed normalization, cached validated colors, and safe overlay-type defaults.",
-      "Completed Settings navigation, GPO refresh/unlock behavior, enabled-module notifications, OOBE content, localization, developer documentation, privacy disclosures, and MIT attribution.",
-      "Added serialization/default/color/GPO/Quick Access/OOBE/navigation regression coverage and a buildable OneFuzz settings target with validated dependencies."
-    ],
-    "local_status": "The clean local branch and fork/pr-iterate/41003-v3 both point to e3daeec99abb4de92fb2dcd3872f59e0b9761bfa on base b7891108fad39459fcbf7f45c0a32030568a02a1.",
-    "publishing": "No comment, review, approval, label, close action, Azure trigger, or other write was performed against microsoft/PowerToys. All pushes, fork PR creation/closure, review requests, replies, and thread resolutions occurred only in MuyuanMS/PowerToys.",
-    "safety": {
-      "upstream_writes": "none",
-      "fork_side_only": true,
-      "public_payload_contains_internal_links": false,
-      "proposed_upstream_items": 2
-    }
-  }
+  "fork_branch": "pr-iterate/41003-v3"
 }

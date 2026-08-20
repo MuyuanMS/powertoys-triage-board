@@ -38,7 +38,7 @@
   ],
   "confidence": "Medium",
   "evaluated_at": "2026-08-14T00:25:39.6245114Z",
-  "source_updated_at": "2026-08-13T14:41:53.0000000Z",
+  "source_updated_at": "2026-08-13T14:41:53Z",
   "judgment": {
     "status": "needs_information",
     "rationale": "The symptom is concrete, but the current report is still missing the admin/elevation context that would distinguish a by-design security boundary from a genuine Mouse Without Borders regression.",
@@ -49,6 +49,6 @@
     ],
     "recommended_action": "Collect a bug report plus elevation and cross-app repro details before committing engineering time.",
     "evaluated_at": "2026-08-14T00:25:39.6245114Z",
-    "source_updated_at": "2026-08-13T14:41:53.0000000Z"
+    "source_updated_at": "2026-08-13T14:41:53Z"
   }
 }

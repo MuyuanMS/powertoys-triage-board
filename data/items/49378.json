@@ -102,10 +102,10 @@
       }
     ],
     "outputs": [
-      "C:\\PowerToys-ba22\\x64\\Debug\\PowerToys.exe"
+      "<PowerToysCheckout>\\x64\\Debug\\PowerToys.exe"
     ],
     "latest_targeted_validation": "Package restore, the x64 Debug runner build, and the x64 Debug Settings build completed with zero warnings and zero errors. PowerToys.exe was rebuilt at 2026-08-13T11:06:29.6555779Z.",
-    "build_note": "The initial runner attempt exposed missing Spectre libraries. The documented POWERTOYS_DISABLE_SPECTRE local-only conditions were applied, the complete essentials build passed, and both local files were restored so the worktree is clean."
+    "build_note": "The initial runner attempt exposed missing Spectre libraries. The documented POWERTOYS_DISABLE_SPECTRE local-only conditions were applied, the complete essentials build passed, and both local files were restored so the local checkout is clean."
   },
   "test_instructions": [
     "No manual UI test is applicable because the PR changes only the actions/setup-dotnet workflow dependency.",
@@ -125,48 +125,5 @@
     "commit_count": 1,
     "changed_file_count": 1
   },
-  "fork_branch": "pr-iterate/49378-v3",
-  "internalEvidence": {
-    "status": "review-ready-no-findings",
-    "worktree": "C:\\PowerToys-ba22",
-    "upstream_head_sha": "0abcece8c09664fa08f5ea5c8d5b64670d128c22",
-    "review_head_sha": "543fb2749930013f5404239945fc22ea234c4fc1",
-    "review_base_sha": "29471231dd4efdb4433163be135c839177287cdc",
-    "freshness": {
-      "evaluated_at": "2026-08-13T11:14:55.7805125Z",
-      "upstream_updated_at": "2026-07-20T17:29:39Z",
-      "upstream_commit_count": 1,
-      "upstream_issue_comment_count": 3,
-      "upstream_review_comment_count": 0,
-      "upstream_review_count": 0,
-      "upstream_unresolved_review_threads": 0
-    },
-    "review_loop": {
-      "prior_fork_pr": 278,
-      "current_fork_pr": 350,
-      "durable_prior_copilot_reviews": 2,
-      "current_head_copilot_reviews": 2,
-      "current_round_1": "2026-08-13T10:58:51Z — current-head overview with zero published inline comments.",
-      "current_round_2": "2026-08-13T11:01:40Z — freshly triggered current-head review explicitly generated zero new comments.",
-      "latest_fresh_review_comments": 0,
-      "published_comments_processed": 0,
-      "unresolved_copilot_threads": 0,
-      "unresolved_all_fork_threads": 0
-    },
-    "resume_and_mirror": {
-      "prior_fork_pr": 278,
-      "prior_branch": "pr-iterate/49378-v2",
-      "prior_worktree": "C:\\PowerToys-ba22",
-      "replacement_reason": "Durable state was resumed and rebased onto current main. Fork branch protection rejected the required force-push, so fork PR 278 was closed and fork PR 350 was created from pr-iterate/49378-v3 without remirroring the upstream contribution.",
-      "scope_note": "The upstream PR and fork PR each contain exactly one changed path, .github/workflows/msstore-submissions.yml. Their semantic patch is the same single actions/setup-dotnet v5-to-v6 replacement; the fork hunk moved down one line because it is rebased onto current main.",
-      "sanitization": "The replacement fork PR uses a plain PR number and retains the sanitized description."
-    },
-    "local_status": "The clean local branch and fork/pr-iterate/49378-v3 both point to 543fb2749930013f5404239945fc22ea234c4fc1.",
-    "publishing": "No comment, review, approval, label, close action, Azure trigger, or other write was performed against microsoft/PowerToys. No upstream payload is proposed because there are no findings.",
-    "safety": {
-      "upstream_writes": "none",
-      "fork_side_only": true,
-      "public_payload_contains_internal_links": false
-    }
-  }
+  "fork_branch": "pr-iterate/49378-v3"
 }

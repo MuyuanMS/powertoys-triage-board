@@ -26,7 +26,7 @@
   ],
   "confidence": "High",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-08-11T20:09:59.0000000Z",
+  "source_updated_at": "2026-08-11T20:09:59Z",
   "judgment": {
     "status": "duplicate_or_handled",
     "rationale": "A maintainer is assigned and has already linked a likely fix candidate.",
@@ -36,6 +36,6 @@
     ],
     "recommended_action": "The useful next signal is whether the linked Power Display change resolves the dock-monitor persistence bug.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-08-11T20:09:59.0000000Z"
+    "source_updated_at": "2026-08-11T20:09:59Z"
   }
 }

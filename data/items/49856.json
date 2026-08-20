@@ -26,7 +26,7 @@
   ],
   "confidence": "High",
   "evaluated_at": "2026-08-14T00:25:39.6245114Z",
-  "source_updated_at": "2026-08-13T09:56:21.0000000Z",
+  "source_updated_at": "2026-08-13T09:56:21Z",
   "judgment": {
     "status": "actionable_design",
     "rationale": "The behavior is concrete, user-visible, and already supported by both a screenshot and a bug-report ZIP, so it is ready for a deeper design/investigation pass.",
@@ -37,6 +37,6 @@
     ],
     "recommended_action": "Queue a focused Command Palette dock/window-layout design investigation using the supplied screenshot and bug report.",
     "evaluated_at": "2026-08-14T00:25:39.6245114Z",
-    "source_updated_at": "2026-08-13T09:56:21.0000000Z"
+    "source_updated_at": "2026-08-13T09:56:21Z"
   }
 }

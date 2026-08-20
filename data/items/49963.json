@@ -1,0 +1,37 @@
+{
+  "number": 49963,
+  "kind": "pr",
+  "track": "review",
+  "stage": "review_in_progress",
+  "owes": "us",
+  "pending_author": false,
+  "generated_at": "2026-08-20T18:00:08.5542308+08:00",
+  "evaluated_at": "2026-08-20T18:00:08.5542308+08:00",
+  "source_updated_at": "2026-08-20T07:49:25Z",
+  "head_sha": "4c4c3a66d200e23b0496240dbbec1c7d890da2e6",
+  "title": "[Peek] Enable reusable previewers for Peek to fix flicker",
+  "url": "https://github.com/microsoft/PowerToys/pull/49963",
+  "status": {
+    "glyph": "🔄",
+    "label": "Local validation done — fresh Copilot rerun blocked",
+    "detail": "Process review is clear for this collaborator-authored PR, the resumed fork branch builds locally and the Peek unit tests pass, and all existing fork review threads are resolved. The mandatory fresh request to copilot-pull-request-reviewer[bot] on fork PR 415 returned an empty requested_reviewers list, so the loop cannot be marked ready yet."
+  },
+  "next_action": null,
+  "actions": [
+    {
+      "id": "retry-copilot-review-49963",
+      "type": "continue_review",
+      "label": "Retry fresh Copilot fork review",
+      "primary": true,
+      "note": "Fork PR 415 on branch pr-iterate/49963-v2 is at commit 6bf4de1cba687cea7ed08da9f674bab5ab6238bc with all prior review threads resolved, but the latest Copilot review request returned an empty requested_reviewers list."
+    }
+  ],
+  "needs_revalidation": true,
+  "confidence": "High",
+  "fork_pr": {
+    "number": 415,
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/415"
+  },
+  "fork_branch": "pr-iterate/49963-v2",
+  "proposed_comments": []
+}

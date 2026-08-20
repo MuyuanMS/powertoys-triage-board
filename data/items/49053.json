@@ -30,7 +30,7 @@
   ],
   "confidence": "Medium-high",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-07-15T17:47:05.0000000Z",
+  "source_updated_at": "2026-07-15T17:47:05Z",
   "judgment": {
     "status": "actionable_design",
     "rationale": "The repro is concrete, the issue is currently unowned, and the thread is specific enough to justify focused module work.",
@@ -39,6 +39,6 @@
     ],
     "recommended_action": "Investigate CmdPal dock monitor identity/persistence around RDP connect-disconnect and keep saved settings tied to stable monitor identity.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-07-15T17:47:05.0000000Z"
+    "source_updated_at": "2026-07-15T17:47:05Z"
   }
 }

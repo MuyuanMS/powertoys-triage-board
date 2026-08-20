@@ -33,7 +33,7 @@
   ],
   "confidence": "High",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-07-14T06:49:20.0000000Z",
+  "source_updated_at": "2026-07-14T06:49:20Z",
   "judgment": {
     "status": "actionable_design",
     "rationale": "Dock placement does not follow shy-taskbar state changes, especially on the primary display.",
@@ -43,6 +43,6 @@
     ],
     "recommended_action": "The repro is specific enough to justify targeted code investigation without waiting on more reporter input.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-07-14T06:49:20.0000000Z"
+    "source_updated_at": "2026-07-14T06:49:20Z"
   }
 }

@@ -26,7 +26,7 @@
   ],
   "confidence": "High",
   "evaluated_at": "2026-08-14T00:25:39.6245114Z",
-  "source_updated_at": "2026-08-13T15:50:13.0000000Z",
+  "source_updated_at": "2026-08-13T15:50:13Z",
   "judgment": {
     "status": "duplicate_or_handled",
     "rationale": "New comments changed the architectural debate, but they still point to active owned work rather than an unowned issue needing another dashboard investigation.",
@@ -37,6 +37,6 @@
     ],
     "recommended_action": "Track the existing PR/architecture thread and wait for the contributor or maintainers to converge before launching any parallel dashboard-side design work.",
     "evaluated_at": "2026-08-14T00:25:39.6245114Z",
-    "source_updated_at": "2026-08-13T15:50:13.0000000Z"
+    "source_updated_at": "2026-08-13T15:50:13Z"
   }
 }

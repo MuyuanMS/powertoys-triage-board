@@ -5,8 +5,8 @@
   "stage": "review_ready",
   "owes": "author",
   "pending_author": true,
-  "generated_at": "2026-08-13T15:14:13.4039090Z",
-  "evaluated_at": "2026-08-13T15:14:13.4039090Z",
+  "generated_at": "2026-08-13T15:14:13.403909Z",
+  "evaluated_at": "2026-08-13T15:14:13.403909Z",
   "source_updated_at": "2026-07-25T16:55:33Z",
   "head_sha": "0b509c0ef046634654aadeb4e00cda2f274e43d8",
   "summary": "The first-time contributor's PR is unchanged and still awaiting fixes after an existing maintainer review. The fork candidate was rebased onto current main, scope-validated, iterated through eight fresh Copilot reviews across durable fork PRs, and converged with zero new published comments and zero unresolved fork Copilot threads. Required x64 Debug builds and all 23 targeted SVG preview tests passed.",
@@ -123,15 +123,15 @@
       }
     ],
     "outputs": [
-      "C:\\PowerToys-eae5\\x64\\Debug\\PowerToys.exe",
-      "C:\\PowerToys-eae5\\x64\\Debug\\PowerToys.SvgPreviewHandler.dll",
-      "C:\\PowerToys-eae5\\x64\\Debug\\PowerToys.SvgThumbnailProvider.dll"
+      "<PowerToysCheckout>\\x64\\Debug\\PowerToys.exe",
+      "<PowerToysCheckout>\\x64\\Debug\\PowerToys.SvgPreviewHandler.dll",
+      "<PowerToysCheckout>\\x64\\Debug\\PowerToys.SvgThumbnailProvider.dll"
     ],
     "latest_targeted_validation": "The final x64 Debug restore, runner, Settings, PreviewHandlerCommon, SvgPreviewHandler, SvgThumbnailProvider, and SVG preview unit-test builds completed successfully. The targeted test executable passed 23/23 tests.",
-    "build_note": "The machine lacks Spectre libraries. The documented POWERTOYS_DISABLE_SPECTRE local-only property conditions were applied only for validation and restored afterward; the review worktree is clean."
+    "build_note": "The machine lacks Spectre libraries. The documented POWERTOYS_DISABLE_SPECTRE local-only property conditions were applied only for validation and restored afterward; the review local checkout is clean."
   },
   "test_instructions": [
-    "Launch C:\\PowerToys-eae5\\x64\\Debug\\PowerToys.exe.",
+    "Launch <PowerToysCheckout>\\x64\\Debug\\PowerToys.exe.",
     "In PowerToys Settings, enable File Explorer add-ons for SVG Preview Pane and SVG thumbnails.",
     "Open a folder containing several SVG files, enable the Preview pane, and move between the files twice. Verify previews render correctly on the first pass and are reused without blank or partially rendered output on the second pass.",
     "Change the SVG preview background mode/color in Settings, reopen the same SVG, and verify the preview reflects the new settings rather than stale cached HTML.",
@@ -151,65 +151,5 @@
     "commit_count": 6,
     "changed_file_count": 6
   },
-  "fork_branch": "pr-iterate/48223-v3",
-  "internalEvidence": {
-    "status": "review-ready-waiting-on-author",
-    "worktree": "C:\\PowerToys-eae5",
-    "upstream_head_sha": "0b509c0ef046634654aadeb4e00cda2f274e43d8",
-    "review_head_sha": "a41f11d160539d1219b0ba19a8050403e180f537",
-    "review_base_sha": "5193a1e49729bf8d9a8553e352e7c0c285e50188",
-    "freshness": {
-      "evaluated_at": "2026-08-13T15:14:13.4039090Z",
-      "upstream_updated_at": "2026-07-25T16:55:33Z",
-      "upstream_commit_count": 1,
-      "upstream_issue_comment_count": 1,
-      "upstream_review_comment_count": 8,
-      "upstream_review_count": 4,
-      "upstream_unresolved_review_threads": 8,
-      "upstream_unresolved_copilot_threads": 6
-    },
-    "review_loop": {
-      "fork_prs": [
-        361,
-        362,
-        364
-      ],
-      "copilot_review_count": 8,
-      "published_copilot_comments_processed": 12,
-      "current_fork_pr": 364,
-      "latest_fresh_review": "2026-08-13T15:04:57Z on a41f11d160539d1219b0ba19a8050403e180f537 — generated no new published comments.",
-      "latest_fresh_review_comments": 0,
-      "unresolved_copilot_threads_pr361": 0,
-      "unresolved_copilot_threads_pr362": 0,
-      "unresolved_copilot_threads_pr364": 0,
-      "suppressed_final_comments": 4,
-      "suppressed_policy": "The important round-1-to-5 correctness and performance candidates were addressed before convergence; no suppressed candidate triggered another round after round 5."
-    },
-    "resume_and_mirror": {
-      "resume_action": "fresh-mirror",
-      "original_fork_pr": 361,
-      "replacement_fork_pr": 362,
-      "current_fork_pr": 364,
-      "replacement_reason": "Current-main rebase changed the commit. Fork branch protection rejected force-pushes, so the review continued on versioned branches and replacement fork PRs without remirroring the upstream contribution.",
-      "scope_note": "The upstream PR changed five paths. The final fork diff contains those five paths plus SvgHTMLPreviewGenerator.cs, which is the tightly coupled implementation change needed to make settings snapshots consistent between cache identity and generated HTML. No unrelated files are present.",
-      "sanitization": "Fork titles and descriptions use plain PR/issue numbers and contain no upstream-notifying number syntax."
-    },
-    "fixes": [
-      "Added required file headers and culture-invariant settings serialization.",
-      "Made cache keys collision-safe and encoded large inputs in bounded chunks.",
-      "Snapshotted preview settings so the key and generated HTML use the same values.",
-      "Centralized atomic cache publication and protected active entries with read leases.",
-      "Added bounded aggregate cache retention with age/size eviction and failed-deletion accounting.",
-      "Added oversized transient fallback and deletes transient files after WebView2 loading/capture.",
-      "Added regression tests for key ambiguity, atomic reuse, expiry, per-entry and aggregate limits, transient fallback/cleanup, and active-entry pruning protection."
-    ],
-    "local_status": "The clean local branch and fork/pr-iterate/48223-v3 both point to a41f11d160539d1219b0ba19a8050403e180f537.",
-    "publishing": "No comment, review, approval, label, close action, Azure trigger, or other write was performed against microsoft/PowerToys. Fork-only PR creation, replies, resolutions, pushes, and closures were used for internal validation.",
-    "safety": {
-      "upstream_writes": "none",
-      "fork_side_only": true,
-      "public_payload_contains_internal_links": false,
-      "proposed_upstream_items": 0
-    }
-  }
+  "fork_branch": "pr-iterate/48223-v3"
 }

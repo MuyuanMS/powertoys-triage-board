@@ -29,7 +29,7 @@
   ],
   "confidence": "High",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-08-10T22:44:52.0000000Z",
+  "source_updated_at": "2026-08-10T22:44:52Z",
   "judgment": {
     "status": "needs_information",
     "rationale": "Mouse Without Borders stops crossing to the peer after an unspecified period, but the report has no topology, trigger, recovery, logs, or network details.",
@@ -39,6 +39,6 @@
     ],
     "recommended_action": "Hold for maintainer review.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-08-10T22:44:52.0000000Z"
+    "source_updated_at": "2026-08-10T22:44:52Z"
   }
 }

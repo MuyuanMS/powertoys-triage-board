@@ -233,15 +233,15 @@
       }
     ],
     "outputs": [
-      "C:\\PowerToys-0622\\x64\\Debug\\PowerToys.exe",
-      "C:\\PowerToys-0622\\x64\\Debug\\WinUI3Apps\\PowerToys.ShortcutGuideModuleInterface.dll",
-      "C:\\PowerToys-0622\\x64\\Debug\\WinUI3Apps\\PowerToys.ShortcutGuide.exe"
+      "<PowerToysCheckout>\\x64\\Debug\\PowerToys.exe",
+      "<PowerToysCheckout>\\x64\\Debug\\WinUI3Apps\\PowerToys.ShortcutGuideModuleInterface.dll",
+      "<PowerToysCheckout>\\x64\\Debug\\WinUI3Apps\\PowerToys.ShortcutGuide.exe"
     ],
     "latest_targeted_validation": "The x64 Debug essentials build passed, the Shortcut Guide module interface passed with the documented local Spectre override, the UI and unit-test projects passed, and vstest passed all 28 tests in 2.785 seconds.",
-    "build_note": "The machine lacks Spectre-mitigated libraries. The documented local-only property conditions and /p:SpectreMitigation=false were used for validation, never committed or pushed, and restored afterward. The worktree is clean."
+    "build_note": "The machine lacks Spectre-mitigated libraries. The documented local-only property conditions and /p:SpectreMitigation=false were used for validation, never committed or pushed, and restored afterward. The local checkout is clean."
   },
   "test_instructions": [
-    "Launch C:\\PowerToys-0622\\x64\\Debug\\PowerToys.exe.",
+    "Launch <PowerToysCheckout>\\x64\\Debug\\PowerToys.exe.",
     "Open Shortcut Guide and immediately type a query; verify the title-bar search receives focus and filters only the selected application page.",
     "Verify fuzzy queries such as tgl dsk and mng vrtl match the expected shortcut names or descriptions.",
     "Verify complete chords such as Win Shift S, Windows K, and Control K match; switch application pages and confirm the query persists.",
@@ -261,65 +261,5 @@
     "commit_count": 5,
     "changed_file_count": 11
   },
-  "fork_branch": "pr-iterate/49639-v5",
-  "internalEvidence": {
-    "status": "review-clean-awaiting-upstream-rebase",
-    "worktree": "C:\\PowerToys-0622",
-    "upstream_head_sha": "6fe9873546864f72e2f08ad82811a76010510a64",
-    "review_head_sha": "487eb6f731127c843342f2279c8d13a4eba79f6b",
-    "review_base_sha": "cade1d9e0e00de27046358136d5c0e6ac1ad35d0",
-    "freshness": {
-      "evaluated_at": "2026-08-14T08:48:14.2949494+08:00",
-      "upstream_updated_at": "2026-08-13T16:39:55Z",
-      "upstream_commit_count": 5,
-      "upstream_issue_comment_count": 0,
-      "upstream_review_comment_count": 16,
-      "upstream_review_count": 12,
-      "upstream_review_thread_count": 8,
-      "upstream_unresolved_review_threads": 0
-    },
-    "resume_and_mirror": {
-      "prior_fork_pr": 330,
-      "prior_branch": "pr-iterate/49639-v4",
-      "current_fork_pr": 383,
-      "current_branch": "pr-iterate/49639-v5",
-      "replacement_reason": "The upstream head changed after the prior review. Fork PR 330 and branch pr-iterate/49639-v4 were preserved as durable review history; PR 330 was closed only after current-head fork PR 383 was created from the new v5 branch.",
-      "current_main_sync": "Both microsoft/PowerToys main and MuyuanMS/PowerToys main were synchronized to cade1d9e0e00de27046358136d5c0e6ac1ad35d0 before the current-head fork PR was reviewed.",
-      "rebase_note": "Rebasing required one conflict in doc/devdocs/modules/shortcut_guide.md. The resolution preserved main's new Windows-key activation documentation and added the PR's search instructions.",
-      "scope_note": "The upstream PR and fork PR each contain exactly the same 11 changed paths. No unrelated file entered the fork diff.",
-      "sanitization": "The fork PR title and description use plain PR numbers and do not contain upstream-notifying number syntax."
-    },
-    "review_loop": {
-      "prior_fork_pr": 330,
-      "prior_zero_comment_review": "2026-08-13T07:45:07Z on a51014110f5b52ef429fb8225fccfcea7c04b1d6",
-      "current_fork_pr": 383,
-      "current_review_id": 4932722236,
-      "latest_fresh_review": "2026-08-14T00:32:31Z on 487eb6f731127c843342f2279c8d13a4eba79f6b — generated no published comments.",
-      "latest_fresh_review_comments": 0,
-      "published_comments_processed": 0,
-      "unresolved_copilot_threads": 0,
-      "unresolved_all_fork_threads": 0
-    },
-    "author_update": {
-      "old_head_sha": "a313a4c4023257b478320f7cbd8c243a59315e8f",
-      "new_head_sha": "6fe9873546864f72e2f08ad82811a76010510a64",
-      "commit_at": "2026-08-13T16:37:42Z",
-      "activity_at": "2026-08-13T16:39:55Z",
-      "resolved_items": [
-        "Shared fuzzy matching with exact-substring fast path",
-        "Complete displayed and semantic chord matching",
-        "Fuzzy and complete-chord regression coverage",
-        "Common.Search project reference",
-        "FocusSearch entry point and focus-after-visible call"
-      ]
-    },
-    "local_status": "The clean local branch and fork/pr-iterate/49639-v5 both point to 487eb6f731127c843342f2279c8d13a4eba79f6b.",
-    "publishing": "No comment, review, approval, label, close action, Azure trigger, or other write was performed against microsoft/PowerToys. Fork-only writes were limited to synchronizing main, pushing the v5 review branch, creating fork PR 383, closing superseded fork PR 330 while preserving its branch/history, and requesting the fresh Copilot review.",
-    "safety": {
-      "upstream_writes": "none",
-      "fork_side_only": true,
-      "public_payload_contains_internal_links": false,
-      "proposed_upstream_items": 0
-    }
-  }
+  "fork_branch": "pr-iterate/49639-v5"
 }

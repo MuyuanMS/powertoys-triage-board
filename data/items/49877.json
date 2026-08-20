@@ -38,7 +38,7 @@
   ],
   "confidence": "High",
   "evaluated_at": "2026-08-14T00:25:39.6245114Z",
-  "source_updated_at": "2026-08-13T22:55:48.0000000Z",
+  "source_updated_at": "2026-08-13T22:55:48Z",
   "judgment": {
     "status": "needs_information",
     "rationale": "The report is specific enough to be believable, but the single live maintainer signal is a non-repro on a newer build and the issue does not yet contain the configuration details needed to isolate why FancyZones behaves differently from Windows Snap.",
@@ -49,6 +49,6 @@
     ],
     "recommended_action": "Ask for a fresh bug report, exact zone/monitor setup, and a short recording before scheduling engineering work.",
     "evaluated_at": "2026-08-14T00:25:39.6245114Z",
-    "source_updated_at": "2026-08-13T22:55:48.0000000Z"
+    "source_updated_at": "2026-08-13T22:55:48Z"
   }
 }

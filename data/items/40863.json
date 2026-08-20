@@ -26,7 +26,7 @@
   ],
   "confidence": "High",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-08-05T07:52:53.0000000Z",
+  "source_updated_at": "2026-08-05T07:52:53Z",
   "judgment": {
     "status": "duplicate_or_handled",
     "rationale": "Image Resizer metadata preservation already has an open linked fix proposal.",
@@ -36,6 +36,6 @@
     ],
     "recommended_action": "The linked PR is the clearest ownership signal for the localization-tag loss issue.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-08-05T07:52:53.0000000Z"
+    "source_updated_at": "2026-08-05T07:52:53Z"
   }
 }

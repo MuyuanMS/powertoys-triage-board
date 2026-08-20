@@ -33,7 +33,7 @@
   ],
   "confidence": "High",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-08-10T05:42:52.0000000Z",
+  "source_updated_at": "2026-08-10T05:42:52Z",
   "judgment": {
     "status": "actionable_design",
     "rationale": "Mouse Without Borders cannot traverse directly between the upper displays in a two-machine 2x2 layout, while the lower pair works.",
@@ -43,6 +43,6 @@
     ],
     "recommended_action": "The repro is specific enough to justify targeted code investigation without waiting on more reporter input.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-08-10T05:42:52.0000000Z"
+    "source_updated_at": "2026-08-10T05:42:52Z"
   }
 }

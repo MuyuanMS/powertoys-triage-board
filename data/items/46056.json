@@ -463,53 +463,6 @@
       "reason": "Branch protection prevented force-pushing rewritten history after main advanced; review continued on PR 379."
     }
   },
-  "internalEvidence": {
-    "worktree": "C:\\PowerToys-d7eb",
-    "branch": "pr-iterate/46056-v3",
-    "forkOnly": true,
-    "upstreamWrites": false,
-    "evidenceDirectory": "C:\\powertoys-triage-board-source\\.review\\46056",
-    "reviewFixCommits": [
-      {
-        "sha": "f8c88e7f1021447d5d031500e029b073261c0d4e",
-        "subject": "Fix Copy as UNC integration issues"
-      },
-      {
-        "sha": "473a952d03d724749d5a0cd121cfb4a89a67c356",
-        "subject": "Address local review findings"
-      },
-      {
-        "sha": "3db22c65d301de2c7b0b20bb391e801bd4fee2df",
-        "subject": "Harden Copy as UNC command behavior"
-      },
-      {
-        "sha": "d1848eb2770d70ae829e788eea428af6295ebea4",
-        "subject": "Resolve Copilot integration findings"
-      },
-      {
-        "sha": "edabe0ef80d805de835dae5b0eee2598ae27a6ce",
-        "subject": "Address final review safeguards"
-      },
-      {
-        "sha": "677862004b74962e7113b63b5be7a0828e2884af",
-        "subject": "Verify Copy as UNC installation artifacts"
-      },
-      {
-        "sha": "c530685550c68190b7d037fbc48d4f92383bccf1",
-        "subject": "Remove unsupported extended-menu setting"
-      }
-    ],
-    "majorFixes": [
-      "Corrected sparse-package staging, manifest stamping, registration root, COM path, signing, generated resources, and installer generation.",
-      "Added policy definitions, GPO-aware settings, Windows 11 visibility, Settings deep-link routing, IPC coverage, and installation verification.",
-      "Hardened Explorer selection, UNC visibility, okToBeSlow handling, clipboard ownership, allocation, cleanup, and exception boundaries.",
-      "Removed unsupported extended-menu configuration and unrelated spell-check and Shortcut Guide scope."
-    ],
-    "reviewRounds": {
-      "forkPr372": "All published Copilot and code-scanning threads replied to and resolved before the rebase migration.",
-      "forkPr379": "Five threads total, all resolved; the final fresh review at the current head generated zero published comments. The fork PR description was corrected to match the persistent sparse-package lifecycle."
-    }
-  },
   "metadata": {
     "generatedAt": "2026-08-13T20:37:44.2712611Z",
     "generatedBy": "powertoys-pr-review",

@@ -33,7 +33,7 @@
   ],
   "confidence": "High",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-07-29T01:18:54.0000000Z",
+  "source_updated_at": "2026-07-29T01:18:54Z",
   "judgment": {
     "status": "actionable_design",
     "rationale": "Dock monitor selection is captured only at startup; hot-plug or resume display changes require a full restart.",
@@ -43,6 +43,6 @@
     ],
     "recommended_action": "The repro is specific enough to justify targeted code investigation without waiting on more reporter input.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-07-29T01:18:54.0000000Z"
+    "source_updated_at": "2026-07-29T01:18:54Z"
   }
 }

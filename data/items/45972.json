@@ -332,12 +332,7 @@
             }
           ]
         },
-        "internalEvidence": {
-          "status": "reviewed-pending-approval",
-          "worktree": "C:\\PowerToys-45972",
-          "validationSummary": "Required x64 Debug build chain passed; targeted Settings and FancyZones regression suites passed with the documented native aggregate teardown limitation."
-        },
-        "testInstructions": "Launch C:\\PowerToys-45972\\x64\\Debug\\PowerToys.exe, disable zone cycling in FancyZones settings, and verify adjacent-monitor movement, global-edge stopping, and maximize/restore/minimize sequencing."
+        "testInstructions": "Launch <PowerToysCheckout>\\x64\\Debug\\PowerToys.exe, disable zone cycling in FancyZones settings, and verify adjacent-monitor movement, global-edge stopping, and maximize/restore/minimize sequencing."
       }
     ]
   },
@@ -421,13 +416,13 @@
       }
     ],
     "outputs": [
-      "C:\\PowerToys-45972\\x64\\Debug\\PowerToys.exe",
-      "C:\\PowerToys-45972\\x64\\Debug\\PowerToys.FancyZonesModuleInterface.dll"
+      "<PowerToysCheckout>\\x64\\Debug\\PowerToys.exe",
+      "<PowerToysCheckout>\\x64\\Debug\\PowerToys.FancyZonesModuleInterface.dll"
     ],
     "localBuildNote": "The machine lacks Spectre libraries. The documented conditional POWERTOYS_DISABLE_SPECTRE property overrides were applied only for local validation, restored afterward, and never committed or pushed."
   },
   "test_instructions": [
-    "Launch C:\\PowerToys-45972\\x64\\Debug\\PowerToys.exe.",
+    "Launch <PowerToysCheckout>\\x64\\Debug\\PowerToys.exe.",
     "Open Settings → FancyZones → Window behavior, toggle the new zone-cycling option off, restart PowerToys, and confirm the value persists.",
     "With Override Windows Snap enabled, move a window through zones with Win+Left/Right and Win+Up/Down. Confirm it can cross to an adjacent monitor but stops without wrapping at the global edge.",
     "From an unsnapped or intermediate-zone window, press Win+Up/Down and confirm it navigates to the next zone before maximizing or minimizing.",
@@ -461,88 +456,5 @@
     "Explicit written maintainer approval is required before any upstream review is published.",
     "Phase 0 proposes asking the contributor for a short behavior recording.",
     "The native aggregate VSTest teardown/access-violation and mock-window Snap_Down instability must remain disclosed; deterministic changed-behavior suites pass."
-  ],
-  "internalEvidence": {
-    "status": "reviewed-pending-approval",
-    "no_upstream_writes": true,
-    "upstream_write_log": [],
-    "resume": {
-      "worktree": "C:\\PowerToys-45972",
-      "resumed_fork_pr": 201,
-      "resumed_branch": "pr-iterate/45972-v20260804",
-      "current_fork_pr": 363,
-      "current_branch": "pr-iterate/45972-v20260813",
-      "superseded_fork_pr_closed": true,
-      "protected_branch_workaround": "Fork branch protection rejected force-push after the current-main rebase, so review continued on a versioned replacement branch and PR without remirroring."
-    },
-    "scope_validation": {
-      "upstream_original_changed_files": 12,
-      "rebased_candidate_changed_files_before_review_fixes": 12,
-      "all_original_paths_present": true,
-      "missing_paths": [],
-      "converged_candidate_changed_files": 15,
-      "extra_paths": [
-        "src/modules/fancyzones/FancyZonesLib/FancyZones.cpp",
-        "src/modules/fancyzones/FancyZonesTests/UnitTests/WindowKeyboardSnap.Spec.cpp",
-        "src/settings-ui/Settings.UI.Library/ConfigDefaults.cs"
-      ],
-      "extra_path_reason": "The three files contain tightly coupled runtime default wiring and regression coverage required by accepted review fixes.",
-      "final_diff": {
-        "additions": 399,
-        "deletions": 37
-      }
-    },
-    "review_fix_commits": [
-      "f6c6c729e607356a3154b2a785cff4527f9ddb9c",
-      "b3afd1a968ccec8f390061b272ff12656f0a78ed",
-      "0c70f6b740ad223edcc0a1122d19c0d1fc0856dd",
-      "1e32381edfc493fd779e2cac54cce875dd5fe577",
-      "ed4a4b49587cc35928c528d11bfe537986125d38",
-      "67ee9361bb50fe571e53e00097faf54427e2a9d4",
-      "47bb6a1d51e7bfe102b9d589844f7340e44defa6",
-      "b03d1e0b1e2bf18d1dfa30f8145b6406f72e2522"
-    ],
-    "review_fixes": [
-      "Honor cycleThroughAllZones in native position and zone-index navigation.",
-      "Keep native and Settings defaults aligned and serialize/persist non-default values.",
-      "Initialize WINDOWPLACEMENT.length and use WPF_ASYNCWINDOWPLACEMENT for cross-thread windows.",
-      "Stop no-cycle movement at local/global edges without incorrectly restoring window size.",
-      "Restore a maximized window on the first Win+Down before navigating or minimizing.",
-      "Distinguish no directional target from WorkArea::Snap failure before applying maximize/minimize fallback.",
-      "Add native and Settings regression coverage and reset singleton settings between tests."
-    ],
-    "copilot": {
-      "review_count": 9,
-      "published_thread_count": 5,
-      "resolved_thread_count": 5,
-      "unresolved_thread_count": 0,
-      "latest_review_id": 4929317568,
-      "latest_review_submitted_at": "2026-08-13T16:27:20Z",
-      "latest_review_commit_sha": "b03d1e0b1e2bf18d1dfa30f8145b6406f72e2522",
-      "latest_published_comment_count": 0,
-      "latest_review_summary": "Copilot reviewed 15 of 15 changed files and generated no new comments.",
-      "suppressed_after_round_five": 2,
-      "suppressed_policy": "The final focus-transition and additional test-only candidates were suppressed after round five and did not trigger another round, per policy."
-    },
-    "local_only_changes": [
-      "Cpp.Build.props",
-      "Directory.Build.props"
-    ],
-    "local_only_reason": "Conditional POWERTOYS_DISABLE_SPECTRE overrides were required because Spectre libraries are unavailable locally. They were restored and never pushed.",
-    "worktree_clean_at_end": true,
-    "final_local_head": "b03d1e0b1e2bf18d1dfa30f8145b6406f72e2522",
-    "final_remote_head": "b03d1e0b1e2bf18d1dfa30f8145b6406f72e2522",
-    "validation_limitations": [
-      "The complete WindowKeyboardSnap VSTest process can exit -1073741819 during mock-window teardown after tests execute.",
-      "The multi-monitor position aggregate currently reports 15/16 because Snap_Down uses a default-position mock HWND and can select a different artificial monitor; deterministic no-cycle edge tests pass 4/4 and an earlier aggregate run passed 16/16."
-    ],
-    "publishing": "No comment, review, approval, label, close action, Azure trigger, or other write was performed against microsoft/PowerToys. Fork-only pushes, PR lifecycle actions, Copilot replies, and thread resolution were used for internal review.",
-    "artifactValidation": {
-      "jsonParse": "pass",
-      "dashboardContract": "pass",
-      "reviewPayloadValidator": "pass",
-      "checkGitHub": true,
-      "validatedAt": "2026-08-13T16:32:51.7847106Z"
-    }
-  }
+  ]
 }

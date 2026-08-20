@@ -26,7 +26,7 @@
   ],
   "confidence": "High",
   "evaluated_at": "2026-08-14T00:25:39.6245114Z",
-  "source_updated_at": "2026-08-13T10:06:00.0000000Z",
+  "source_updated_at": "2026-08-13T10:06:00Z",
   "judgment": {
     "status": "duplicate_or_handled",
     "rationale": "This is a maintainer-authored dev-build regression report with precise reproduction, which is an ownership signal rather than an unowned community bug needing separate dashboard work.",
@@ -37,6 +37,6 @@
     ],
     "recommended_action": "Track it as maintainer-owned work and wait for the corresponding Command Palette change rather than opening a parallel dashboard investigation.",
     "evaluated_at": "2026-08-14T00:25:39.6245114Z",
-    "source_updated_at": "2026-08-13T10:06:00.0000000Z"
+    "source_updated_at": "2026-08-13T10:06:00Z"
   }
 }

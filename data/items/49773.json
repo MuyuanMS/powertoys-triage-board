@@ -119,7 +119,7 @@
     ]
   },
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-08-08T12:12:51.0000000Z",
+  "source_updated_at": "2026-08-08T12:12:51Z",
   "judgment": {
     "status": "actionable_design",
     "rationale": "The desktop shell is being treated like a normal window, so Always On Top can pin and alpha-adjust Program Manager / WorkerW.",
@@ -132,6 +132,6 @@
     ],
     "recommended_action": "Approve the shell-window guard design and implement it in Always On Top before adding opacity regressions to the desktop path.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-08-08T12:12:51.0000000Z"
+    "source_updated_at": "2026-08-08T12:12:51Z"
   }
 }

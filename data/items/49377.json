@@ -113,7 +113,7 @@
       }
     ],
     "outputs": [
-      "C:\\PowerToys-12f9\\x64\\Debug\\PowerToys.exe"
+      "<PowerToysCheckout>\\x64\\Debug\\PowerToys.exe"
     ],
     "latest_targeted_validation": "Package restore, the x64 Debug runner build, and the x64 Debug Settings build completed with zero warnings and zero errors. PowerToys.exe was rebuilt at 2026-08-13T11:46:01.8778748Z.",
     "build_note": "This machine lacks Spectre libraries. The documented local-only POWERTOYS_DISABLE_SPECTRE property overrides were applied for validation, restored afterward, and never committed or pushed."
@@ -150,58 +150,5 @@
     "additions": 1,
     "deletions": 1
   },
-  "fork_branch": "pr-iterate/49377-v3",
-  "internalEvidence": {
-    "status": "closed-superseded-no-upstream-action",
-    "worktree": "C:\\PowerToys-12f9",
-    "upstream_head_sha": "a7ad20f41108c27015082e66ffae8f8f62117e60",
-    "review_head_sha": "40dae4ef1ee425c9658ce0de4c027db8e5e5fd78",
-    "review_base_sha": "29471231dd4efdb4433163be135c839177287cdc",
-    "freshness": {
-      "evaluated_at": "2026-08-13T11:55:24.5536409Z",
-      "upstream_updated_at": "2026-08-13T11:29:28Z",
-      "upstream_commit_count": 1,
-      "upstream_issue_comment_count": 4,
-      "upstream_review_comment_count": 0,
-      "upstream_review_count": 0,
-      "upstream_review_thread_count": 0,
-      "upstream_unresolved_review_threads": 0,
-      "head_changed_during_run": false,
-      "material_change_during_run": "The upstream PR closed and its head branch was deleted after the fresh fork review; this terminal supersession is incorporated in the artifact."
-    },
-    "resume_and_mirror": {
-      "prior_fork_pr": 280,
-      "prior_branch": "pr-iterate/49377-v2",
-      "prior_worktree": "C:\\PowerToys-12f9",
-      "durable_prior_copilot_reviews": 2,
-      "replacement_reason": "Durable state was resumed and rebased onto current main 29471231dd4efdb4433163be135c839177287cdc. Fork branch protection rejected the required force-push, so fork PR 280 was closed and fork PR 351 was created from pr-iterate/49377-v3 without remirroring the upstream contribution.",
-      "scope_note": "Before supersession, the upstream PR and fork PR each contained exactly one changed path, .github/workflows/regenerate-devdocs-website.yml, with the same semantic actions/setup-node v6-to-v7 replacement.",
-      "sanitization": "The replacement fork PR title and body used plain PR numbers and contained no notification-form upstream references."
-    },
-    "review_loop": {
-      "current_fork_pr": 351,
-      "current_head_copilot_reviews": 2,
-      "current_round_1": "2026-08-13T11:21:56Z — current-head overview with zero published inline comments.",
-      "current_round_2": "2026-08-13T11:27:52Z — freshly triggered current-head review explicitly generated zero new comments.",
-      "latest_fresh_review_at": "2026-08-13T11:27:52Z",
-      "latest_fresh_review_comments": 0,
-      "published_comments_processed": 0,
-      "unresolved_copilot_threads": 0,
-      "unresolved_all_fork_threads": 0
-    },
-    "current_main": {
-      "upstream_sha_at_final_evaluation": "5193a1e49729bf8d9a8553e352e7c0c285e50188",
-      "fork_sha_at_final_evaluation": "5193a1e49729bf8d9a8553e352e7c0c285e50188",
-      "note": "Main advanced after the converged review branch was created because the workflow was pinned to setup-node v6.5.0 and Dependabot opened successor PR 49863. The closed PR was not remirrored or reconverged after this terminal supersession."
-    },
-    "local_status": "Clean worktree. Local pr-iterate/49377-v3 and fork/pr-iterate/49377-v3 both point to 40dae4ef1ee425c9658ce0de4c027db8e5e5fd78. The fork review PR was closed after the upstream supersession; the branch remains for audit.",
-    "publishing": "No comment, review, approval, label, close action, Azure trigger, or other write was performed against microsoft/PowerToys. No upstream payload is proposed.",
-    "safety": {
-      "upstream_writes": "none",
-      "fork_side_only": true,
-      "fork_side_writes": "Synchronized MuyuanMS/PowerToys main, rebased and pushed replacement branch pr-iterate/49377-v3, replaced fork PR 280 with fork PR 351, requested fresh Copilot review, and closed fork PR 351 after upstream supersession.",
-      "public_payload_contains_internal_links": false,
-      "approval_required_before_upstream_action": true
-    }
-  }
+  "fork_branch": "pr-iterate/49377-v3"
 }

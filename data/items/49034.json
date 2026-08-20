@@ -264,48 +264,5 @@
   "fork_branch": "pr-iterate/49034-v3",
   "blockers": [
     "Explicit maintainer approval is required before any upstream review is published."
-  ],
-  "internalEvidence": {
-    "no_upstream_writes": true,
-    "upstream_write_log": [],
-    "resume": {
-      "worktree": "C:\\PowerToys-49034-v3",
-      "durable_fork_pr": 186,
-      "durable_branch": "pr-iterate/49034-v3",
-      "protected_branch_workaround": "A fast-forward merge commit preserved the exact rebased tree because the durable fork branch rejects force-pushes."
-    },
-    "scope_validation": {
-      "upstream_original_changed_files": 43,
-      "rebased_candidate_changed_files_before_review_fixes": 43,
-      "missing_paths": 0,
-      "extra_paths": 0,
-      "converged_candidate_changed_files": 44,
-      "converged_extra_path_reason": "One shared PythonSourceParser.cs file was added while implementing accepted review fixes."
-    },
-    "review_fix_commits": [
-      "710e61c5d4f2f4e85c0fcbdbad1846189e195fb4",
-      "29a72a63fff3c244ddc5ac64e7bb29a97897b706",
-      "9323972e180591f43e4e0c20046eb83224682d36",
-      "836a8d53ba5fac93f69b611cba63d7bf8a5c76dc",
-      "a5e29b661df02f0a092881301f3c1a09f222b339",
-      "cc7f5c1e55c16d017f9ae841e5426029b1065d73"
-    ],
-    "copilot": {
-      "latest_review_id": 4928409901,
-      "latest_review_submitted_at": "2026-08-13T14:54:46Z",
-      "latest_review_commit_sha": "cc7f5c1e55c16d017f9ae841e5426029b1065d73",
-      "latest_published_comment_count": 0,
-      "unresolved_thread_count": 0,
-      "suppressed_after_round_five": "Ignored according to the review-loop policy and did not trigger another round."
-    },
-    "local_only_changes": [
-      "Cpp.Build.props",
-      "Directory.Build.props"
-    ],
-    "local_only_reason": "Conditional POWERTOYS_DISABLE_SPECTRE overrides were required because Spectre libraries are unavailable locally. These files were never staged or pushed.",
-    "validation_limitations": [
-      "No Windows Python executable or WSL distribution was installed, so the new Python runner protocol could not be exercised end-to-end locally.",
-      "The required build and unit-test coverage completed successfully; manual end-to-end instructions are retained for approval-time validation."
-    ]
-  }
+  ]
 }

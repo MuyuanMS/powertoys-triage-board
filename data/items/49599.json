@@ -63,7 +63,7 @@
   },
   "fork_branch": "copilot/issue-49599-hot-reload-settings",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-07-31T23:35:39.0000000Z",
+  "source_updated_at": "2026-07-31T23:35:39Z",
   "judgment": {
     "status": "actionable_design",
     "rationale": "The dashboard already has a reviewed fork PR ready for maintainer approval.",
@@ -72,6 +72,6 @@
     ],
     "recommended_action": "This issue already has a prepared fix path and does not need another fast-triage investigation.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-07-31T23:35:39.0000000Z"
+    "source_updated_at": "2026-07-31T23:35:39Z"
   }
 }

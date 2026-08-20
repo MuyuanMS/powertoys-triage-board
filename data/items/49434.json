@@ -185,7 +185,7 @@
     ]
   },
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-08-09T14:25:35.0000000Z",
+  "source_updated_at": "2026-08-09T14:25:35Z",
   "judgment": {
     "status": "actionable_design",
     "rationale": "The Keyboard Manager editor issue already has two user reports plus logs showing native dependency startup failure. The fallback and launch paths are concrete enough to design a fix without waiting on more upstream triage.",
@@ -198,6 +198,6 @@
     ],
     "recommended_action": "Repository files, implementation steps, and verification are specific enough to start the fork-side fix when desired.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-08-09T14:25:35.0000000Z"
+    "source_updated_at": "2026-08-09T14:25:35Z"
   }
 }

@@ -276,16 +276,16 @@
       }
     ],
     "outputs": [
-      "C:\\PowerToys-c1c7\\x64\\Debug\\PowerToys.exe",
-      "C:\\PowerToys-c1c7\\x64\\Debug\\PowerToys.AdvancedPasteModuleInterface.dll",
-      "C:\\PowerToys-c1c7\\x64\\Debug\\WinUI3Apps\\PowerToys.AdvancedPaste.exe",
-      "C:\\PowerToys-c1c7\\src\\modules\\AdvancedPaste\\AdvancedPaste.UnitTests\\x64\\Debug\\tests\\AdvancedPaste.UnitTests\\AdvancedPaste.UnitTests.exe"
+      "<PowerToysCheckout>\\x64\\Debug\\PowerToys.exe",
+      "<PowerToysCheckout>\\x64\\Debug\\PowerToys.AdvancedPasteModuleInterface.dll",
+      "<PowerToysCheckout>\\x64\\Debug\\WinUI3Apps\\PowerToys.AdvancedPaste.exe",
+      "<PowerToysCheckout>\\src\\modules\\AdvancedPaste\\AdvancedPaste.UnitTests\\x64\\Debug\\tests\\AdvancedPaste.UnitTests\\AdvancedPaste.UnitTests.exe"
     ],
     "latest_targeted_validation": "The final current-main x64 Debug restore, runner, Settings, Advanced Paste module-interface, managed-app, and unit-test-project builds passed. AdvancedPaste.UnitTests reported 32 passed, 0 failed, and 14 intentionally skipped tests.",
     "build_note": "The first runner build exposed missing Spectre libraries. The documented POWERTOYS_DISABLE_SPECTRE conditional overrides were applied only for local validation, the complete final build passed, and both local property files were restored without committing or pushing them."
   },
   "test_instructions": [
-    "Launch C:\\PowerToys-c1c7\\x64\\Debug\\PowerToys.exe.",
+    "Launch <PowerToysCheckout>\\x64\\Debug\\PowerToys.exe.",
     "Open Settings → Advanced Paste, enable the module, and configure either an OpenAI or Azure OpenAI provider.",
     "Run a custom action with a model or deployment that does not accept reasoning_effort=minimal; verify the action is not rejected with the HTTP 400 described in issue 49838.",
     "For the PR-specific automated guard, run the built AdvancedPaste.UnitTests executable and confirm both CreateExecutionSettings_ForOpenAIProviders data rows pass."
@@ -361,117 +361,8 @@
             }
           ]
         },
-        "internalEvidence": {
-          "status": "reviewed-pending-approval",
-          "worktree": "C:\\PowerToys-c1c7",
-          "forkPr": "https://github.com/MuyuanMS/PowerToys/pull/384",
-          "forkBranch": "pr-iterate/49867-v2",
-          "convergence": "Fresh Copilot review at 2026-08-14T00:54:56Z on final head 1f94430625a807b0af0747dd8431a3fa6ac91fe6 generated zero published comments; unresolved Copilot threads: 0.",
-          "validationSummary": "Final x64 Debug restore, runner, Settings, Advanced Paste interface/app/test builds passed. AdvancedPaste.UnitTests: 32 passed, 0 failed, 14 skipped.",
-          "upstreamChecks": {
-            "successful": 3,
-            "failing": 0,
-            "pending": 0,
-            "azureBuild": "not-triggered-for-external-fork"
-          }
-        },
-        "testInstructions": "Launch C:\\PowerToys-c1c7\\x64\\Debug\\PowerToys.exe. Open Settings → Advanced Paste, configure OpenAI or Azure OpenAI, and run a custom action against a model that rejects reasoning_effort=minimal; verify no HTTP 400 occurs. The built AdvancedPaste.UnitTests executable passes both provider data rows."
+        "testInstructions": "Launch <PowerToysCheckout>\\x64\\Debug\\PowerToys.exe. Open Settings → Advanced Paste, configure OpenAI or Azure OpenAI, and run a custom action against a model that rejects reasoning_effort=minimal; verify no HTTP 400 occurs. The built AdvancedPaste.UnitTests executable passes both provider data rows."
       }
     ]
-  },
-  "internalEvidence": {
-    "status": "reviewed-pending-approval",
-    "no_upstream_writes": true,
-    "upstream_write_log": [],
-    "resume": {
-      "resume_action": "fresh-mirror",
-      "prior_artifact_found": false,
-      "initial_fork_pr": 382,
-      "initial_branch": "pr-iterate/49867",
-      "current_fork_pr": 384,
-      "current_branch": "pr-iterate/49867-v2",
-      "worktree": "C:\\PowerToys-c1c7",
-      "replacement_reason": "The upstream branch was rebased onto current main, but fork repository rules rejected the required force-push. Fork PR 382 was closed and fork PR 384 was created from the versioned rebased branch without remirroring the upstream contribution."
-    },
-    "scope_validation": {
-      "upstream_original_head": "aa9c26631872bea8a481b412e136caa4e5e7c524",
-      "upstream_original_base": "5193a1e49729bf8d9a8553e352e7c0c285e50188",
-      "current_main": "cade1d9e0e00de27046358136d5c0e6ac1ad35d0",
-      "rebased_initial_head": "da347695dd34bfcf3715774509d8dfb27a5a83e1",
-      "original_patch_id": "39c676599fe03dabed4a3e9a152d32932810d962",
-      "rebased_patch_id": "39c676599fe03dabed4a3e9a152d32932810d962",
-      "upstream_changed_paths": [
-        "src/modules/AdvancedPaste/AdvancedPaste.UnitTests/ServicesTests/SemanticKernelPasteProviderTests.cs"
-      ],
-      "rebased_changed_paths": [
-        "src/modules/AdvancedPaste/AdvancedPaste.UnitTests/ServicesTests/SemanticKernelPasteProviderTests.cs"
-      ],
-      "extra_paths": [],
-      "missing_paths": [],
-      "review_fix_commit": "1f94430625a807b0af0747dd8431a3fa6ac91fe6",
-      "review_fix": "Parameterize the regression test for both AIServiceType.OpenAI and AIServiceType.AzureOpenAI."
-    },
-    "review_loop": {
-      "copilot_review_count": 3,
-      "rounds": [
-        "2026-08-14T00:31:25Z — automatic initial-head review, zero published comments.",
-        "2026-08-14T00:52:32Z — fresh initial-head pass, zero new comments.",
-        "2026-08-14T00:54:56Z — fresh final-head pass after the coverage fix, zero new comments."
-      ],
-      "latest_review_id": 4932861829,
-      "latest_review_submitted_at": "2026-08-14T00:54:56Z",
-      "latest_review_commit_sha": "1f94430625a807b0af0747dd8431a3fa6ac91fe6",
-      "latest_published_comment_count": 0,
-      "published_comments_processed": 0,
-      "unresolved_copilot_threads": 0,
-      "unresolved_all_fork_threads": 0
-    },
-    "validation": {
-      "configuration": "x64 Debug",
-      "commands": [
-        "tools\\build\\build-essentials.cmd",
-        "src\\modules\\AdvancedPaste\\AdvancedPasteModuleInterface\\..\\..\\..\\..\\tools\\build\\build.cmd",
-        "src\\modules\\AdvancedPaste\\AdvancedPaste\\..\\..\\..\\..\\tools\\build\\build.cmd",
-        "src\\modules\\AdvancedPaste\\AdvancedPaste.UnitTests\\..\\..\\..\\..\\tools\\build\\build.cmd",
-        "AdvancedPaste.UnitTests.exe --no-progress --output Normal --report-trx --report-trx-filename pr49867-final.trx",
-        "git diff --check origin/main...HEAD"
-      ],
-      "unit_test_result": {
-        "total": 46,
-        "passed": 32,
-        "failed": 0,
-        "skipped": 14
-      },
-      "local_only_changes": [
-        "Cpp.Build.props",
-        "Directory.Build.props"
-      ],
-      "local_only_reason": "Conditional POWERTOYS_DISABLE_SPECTRE overrides were required because Spectre libraries are unavailable locally. They were restored and never committed or pushed.",
-      "worktree_clean_at_end": true,
-      "final_local_head": "1f94430625a807b0af0747dd8431a3fa6ac91fe6",
-      "final_remote_head": "1f94430625a807b0af0747dd8431a3fa6ac91fe6"
-    },
-    "freshness": {
-      "evaluated_at": "2026-08-14T01:02:07.585994Z",
-      "upstream_updated_at": "2026-08-13T15:28:49Z",
-      "upstream_commit_count": 1,
-      "upstream_issue_comment_count": 2,
-      "upstream_review_comment_count": 0,
-      "upstream_review_count": 0,
-      "upstream_unresolved_review_threads": 0
-    },
-    "publishing": "No comment, review, approval, label, close action, Azure trigger, or other write was performed against microsoft/PowerToys. Fork-side pushes, fork PR lifecycle actions, and Copilot review requests were used only for internal review.",
-    "safety": {
-      "upstream_writes": "none",
-      "fork_side_only": true,
-      "public_payload_contains_internal_links": false
-    },
-    "artifactValidation": {
-      "jsonParse": "passed",
-      "dashboardContract": "passed",
-      "reviewPayloadValidator": "passed",
-      "checkGitHub": true,
-      "validatedAt": "2026-08-14T01:05:30.0635017Z"
-    }
   }
 }

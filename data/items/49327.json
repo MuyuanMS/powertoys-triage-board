@@ -33,7 +33,7 @@
   ],
   "confidence": "High",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-07-15T06:07:42.0000000Z",
+  "source_updated_at": "2026-07-15T06:07:42Z",
   "judgment": {
     "status": "needs_information",
     "rationale": "The issue is still open, but the current thread does not isolate the trigger well enough to support a reliable code-level design.",
@@ -43,6 +43,6 @@
     ],
     "recommended_action": "A targeted follow-up should collect the smallest missing piece of evidence before an engineer starts chasing a speculative root cause.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-07-15T06:07:42.0000000Z"
+    "source_updated_at": "2026-07-15T06:07:42Z"
   }
 }

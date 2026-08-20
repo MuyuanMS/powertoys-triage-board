@@ -219,15 +219,15 @@
       }
     ],
     "outputs": [
-      "C:\\PowerToys-49597\\x64\\Debug\\PowerToys.exe",
-      "C:\\PowerToys-49597\\x64\\Debug\\WinUI3Apps\\PowerToys.ImageResizer.exe",
-      "C:\\PowerToys-49597\\x64\\Debug\\WinUI3Apps\\CmdPal\\tests\\Microsoft.CmdPal.UI.ViewModels.UnitTests.dll"
+      "<PowerToysCheckout>\\x64\\Debug\\PowerToys.exe",
+      "<PowerToysCheckout>\\x64\\Debug\\WinUI3Apps\\PowerToys.ImageResizer.exe",
+      "<PowerToysCheckout>\\x64\\Debug\\WinUI3Apps\\CmdPal\\tests\\Microsoft.CmdPal.UI.ViewModels.UnitTests.dll"
     ],
     "latest_targeted_validation": "The final template restore and x64 Debug build passed after proving the older MSIX build-tools version fails restore with NU1605. The refreshed template archive passed 269/269 Command Palette ViewModels tests, including template creation and archive handling.",
-    "build_note": "The machine lacks Spectre libraries. The documented POWERTOYS_DISABLE_SPECTRE local-only property conditions were used for validation, never committed or pushed, and restored afterward. The worktree is clean."
+    "build_note": "The machine lacks Spectre libraries. The documented POWERTOYS_DISABLE_SPECTRE local-only property conditions were used for validation, never committed or pushed, and restored afterward. The local checkout is clean."
   },
   "test_instructions": [
-    "Launch C:\\PowerToys-49597\\x64\\Debug\\PowerToys.exe.",
+    "Launch <PowerToysCheckout>\\x64\\Debug\\PowerToys.exe.",
     "Open Command Palette, use the create-extension flow, and generate a new extension from the shipped template.",
     "Restore and build the generated x64 Debug extension; verify it resolves Microsoft.WindowsAppSDK 2.3.1 without a package-downgrade warning.",
     "Inspect the generated publishing guide and verify it declares Microsoft.WindowsAppRuntime.2 with MinimumVersion 2.3.1.",
@@ -247,57 +247,5 @@
     "commit_count": 7,
     "changed_file_count": 5
   },
-  "fork_branch": "pr-iterate/49597-v2",
-  "internalEvidence": {
-    "status": "reviewed-pending-approval",
-    "worktree": "C:\\PowerToys-49597",
-    "upstream_head_sha": "d757d78c42edab73e348df5df6a243a4e8a2e07d",
-    "review_head_sha": "3fbfdf686ab0fc1bc390ef028c011cedb9a37480",
-    "review_base_sha": "5193a1e49729bf8d9a8553e352e7c0c285e50188",
-    "freshness": {
-      "evaluated_at": "2026-08-13T16:01:38.1135244Z",
-      "upstream_updated_at": "2026-07-31T06:34:25Z",
-      "upstream_commit_count": 1,
-      "upstream_issue_comment_count": 0,
-      "upstream_review_comment_count": 0,
-      "upstream_review_count": 0,
-      "upstream_unresolved_review_threads": 0
-    },
-    "resume_and_mirror": {
-      "resume_action": "create-worktree",
-      "original_fork_pr": 209,
-      "current_fork_pr": 365,
-      "replacement_reason": "The durable review branch and resolved review history were resumed. After the mandatory current-main rebase, fork branch protection rejected force-pushing pr-iterate/49597, so the rebased candidate continued on pr-iterate/49597-v2 and fork PR 365. Superseded fork PR 209 was closed.",
-      "patch_identity": "The rebased first commit has the same stable patch-id, d86d10cea1c29a190d3d9a21ff8e445c0f1b776e, as upstream head d757d78c42edab73e348df5df6a243a4e8a2e07d.",
-      "scope_note": "The upstream PR changes two dependency files. The final fork diff contains those two files plus the direct template PackageReference, the generated extension publishing guide, and template.zip; all three additions are directly required to make the shipped template consume and document App SDK 2.3.1.",
-      "sanitization": "Fork PR titles and descriptions use plain PR numbers and contain no upstream-notifying number syntax."
-    },
-    "review_loop": {
-      "prior_fork_pr": 209,
-      "prior_copilot_reviews": 4,
-      "prior_published_comments_processed": 1,
-      "current_fork_pr": 365,
-      "current_session_copilot_reviews": 3,
-      "latest_review_id": 4929011877,
-      "latest_fresh_review": "2026-08-13T15:56:39Z on 3fbfdf686ab0fc1bc390ef028c011cedb9a37480 — generated no new published comments.",
-      "latest_fresh_review_comments": 0,
-      "latest_suppressed_comments": 1,
-      "suppressed_policy": "The final suppressed item only requested that the fork PR description explain the necessary MSIX tooling bump. Independent restore validation proved that the old version fails with NU1605 because Windows App SDK 2.3.1 requires Microsoft.Windows.SDK.BuildTools.MSIX >= 1.7.251221100; it does not trigger another code round.",
-      "unresolved_copilot_threads": 0
-    },
-    "fixes": [
-      "Added a direct Microsoft.WindowsAppSDK reference so the generated extension restore graph uses 2.3.1.",
-      "Raised Microsoft.Windows.SDK.BuildTools.MSIX to 1.7.251221100, the minimum required by the App SDK 2.3.1 dependency graph.",
-      "Updated the generated extension publishing guide from Microsoft.WindowsAppRuntime.1.7 to Microsoft.WindowsAppRuntime.2 with minimum version 2.3.1.",
-      "Regenerated the shipped template.zip and verified all 32 archived files against committed source."
-    ],
-    "local_status": "The clean local branch and fork/pr-iterate/49597-v2 both point to 3fbfdf686ab0fc1bc390ef028c011cedb9a37480.",
-    "publishing": "No comment, review, approval, label, close action, Azure trigger, or other write was performed against microsoft/PowerToys. All pushes, PR creation/closure, review requests, and iteration occurred only in MuyuanMS/PowerToys.",
-    "safety": {
-      "upstream_writes": "none",
-      "fork_side_only": true,
-      "public_payload_contains_internal_links": false,
-      "proposed_upstream_items": 2
-    }
-  }
+  "fork_branch": "pr-iterate/49597-v2"
 }

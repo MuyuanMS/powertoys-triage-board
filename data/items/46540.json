@@ -27,7 +27,7 @@
   ],
   "confidence": "High",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-08-05T08:39:08.0000000Z",
+  "source_updated_at": "2026-08-05T08:39:08Z",
   "judgment": {
     "status": "duplicate_or_handled",
     "rationale": "Linked work or ownership signals already cover the next step.",
@@ -37,6 +37,6 @@
     ],
     "recommended_action": "Linked work or existing ownership signals already cover the next step.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-08-05T08:39:08.0000000Z"
+    "source_updated_at": "2026-08-05T08:39:08Z"
   }
 }

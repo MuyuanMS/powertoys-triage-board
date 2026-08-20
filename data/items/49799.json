@@ -29,7 +29,7 @@
   ],
   "confidence": "High",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-08-10T18:05:05.0000000Z",
+  "source_updated_at": "2026-08-10T18:05:05Z",
   "judgment": {
     "status": "needs_information",
     "rationale": "The report maps padding thresholds well, but disabling Windows Snap removes the behavior, so evidence is needed to separate FancyZones placement from native border hit testing.",
@@ -39,6 +39,6 @@
     ],
     "recommended_action": "Hold for maintainer review.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-08-10T18:05:05.0000000Z"
+    "source_updated_at": "2026-08-10T18:05:05Z"
   }
 }

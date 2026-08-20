@@ -26,7 +26,7 @@
   ],
   "confidence": "High",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-07-17T15:44:42.0000000Z",
+  "source_updated_at": "2026-07-17T15:44:42Z",
   "judgment": {
     "status": "duplicate_or_handled",
     "rationale": "The issue already carries GitHub's duplicate signal for an older Keyboard Manager failure.",
@@ -36,6 +36,6 @@
     ],
     "recommended_action": "There is no value in starting another design pass while the issue remains marked duplicate.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-07-17T15:44:42.0000000Z"
+    "source_updated_at": "2026-07-17T15:44:42Z"
   }
 }

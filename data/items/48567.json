@@ -26,7 +26,7 @@
   ],
   "confidence": "Medium",
   "evaluated_at": "2026-08-14T00:25:39.6245114Z",
-  "source_updated_at": "2026-08-13T15:26:29.0000000Z",
+  "source_updated_at": "2026-08-13T15:26:29Z",
   "judgment": {
     "status": "duplicate_or_handled",
     "rationale": "The missing FancyZones behavior is a consequence of PowerToys itself not starting, and the repository already has an older general startup tracker collecting the same intermittent symptom.",
@@ -37,6 +37,6 @@
     ],
     "recommended_action": "Cluster this with the existing general autostart tracker (#23193) instead of opening separate FancyZones-specific dashboard work.",
     "evaluated_at": "2026-08-14T00:25:39.6245114Z",
-    "source_updated_at": "2026-08-13T15:26:29.0000000Z"
+    "source_updated_at": "2026-08-13T15:26:29Z"
   }
 }

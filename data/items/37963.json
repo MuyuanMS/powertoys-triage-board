@@ -26,7 +26,7 @@
   ],
   "confidence": "High",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-08-05T17:36:56.0000000Z",
+  "source_updated_at": "2026-08-05T17:36:56Z",
   "judgment": {
     "status": "waiting_on_author",
     "rationale": "The current thread is blocked on updated repro information, logs, or confirmation on a newer build.",
@@ -36,6 +36,6 @@
     ],
     "recommended_action": "The reporter has the next move because maintainers already asked for current-version validation or extra diagnostics.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-08-05T17:36:56.0000000Z"
+    "source_updated_at": "2026-08-05T17:36:56Z"
   }
 }

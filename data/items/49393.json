@@ -131,7 +131,7 @@
     ]
   },
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-07-20T15:06:32.0000000Z",
+  "source_updated_at": "2026-07-20T15:06:32Z",
   "judgment": {
     "status": "actionable_design",
     "rationale": "FancyZones is not clamping the realized snapped window back inside the monitor work area after Windows enforces a minimum width.",
@@ -144,6 +144,6 @@
     ],
     "recommended_action": "Approve the post-placement work-area clamp design and add the oversized-right-zone regression before touching broader FancyZones snapping behavior.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-07-20T15:06:32.0000000Z"
+    "source_updated_at": "2026-07-20T15:06:32Z"
   }
 }

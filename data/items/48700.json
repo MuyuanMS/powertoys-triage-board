@@ -244,31 +244,31 @@
     ],
     "outputs": [
       {
-        "path": "C:\\PowerToys-d985\\x64\\Debug\\PowerToys.exe",
+        "path": "<PowerToysCheckout>\\x64\\Debug\\PowerToys.exe",
         "last_write_utc": "2026-08-13T17:53:44.4729697Z"
       },
       {
-        "path": "C:\\PowerToys-d985\\x64\\Debug\\PowerToys.WorkspacesModuleInterface.dll",
+        "path": "<PowerToysCheckout>\\x64\\Debug\\PowerToys.WorkspacesModuleInterface.dll",
         "last_write_utc": "2026-08-13T17:57:22.9618394Z"
       },
       {
-        "path": "C:\\PowerToys-d985\\x64\\Debug\\PowerToys.WorkspacesLauncher.exe",
+        "path": "<PowerToysCheckout>\\x64\\Debug\\PowerToys.WorkspacesLauncher.exe",
         "last_write_utc": "2026-08-13T17:57:55.0871656Z"
       },
       {
-        "path": "C:\\PowerToys-d985\\x64\\Debug\\WinUI3Apps\\PowerToys.WorkspacesLauncherUI.dll",
+        "path": "<PowerToysCheckout>\\x64\\Debug\\WinUI3Apps\\PowerToys.WorkspacesLauncherUI.dll",
         "last_write_utc": "2026-08-13T18:19:56.2482365Z"
       },
       {
-        "path": "C:\\PowerToys-d985\\x64\\Debug\\tests\\WorkspacesLauncherUI.Tests\\PowerToys.WorkspacesLauncherUI.Tests.dll",
+        "path": "<PowerToysCheckout>\\x64\\Debug\\tests\\WorkspacesLauncherUI.Tests\\PowerToys.WorkspacesLauncherUI.Tests.dll",
         "last_write_utc": "2026-08-13T18:21:48.8110509Z"
       }
     ],
     "latest_targeted_validation": "The final launcher and test project built successfully after adding application-specific live-region text and removing unused package references. The final suite passed 133/133 tests, including the cancel-send/cancel-ack/close handshake and all four localized state-announcement formats.",
-    "build_note": "This machine lacks Spectre libraries. A local-only conditional Spectre override was used for the essentials build, restored immediately afterward, and never committed or pushed. The final source worktree is clean. Two pre-existing MVVMTK0045 field-based ObservableProperty warnings remain; converting them to partial properties was tested earlier but produced generator/compiler failures, so the working form was retained."
+    "build_note": "This machine lacks Spectre libraries. A local-only conditional Spectre override was used for the essentials build, restored immediately afterward, and never committed or pushed. The final source local checkout is clean. Two pre-existing MVVMTK0045 field-based ObservableProperty warnings remain; converting them to partial properties was tested earlier but produced generator/compiler failures, so the working form was retained."
   },
   "test_instructions": [
-    "Launch C:\\PowerToys-d985\\x64\\Debug\\PowerToys.exe and start a workspace containing several Win32, packaged, and PWA applications.",
+    "Launch <PowerToysCheckout>\\x64\\Debug\\PowerToys.exe and start a workspace containing several Win32, packaged, and PWA applications.",
     "Verify the status window receives its initial list reliably, updates every app, and closes cleanly after completion.",
     "Cancel while several apps remain pending; verify no additional pending apps launch, the native side acknowledges cancellation, and the UI closes only after the acknowledgment.",
     "Verify packaged, PWA, executable, and missing-app icons resolve, including the installed DefaultIcon.ico fallback.",
@@ -301,98 +301,5 @@
     "additions": 3326,
     "deletions": 979
   },
-  "fork_branch": "pr-iterate/48700-v5",
-  "internalEvidence": {
-    "status": "reviewed-pending-approval",
-    "worktree": "C:\\PowerToys-d985",
-    "local_branch": "pr-iterate/48700-v2",
-    "remote_branch": "pr-iterate/48700-v5",
-    "upstream_head_sha": "f4c16f21783f6a79c865457f0b1384b509cad3a7",
-    "review_head_sha": "abd2a49b6cc86ac58b5a4872662cd10d913d682b",
-    "review_base_sha": "b7891108fad39459fcbf7f45c0a32030568a02a1",
-    "freshness": {
-      "evaluated_at": "2026-08-13T18:30:21.9179382Z",
-      "upstream_updated_at": "2026-08-06T16:23:48Z",
-      "upstream_commit_count": 26,
-      "upstream_issue_comment_count": 10,
-      "upstream_review_comment_count": 22,
-      "upstream_review_count": 13,
-      "upstream_review_thread_count": 11,
-      "upstream_unresolved_review_threads": 0,
-      "main_sha": "b7891108fad39459fcbf7f45c0a32030568a02a1",
-      "head_changed_during_finalization": false,
-      "main_changed_during_finalization": false
-    },
-    "resume_and_mirror": {
-      "resume_action": "resume-durable-fork-state-and-rebase",
-      "historical_fork_pr": 223,
-      "superseded_fork_prs": [
-        369,
-        373
-      ],
-      "current_fork_pr": 375,
-      "replacement_reason": "Durable review state was resumed. Main advanced twice during the run. Fork branch protection rejected force-pushing rebased history, so the review continued on versioned branches and replacement fork PRs. PRs 369 and 373 were closed as superseded; historical PR 223 remains as durable audit evidence.",
-      "range_diff": "The upstream branch contains 25 non-merge patches plus one merge commit. Against current main, 24 patches are byte-equivalent, one differs only because current main already contains the adjacent IMEAceept dictionary line, and the merge commit is intentionally omitted. Eighteen review-fix commits follow the rebased upstream tip.",
-      "scope_note": "The upstream PR changes 51 paths and the final fork PR changes 63. Two upstream Data utility paths are replaced by equivalent shared Utils paths. Fourteen fork-only paths are tightly coupled lifecycle, installer, status-snapshot, callback-shutdown, shared-utility, and icon-test fixes; no unrelated product area is included.",
-      "sanitization": "Fork PR titles and descriptions use plain PR numbers and contain no upstream-notifying issue or PR reference syntax."
-    },
-    "review_loop": {
-      "fork_prs": [
-        {
-          "number": 223,
-          "state": "OPEN",
-          "copilot_reviews": 8,
-          "published_copilot_comments": 8
-        },
-        {
-          "number": 369,
-          "state": "CLOSED",
-          "copilot_reviews": 3,
-          "published_copilot_comments": 6
-        },
-        {
-          "number": 373,
-          "state": "CLOSED",
-          "copilot_reviews": 8,
-          "published_copilot_comments": 7
-        },
-        {
-          "number": 375,
-          "state": "OPEN",
-          "copilot_reviews": 3,
-          "published_copilot_comments": 1
-        }
-      ],
-      "latest_review_id": 4930384778,
-      "latest_fresh_review": "2026-08-13T18:29:15Z on abd2a49b6cc86ac58b5a4872662cd10d913d682b — generated zero published and zero suppressed comments.",
-      "latest_fresh_review_comments": 0,
-      "latest_suppressed_comments": 0,
-      "unresolved_copilot_threads": 0,
-      "non_copilot_threads": "Four unresolved github-advanced-security threads remain on upstream-added spell-check dictionary entries in the fork PR. The upstream spelling checks pass; these are excluded from Copilot convergence and are not proposed as upstream review findings.",
-      "convergence_note": "The final current-main rounds fixed cancellation handshake coverage, application-specific live announcements, unused System.IO.Abstractions and Moq references, and the Windows 10 title-border advisory before the zero-comment final review."
-    },
-    "fixes": [
-      "Added a reliable UI-ready handshake and native status resend so the initial payload cannot be lost.",
-      "Returned launch status snapshots by value and synchronized callback shutdown.",
-      "Owned and joined the native launch worker before launcher destruction.",
-      "Made cancellation claims, terminal state transitions, acknowledgment, and UI close ordering race-free.",
-      "Added an injectable cancel-send boundary and end-to-end cancel_ack close coverage.",
-      "Resolved qualified packaged app icons, retained executable/PWA fallbacks, and added icon caching and tests.",
-      "Installed Workspaces launcher assets under WinUI3Apps\\Assets\\Workspaces.",
-      "Made window sizing DPI-aware and centering respect the display work-area origin.",
-      "Added localized per-application live-region announcements and the Windows 10 title-border workaround.",
-      "Initialized the Windows App SDK test runtime reliably and corrected test documentation.",
-      "Removed unused System.IO.Abstractions and Moq package references."
-    ],
-    "local_status": "The clean local branch, fork/pr-iterate/48700-v5, and fork PR 375 all point to abd2a49b6cc86ac58b5a4872662cd10d913d682b. Fork main and origin/main both point to b7891108fad39459fcbf7f45c0a32030568a02a1.",
-    "publishing": "No comment, review, approval, label, close action, Azure trigger, or other write was performed against microsoft/PowerToys. All pushes, PR creation/closure, review requests, and thread resolutions occurred only in MuyuanMS/PowerToys.",
-    "safety": {
-      "upstream_writes": "none",
-      "fork_side_only": true,
-      "fork_side_writes": "Synchronized MuyuanMS/PowerToys main, pushed versioned review branches, created replacement fork PRs, requested Copilot reviews, resolved Copilot threads, and closed superseded fork PRs.",
-      "public_payload_contains_internal_links": false,
-      "approval_required_before_upstream_action": true,
-      "proposed_upstream_items": 4
-    }
-  }
+  "fork_branch": "pr-iterate/48700-v5"
 }

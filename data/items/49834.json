@@ -38,7 +38,7 @@
   ],
   "confidence": "High",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-08-12T00:00:08.0000000Z",
+  "source_updated_at": "2026-08-12T00:00:08Z",
   "judgment": {
     "status": "needs_information",
     "rationale": "The report identifies a Windows 10 title-bar hit-target symptom, but it has no screenshot or recording, display-scale details, or bug-report archive to distinguish a layout issue from a non-client hit-test issue.",
@@ -48,6 +48,6 @@
     ],
     "recommended_action": "The missing evidence is specific and can be collected without speculative code investigation.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-08-12T00:00:08.0000000Z"
+    "source_updated_at": "2026-08-12T00:00:08Z"
   }
 }

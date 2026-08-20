@@ -24,7 +24,7 @@
   ],
   "confidence": "High",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-08-09T12:28:02.0000000Z",
+  "source_updated_at": "2026-08-09T12:28:02Z",
   "judgment": {
     "status": "actionable_design",
     "rationale": "Win+D hides the target window but leaves its Always On Top border visible and detached; restoring and moving the window does not reattach it.",
@@ -34,6 +34,6 @@
     ],
     "recommended_action": "Hold for maintainer review.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-08-09T12:28:02.0000000Z"
+    "source_updated_at": "2026-08-09T12:28:02Z"
   }
 }

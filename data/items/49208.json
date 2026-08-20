@@ -38,7 +38,7 @@
   ],
   "confidence": "Medium",
   "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-  "source_updated_at": "2026-07-28T01:54:51.0000000Z",
+  "source_updated_at": "2026-07-28T01:54:51Z",
   "judgment": {
     "status": "needs_information",
     "rationale": "The symptom is not yet localized enough to choose a safe code owner or design path.",
@@ -48,6 +48,6 @@
     ],
     "recommended_action": "The missing evidence is specific and cheaper to collect than speculative code investigation.",
     "evaluated_at": "2026-08-14T00:05:43.6608691Z",
-    "source_updated_at": "2026-07-28T01:54:51.0000000Z"
+    "source_updated_at": "2026-07-28T01:54:51Z"
   }
 }
