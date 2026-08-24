@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-24T16:04:16.9182674+08:00",
+  "generated_at": "2026-08-24T17:14:51.3439262+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -82,18 +82,23 @@ window.BOARD_INDEX = {
   },
   "counts": {
     "open_prs": 113,
-    "open_issues": 7403,
-    "community": 6854,
-    "artifacts": 3185
+    "open_issues": 7400,
+    "community": 6851,
+    "artifacts": 3190
   },
   "impact": {
-    "as_of": "2026-08-24T16:04:16.9182674+08:00",
+    "as_of": "2026-08-24T17:14:51.3439262+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
     "comments_drafted": 24
   },
   "artifact_numbers": [
+    50082,
+    50081,
+    50054,
+    50052,
+    50044,
     50027,
     50020,
     50011,
@@ -3291,18 +3296,18 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Ready for review"
@@ -3310,7 +3315,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-23T20:46:49Z",
       "updated_at": "2026-08-24T07:07:09Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 439,
+        "fork_title": "[PR 50082] GrabAndMove refactor",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/50082-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/439"
+      }
     },
     {
       "id": "pr-50081",
@@ -3322,18 +3335,18 @@ window.BOARD_INDEX = {
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Ready for review"
@@ -3341,7 +3354,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-23T16:32:33Z",
       "updated_at": "2026-08-23T16:43:10Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 440,
+        "fork_title": "[PR 50081] [AdvancedPaste] Add \"Paste as .jpg file\" action with configurable JPEG quality",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/50081-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/440"
+      }
     },
     {
       "id": "pr-50054",
@@ -3353,18 +3374,18 @@ window.BOARD_INDEX = {
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Ready for review"
@@ -3372,7 +3393,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-21T15:13:26Z",
       "updated_at": "2026-08-21T17:57:05Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 443,
+        "fork_title": "[PR 50054] [CmdPal] Window Walker: match app name and window title together",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/50054-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/443"
+      }
     },
     {
       "id": "pr-50052",
@@ -3384,18 +3413,18 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Ready for review"
@@ -3403,7 +3432,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-21T13:42:33Z",
       "updated_at": "2026-08-21T13:43:35Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 444,
+        "fork_title": "[PR 50052] [CI] Skip issue triage for closed issues",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/50052-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/444"
+      }
     },
     {
       "id": "pr-50044",
@@ -3415,18 +3452,18 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": true,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Product-Command Palette",
@@ -3436,7 +3473,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-20T21:13:42Z",
       "updated_at": "2026-08-20T23:31:10Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 446,
+        "fork_title": "[PR 50044] CmdPal: Fix dock items not activating with keyboard",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/50044-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/446"
+      }
     },
     {
       "id": "pr-50043",
@@ -3555,7 +3600,7 @@ window.BOARD_INDEX = {
       "stage": "awaiting_author",
       "owes": "author",
       "pending_author": true,
-      "waiting_since": "2026-08-20T21:51:55Z",
+      "waiting_since": "2026-08-24T09:02:33Z",
       "has_artifact": true,
       "agent_status": "review",
       "issue_type": null,
@@ -3565,7 +3610,7 @@ window.BOARD_INDEX = {
         "Ready for review"
       ],
       "created_at": "2026-08-19T21:40:14Z",
-      "updated_at": "2026-08-20T21:51:55Z",
+      "updated_at": "2026-08-24T09:02:33Z",
       "comments": 0,
       "priority": null,
       "mirror": {
@@ -4968,8 +5013,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "approve",
-        "label": "Approve"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Product-Command Palette",
@@ -5233,8 +5278,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "approve",
-        "label": "Approve"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Product-Command Palette",
@@ -5341,8 +5386,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "approve",
-        "label": "Approve"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Needs-Author-Feedback",
@@ -5382,8 +5427,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "approve",
-        "label": "Approve"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Needs-Author-Feedback",
@@ -5423,8 +5468,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "approve",
-        "label": "Approve"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Product-Command Palette",
@@ -5464,8 +5509,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "approve",
-        "label": "Approve"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Product-Command Palette",
@@ -5505,8 +5550,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "approve",
-        "label": "Approve"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Product-Command Palette",
@@ -5546,8 +5591,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "approve",
-        "label": "Approve"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Product-Command Palette",
@@ -6063,8 +6108,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "approve",
-        "label": "Approve"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Needs-Author-Feedback",
@@ -6358,8 +6403,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "approve",
-        "label": "Approve"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Product-Command Palette"
@@ -6468,8 +6513,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "approve",
-        "label": "Approve"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Product-Command Palette",
@@ -6756,8 +6801,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "approve",
-        "label": "Approve"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Needs-Review",
@@ -7277,6 +7322,37 @@ window.BOARD_INDEX = {
       }
     },
     {
+      "id": "issue-50086",
+      "kind": "issue",
+      "number": 50086,
+      "url": "https://github.com/microsoft/PowerToys/issues/50086",
+      "title": "[Dedupe Digest] 2026-08-24",
+      "author": "github-actions[bot]",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [
+        "dedupe-digest"
+      ],
+      "created_at": "2026-08-24T08:18:57Z",
+      "updated_at": "2026-08-24T08:18:58Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
       "id": "issue-50085",
       "kind": "issue",
       "number": 50085,
@@ -7345,39 +7421,6 @@ window.BOARD_INDEX = {
       "priority": null
     },
     {
-      "id": "issue-50083",
-      "kind": "issue",
-      "number": 50083,
-      "url": "https://github.com/microsoft/PowerToys/issues/50083",
-      "title": "Power Display - Profile not applied after sleep state",
-      "author": "redfave",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "bug",
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_triage",
-        "label": "Check bug"
-      },
-      "labels": [
-        "Issue-Bug",
-        "Needs-Triage",
-        "Product-PowerDisplay"
-      ],
-      "created_at": "2026-08-23T22:23:03Z",
-      "updated_at": "2026-08-23T22:28:00Z",
-      "comments": 1,
-      "priority": null
-    },
-    {
       "id": "issue-50080",
       "kind": "issue",
       "number": 50080,
@@ -7438,7 +7481,7 @@ window.BOARD_INDEX = {
         "Needs-Triage"
       ],
       "created_at": "2026-08-23T12:34:38Z",
-      "updated_at": "2026-08-23T12:43:23Z",
+      "updated_at": "2026-08-24T09:04:57Z",
       "comments": 1,
       "priority": null
     },
@@ -7477,39 +7520,6 @@ window.BOARD_INDEX = {
       "priority": null
     },
     {
-      "id": "issue-50075",
-      "kind": "issue",
-      "number": 50075,
-      "url": "https://github.com/microsoft/PowerToys/issues/50075",
-      "title": "Preferred language of Text Extractor not remembered",
-      "author": "Dobypeti",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "bug",
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_triage",
-        "label": "Check bug"
-      },
-      "labels": [
-        "Issue-Bug",
-        "Needs-Triage",
-        "Product-Text Extractor"
-      ],
-      "created_at": "2026-08-23T10:14:44Z",
-      "updated_at": "2026-08-23T11:07:39Z",
-      "comments": 3,
-      "priority": null
-    },
-    {
       "id": "issue-50074",
       "kind": "issue",
       "number": 50074,
@@ -7538,37 +7548,6 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-23T10:10:24Z",
       "updated_at": "2026-08-23T10:18:04Z",
       "comments": 1,
-      "priority": null
-    },
-    {
-      "id": "issue-50072",
-      "kind": "issue",
-      "number": 50072,
-      "url": "https://github.com/microsoft/PowerToys/issues/50072",
-      "title": "[Dedupe Digest] 2026-08-23",
-      "author": "github-actions[bot]",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "other",
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_triage",
-        "label": "Start triage"
-      },
-      "labels": [
-        "dedupe-digest"
-      ],
-      "created_at": "2026-08-23T08:08:43Z",
-      "updated_at": "2026-08-23T08:08:44Z",
-      "comments": 0,
       "priority": null
     },
     {
@@ -7993,40 +7972,6 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-20T16:48:49Z",
       "updated_at": "2026-08-20T17:17:39Z",
       "comments": 1,
-      "priority": null
-    },
-    {
-      "id": "issue-50037",
-      "kind": "issue",
-      "number": 50037,
-      "url": "https://github.com/microsoft/PowerToys/issues/50037",
-      "title": "Shortcut Guide - crashes when trying to retrieve Windows shortcuts (Windows 11)",
-      "author": "RexLuscus56",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "bug",
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_triage",
-        "label": "Check bug"
-      },
-      "labels": [
-        "Issue-Bug",
-        "Product-Shortcut Guide",
-        "Needs-Triage",
-        "Needs-Team-Response"
-      ],
-      "created_at": "2026-08-20T16:24:37Z",
-      "updated_at": "2026-08-22T21:43:32Z",
-      "comments": 3,
       "priority": null
     },
     {
@@ -53157,8 +53102,8 @@ window.BOARD_INDEX = {
         "Product-Command Palette"
       ],
       "created_at": "2026-03-24T03:21:52Z",
-      "updated_at": "2026-03-24T06:21:11Z",
-      "comments": 2,
+      "updated_at": "2026-08-24T08:14:53Z",
+      "comments": 3,
       "priority": null
     },
     {
