@@ -3,18 +3,20 @@
   "kind": "pr",
   "track": "review",
   "stage": "review_in_progress",
-  "generated_at": "2026-08-20T08:48:18.5429819Z",
-  "evaluated_at": "2026-08-20T08:48:18.5429819Z",
-  "source_updated_at": "2026-08-17T18:25:26Z",
-  "head_sha": "e23e507b41f4e2cfba89ff8cc86e88cce873a1c1",
+  "owes": "us",
+  "pending_author": false,
+  "generated_at": "2026-08-24T16:18:00Z",
+  "evaluated_at": "2026-08-24T16:18:00Z",
+  "source_updated_at": "2026-08-21T01:23:33Z",
+  "head_sha": "84524f800f5e1ce8e77735b97d30e6419f8ce4bf",
   "title": "CmdPal JS/TS Extensions - Phase 6: docs + parity sample extension",
   "url": "https://github.com/microsoft/PowerToys/pull/49329",
   "status": {
-    "glyph": "⏳",
-    "label": "Review queued",
-    "detail": "This PR is in the mandatory stale-review queue and must complete the fork review loop before it can be marked current."
+    "glyph": "...",
+    "label": "Fork remediation complete; final review blocked",
+    "detail": "Fork PR 425 now points to 7b50d57. All thirteen processed Copilot threads have replies and zero remain unresolved. A fresh Copilot review request was not accepted, so convergence cannot be claimed."
   },
-  "pending_author": false,
+  "next_action": "Resume only after Copilot review can be requested on fork PR 425; then require a fresh zero-comment review, a final build, and upstream-head freshness before drafting any action.",
   "proposed_comments": [],
   "actions": [
     {
@@ -22,15 +24,28 @@
       "type": "continue_review",
       "label": "Continue review loop",
       "primary": true,
-      "note": "Dashboard updater queued this PR for powertoys-pr-review; no upstream action has been posted."
+      "note": "Review progress is checkpointed; no upstream action has been posted."
     }
   ],
+  "workflow": {
+    "phase": "blocked-final-validation",
+    "checkpoint_at": "2026-08-24T16:18:00Z",
+    "fork_pr": 425,
+    "fork_branch": "pr-iterate/49329-v2",
+    "unresolved_copilot_threads": 0,
+    "local_remediation_commit": "7b50d57d144ceb4b18035ab9e8262786ec8748c3",
+    "copilot_thread_replies": 13,
+    "fresh_review_request_accepted": false
+  },
   "freshness": {
-    "stale_reasons": [
-      "missing_artifact",
-      "missing_current_review_action",
-      "missing_artifact_head_sha"
-    ],
-    "queued_at": "2026-08-20T08:48:18.5429819Z"
+    "queued_at": "2026-08-24T15:49:25.9282696Z",
+    "checkpoint_at": "2026-08-24T16:18:00Z",
+    "observed_upstream_head_sha": "510a575d24c59a2eba1c1782ebfacb51b8788a22",
+    "checkpoint_head_is_stale": true,
+    "native_build_blocked_by_unowned_lock": true,
+    "typescript_validation": {
+      "sdk_forms_test": "passed",
+      "sample_typecheck": "passed"
+    }
   }
 }

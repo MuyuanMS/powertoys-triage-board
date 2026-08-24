@@ -3,18 +3,20 @@
   "kind": "pr",
   "track": "review",
   "stage": "review_in_progress",
-  "generated_at": "2026-08-20T08:48:18.5429819Z",
-  "evaluated_at": "2026-08-20T08:48:18.5429819Z",
-  "source_updated_at": "2026-08-14T08:05:15Z",
+  "owes": "us",
+  "pending_author": false,
+  "generated_at": "2026-08-24T16:17:00Z",
+  "evaluated_at": "2026-08-24T16:17:00Z",
+  "source_updated_at": "08/14/2026 16:05:15",
   "head_sha": "c45eee286b58fc857064486b2a5bf7292f332c7a",
   "title": "[CmdPal][PerfMon] Add CPU temperature widget via ACPI thermal zone",
   "url": "https://github.com/microsoft/PowerToys/pull/48639",
   "status": {
-    "glyph": "⏳",
-    "label": "Review queued",
-    "detail": "This PR is in the mandatory stale-review queue and must complete the fork review loop before it can be marked current."
+    "glyph": "...",
+    "label": "Review blocked on Copilot availability",
+    "detail": "Fork commit 8773d94a9 addresses both prior findings and their threads were resolved. The one fresh-review request returned an empty reviewer list, so no fresh zero-comment review is available."
   },
-  "pending_author": false,
+  "next_action": "Enable Copilot code review for the fork, then request one fresh review of 8773d94a9 and verify a zero-comment result, zero unresolved threads, and a local build.",
   "proposed_comments": [],
   "actions": [
     {
@@ -22,15 +24,15 @@
       "type": "continue_review",
       "label": "Continue review loop",
       "primary": true,
-      "note": "Dashboard updater queued this PR for powertoys-pr-review; no upstream action has been posted."
+      "note": "Review progress is checkpointed; no upstream action has been posted."
     }
   ],
+  "workflow": {
+    "phase": "fresh_review_unavailable",
+    "checkpoint_at": "2026-08-24T16:17:00Z"
+  },
   "freshness": {
-    "stale_reasons": [
-      "missing_artifact",
-      "missing_current_review_action",
-      "missing_artifact_head_sha"
-    ],
-    "queued_at": "2026-08-20T08:48:18.5429819Z"
+    "queued_at": "08/20/2026 08:48:18",
+    "checkpoint_at": "2026-08-24T16:17:00Z"
   }
 }

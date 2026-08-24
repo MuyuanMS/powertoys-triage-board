@@ -2,42 +2,47 @@
   "number": 50052,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
+  "stage": "review_blocked_stale",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-24T09:01:03.1533063Z",
-  "evaluated_at": "08/24/2026 08:55:13",
-  "source_updated_at": "2026-08-21T13:43:35Z",
-  "head_sha": "d0d7f5bd39b500e24ce957f6a8e321ebcece5d52",
+  "generated_at": "2026-08-24T16:00:14.2257989Z",
+  "evaluated_at": "2026-08-24T16:00:14.2257989Z",
+  "source_updated_at": "2026-08-24T15:59:22.2724432Z",
+  "head_sha": "9cb18c61c8e9d160bad825b696c6910ed5b7380e",
+  "needs_revalidation": true,
   "title": "[CI] Skip issue triage for closed issues",
   "url": "https://github.com/microsoft/PowerToys/pull/50052",
   "status": {
-    "glyph": "...",
-    "label": "Review in progress",
-    "detail": "Copilot reviewer request was unavailable; local validation is blocked by an unowned build lock and missing Python. Manual code inspection completed; review cannot converge."
+    "glyph": "!",
+    "label": "Review blocked: upstream changed",
+    "detail": "The saved fork PR 444 remains intact, but upstream moved from d0d7f5bd39b500e24ce957f6a8e321ebcece5d52 to 9cb18c61c8e9d160bad825b696c6910ed5b7380e. Three Copilot threads were unresolved before the single permitted fork-side review request; that request was not accepted because GitHub returned no requested reviewer."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "Preserve fork PR 444 and rebase its saved branch on the current upstream head before resolving the three existing Copilot threads. No clean-review claim is valid until a fresh accepted Copilot review has zero published comments, all threads are resolved, and the build succeeds.",
   "proposed_comments": [],
   "actions": [
     {
       "id": "continue-review-50052",
       "type": "continue_review",
-      "label": "Continue review loop",
+      "label": "Resume blocked review",
       "primary": true,
-      "note": "Review progress is checkpointed; no upstream action has been posted."
+      "note": "Fork PR 444 is preserved. Upstream has changed, Copilot review could not be requested, and no upstream action has been posted."
     }
   ],
   "workflow": {
-    "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-24T09:01:03.1533063Z"
+    "phase": "blocked_stale",
+    "checkpoint_at": "2026-08-24T16:00:14.2257989Z",
+    "fork_pr": 444,
+    "fork_branch": "pr-iterate/50052-v2",
+    "fork_head": "da7bcf7c1f6b4f6bc31a0d9c672cd521e4b38f4b",
+    "unresolved_copilot_threads": 3,
+    "copilot_request_at": "2026-08-24T15:59:53.6164306Z",
+    "copilot_request_accepted": false
   },
   "freshness": {
     "queued_at": "08/24/2026 08:55:13",
-    "checkpoint_at": "2026-08-24T09:01:03.1533063Z"
-  },
-  "fork_pr": {
-    "number": 444,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/444"
-  },
-  "fork_branch": "pr-iterate/50052-v2"
+    "checkpoint_at": "2026-08-24T16:00:14.2257989Z",
+    "previous_head_sha": "d0d7f5bd39b500e24ce957f6a8e321ebcece5d52",
+    "observed_head_sha": "9cb18c61c8e9d160bad825b696c6910ed5b7380e",
+    "is_stale": true
+  }
 }

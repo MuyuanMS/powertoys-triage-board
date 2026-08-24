@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T17:19:30.6174081+08:00",
+  "generated_at": "2026-08-25T00:14:47.2044917+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -81,13 +81,13 @@
     ]
   },
   "counts": {
-    "open_prs": 113,
-    "open_issues": 7400,
-    "community": 6851,
+    "open_prs": 117,
+    "open_issues": 7403,
+    "community": 6854,
     "artifacts": 3190
   },
   "impact": {
-    "as_of": "2026-08-24T17:19:30.6174081+08:00",
+    "as_of": "2026-08-25T00:14:47.2044917+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -3287,6 +3287,132 @@
   ],
   "items": [
     {
+      "id": "pr-50095",
+      "kind": "pr",
+      "number": 50095,
+      "url": "https://github.com/microsoft/PowerToys/pull/50095",
+      "title": "CmdPal: add .vsconfig to extension template",
+      "author": "michaeljolley",
+      "is_community": false,
+      "mine": false,
+      "is_cmdpal": true,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": null,
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_review",
+        "label": "Start review"
+      },
+      "labels": [
+        "Product-Command Palette",
+        "Ready for review"
+      ],
+      "created_at": "2026-08-24T14:55:45Z",
+      "updated_at": "2026-08-24T15:47:37Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
+      "id": "pr-50094",
+      "kind": "pr",
+      "number": 50094,
+      "url": "https://github.com/microsoft/PowerToys/pull/50094",
+      "title": "fix(shortcut-guide): restore transparent overlay on Windows 10",
+      "author": "niels9001",
+      "is_community": false,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": null,
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_review",
+        "label": "Start review"
+      },
+      "labels": [
+        "0.101"
+      ],
+      "created_at": "2026-08-24T13:59:25Z",
+      "updated_at": "2026-08-24T14:29:50Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
+      "id": "pr-50093",
+      "kind": "pr",
+      "number": 50093,
+      "url": "https://github.com/microsoft/PowerToys/pull/50093",
+      "title": "[Screen Ruler] Fix edge detection at index 0 and SAD truncation in bounds mode",
+      "author": "4RH1T3CT0R7",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": null,
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_review",
+        "label": "Start review"
+      },
+      "labels": [
+        "Ready for review"
+      ],
+      "created_at": "2026-08-24T13:28:42Z",
+      "updated_at": "2026-08-24T13:47:15Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
+      "id": "pr-50091",
+      "kind": "pr",
+      "number": 50091,
+      "url": "https://github.com/microsoft/PowerToys/pull/50091",
+      "title": "fix(shortcut-guide): prevent orphaned processes during shutdown",
+      "author": "LegendaryBlair",
+      "is_community": false,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": null,
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_review",
+        "label": "Start review"
+      },
+      "labels": [
+        "0.101",
+        "Ready for review"
+      ],
+      "created_at": "2026-08-24T12:16:16Z",
+      "updated_at": "2026-08-24T16:10:58Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
       "id": "pr-50082",
       "kind": "pr",
       "number": 50082,
@@ -3408,13 +3534,13 @@
       "kind": "pr",
       "number": 50052,
       "url": "https://github.com/microsoft/PowerToys/pull/50052",
-      "title": "[CI] Skip issue triage for closed issues",
+      "title": "fix(ci): correct issue and PR triage automation",
       "author": "niels9001",
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "review_in_progress",
+      "stage": "review_blocked_stale",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
@@ -3423,14 +3549,14 @@
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "rerun",
+        "label": "Re-run review"
       },
       "labels": [
         "Ready for review"
       ],
       "created_at": "2026-08-21T13:42:33Z",
-      "updated_at": "2026-08-21T13:43:35Z",
+      "updated_at": "2026-08-24T14:40:24Z",
       "comments": 0,
       "priority": null,
       "mirror": {
@@ -3864,10 +3990,10 @@
         "label": "Post comments"
       },
       "labels": [
-        "Ready for review"
+        "Needs-Author-Feedback"
       ],
       "created_at": "2026-08-16T21:36:14Z",
-      "updated_at": "2026-08-16T21:48:50Z",
+      "updated_at": "2026-08-24T14:38:46Z",
       "comments": 0,
       "priority": null,
       "mirror": {
@@ -5270,7 +5396,7 @@
       "is_cmdpal": true,
       "track": "review",
       "stage": "review_in_progress",
-      "owes": "maintainer",
+      "owes": "us",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -5378,7 +5504,7 @@
       "is_cmdpal": true,
       "track": "review",
       "stage": "review_in_progress",
-      "owes": "maintainer",
+      "owes": "us",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -6099,7 +6225,7 @@
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_in_progress",
+      "stage": "review_looping",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
@@ -6108,8 +6234,8 @@
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Needs-Author-Feedback",
@@ -7322,6 +7448,74 @@
       }
     },
     {
+      "id": "issue-50090",
+      "kind": "issue",
+      "number": 50090,
+      "url": "https://github.com/microsoft/PowerToys/issues/50090",
+      "title": "dock on second display wont display icons",
+      "author": "skottlanning-debug",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": true,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Check bug"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Needs-Author-Feedback",
+        "Needs-Triage",
+        "Product-Command Palette"
+      ],
+      "created_at": "2026-08-24T10:49:35Z",
+      "updated_at": "2026-08-24T10:54:47Z",
+      "comments": 1,
+      "priority": null
+    },
+    {
+      "id": "issue-50087",
+      "kind": "issue",
+      "number": 50087,
+      "url": "https://github.com/microsoft/PowerToys/issues/50087",
+      "title": "[Installer] Per-user upgrades plan related bundles twice and leave broken uninstall entries",
+      "author": "LegendaryBlair",
+      "is_community": false,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Check bug"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Needs-Author-Feedback",
+        "Area-Setup/Install",
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-24T09:44:29Z",
+      "updated_at": "2026-08-24T09:50:08Z",
+      "comments": 2,
+      "priority": null
+    },
+    {
       "id": "issue-50086",
       "kind": "issue",
       "number": 50086,
@@ -7348,8 +7542,8 @@
         "dedupe-digest"
       ],
       "created_at": "2026-08-24T08:18:57Z",
-      "updated_at": "2026-08-24T08:18:58Z",
-      "comments": 0,
+      "updated_at": "2026-08-24T09:32:31Z",
+      "comments": 1,
       "priority": null
     },
     {
@@ -7517,6 +7711,39 @@
       "created_at": "2026-08-23T10:55:48Z",
       "updated_at": "2026-08-24T09:12:58Z",
       "comments": 2,
+      "priority": null
+    },
+    {
+      "id": "issue-50075",
+      "kind": "issue",
+      "number": 50075,
+      "url": "https://github.com/microsoft/PowerToys/issues/50075",
+      "title": "Preferred language of Text Extractor not remembered",
+      "author": "Dobypeti",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Check bug"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage",
+        "Product-Text Extractor"
+      ],
+      "created_at": "2026-08-23T10:14:44Z",
+      "updated_at": "2026-08-24T10:05:20Z",
+      "comments": 5,
       "priority": null
     },
     {
@@ -20533,8 +20760,8 @@
         "Product-Grab And Move"
       ],
       "created_at": "2026-06-29T15:38:32Z",
-      "updated_at": "2026-06-29T15:38:46Z",
-      "comments": 0,
+      "updated_at": "2026-08-24T11:01:30Z",
+      "comments": 1,
       "priority": null
     },
     {
@@ -35051,8 +35278,8 @@
         "Product-Keyboard Manager"
       ],
       "created_at": "2026-05-20T11:52:49Z",
-      "updated_at": "2026-07-17T15:44:42Z",
-      "comments": 5,
+      "updated_at": "2026-08-24T13:48:47Z",
+      "comments": 6,
       "priority": null
     },
     {
@@ -40449,8 +40676,8 @@
         "Product-Grab And Move"
       ],
       "created_at": "2026-05-05T02:04:18Z",
-      "updated_at": "2026-08-05T02:10:34Z",
-      "comments": 7,
+      "updated_at": "2026-08-24T10:56:56Z",
+      "comments": 8,
       "priority": null
     },
     {
@@ -95155,8 +95382,8 @@
         "cmdpal-Extension Request"
       ],
       "created_at": "2025-07-05T08:28:51Z",
-      "updated_at": "2026-04-19T10:26:41Z",
-      "comments": 3,
+      "updated_at": "2026-08-24T11:47:33Z",
+      "comments": 4,
       "priority": null
     },
     {
@@ -169119,7 +169346,7 @@
       "number": 30432,
       "url": "https://github.com/microsoft/PowerToys/issues/30432",
       "title": "#File Explorer Add Ons #PDF Toggle Behavior error",
-      "author": "sanzserif",
+      "author": "sanszerif",
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
