@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T17:14:51.3439262+08:00",
+  "generated_at": "2026-08-24T17:19:30.6174081+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -87,7 +87,7 @@
     "artifacts": 3190
   },
   "impact": {
-    "as_of": "2026-08-24T17:14:51.3439262+08:00",
+    "as_of": "2026-08-24T17:19:30.6174081+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -7515,8 +7515,8 @@
         "Needs-Triage"
       ],
       "created_at": "2026-08-23T10:55:48Z",
-      "updated_at": "2026-08-23T11:03:29Z",
-      "comments": 1,
+      "updated_at": "2026-08-24T09:12:58Z",
+      "comments": 2,
       "priority": null
     },
     {

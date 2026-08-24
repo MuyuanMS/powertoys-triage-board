@@ -594,7 +594,9 @@ foreach ($it in $src.items) {
   } elseif ($hasArtifact -and $o.needs_revalidation) {
     $primary = [ordered]@{ type='rerun'; label=if ($it.kind -eq 'pr') { 'Re-run review' } else { 'Re-run triage' } }
   } elseif ($hasArtifact -and $it.kind -eq 'pr') {
-    if ($proposedOpen -gt 0) {
+    if ($stage -eq 'review_in_progress') {
+      $primary = [ordered]@{ type='continue_review'; label='Continue review' }
+    } elseif ($proposedOpen -gt 0) {
       $primary = [ordered]@{ type='review'; label='Post comments' }
     } elseif ($iowes -ne 'author') {
       $primary = [ordered]@{ type='approve'; label='Approve' }

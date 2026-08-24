@@ -1,0 +1,43 @@
+{
+  "number": 50054,
+  "kind": "pr",
+  "track": "review",
+  "stage": "review_in_progress",
+  "owes": "us",
+  "pending_author": false,
+  "generated_at": "2026-08-24T08:59:45.9279771Z",
+  "evaluated_at": "08/24/2026 08:55:13",
+  "source_updated_at": "2026-08-21T17:57:05Z",
+  "head_sha": "bd1c09f8af79d496b3d1aadc4f7a464d936038c8",
+  "title": "[CmdPal] Window Walker: match app name and window title together",
+  "url": "https://github.com/microsoft/PowerToys/pull/50054",
+  "status": {
+    "glyph": "...",
+    "label": "Review in progress",
+    "detail": "Fork PR 443 is mirror-valid, but Copilot review was not accepted and the shared build lock is owned by another review. No further review request or build was initiated."
+  },
+  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "proposed_comments": [],
+  "actions": [
+    {
+      "id": "continue-review-50054",
+      "type": "continue_review",
+      "label": "Continue review loop",
+      "primary": true,
+      "note": "Review progress is checkpointed; no upstream action has been posted."
+    }
+  ],
+  "workflow": {
+    "phase": "review_in_progress",
+    "checkpoint_at": "2026-08-24T08:59:45.9279771Z"
+  },
+  "freshness": {
+    "queued_at": "08/24/2026 08:55:13",
+    "checkpoint_at": "2026-08-24T08:59:45.9279771Z"
+  },
+  "fork_pr": {
+    "number": 443,
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/443"
+  },
+  "fork_branch": "pr-iterate/50054-v2"
+}

@@ -1,0 +1,43 @@
+{
+  "number": 50052,
+  "kind": "pr",
+  "track": "review",
+  "stage": "review_in_progress",
+  "owes": "us",
+  "pending_author": false,
+  "generated_at": "2026-08-24T09:01:03.1533063Z",
+  "evaluated_at": "08/24/2026 08:55:13",
+  "source_updated_at": "2026-08-21T13:43:35Z",
+  "head_sha": "d0d7f5bd39b500e24ce957f6a8e321ebcece5d52",
+  "title": "[CI] Skip issue triage for closed issues",
+  "url": "https://github.com/microsoft/PowerToys/pull/50052",
+  "status": {
+    "glyph": "...",
+    "label": "Review in progress",
+    "detail": "Copilot reviewer request was unavailable; local validation is blocked by an unowned build lock and missing Python. Manual code inspection completed; review cannot converge."
+  },
+  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "proposed_comments": [],
+  "actions": [
+    {
+      "id": "continue-review-50052",
+      "type": "continue_review",
+      "label": "Continue review loop",
+      "primary": true,
+      "note": "Review progress is checkpointed; no upstream action has been posted."
+    }
+  ],
+  "workflow": {
+    "phase": "review_in_progress",
+    "checkpoint_at": "2026-08-24T09:01:03.1533063Z"
+  },
+  "freshness": {
+    "queued_at": "08/24/2026 08:55:13",
+    "checkpoint_at": "2026-08-24T09:01:03.1533063Z"
+  },
+  "fork_pr": {
+    "number": 444,
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/444"
+  },
+  "fork_branch": "pr-iterate/50052-v2"
+}
