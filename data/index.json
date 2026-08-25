@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T22:42:47.7542200+08:00",
+  "generated_at": "2026-08-26T00:46:54.8177381+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -81,19 +81,20 @@
     ]
   },
   "counts": {
-    "open_prs": 118,
-    "open_issues": 7406,
-    "community": 6859,
-    "artifacts": 3193
+    "open_prs": 119,
+    "open_issues": 7409,
+    "community": 6862,
+    "artifacts": 3194
   },
   "impact": {
-    "as_of": "2026-08-25T22:42:47.7542200+08:00",
+    "as_of": "2026-08-26T00:46:54.8177381+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
     "comments_drafted": 24
   },
   "artifact_numbers": [
+    50114,
     50102,
     50100,
     50098,
@@ -3290,6 +3291,45 @@
   ],
   "items": [
     {
+      "id": "pr-50114",
+      "kind": "pr",
+      "number": 50114,
+      "url": "https://github.com/microsoft/PowerToys/pull/50114",
+      "title": "Disable cursor wrap on the top edge of monitors when in an RDP session.",
+      "author": "mikehall-ms",
+      "is_community": false,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": "review",
+      "stage": "review_in_progress",
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": true,
+      "agent_status": "review",
+      "issue_type": null,
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "continue_review",
+        "label": "Continue review"
+      },
+      "labels": [
+        "Product-Cursor Wrap"
+      ],
+      "created_at": "2026-08-25T14:55:27Z",
+      "updated_at": "2026-08-25T15:01:46Z",
+      "comments": 0,
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 452,
+        "fork_title": "[PR 50114] Disable cursor wrap on the top edge of monitors when in an RDP session.",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/50114",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/452"
+      }
+    },
+    {
       "id": "pr-50102",
       "kind": "pr",
       "number": 50102,
@@ -3587,7 +3627,7 @@
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "review_blocked_stale",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
@@ -3596,8 +3636,8 @@
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "rerun",
-        "label": "Re-run review"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Ready for review"
@@ -6706,11 +6746,12 @@
         "label": "Continue review"
       },
       "labels": [
+        "Needs-Author-Feedback",
         "Product-Command Palette",
         "Merge conflict 🙀"
       ],
       "created_at": "2026-06-15T10:16:19Z",
-      "updated_at": "2026-08-14T16:05:15Z",
+      "updated_at": "2026-08-25T15:55:58Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -7000,7 +7041,7 @@
         "CmdPal - Dock"
       ],
       "created_at": "2026-05-24T23:01:07Z",
-      "updated_at": "2026-08-20T23:11:19Z",
+      "updated_at": "2026-08-25T16:17:58Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -7509,6 +7550,105 @@
         "fork_branch": "pr-iterate/41003-v3",
         "url": "https://github.com/MuyuanMS/PowerToys/pull/378"
       }
+    },
+    {
+      "id": "issue-50116",
+      "kind": "issue",
+      "number": 50116,
+      "url": "https://github.com/microsoft/PowerToys/issues/50116",
+      "title": "Mouse without border: KeysNotMatched",
+      "author": "FrenchPie",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Check bug"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage",
+        "Product-Mouse Without Borders"
+      ],
+      "created_at": "2026-08-25T16:05:00Z",
+      "updated_at": "2026-08-25T16:11:40Z",
+      "comments": 1,
+      "priority": null
+    },
+    {
+      "id": "issue-50115",
+      "kind": "issue",
+      "number": 50115,
+      "url": "https://github.com/microsoft/PowerToys/issues/50115",
+      "title": "Administrator mode will not run",
+      "author": "redicanjoe-lgtm",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Check bug"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-25T15:35:15Z",
+      "updated_at": "2026-08-25T15:39:39Z",
+      "comments": 1,
+      "priority": null
+    },
+    {
+      "id": "issue-50113",
+      "kind": "issue",
+      "number": 50113,
+      "url": "https://github.com/microsoft/PowerToys/issues/50113",
+      "title": "Visual issues with Window Hopper",
+      "author": "DorsalAxe",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Check bug"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Needs-Author-Feedback",
+        "Needs-Triage",
+        "Product-General"
+      ],
+      "created_at": "2026-08-25T14:44:04Z",
+      "updated_at": "2026-08-25T14:49:59Z",
+      "comments": 1,
+      "priority": null
     },
     {
       "id": "issue-50112",
@@ -87517,8 +87657,8 @@
         "CmdPal - All Apps"
       ],
       "created_at": "2025-08-30T23:01:42Z",
-      "updated_at": "2026-08-01T22:00:08Z",
-      "comments": 8,
+      "updated_at": "2026-08-25T16:16:28Z",
+      "comments": 10,
       "priority": null
     },
     {
@@ -192075,8 +192215,8 @@
         "Idea-New PowerToy"
       ],
       "created_at": "2023-04-18T04:07:48Z",
-      "updated_at": "2026-08-25T14:35:57Z",
-      "comments": 356,
+      "updated_at": "2026-08-25T16:05:02Z",
+      "comments": 354,
       "priority": null
     },
     {

@@ -1,0 +1,38 @@
+{
+  "number": 50114,
+  "kind": "pr",
+  "track": "review",
+  "stage": "review_in_progress",
+  "owes": "us",
+  "pending_author": false,
+  "generated_at": "2026-08-25T15:45:09.3015414Z",
+  "evaluated_at": "2026-08-25T15:45:09.3015414Z",
+  "source_updated_at": "08/25/2026 15:01:46",
+  "head_sha": "620ae8838d2257594d617891ecbe9f4ae3f03a2a",
+  "title": "Disable cursor wrap on the top edge of monitors when in an RDP session.",
+  "url": "https://github.com/microsoft/PowerToys/pull/50114",
+  "status": {
+    "glyph": "...",
+    "label": "Review in progress",
+    "detail": "The current head has been scoped for review. Reported platform CI failures remain to be investigated, and a fresh review is pending reviewer availability."
+  },
+  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "proposed_comments": [],
+  "actions": [
+    {
+      "id": "continue-review-50114",
+      "type": "continue_review",
+      "label": "Continue review loop",
+      "primary": true,
+      "note": "Review progress is checkpointed; no upstream action has been posted."
+    }
+  ],
+  "workflow": {
+    "phase": "review_in_progress",
+    "checkpoint_at": "2026-08-25T15:45:09.3015414Z"
+  },
+  "freshness": {
+    "queued_at": "2026-08-25T15:45:09.3015414Z",
+    "checkpoint_at": "2026-08-25T15:45:09.3015414Z"
+  }
+}
