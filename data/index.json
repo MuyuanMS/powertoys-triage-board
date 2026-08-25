@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T16:38:35.8668115+08:00",
+  "generated_at": "2026-08-25T16:51:58.4031781+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -81,13 +81,13 @@
     ]
   },
   "counts": {
-    "open_prs": 118,
+    "open_prs": 119,
     "open_issues": 7403,
     "community": 6856,
     "artifacts": 3187
   },
   "impact": {
-    "as_of": "2026-08-25T16:38:35.8668115+08:00",
+    "as_of": "2026-08-25T16:51:58.4031781+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -3283,6 +3283,37 @@
     821
   ],
   "items": [
+    {
+      "id": "pr-50108",
+      "kind": "pr",
+      "number": 50108,
+      "url": "https://github.com/microsoft/PowerToys/pull/50108",
+      "title": "Update README roadmap for PowerToys 0.102",
+      "author": "niels9001",
+      "is_community": false,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": null,
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_review",
+        "label": "Start review"
+      },
+      "labels": [
+        "Ready for review"
+      ],
+      "created_at": "2026-08-25T08:41:24Z",
+      "updated_at": "2026-08-25T08:41:52Z",
+      "comments": 0,
+      "priority": null
+    },
     {
       "id": "pr-50102",
       "kind": "pr",

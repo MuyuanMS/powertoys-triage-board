@@ -5,7 +5,7 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-25T08:18:32.7557807Z",
+  "generated_at": "2026-08-25T08:48:44.6313355Z",
   "evaluated_at": "08/25/2026 02:17:29",
   "source_updated_at": "2026-08-19T19:32:18Z",
   "head_sha": "a08915f5ae1a93504b2f76fd7a754e48e9261566",
@@ -14,7 +14,7 @@
   "status": {
     "glyph": "...",
     "label": "Reviewing findings",
-    "detail": "A Copilot review is available for the current head, with two unresolved findings pending assessment. No new review round or upstream action was started."
+    "detail": "One Copilot finding remains unresolved, so the review is not converged. The installed-state finding was addressed; targeted validation remains blocked until required build dependencies are restored. No new review round or upstream action was started."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,11 +29,11 @@
   ],
   "workflow": {
     "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-25T08:18:32.7557807Z"
+    "checkpoint_at": "2026-08-25T08:48:44.6313355Z"
   },
   "freshness": {
     "queued_at": "08/20/2026 08:48:18",
-    "checkpoint_at": "2026-08-25T08:18:32.7557807Z"
+    "checkpoint_at": "2026-08-25T08:48:44.6313355Z"
   },
   "fork_pr": {
     "number": 447,

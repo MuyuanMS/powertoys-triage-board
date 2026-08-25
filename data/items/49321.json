@@ -5,7 +5,7 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-25T08:35:31.0563346Z",
+  "generated_at": "2026-08-25T08:40:30.9516790Z",
   "evaluated_at": "08/24/2026 07:31:39",
   "source_updated_at": "08/21/2026 00:03:58",
   "head_sha": "6fa225e04b4568e6c1e5ea89212f4cfa0a195e20",
@@ -14,7 +14,7 @@
   "status": {
     "glyph": "...",
     "label": "Review in progress",
-    "detail": "All current review threads are resolved. The latest changes require a fresh review before completion; no new review was initiated in drain mode."
+    "detail": "The requested reviewer was not accepted, and the single immediate status check found no newly submitted review. All current review threads are resolved."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,11 +29,11 @@
   ],
   "workflow": {
     "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-25T08:35:31.0563346Z"
+    "checkpoint_at": "2026-08-25T08:40:30.9516790Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 07:31:39",
-    "checkpoint_at": "2026-08-25T08:35:31.0563346Z"
+    "checkpoint_at": "2026-08-25T08:40:30.9516790Z"
   },
   "fork_pr": {
     "number": 429,
