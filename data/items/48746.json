@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-25T09:04:48.1137923Z",
+  "generated_at": "2026-08-25T17:48:47.3683780Z",
   "evaluated_at": "08/25/2026 02:17:29",
-  "source_updated_at": "08/19/2026 19:32:18",
+  "source_updated_at": "2026-08-19T11:32:18.0000000+00:00",
   "head_sha": "a08915f5ae1a93504b2f76fd7a754e48e9261566",
   "title": "Fix CmdPal extension installed state detection for Store-only package…",
   "url": "https://github.com/microsoft/PowerToys/pull/48746",
   "status": {
     "glyph": "...",
-    "label": "Review in progress",
-    "detail": "The latest fork changes address the outstanding review findings. A fresh Copilot request was submitted, but the immediate check did not show an accepted reviewer. Targeted validation remains blocked because the required native WinGet build dependency is unavailable. No upstream action is ready."
+    "label": "Reviewing findings",
+    "detail": "The latest automated review is clean. Targeted validation is blocked because a required native package dependency is unavailable; the upstream intake check is also currently failing."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -28,16 +28,11 @@
     }
   ],
   "workflow": {
-    "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-25T09:04:48.1137923Z"
+    "phase": "reviewing_findings",
+    "checkpoint_at": "2026-08-25T17:48:47.3683780Z"
   },
   "freshness": {
     "queued_at": "08/20/2026 08:48:18",
-    "checkpoint_at": "2026-08-25T09:04:48.1137923Z"
-  },
-  "fork_pr": {
-    "number": 447,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/447"
-  },
-  "fork_branch": "pr-iterate/48746"
+    "checkpoint_at": "2026-08-25T17:48:47.3683780Z"
+  }
 }

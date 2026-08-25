@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-26T00:46:54.8177381+08:00",
+  "generated_at": "2026-08-26T02:50:50.2228399+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -87,7 +87,7 @@ window.BOARD_INDEX = {
     "artifacts": 3194
   },
   "impact": {
-    "as_of": "2026-08-26T00:46:54.8177381+08:00",
+    "as_of": "2026-08-26T02:50:50.2228399+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -3454,9 +3454,13 @@ window.BOARD_INDEX = {
         "type": "start_review",
         "label": "Start review"
       },
-      "labels": [],
+      "labels": [
+        "Area-Tests",
+        "Product-PowerRename",
+        "Ready for review"
+      ],
       "created_at": "2026-08-24T17:20:25Z",
-      "updated_at": "2026-08-25T01:05:06Z",
+      "updated_at": "2026-08-25T18:11:37Z",
       "comments": 0,
       "priority": null
     },
@@ -3523,19 +3527,19 @@ window.BOARD_INDEX = {
         "label": "Continue review"
       },
       "labels": [
-        "Ready for review"
+        "Needs-Author-Feedback"
       ],
       "created_at": "2026-08-23T20:46:49Z",
-      "updated_at": "2026-08-24T07:07:09Z",
+      "updated_at": "2026-08-25T17:13:09Z",
       "comments": 0,
       "priority": null,
       "mirror": {
         "kind": "pr",
-        "fork_number": 439,
+        "fork_number": 454,
         "fork_title": "[PR 50082] GrabAndMove refactor",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/50082-v2",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/439"
+        "fork_branch": "pr-iterate/50082-v4",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/454"
       }
     },
     {
@@ -7580,7 +7584,7 @@ window.BOARD_INDEX = {
         "Product-Mouse Without Borders"
       ],
       "created_at": "2026-08-25T16:05:00Z",
-      "updated_at": "2026-08-25T16:11:40Z",
+      "updated_at": "2026-08-25T17:09:21Z",
       "comments": 1,
       "priority": null
     },
@@ -7643,10 +7647,11 @@ window.BOARD_INDEX = {
         "Issue-Bug",
         "Needs-Author-Feedback",
         "Needs-Triage",
-        "Product-General"
+        "Product-General",
+        "Product-Window Hopper"
       ],
       "created_at": "2026-08-25T14:44:04Z",
-      "updated_at": "2026-08-25T14:49:59Z",
+      "updated_at": "2026-08-25T18:03:42Z",
       "comments": 1,
       "priority": null
     },
@@ -87657,8 +87662,8 @@ window.BOARD_INDEX = {
         "CmdPal - All Apps"
       ],
       "created_at": "2025-08-30T23:01:42Z",
-      "updated_at": "2026-08-25T16:16:28Z",
-      "comments": 10,
+      "updated_at": "2026-08-25T17:03:31Z",
+      "comments": 11,
       "priority": null
     },
     {

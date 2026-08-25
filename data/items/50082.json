@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-24T08:54:18.1137343Z",
-  "evaluated_at": "08/24/2026 08:47:19",
-  "source_updated_at": "2026-08-24T07:07:09Z",
-  "head_sha": "91c7f6ef05aba93d842c03066825cb3bee5e1699",
+  "generated_at": "2026-08-25T17:50:16.5432868Z",
+  "evaluated_at": "08/25/2026 17:50:03",
+  "source_updated_at": "08/25/2026 17:13:09",
+  "head_sha": "7a9fd4838a7ae48d2ffb920773dd6aa643e752bc",
   "title": "GrabAndMove refactor",
   "url": "https://github.com/microsoft/PowerToys/pull/50082",
   "status": {
     "glyph": "...",
     "label": "Review in progress",
-    "detail": "Local review found and fork commit 18872113c fixes missed final resize coordinates. Copilot is unavailable (empty requested reviewer list); Debug build remains blocked by an existing unowned lock."
+    "detail": "The current head has been refreshed. A fresh review is pending reviewer availability; upstream author feedback and reported platform CI remain pending."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,15 +29,10 @@
   ],
   "workflow": {
     "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-24T08:54:18.1137343Z"
+    "checkpoint_at": "2026-08-25T17:50:16.5432868Z"
   },
   "freshness": {
-    "queued_at": "08/24/2026 08:47:19",
-    "checkpoint_at": "2026-08-24T08:54:18.1137343Z"
-  },
-  "fork_pr": {
-    "number": 439,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/439"
-  },
-  "fork_branch": "pr-iterate/50082-v2"
+    "queued_at": "08/25/2026 17:50:03",
+    "checkpoint_at": "2026-08-25T17:50:16.5432868Z"
+  }
 }
