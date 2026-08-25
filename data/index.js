@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-26T02:50:50.2228399+08:00",
+  "generated_at": "2026-08-26T04:54:57.6360103+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -84,10 +84,10 @@ window.BOARD_INDEX = {
     "open_prs": 119,
     "open_issues": 7409,
     "community": 6862,
-    "artifacts": 3194
+    "artifacts": 3195
   },
   "impact": {
-    "as_of": "2026-08-26T02:50:50.2228399+08:00",
+    "as_of": "2026-08-26T04:54:57.6360103+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -98,6 +98,7 @@ window.BOARD_INDEX = {
     50102,
     50100,
     50098,
+    50096,
     50093,
     50082,
     50081,
@@ -3441,18 +3442,18 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Area-Tests",
@@ -3879,11 +3880,11 @@ window.BOARD_INDEX = {
       "priority": null,
       "mirror": {
         "kind": "pr",
-        "fork_number": 412,
-        "fork_title": "[PR 50011] fix(ui-tests): suppress intentional plaintext conversion",
+        "fork_number": 455,
+        "fork_title": "[PR 50011] fix(ui-tests): avoid plaintext SecureString conversion",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/50011-v2",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/412"
+        "fork_branch": "pr-iterate/50011-v3",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/455"
       }
     },
     {
