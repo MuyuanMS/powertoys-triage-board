@@ -1,0 +1,38 @@
+{
+  "number": 50043,
+  "kind": "pr",
+  "track": "review",
+  "stage": "review_in_progress",
+  "owes": "us",
+  "pending_author": false,
+  "generated_at": "2026-08-25T09:34:21.2528893Z",
+  "evaluated_at": "2026-08-25T09:34:21.2528893Z",
+  "source_updated_at": "2026-08-20T23:31:09.0000000Z",
+  "head_sha": "f27ed60e9484fa197d55c5c88d7c45167bfa6db3",
+  "title": "CmdPal: Fix Command Palette RDP extension not filtering search results",
+  "url": "https://github.com/microsoft/PowerToys/pull/50043",
+  "status": {
+    "glyph": "...",
+    "label": "Preparing fork review",
+    "detail": "Initial review is selected; a clean base checkout is required before synchronizing main and creating the fork mirror."
+  },
+  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "proposed_comments": [],
+  "actions": [
+    {
+      "id": "continue-review-50043",
+      "type": "continue_review",
+      "label": "Continue review loop",
+      "primary": true,
+      "note": "Review progress is checkpointed; no upstream action has been posted."
+    }
+  ],
+  "workflow": {
+    "phase": "mirroring",
+    "checkpoint_at": "2026-08-25T09:34:21.2528893Z"
+  },
+  "freshness": {
+    "queued_at": "2026-08-25T09:34:21.2528893Z",
+    "checkpoint_at": "2026-08-25T09:34:21.2528893Z"
+  }
+}

@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-25T17:20:30.6145587+08:00",
+  "generated_at": "2026-08-25T17:39:43.7513462+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -84,10 +84,10 @@ window.BOARD_INDEX = {
     "open_prs": 119,
     "open_issues": 7402,
     "community": 6855,
-    "artifacts": 3187
+    "artifacts": 3189
   },
   "impact": {
-    "as_of": "2026-08-25T17:20:30.6145587+08:00",
+    "as_of": "2026-08-25T17:39:43.7513462+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -99,6 +99,8 @@ window.BOARD_INDEX = {
     50054,
     50052,
     50044,
+    50043,
+    50029,
     50027,
     50020,
     50011,
@@ -3675,18 +3677,18 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": true,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Product-Command Palette",
@@ -3708,18 +3710,18 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "0.102"
@@ -3727,7 +3729,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-20T11:46:07Z",
       "updated_at": "2026-08-20T14:08:59Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 449,
+        "fork_title": "[PR 50029] Add CursorWrap Game Mode setting",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/50029",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/449"
+      }
     },
     {
       "id": "pr-50027",
@@ -7137,7 +7147,7 @@ window.BOARD_INDEX = {
         "Product-Mouse Without Borders"
       ],
       "created_at": "2026-04-08T21:58:15Z",
-      "updated_at": "2026-08-10T08:51:01Z",
+      "updated_at": "2026-08-25T09:17:32Z",
       "comments": 0,
       "priority": null
     },

@@ -1,0 +1,43 @@
+{
+  "number": 50029,
+  "kind": "pr",
+  "track": "review",
+  "stage": "review_in_progress",
+  "owes": "us",
+  "pending_author": false,
+  "generated_at": "2026-08-25T09:36:37.0983942Z",
+  "evaluated_at": "08/25/2026 09:34:26",
+  "source_updated_at": "08/20/2026 14:08:59",
+  "head_sha": "40a0e8b21d39cb624edb1312dc2d6b9eca975a8e",
+  "title": "Add setting to disable cursor wrap in Game Mode (full screen D3D application).",
+  "url": "https://github.com/microsoft/PowerToys/pull/50029",
+  "status": {
+    "glyph": "...",
+    "label": "Review in progress",
+    "detail": "The fork-side Copilot reviewer request was not accepted. The single immediate status check found no newly submitted review."
+  },
+  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "proposed_comments": [],
+  "actions": [
+    {
+      "id": "continue-review-50029",
+      "type": "continue_review",
+      "label": "Continue review loop",
+      "primary": true,
+      "note": "Review progress is checkpointed; no upstream action has been posted."
+    }
+  ],
+  "workflow": {
+    "phase": "review_in_progress",
+    "checkpoint_at": "2026-08-25T09:36:37.0983942Z"
+  },
+  "freshness": {
+    "queued_at": "08/25/2026 09:34:26",
+    "checkpoint_at": "2026-08-25T09:36:37.0983942Z"
+  },
+  "fork_pr": {
+    "number": 449,
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/449"
+  },
+  "fork_branch": "pr-iterate/50029"
+}
