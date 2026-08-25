@@ -2,21 +2,21 @@
   "number": 49329,
   "kind": "pr",
   "track": "review",
-  "stage": "review_validation_pending",
+  "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-25T02:09:18Z",
-  "evaluated_at": "2026-08-25T02:09:18Z",
-  "source_updated_at": "2026-08-21T01:23:33Z",
+  "generated_at": "2026-08-25T13:45:13.5740468Z",
+  "evaluated_at": "08/25/2026 02:09:18",
+  "source_updated_at": "08/21/2026 01:23:33",
   "head_sha": "510a575d24c59a2eba1c1782ebfacb51b8788a22",
   "title": "CmdPal JS/TS Extensions - Phase 6: docs + parity sample extension",
   "url": "https://github.com/microsoft/PowerToys/pull/49329",
   "status": {
     "glyph": "...",
-    "label": "Final validation pending",
-    "detail": "The current review finding is addressed. Completion still requires a fresh zero-comment review and a final build."
+    "label": "Review in progress",
+    "detail": "The current-head findings are addressed. A fresh zero-comment review and final validation are required before the review can complete."
   },
-  "next_action": "Obtain a fresh zero-comment review and complete the final build before drafting any action.",
+  "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
   "actions": [
     {
@@ -24,13 +24,15 @@
       "type": "continue_review",
       "label": "Continue review loop",
       "primary": true,
-      "note": "Review progress is checkpointed; no action has been posted."
+      "note": "Review progress is checkpointed; no upstream action has been posted."
     }
   ],
+  "workflow": {
+    "phase": "review_in_progress",
+    "checkpoint_at": "2026-08-25T13:45:13.5740468Z"
+  },
   "freshness": {
-    "queued_at": "2026-08-24T15:49:25.9282696Z",
-    "checkpoint_at": "2026-08-25T02:09:18Z",
-    "observed_upstream_head_sha": "510a575d24c59a2eba1c1782ebfacb51b8788a22",
-    "checkpoint_head_is_stale": false
+    "queued_at": "08/24/2026 15:49:25",
+    "checkpoint_at": "2026-08-25T13:45:13.5740468Z"
   }
 }

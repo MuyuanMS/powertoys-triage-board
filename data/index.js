@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-25T19:37:49.8375409+08:00",
+  "generated_at": "2026-08-25T22:42:47.7542200+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -82,19 +82,21 @@ window.BOARD_INDEX = {
   },
   "counts": {
     "open_prs": 118,
-    "open_issues": 7402,
-    "community": 6855,
-    "artifacts": 3191
+    "open_issues": 7406,
+    "community": 6859,
+    "artifacts": 3193
   },
   "impact": {
-    "as_of": "2026-08-25T19:37:49.8375409+08:00",
+    "as_of": "2026-08-25T22:42:47.7542200+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
     "comments_drafted": 24
   },
   "artifact_numbers": [
+    50102,
     50100,
+    50098,
     50093,
     50082,
     50081,
@@ -3297,18 +3299,18 @@ window.BOARD_INDEX = {
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Ready for review"
@@ -3359,18 +3361,18 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": true,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Product-Command Palette",
@@ -3379,7 +3381,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-24T17:24:24Z",
       "updated_at": "2026-08-25T02:31:19Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 451,
+        "fork_title": "[PR 50098] Fix clipboard history image previews",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/50098",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/451"
+      }
     },
     {
       "id": "pr-50096",
@@ -5548,7 +5558,7 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_validation_pending",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
@@ -5557,8 +5567,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "approve",
-        "label": "Approve"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Needs-Author-Feedback",
@@ -6270,7 +6280,7 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_looping",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
@@ -6279,8 +6289,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "approve",
-        "label": "Approve"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Needs-Author-Feedback",
@@ -7499,6 +7509,136 @@ window.BOARD_INDEX = {
         "fork_branch": "pr-iterate/41003-v3",
         "url": "https://github.com/MuyuanMS/PowerToys/pull/378"
       }
+    },
+    {
+      "id": "issue-50112",
+      "kind": "issue",
+      "number": 50112,
+      "url": "https://github.com/microsoft/PowerToys/issues/50112",
+      "title": "关于申请新的功能",
+      "author": "SUGARYeUNGG",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [
+        "Needs-Author-Feedback",
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-25T14:23:24Z",
+      "updated_at": "2026-08-25T14:29:23Z",
+      "comments": 1,
+      "priority": null
+    },
+    {
+      "id": "issue-50111",
+      "kind": "issue",
+      "number": 50111,
+      "url": "https://github.com/microsoft/PowerToys/issues/50111",
+      "title": "Failed to remove PowerToys folder when updating from stable to Preview",
+      "author": "maisondasilva",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Check bug"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Area-Setup/Install",
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-25T13:22:49Z",
+      "updated_at": "2026-08-25T13:44:22Z",
+      "comments": 2,
+      "priority": null
+    },
+    {
+      "id": "issue-50110",
+      "kind": "issue",
+      "number": 50110,
+      "url": "https://github.com/microsoft/PowerToys/issues/50110",
+      "title": "Windows Hopper not following Dark Mode",
+      "author": "nsathya2010",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [
+        "Needs-Author-Feedback",
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-25T12:25:08Z",
+      "updated_at": "2026-08-25T12:31:55Z",
+      "comments": 1,
+      "priority": null
+    },
+    {
+      "id": "issue-50109",
+      "kind": "issue",
+      "number": 50109,
+      "url": "https://github.com/microsoft/PowerToys/issues/50109",
+      "title": "Command Palette doesn't open with shortcut sometimes",
+      "author": "RexLuscus56",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": true,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Check bug"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage",
+        "Product-Command Palette"
+      ],
+      "created_at": "2026-08-25T12:12:20Z",
+      "updated_at": "2026-08-25T12:16:54Z",
+      "comments": 1,
+      "priority": null
     },
     {
       "id": "issue-50107",
@@ -191935,8 +192075,8 @@ window.BOARD_INDEX = {
         "Idea-New PowerToy"
       ],
       "created_at": "2023-04-18T04:07:48Z",
-      "updated_at": "2026-06-18T22:47:10Z",
-      "comments": 354,
+      "updated_at": "2026-08-25T14:35:57Z",
+      "comments": 356,
       "priority": null
     },
     {

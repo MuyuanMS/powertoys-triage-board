@@ -2,21 +2,21 @@
   "number": 49093,
   "kind": "pr",
   "track": "review",
-  "stage": "review_looping",
+  "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-24T16:04:33Z",
-  "evaluated_at": "2026-08-24T16:04:33Z",
-  "source_updated_at": "2026-08-23T21:15:55Z",
+  "generated_at": "2026-08-25T13:44:26.8109988Z",
+  "evaluated_at": "08/24/2026 16:04:33",
+  "source_updated_at": "2026-08-23T13:15:55.0000000+00:00",
   "head_sha": "00f74705e0ee9c6649e5a272b772575cb2f999f6",
   "title": "[CmdPal][TimeDate] Add optional week number to the Clock dock band",
   "url": "https://github.com/microsoft/PowerToys/pull/49093",
   "status": {
     "glyph": "...",
-    "label": "Waiting for Copilot",
-    "detail": "All six private Copilot findings were fixed, replied to, and resolved on fork PR 431. A fresh review request returned no assigned reviewer."
+    "label": "Reviewing findings",
+    "detail": "Four review findings have been addressed in the current review changes; targeted validation is blocked by an existing compiler diagnostic in an unrelated settings file."
   },
-  "next_action": "Obtain a fresh Copilot review, then rebuild once the shared build lock is released.",
+  "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
   "actions": [
     {
@@ -28,18 +28,11 @@
     }
   ],
   "workflow": {
-    "phase": "waiting_for_copilot",
-    "checkpoint_at": "2026-08-24T16:04:33Z"
+    "phase": "reviewing_findings",
+    "checkpoint_at": "2026-08-25T13:44:26.8109988Z"
   },
   "freshness": {
-    "queued_at": "2026-08-24T15:58:24.9629506Z",
-    "checkpoint_at": "2026-08-24T16:04:33Z"
-  },
-  "fork": {
-    "pr": 431,
-    "branch": "pr-iterate/49093-v2",
-    "head_sha": "d0dfd7b5e5e0e5b9a1fc41c8aa6482b1b14219b6",
-    "unresolved_copilot_threads": 0,
-    "build": "not run: shared build lock was present without owner metadata"
+    "queued_at": "08/24/2026 15:58:24",
+    "checkpoint_at": "2026-08-25T13:44:26.8109988Z"
   }
 }

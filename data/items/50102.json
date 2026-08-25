@@ -1,0 +1,38 @@
+{
+  "number": 50102,
+  "kind": "pr",
+  "track": "review",
+  "stage": "review_in_progress",
+  "owes": "us",
+  "pending_author": false,
+  "generated_at": "2026-08-25T12:39:15.0344371Z",
+  "evaluated_at": "08/25/2026 12:39:00",
+  "source_updated_at": "2026-08-25T03:20:38.0000000+00:00",
+  "head_sha": "1cd33b4087eb4f3c1c66577f593041bcd50c3462",
+  "title": "docs(devdocs): update docs.microsoft.com to learn.microsoft.com",
+  "url": "https://github.com/microsoft/PowerToys/pull/50102",
+  "status": {
+    "glyph": "...",
+    "label": "Preparing fork review",
+    "detail": "Initial review is selected; a clean review base is required before assessing the current changes."
+  },
+  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "proposed_comments": [],
+  "actions": [
+    {
+      "id": "continue-review-50102",
+      "type": "continue_review",
+      "label": "Continue review loop",
+      "primary": true,
+      "note": "Review progress is checkpointed; no upstream action has been posted."
+    }
+  ],
+  "workflow": {
+    "phase": "mirroring",
+    "checkpoint_at": "2026-08-25T12:39:15.0344371Z"
+  },
+  "freshness": {
+    "queued_at": "08/25/2026 12:39:00",
+    "checkpoint_at": "2026-08-25T12:39:15.0344371Z"
+  }
+}
