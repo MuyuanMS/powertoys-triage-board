@@ -5,7 +5,7 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-25T07:32:20.8742404Z",
+  "generated_at": "2026-08-25T08:30:40.8905658Z",
   "evaluated_at": "08/20/2026 08:48:18",
   "source_updated_at": "2026-08-20T23:31:19.0000000Z",
   "head_sha": "2e76bba3750503fe718785844aa325b50d1e2336",
@@ -14,7 +14,7 @@
   "status": {
     "glyph": "...",
     "label": "Reviewing findings",
-    "detail": "Review findings have been addressed; one lifecycle concern remains under review."
+    "detail": "Drain mode: one lifecycle ownership concern remains; no further review round was started."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-25T07:32:20.8742404Z"
+    "checkpoint_at": "2026-08-25T08:30:40.8905658Z"
   },
   "freshness": {
     "queued_at": "08/20/2026 08:48:18",
-    "checkpoint_at": "2026-08-25T07:32:20.8742404Z"
+    "checkpoint_at": "2026-08-25T08:30:40.8905658Z"
   }
 }
