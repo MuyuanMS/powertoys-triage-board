@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-24T07:40:32.8077781Z",
+  "generated_at": "2026-08-25T07:39:11.5625758Z",
   "evaluated_at": "08/24/2026 07:31:39",
-  "source_updated_at": "2026-08-21T00:03:58Z",
+  "source_updated_at": "08/21/2026 00:03:58",
   "head_sha": "6fa225e04b4568e6c1e5ea89212f4cfa0a195e20",
   "title": "CmdPal JS/TS Extensions - Phase 1: TypeScript SDK",
   "url": "https://github.com/microsoft/PowerToys/pull/49321",
   "status": {
     "glyph": "...",
-    "label": "Waiting for Copilot review",
-    "detail": "Five prior Copilot threads were resolved after 46af44a72. The fresh-review endpoint returned no accepted reviewer; the single immediate review-status check found no new submitted Copilot result."
+    "label": "Review in progress",
+    "detail": "Fork Copilot review request returned no accepted reviewer; the single immediate status check found no newly submitted review. Prior Copilot threads are resolved."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -28,12 +28,12 @@
     }
   ],
   "workflow": {
-    "phase": "waiting_copilot",
-    "checkpoint_at": "2026-08-24T07:40:32.8077781Z"
+    "phase": "review_in_progress",
+    "checkpoint_at": "2026-08-25T07:39:11.5625758Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 07:31:39",
-    "checkpoint_at": "2026-08-24T07:40:32.8077781Z"
+    "checkpoint_at": "2026-08-25T07:39:11.5625758Z"
   },
   "fork_pr": {
     "number": 429,
