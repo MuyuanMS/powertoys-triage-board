@@ -5,7 +5,7 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-25T07:24:11.4630760Z",
+  "generated_at": "2026-08-25T08:18:32.7557807Z",
   "evaluated_at": "08/25/2026 02:17:29",
   "source_updated_at": "2026-08-19T19:32:18Z",
   "head_sha": "a08915f5ae1a93504b2f76fd7a754e48e9261566",
@@ -13,8 +13,8 @@
   "url": "https://github.com/microsoft/PowerToys/pull/48746",
   "status": {
     "glyph": "...",
-    "label": "Review in progress",
-    "detail": "Fork review PR 447 was created at the current upstream head. GitHub did not accept the Copilot reviewer request, so no review round started and no upstream action is ready."
+    "label": "Reviewing findings",
+    "detail": "A Copilot review is available for the current head, with two unresolved findings pending assessment. No new review round or upstream action was started."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -28,12 +28,12 @@
     }
   ],
   "workflow": {
-    "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-25T07:24:11.4630760Z"
+    "phase": "reviewing_findings",
+    "checkpoint_at": "2026-08-25T08:18:32.7557807Z"
   },
   "freshness": {
     "queued_at": "08/20/2026 08:48:18",
-    "checkpoint_at": "2026-08-25T07:24:11.4630760Z"
+    "checkpoint_at": "2026-08-25T08:18:32.7557807Z"
   },
   "fork_pr": {
     "number": 447,

@@ -5,7 +5,7 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-24T07:38:09.5591361Z",
+  "generated_at": "2026-08-25T08:20:08.3959520Z",
   "evaluated_at": "08/24/2026 07:31:39",
   "source_updated_at": "2026-08-21T01:02:16Z",
   "head_sha": "6fd82385fc6376a430f65ef0439b4ddd42653365",
@@ -13,8 +13,8 @@
   "url": "https://github.com/microsoft/PowerToys/pull/49323",
   "status": {
     "glyph": "...",
-    "label": "Waiting for Copilot review",
-    "detail": "Four valid Copilot findings were fixed, committed as e0ad6a40496ff2de21fa5c2e42195fee64d15346, pushed, replied to, and resolved. A fresh Copilot request was attempted, but the endpoint did not retain the reviewer; one immediate check found no fresh published Copilot review. Build was not started because the global build lock was unavailable."
+    "label": "Reviewing findings",
+    "detail": "One Copilot finding remains unresolved, so the review is not converged. No new review round, build, or upstream action was started."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -28,12 +28,12 @@
     }
   ],
   "workflow": {
-    "phase": "waiting_copilot",
-    "checkpoint_at": "2026-08-24T07:38:09.5591361Z"
+    "phase": "reviewing_findings",
+    "checkpoint_at": "2026-08-25T08:20:08.3959520Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 07:31:39",
-    "checkpoint_at": "2026-08-24T07:38:09.5591361Z"
+    "checkpoint_at": "2026-08-25T08:20:08.3959520Z"
   },
   "fork_pr": {
     "number": 427,

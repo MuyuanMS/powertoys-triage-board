@@ -5,7 +5,7 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-25T07:24:43.1981271Z",
+  "generated_at": "2026-08-25T08:22:34.2120968Z",
   "evaluated_at": "08/25/2026 02:14:55",
   "source_updated_at": "2026-08-14T16:05:15Z",
   "head_sha": "c45eee286b58fc857064486b2a5bf7292f332c7a",
@@ -14,7 +14,7 @@
   "status": {
     "glyph": "...",
     "label": "Review in progress",
-    "detail": "Review remains incomplete: the current source does not rebase cleanly against main, and one review finding remains unresolved. No public action has been taken."
+    "detail": "Review progress is preserved on the current base and the documentation finding is addressed. A fresh automated review request was not accepted, so convergence remains pending; the upstream source still reports merge conflicts. No upstream public action has been taken."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-25T07:24:43.1981271Z"
+    "checkpoint_at": "2026-08-25T08:22:34.2120968Z"
   },
   "freshness": {
     "queued_at": "08/20/2026 08:48:18",
-    "checkpoint_at": "2026-08-25T07:24:43.1981271Z"
+    "checkpoint_at": "2026-08-25T08:22:34.2120968Z"
   }
 }
