@@ -1,0 +1,38 @@
+{
+  "number": 50100,
+  "kind": "pr",
+  "track": "review",
+  "stage": "review_in_progress",
+  "owes": "us",
+  "pending_author": false,
+  "generated_at": "2026-08-25T10:34:35.1038963Z",
+  "evaluated_at": "2026-08-25T10:34:35.1038963Z",
+  "source_updated_at": "2026-08-24T20:29:51.0000000Z",
+  "head_sha": "0e9d50766a69b9e2e583296232771860e918c724",
+  "title": "Shortcut Guide: add Ableton Live shortcut manifest",
+  "url": "https://github.com/microsoft/PowerToys/pull/50100",
+  "status": {
+    "glyph": "...",
+    "label": "Preparing fork review",
+    "detail": "Initial review is selected; a clean base checkout is required before synchronizing main and creating the fork mirror."
+  },
+  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "proposed_comments": [],
+  "actions": [
+    {
+      "id": "continue-review-50100",
+      "type": "continue_review",
+      "label": "Continue review loop",
+      "primary": true,
+      "note": "Review progress is checkpointed; no upstream action has been posted."
+    }
+  ],
+  "workflow": {
+    "phase": "mirroring",
+    "checkpoint_at": "2026-08-25T10:34:35.1038963Z"
+  },
+  "freshness": {
+    "queued_at": "2026-08-25T10:34:35.1038963Z",
+    "checkpoint_at": "2026-08-25T10:34:35.1038963Z"
+  }
+}

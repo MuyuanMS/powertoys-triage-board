@@ -1,0 +1,43 @@
+{
+  "number": 50093,
+  "kind": "pr",
+  "track": "review",
+  "stage": "review_in_progress",
+  "owes": "us",
+  "pending_author": false,
+  "generated_at": "2026-08-25T10:35:31.6199742Z",
+  "evaluated_at": "08/25/2026 10:34:44",
+  "source_updated_at": "08/24/2026 13:47:15",
+  "head_sha": "8027dc646a28359c576dbd1ea172343e67a7b9e1",
+  "title": "[Screen Ruler] Fix edge detection at index 0 and SAD truncation in bounds mode",
+  "url": "https://github.com/microsoft/PowerToys/pull/50093",
+  "status": {
+    "glyph": "...",
+    "label": "Review in progress",
+    "detail": "The fork-side Copilot reviewer request was not accepted after validating that the fork diff matches the upstream scope. The single immediate status check found no newly submitted review."
+  },
+  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "proposed_comments": [],
+  "actions": [
+    {
+      "id": "continue-review-50093",
+      "type": "continue_review",
+      "label": "Continue review loop",
+      "primary": true,
+      "note": "Review progress is checkpointed; no upstream action has been posted."
+    }
+  ],
+  "workflow": {
+    "phase": "review_in_progress",
+    "checkpoint_at": "2026-08-25T10:35:31.6199742Z"
+  },
+  "freshness": {
+    "queued_at": "08/25/2026 10:34:44",
+    "checkpoint_at": "2026-08-25T10:35:31.6199742Z"
+  },
+  "fork_pr": {
+    "number": 450,
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/450"
+  },
+  "fork_branch": "pr-iterate/50093"
+}
