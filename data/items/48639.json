@@ -5,18 +5,18 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-24T16:17:00Z",
-  "evaluated_at": "2026-08-24T16:17:00Z",
+  "generated_at": "2026-08-25T02:14:55Z",
+  "evaluated_at": "2026-08-25T02:14:55Z",
   "source_updated_at": "08/14/2026 16:05:15",
   "head_sha": "c45eee286b58fc857064486b2a5bf7292f332c7a",
   "title": "[CmdPal][PerfMon] Add CPU temperature widget via ACPI thermal zone",
   "url": "https://github.com/microsoft/PowerToys/pull/48639",
   "status": {
     "glyph": "...",
-    "label": "Review blocked on Copilot availability",
-    "detail": "Fork commit 8773d94a9 addresses both prior findings and their threads were resolved. The one fresh-review request returned an empty reviewer list, so no fresh zero-comment review is available."
+    "label": "Review incomplete",
+    "detail": "The review is not ready for action: a review thread remains unresolved and a current zero-comment result has not been confirmed."
   },
-  "next_action": "Enable Copilot code review for the fork, then request one fresh review of 8773d94a9 and verify a zero-comment result, zero unresolved threads, and a local build.",
+  "next_action": "Resolve the remaining review thread, complete validation, and re-evaluate before proposing any public action.",
   "proposed_comments": [],
   "actions": [
     {
@@ -28,11 +28,11 @@
     }
   ],
   "workflow": {
-    "phase": "fresh_review_unavailable",
-    "checkpoint_at": "2026-08-24T16:17:00Z"
+    "phase": "review_incomplete",
+    "checkpoint_at": "2026-08-25T02:14:55Z"
   },
   "freshness": {
     "queued_at": "08/20/2026 08:48:18",
-    "checkpoint_at": "2026-08-24T16:17:00Z"
+    "checkpoint_at": "2026-08-25T02:14:55Z"
   }
 }

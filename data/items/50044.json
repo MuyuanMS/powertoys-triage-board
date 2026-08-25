@@ -5,18 +5,18 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-24T09:10:34.3654387Z",
-  "evaluated_at": "08/24/2026 09:06:38",
-  "source_updated_at": "2026-08-20T23:31:10Z",
-  "head_sha": "29db0825fac463e0ec0ccbc352f0fda018cc18c2",
+  "generated_at": "2026-08-25T02:11:23.916Z",
+  "evaluated_at": "2026-08-25T02:11:23.916Z",
+  "source_updated_at": "2026-08-25T02:03:48.634Z",
+  "head_sha": "8f87bcddb4c11868663219807de515f072c9dc92",
   "title": "CmdPal: Fix dock items not activating with keyboard",
   "url": "https://github.com/microsoft/PowerToys/pull/50044",
   "status": {
     "glyph": "...",
     "label": "Review in progress",
-    "detail": "Fork mirror PR 446 is rebased and scope-validated, but GitHub did not accept a Copilot reviewer request; local build is also blocked by a pre-existing non-owned build lock."
+    "detail": "A fresh review and validation remain required before a maintainer decision can be drafted."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "Resume when the completion check can be verified and refresh the draft.",
   "proposed_comments": [],
   "actions": [
     {
@@ -29,11 +29,11 @@
   ],
   "workflow": {
     "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-24T09:10:34.3654387Z"
+    "checkpoint_at": "2026-08-25T02:11:23.916Z"
   },
   "freshness": {
-    "queued_at": "08/24/2026 09:06:38",
-    "checkpoint_at": "2026-08-24T09:10:34.3654387Z"
+    "queued_at": "2026-08-25T02:03:48.634Z",
+    "checkpoint_at": "2026-08-25T02:11:23.916Z"
   },
   "fork_pr": {
     "number": 446,
