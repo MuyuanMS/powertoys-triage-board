@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-25T17:08:54.7507301+08:00",
+  "generated_at": "2026-08-25T17:14:38.8938635+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -87,7 +87,7 @@ window.BOARD_INDEX = {
     "artifacts": 3187
   },
   "impact": {
-    "as_of": "2026-08-25T17:08:54.7507301+08:00",
+    "as_of": "2026-08-25T17:14:38.8938635+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -4789,17 +4789,17 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "awaiting_review_approval",
-      "owes": "maintainer",
+      "stage": "review_in_progress",
+      "owes": "us",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
       "agent_status": "review",
       "issue_type": null,
-      "proposed_open": 5,
+      "proposed_open": 0,
       "primary_action": {
-        "type": "review",
-        "label": "Post comments"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Ready for review"
@@ -6207,17 +6207,17 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "awaiting_review_approval",
-      "owes": "maintainer",
+      "stage": "review_in_progress",
+      "owes": "us",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
       "agent_status": "review",
       "issue_type": null,
-      "proposed_open": 2,
+      "proposed_open": 0,
       "primary_action": {
-        "type": "review",
-        "label": "Post comments"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Needs-Triage",
