@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-25T08:22:34.2120968Z",
+  "generated_at": "2026-08-25T08:56:24.3790030Z",
   "evaluated_at": "08/25/2026 02:14:55",
-  "source_updated_at": "2026-08-14T16:05:15Z",
+  "source_updated_at": "08/14/2026 16:05:15",
   "head_sha": "c45eee286b58fc857064486b2a5bf7292f332c7a",
   "title": "[CmdPal][PerfMon] Add CPU temperature widget via ACPI thermal zone",
   "url": "https://github.com/microsoft/PowerToys/pull/48639",
   "status": {
     "glyph": "...",
-    "label": "Review in progress",
-    "detail": "Review progress is preserved on the current base and the documentation finding is addressed. A fresh automated review request was not accepted, so convergence remains pending; the upstream source still reports merge conflicts. No upstream public action has been taken."
+    "label": "Waiting for Copilot review",
+    "detail": "The current review findings are addressed and no review threads remain unresolved. A fresh automated review request was not accepted, so convergence remains pending; the upstream source still reports merge conflicts. No upstream public action has been taken."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -28,11 +28,11 @@
     }
   ],
   "workflow": {
-    "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-25T08:22:34.2120968Z"
+    "phase": "waiting_copilot",
+    "checkpoint_at": "2026-08-25T08:56:24.3790030Z"
   },
   "freshness": {
     "queued_at": "08/20/2026 08:48:18",
-    "checkpoint_at": "2026-08-25T08:22:34.2120968Z"
+    "checkpoint_at": "2026-08-25T08:56:24.3790030Z"
   }
 }
