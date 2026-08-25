@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T04:54:57.6360103+08:00",
+  "generated_at": "2026-08-26T06:58:51.4255210+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -81,13 +81,13 @@
     ]
   },
   "counts": {
-    "open_prs": 119,
+    "open_prs": 117,
     "open_issues": 7409,
     "community": 6862,
-    "artifacts": 3195
+    "artifacts": 3193
   },
   "impact": {
-    "as_of": "2026-08-26T04:54:57.6360103+08:00",
+    "as_of": "2026-08-26T06:58:51.4255210+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -95,10 +95,8 @@
   },
   "artifact_numbers": [
     50114,
-    50102,
     50100,
     50098,
-    50096,
     50093,
     50082,
     50081,
@@ -3331,37 +3329,6 @@
       }
     },
     {
-      "id": "pr-50102",
-      "kind": "pr",
-      "number": 50102,
-      "url": "https://github.com/microsoft/PowerToys/pull/50102",
-      "title": "docs(devdocs): update docs.microsoft.com to learn.microsoft.com",
-      "author": "loulanyue",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": true,
-      "agent_status": "review",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
-      },
-      "labels": [
-        "Ready for review"
-      ],
-      "created_at": "2026-08-25T03:43:34Z",
-      "updated_at": "2026-08-25T11:20:38Z",
-      "comments": 0,
-      "priority": null
-    },
-    {
       "id": "pr-50100",
       "kind": "pr",
       "number": 50100,
@@ -3431,39 +3398,6 @@
         "fork_branch": "pr-iterate/50098",
         "url": "https://github.com/MuyuanMS/PowerToys/pull/451"
       }
-    },
-    {
-      "id": "pr-50096",
-      "kind": "pr",
-      "number": 50096,
-      "url": "https://github.com/microsoft/PowerToys/pull/50096",
-      "title": "[UITests][PowerRename] Migrate to new .Next and add more UI tests",
-      "author": "khmyznikov",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": true,
-      "agent_status": "review",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
-      },
-      "labels": [
-        "Area-Tests",
-        "Product-PowerRename",
-        "Ready for review"
-      ],
-      "created_at": "2026-08-24T17:20:25Z",
-      "updated_at": "2026-08-25T18:11:37Z",
-      "comments": 0,
-      "priority": null
     },
     {
       "id": "pr-50093",
@@ -7555,6 +7489,37 @@
         "fork_branch": "pr-iterate/41003-v3",
         "url": "https://github.com/MuyuanMS/PowerToys/pull/378"
       }
+    },
+    {
+      "id": "issue-50117",
+      "kind": "issue",
+      "number": 50117,
+      "url": "https://github.com/microsoft/PowerToys/issues/50117",
+      "title": "Paste with AI - Add Claude",
+      "author": "tglaesmann",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-25T21:57:53Z",
+      "updated_at": "2026-08-25T21:57:53Z",
+      "comments": 0,
+      "priority": null
     },
     {
       "id": "issue-50116",
@@ -93778,7 +93743,7 @@
         "Product-Find My Mouse"
       ],
       "created_at": "2025-07-17T19:43:32Z",
-      "updated_at": "2026-04-18T13:52:51Z",
+      "updated_at": "2026-08-25T22:49:00Z",
       "comments": 0,
       "priority": null
     },
@@ -93812,38 +93777,6 @@
       "created_at": "2025-07-17T19:41:43Z",
       "updated_at": "2026-04-18T14:58:54Z",
       "comments": 0,
-      "priority": null
-    },
-    {
-      "id": "issue-40663",
-      "kind": "issue",
-      "number": 40663,
-      "url": "https://github.com/microsoft/PowerToys/issues/40663",
-      "title": "UITests - PowerRename",
-      "author": "khmyznikov",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "other",
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_triage",
-        "label": "Start triage"
-      },
-      "labels": [
-        "Area-Tests",
-        "Product-PowerRename"
-      ],
-      "created_at": "2025-07-17T19:36:30Z",
-      "updated_at": "2026-08-22T00:37:37Z",
-      "comments": 3,
       "priority": null
     },
     {
