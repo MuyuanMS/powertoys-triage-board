@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-25T09:11:28.7336342Z",
-  "evaluated_at": "2026-08-25T09:11:28.7336342Z",
-  "source_updated_at": "08/22/2026 10:15:24",
+  "generated_at": "2026-08-25T09:16:31.3526322Z",
+  "evaluated_at": "08/25/2026 09:11:28",
+  "source_updated_at": "2026-08-22T10:15:24.0000000Z",
   "head_sha": "589a669bad9231c17908568bbd8ae73c628e75a8",
   "title": "[Advanced Paste] Add single-line paste formatting",
   "url": "https://github.com/microsoft/PowerToys/pull/49647",
   "status": {
     "glyph": "...",
     "label": "Preparing fork review",
-    "detail": "The upstream head advanced after the prior review. The fork-side review must be synchronized to the current head before new findings or a draft can be relied upon."
+    "detail": "The prior converged review predates the current source; reconcile existing review corrections against author updates before any fresh review can be relied upon."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,15 +29,10 @@
   ],
   "workflow": {
     "phase": "mirroring",
-    "checkpoint_at": "2026-08-25T09:11:28.7336342Z"
+    "checkpoint_at": "2026-08-25T09:16:31.3526322Z"
   },
   "freshness": {
-    "queued_at": "2026-08-25T09:11:28.7336342Z",
-    "checkpoint_at": "2026-08-25T09:11:28.7336342Z"
-  },
-  "fork_pr": {
-    "number": 417,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/417"
-  },
-  "fork_branch": "pr-iterate/49647-v5"
+    "queued_at": "08/25/2026 09:11:28",
+    "checkpoint_at": "2026-08-25T09:16:31.3526322Z"
+  }
 }
