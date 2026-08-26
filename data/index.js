@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-27T06:12:25.2959108+08:00",
+  "generated_at": "2026-08-27T07:15:45.8296819+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -84,16 +84,17 @@ window.BOARD_INDEX = {
     "open_prs": 117,
     "open_issues": 7423,
     "community": 6875,
-    "artifacts": 3191
+    "artifacts": 3192
   },
   "impact": {
-    "as_of": "2026-08-27T06:12:25.2959108+08:00",
+    "as_of": "2026-08-27T07:15:45.8296819+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
     "comments_drafted": 24
   },
   "artifact_numbers": [
+    50151,
     50132,
     50114,
     50100,
@@ -3297,26 +3298,34 @@ window.BOARD_INDEX = {
       "is_community": true,
       "mine": false,
       "is_cmdpal": true,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Product-Command Palette"
       ],
       "created_at": "2026-08-26T22:08:09Z",
-      "updated_at": "2026-08-26T22:08:41Z",
+      "updated_at": "2026-08-26T22:26:45Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 465,
+        "fork_title": "[PR 50151] Fix adaptive card theme refresh",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/50151",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/465"
+      }
     },
     {
       "id": "pr-50132",
@@ -5777,16 +5786,16 @@ window.BOARD_INDEX = {
         "Ready for review"
       ],
       "created_at": "2026-07-15T02:40:33Z",
-      "updated_at": "2026-08-26T21:17:39Z",
+      "updated_at": "2026-08-26T22:10:26Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
         "kind": "pr",
-        "fork_number": 427,
-        "fork_title": "[PR 49323] CmdPal JS/TS Extensions - Phase 2: JSON-RPC transport + manifest",
+        "fork_number": 466,
+        "fork_title": "CmdPal JS/TS Extensions: JSON-RPC transport and manifest",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/49323-v2",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/427"
+        "fork_branch": "pr-iterate/49323-v3",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/466"
       }
     },
     {
