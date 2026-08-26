@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T06:09:49.3183256Z",
+  "generated_at": "2026-08-26T10:50:02.5473264Z",
   "evaluated_at": "08/20/2026 08:48:18",
-  "source_updated_at": "08/20/2026 23:31:19",
+  "source_updated_at": "2026-08-20T15:31:19.0000000+00:00",
   "head_sha": "2e76bba3750503fe718785844aa325b50d1e2336",
   "title": "[CmdPal] Add tabbed pages to Command Palette",
   "url": "https://github.com/microsoft/PowerToys/pull/49429",
   "status": {
     "glyph": "...",
     "label": "Reviewing findings",
-    "detail": "Two valid findings remain. Child initialization needs cancellation, ownership tracking, and active-child gating for shell-side effects before cleanup; the related initial-focus path must follow the active search host for non-searchable tabs. These UI lifecycle changes require coordinated regression coverage and are not safe for a partial drain patch."
+    "detail": "The non-searchable tab focus correction is published and the focused Command Palette UI build succeeds. Direct review inspection shows one unresolved finding: cached tab children need cancellation or ownership tracking and active-child gating before they can safely publish shell state. This coupled UI lifecycle change requires coordinated regression coverage and is not safe for a partial patch. No new automated review has posted for the updated head."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T06:09:49.3183256Z"
+    "checkpoint_at": "2026-08-26T10:50:02.5473264Z"
   },
   "freshness": {
     "queued_at": "08/20/2026 08:48:18",
-    "checkpoint_at": "2026-08-26T06:09:49.3183256Z"
+    "checkpoint_at": "2026-08-26T10:50:02.5473264Z"
   }
 }

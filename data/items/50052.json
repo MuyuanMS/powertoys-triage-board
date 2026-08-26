@@ -5,7 +5,7 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T02:21:24.5853664Z",
+  "generated_at": "2026-08-26T07:14:13.7267145Z",
   "evaluated_at": "08/24/2026 16:00:14",
   "source_updated_at": "08/24/2026 14:40:24",
   "head_sha": "9cb18c61c8e9d160bad825b696c6910ed5b7380e",
@@ -14,7 +14,7 @@
   "status": {
     "glyph": "...",
     "label": "Reviewing findings",
-    "detail": "Four coordinated automation-lifecycle findings remain: current issue freshness before agent execution, execution gating for closed issues, closure checks before every label mutation, and request-specific closure rollback attribution. They require an end-to-end workflow update and regenerated generated artifacts."
+    "detail": "Direct review inspection confirms four valid coordinated closed-issue safety findings: refresh current issue state before agent execution, gate agent execution, recheck before every label mutation, and use request-specific duplicate-closure attribution. They require one end-to-end workflow update with regenerated artifacts and regression coverage; a partial correction would leave unsafe paths."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T02:21:24.5853664Z"
+    "checkpoint_at": "2026-08-26T07:14:13.7267145Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 08:55:13",
-    "checkpoint_at": "2026-08-26T02:21:24.5853664Z"
+    "checkpoint_at": "2026-08-26T07:14:13.7267145Z"
   }
 }

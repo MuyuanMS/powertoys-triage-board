@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-26T14:50:58.2613387+08:00",
+  "generated_at": "2026-08-26T20:25:12.6305552+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -81,13 +81,13 @@ window.BOARD_INDEX = {
     ]
   },
   "counts": {
-    "open_prs": 117,
-    "open_issues": 7412,
-    "community": 6865,
-    "artifacts": 3193
+    "open_prs": 118,
+    "open_issues": 7417,
+    "community": 6868,
+    "artifacts": 3192
   },
   "impact": {
-    "as_of": "2026-08-26T14:50:58.2613387+08:00",
+    "as_of": "2026-08-26T20:25:12.6305552+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -163,7 +163,6 @@ window.BOARD_INDEX = {
     49034,
     48904,
     48816,
-    48815,
     48769,
     48746,
     48700,
@@ -3290,6 +3289,37 @@ window.BOARD_INDEX = {
   ],
   "items": [
     {
+      "id": "pr-50132",
+      "kind": "pr",
+      "number": 50132,
+      "url": "https://github.com/microsoft/PowerToys/pull/50132",
+      "title": "fix(release): reconcile preview deltas against full history",
+      "author": "LegendaryBlair",
+      "is_community": false,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": null,
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_review",
+        "label": "Start review"
+      },
+      "labels": [
+        "Ready for review"
+      ],
+      "created_at": "2026-08-26T09:22:06Z",
+      "updated_at": "2026-08-26T09:32:30Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
       "id": "pr-50114",
       "kind": "pr",
       "number": 50114,
@@ -4527,6 +4557,38 @@ window.BOARD_INDEX = {
       }
     },
     {
+      "id": "pr-49751",
+      "kind": "pr",
+      "number": 49751,
+      "url": "https://github.com/microsoft/PowerToys/pull/49751",
+      "title": "CmdPal: Update parameter text box style and makes its brushes themeable",
+      "author": "jiripolasek",
+      "is_community": false,
+      "mine": false,
+      "is_cmdpal": true,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": null,
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_review",
+        "label": "Start review"
+      },
+      "labels": [
+        "Product-Command Palette",
+        "Ready for review"
+      ],
+      "created_at": "2026-08-07T14:01:01Z",
+      "updated_at": "2026-08-26T07:44:53Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
       "id": "pr-49748",
       "kind": "pr",
       "number": 49748,
@@ -5491,10 +5553,11 @@ window.BOARD_INDEX = {
         "label": "Post comments"
       },
       "labels": [
-        "Product-File Explorer"
+        "Product-File Explorer",
+        "Ready for review"
       ],
       "created_at": "2026-07-16T07:23:43Z",
-      "updated_at": "2026-08-11T14:32:49Z",
+      "updated_at": "2026-08-26T09:18:32Z",
       "comments": 0,
       "priority": 10,
       "mirror": {
@@ -5794,7 +5857,7 @@ window.BOARD_INDEX = {
       "stage": "awaiting_author",
       "owes": "author",
       "pending_author": true,
-      "waiting_since": "2026-08-19T13:46:41Z",
+      "waiting_since": "2026-08-26T10:51:02Z",
       "has_artifact": true,
       "agent_status": "review",
       "issue_type": null,
@@ -5805,10 +5868,11 @@ window.BOARD_INDEX = {
       },
       "labels": [
         "Product-FancyZones",
-        "has-proof"
+        "has-proof",
+        "Ready for review"
       ],
       "created_at": "2026-07-13T03:15:31Z",
-      "updated_at": "2026-08-19T13:46:41Z",
+      "updated_at": "2026-08-26T10:51:02Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -6484,32 +6548,6 @@ window.BOARD_INDEX = {
         "fork_branch": "pr-iterate/48816-v2",
         "url": "https://github.com/MuyuanMS/PowerToys/pull/335"
       }
-    },
-    {
-      "id": "pr-48815",
-      "kind": "pr",
-      "number": 48815,
-      "url": "https://github.com/microsoft/PowerToys/pull/48815",
-      "title": "Add AI-assisted contribution policy to contributor docs",
-      "author": "niels9001",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": "review",
-      "stage": "ineligible",
-      "owes": "author",
-      "pending_author": true,
-      "waiting_since": "2026-06-24T12:40:21Z",
-      "has_artifact": true,
-      "agent_status": "review",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": null,
-      "labels": [],
-      "created_at": "2026-06-23T11:37:03Z",
-      "updated_at": "2026-06-24T12:40:21Z",
-      "comments": 0,
-      "priority": null
     },
     {
       "id": "pr-48769",
@@ -7498,6 +7536,264 @@ window.BOARD_INDEX = {
       }
     },
     {
+      "id": "issue-50138",
+      "kind": "issue",
+      "number": 50138,
+      "url": "https://github.com/microsoft/PowerToys/issues/50138",
+      "title": "PowerToys Monaco Preview Handler displays UTF-16LE .reg files with NUL characters",
+      "author": "Jordi-PAPA",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Check bug"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Product-File Explorer",
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-26T11:26:19Z",
+      "updated_at": "2026-08-26T11:32:07Z",
+      "comments": 1,
+      "priority": null
+    },
+    {
+      "id": "issue-50137",
+      "kind": "issue",
+      "number": 50137,
+      "url": "https://github.com/microsoft/PowerToys/issues/50137",
+      "title": "Window Hopper - Support secondary key combination (alternate keyboard language)",
+      "author": "Robertm0",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [
+        "Needs-Triage",
+        "Product-Window Hopper"
+      ],
+      "created_at": "2026-08-26T10:31:22Z",
+      "updated_at": "2026-08-26T12:20:42Z",
+      "comments": 1,
+      "priority": null
+    },
+    {
+      "id": "issue-50133",
+      "kind": "issue",
+      "number": 50133,
+      "url": "https://github.com/microsoft/PowerToys/issues/50133",
+      "title": "Ghost PowerToys Run window when using Win+, while PowerToys Run is open",
+      "author": "ReginaldTang",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Check bug"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-26T09:24:41Z",
+      "updated_at": "2026-08-26T09:24:41Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
+      "id": "issue-50131",
+      "kind": "issue",
+      "number": 50131,
+      "url": "https://github.com/microsoft/PowerToys/issues/50131",
+      "title": "CmdPal: Icon loading (12/n) - Separate icon resolution and icon loading",
+      "author": "jiripolasek",
+      "is_community": false,
+      "mine": false,
+      "is_cmdpal": true,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [
+        "Needs-Triage",
+        "Product-Command Palette"
+      ],
+      "created_at": "2026-08-26T09:02:30Z",
+      "updated_at": "2026-08-26T09:02:30Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
+      "id": "issue-50130",
+      "kind": "issue",
+      "number": 50130,
+      "url": "https://github.com/microsoft/PowerToys/issues/50130",
+      "title": "FancyZones exclude by pressing shift during drag no longer working",
+      "author": "Chrisch-Tea",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Check bug"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Product-FancyZones",
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-26T09:01:27Z",
+      "updated_at": "2026-08-26T09:09:04Z",
+      "comments": 1,
+      "priority": null
+    },
+    {
+      "id": "issue-50128",
+      "kind": "issue",
+      "number": 50128,
+      "url": "https://github.com/microsoft/PowerToys/issues/50128",
+      "title": "[Dedupe Digest] 2026-08-26",
+      "author": "github-actions[bot]",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [
+        "dedupe-digest"
+      ],
+      "created_at": "2026-08-26T08:17:14Z",
+      "updated_at": "2026-08-26T08:17:15Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
+      "id": "issue-50127",
+      "kind": "issue",
+      "number": 50127,
+      "url": "https://github.com/microsoft/PowerToys/issues/50127",
+      "title": "Advanced Paste can leave Shift stuck with Caps Lock → Ctrl remap",
+      "author": "jincechen",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Check bug"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage",
+        "Product-Advanced Paste"
+      ],
+      "created_at": "2026-08-26T07:54:42Z",
+      "updated_at": "2026-08-26T08:00:27Z",
+      "comments": 1,
+      "priority": null
+    },
+    {
+      "id": "issue-50126",
+      "kind": "issue",
+      "number": 50126,
+      "url": "https://github.com/microsoft/PowerToys/issues/50126",
+      "title": "Proposal: OmniTray - drag, drop, stack, and shelf anything",
+      "author": "jiripolasek",
+      "is_community": false,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [
+        "Idea-New PowerToy",
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-26T07:03:19Z",
+      "updated_at": "2026-08-26T08:04:04Z",
+      "comments": 1,
+      "priority": null
+    },
+    {
       "id": "issue-50125",
       "kind": "issue",
       "number": 50125,
@@ -7522,12 +7818,11 @@ window.BOARD_INDEX = {
       },
       "labels": [
         "Issue-Bug",
-        "Needs-Author-Feedback",
         "Needs-Triage",
         "Product-ZoomIt"
       ],
       "created_at": "2026-08-26T06:40:26Z",
-      "updated_at": "2026-08-26T06:45:31Z",
+      "updated_at": "2026-08-26T07:03:18Z",
       "comments": 1,
       "priority": null
     },
@@ -7560,38 +7855,6 @@ window.BOARD_INDEX = {
       ],
       "created_at": "2026-08-26T06:32:57Z",
       "updated_at": "2026-08-26T06:37:48Z",
-      "comments": 1,
-      "priority": null
-    },
-    {
-      "id": "issue-50123",
-      "kind": "issue",
-      "number": 50123,
-      "url": "https://github.com/microsoft/PowerToys/issues/50123",
-      "title": "openmeta alternative in the filesystem",
-      "author": "Openhuman2",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "other",
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_triage",
-        "label": "Start triage"
-      },
-      "labels": [
-        "Product-File Explorer",
-        "Needs-Triage"
-      ],
-      "created_at": "2026-08-26T06:31:14Z",
-      "updated_at": "2026-08-26T06:36:51Z",
       "comments": 1,
       "priority": null
     },
@@ -7883,37 +8146,6 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-25T12:12:20Z",
       "updated_at": "2026-08-25T12:16:54Z",
       "comments": 1,
-      "priority": null
-    },
-    {
-      "id": "issue-50107",
-      "kind": "issue",
-      "number": 50107,
-      "url": "https://github.com/microsoft/PowerToys/issues/50107",
-      "title": "[Dedupe Digest] 2026-08-25",
-      "author": "github-actions[bot]",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "other",
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_triage",
-        "label": "Start triage"
-      },
-      "labels": [
-        "dedupe-digest"
-      ],
-      "created_at": "2026-08-25T08:17:59Z",
-      "updated_at": "2026-08-25T08:18:00Z",
-      "comments": 0,
       "priority": null
     },
     {
@@ -33371,37 +33603,6 @@ window.BOARD_INDEX = {
       "priority": null
     },
     {
-      "id": "issue-48178",
-      "kind": "issue",
-      "number": 48178,
-      "url": "https://github.com/microsoft/PowerToys/issues/48178",
-      "title": "not a request, just a question",
-      "author": "TheGamer1445891",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "other",
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_triage",
-        "label": "Start triage"
-      },
-      "labels": [
-        "Needs-Triage"
-      ],
-      "created_at": "2026-05-28T11:00:03Z",
-      "updated_at": "2026-05-28T11:00:03Z",
-      "comments": 0,
-      "priority": null
-    },
-    {
       "id": "issue-48177",
       "kind": "issue",
       "number": 48177,
@@ -34645,8 +34846,8 @@ window.BOARD_INDEX = {
         "Product-Command Palette"
       ],
       "created_at": "2026-05-23T07:32:29Z",
-      "updated_at": "2026-05-23T19:12:13Z",
-      "comments": 0,
+      "updated_at": "2026-08-26T10:38:43Z",
+      "comments": 1,
       "priority": null
     },
     {

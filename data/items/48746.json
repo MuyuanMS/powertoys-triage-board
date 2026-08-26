@@ -5,7 +5,7 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T02:15:30.1037515Z",
+  "generated_at": "2026-08-26T09:45:51.0259451Z",
   "evaluated_at": "08/25/2026 02:17:29",
   "source_updated_at": "2026-08-19T11:32:18.0000000+00:00",
   "head_sha": "a08915f5ae1a93504b2f76fd7a754e48e9261566",
@@ -14,7 +14,7 @@
   "status": {
     "glyph": "...",
     "label": "Reviewing findings",
-    "detail": "The latest automated review is clean. Targeted validation remains blocked because a required native package dependency is unavailable; the upstream intake check is currently failing."
+    "detail": "The confirmed per-ID Store lookup resilience correction is published. Direct review inspection shows zero unresolved threads; no new automated review has posted for the updated head. Targeted validation remains blocked by an unavailable native package dependency. The current upstream intake check is failure, while the listed build, CLA, dependency, and telemetry checks are successful."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T02:15:30.1037515Z"
+    "checkpoint_at": "2026-08-26T09:45:51.0259451Z"
   },
   "freshness": {
     "queued_at": "08/20/2026 08:48:18",
-    "checkpoint_at": "2026-08-26T02:15:30.1037515Z"
+    "checkpoint_at": "2026-08-26T09:45:51.0259451Z"
   }
 }
