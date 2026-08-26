@@ -5,7 +5,7 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-24T07:39:39.2614158Z",
+  "generated_at": "2026-08-26T03:26:44.1005034Z",
   "evaluated_at": "08/24/2026 07:39:25",
   "source_updated_at": "08/21/2026 01:03:26",
   "head_sha": "cd0777003e8c62939b51465297b971726505c284",
@@ -13,8 +13,8 @@
   "url": "https://github.com/microsoft/PowerToys/pull/49324",
   "status": {
     "glyph": "...",
-    "label": "Waiting for Copilot review",
-    "detail": "The single immediate fork Copilot status check was initiated; preserve this review for the next run rather than polling. The local unresolved-thread command could not complete because its parameter name has changed."
+    "label": "Reviewing findings",
+    "detail": "Eight valid findings remain across notification ordering, lifecycle races, atomic page registration, and item-property routing. They require one coordinated concurrency and registry design with focused regression coverage; a partial correction risks dropping or preserving stale UI state."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -28,16 +28,11 @@
     }
   ],
   "workflow": {
-    "phase": "waiting_copilot",
-    "checkpoint_at": "2026-08-24T07:39:39.2614158Z"
+    "phase": "reviewing_findings",
+    "checkpoint_at": "2026-08-26T03:26:44.1005034Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 07:39:25",
-    "checkpoint_at": "2026-08-24T07:39:39.2614158Z"
-  },
-  "fork_pr": {
-    "number": 430,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/430"
-  },
-  "fork_branch": "pr-iterate/49324"
+    "checkpoint_at": "2026-08-26T03:26:44.1005034Z"
+  }
 }

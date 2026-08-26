@@ -5,7 +5,7 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T02:10:03.4729819Z",
+  "generated_at": "2026-08-26T04:05:57.9352226Z",
   "evaluated_at": "08/25/2026 09:34:21",
   "source_updated_at": "2026-08-20T15:31:09.0000000+00:00",
   "head_sha": "f27ed60e9484fa197d55c5c88d7c45167bfa6db3",
@@ -14,7 +14,7 @@
   "status": {
     "glyph": "...",
     "label": "Reviewing findings",
-    "detail": "Current changes are ready for review; targeted validation is blocked because a required native package dependency is unavailable."
+    "detail": "The partial-search test correction is published. Targeted validation remains blocked by an unavailable native package dependency; a fresh automated review request was not accepted, and prior spelling findings await refresh."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T02:10:03.4729819Z"
+    "checkpoint_at": "2026-08-26T04:05:57.9352226Z"
   },
   "freshness": {
     "queued_at": "08/25/2026 09:34:21",
-    "checkpoint_at": "2026-08-26T02:10:03.4729819Z"
+    "checkpoint_at": "2026-08-26T04:05:57.9352226Z"
   }
 }
