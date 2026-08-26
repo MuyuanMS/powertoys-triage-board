@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-25T13:45:13.5740468Z",
+  "generated_at": "2026-08-26T23:22:01.7498018Z",
   "evaluated_at": "08/25/2026 02:09:18",
-  "source_updated_at": "08/21/2026 01:23:33",
+  "source_updated_at": "2026-08-21T01:23:33Z",
   "head_sha": "510a575d24c59a2eba1c1782ebfacb51b8788a22",
   "title": "CmdPal JS/TS Extensions - Phase 6: docs + parity sample extension",
   "url": "https://github.com/microsoft/PowerToys/pull/49329",
   "status": {
     "glyph": "...",
     "label": "Review in progress",
-    "detail": "The current-head findings are addressed. A fresh zero-comment review and final validation are required before the review can complete."
+    "detail": "Addressed the active findings in the sample and packaging guidance; the sample typecheck passed. A fresh automated review request was not retained, and the current head has no unresolved review threads."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-25T13:45:13.5740468Z"
+    "checkpoint_at": "2026-08-26T23:22:01.7498018Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 15:49:25",
-    "checkpoint_at": "2026-08-25T13:45:13.5740468Z"
+    "checkpoint_at": "2026-08-26T23:22:01.7498018Z"
   }
 }
