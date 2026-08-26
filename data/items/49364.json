@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T02:22:57.6916185Z",
+  "generated_at": "2026-08-26T23:17:33.0051508Z",
   "evaluated_at": "08/24/2026 15:55:00",
-  "source_updated_at": "2026-08-20T17:28:47.0000000+00:00",
+  "source_updated_at": "2026-08-21T01:28:47.0000000Z",
   "head_sha": "0303fa8137a56fb97adb76fb3c8f9d4751dbfef8",
   "title": "CmdPal JS/TS Extensions - Phase 7: details size, prefix-select, image fix (+ design proposals)",
   "url": "https://github.com/microsoft/PowerToys/pull/49364",
   "status": {
     "glyph": "...",
-    "label": "Reviewing findings",
-    "detail": "The latest automated review is clean with no unresolved findings. Targeted validation is pending until the active build activity completes."
+    "label": "Review in progress",
+    "detail": "The latest automated review of the current mirrored head reports zero new comments. Direct inspection confirms both historical findings are resolved and there are zero unresolved review threads. Targeted SDK serialization validation passes (10 tests). No fresh review was requested because the final reviewed head is unchanged and already clean."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -28,11 +28,11 @@
     }
   ],
   "workflow": {
-    "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T02:22:57.6916185Z"
+    "phase": "review_in_progress",
+    "checkpoint_at": "2026-08-26T23:17:33.0051508Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 15:49:25",
-    "checkpoint_at": "2026-08-26T02:22:57.6916185Z"
+    "checkpoint_at": "2026-08-26T23:17:33.0051508Z"
   }
 }
