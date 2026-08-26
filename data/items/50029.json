@@ -5,7 +5,7 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-25T09:36:37.0983942Z",
+  "generated_at": "2026-08-26T02:10:03.0866437Z",
   "evaluated_at": "08/25/2026 09:34:26",
   "source_updated_at": "08/20/2026 14:08:59",
   "head_sha": "40a0e8b21d39cb624edb1312dc2d6b9eca975a8e",
@@ -14,7 +14,7 @@
   "status": {
     "glyph": "...",
     "label": "Review in progress",
-    "detail": "The fork-side Copilot reviewer request was not accepted. The single immediate status check found no newly submitted review."
+    "detail": "The current findings are addressed with no unresolved review threads. A fresh zero-comment review and final validation are required before completion."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,15 +29,10 @@
   ],
   "workflow": {
     "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-25T09:36:37.0983942Z"
+    "checkpoint_at": "2026-08-26T02:10:03.0866437Z"
   },
   "freshness": {
     "queued_at": "08/25/2026 09:34:26",
-    "checkpoint_at": "2026-08-25T09:36:37.0983942Z"
-  },
-  "fork_pr": {
-    "number": 449,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/449"
-  },
-  "fork_branch": "pr-iterate/50029"
+    "checkpoint_at": "2026-08-26T02:10:03.0866437Z"
+  }
 }

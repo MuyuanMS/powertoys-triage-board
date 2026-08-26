@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-26T09:02:33.9155709+08:00",
+  "generated_at": "2026-08-26T10:14:12.5522064+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -82,12 +82,12 @@ window.BOARD_INDEX = {
   },
   "counts": {
     "open_prs": 117,
-    "open_issues": 7410,
-    "community": 6863,
+    "open_issues": 7409,
+    "community": 6862,
     "artifacts": 3193
   },
   "impact": {
-    "as_of": "2026-08-26T09:02:33.9155709+08:00",
+    "as_of": "2026-08-26T10:14:12.5522064+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -3666,7 +3666,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-20T20:10:03Z",
       "updated_at": "2026-08-20T23:31:09Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 457,
+        "fork_title": "[PR 50043] CmdPal: Fix Command Palette RDP extension not filtering search results",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/50043",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/457"
+      }
     },
     {
       "id": "pr-50029",
@@ -7489,40 +7497,6 @@ window.BOARD_INDEX = {
         "fork_branch": "pr-iterate/41003-v3",
         "url": "https://github.com/MuyuanMS/PowerToys/pull/378"
       }
-    },
-    {
-      "id": "issue-50118",
-      "kind": "issue",
-      "number": 50118,
-      "url": "https://github.com/microsoft/PowerToys/issues/50118",
-      "title": "gamebar won't work",
-      "author": "yogikumar1012-ops",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "bug",
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_triage",
-        "label": "Check bug"
-      },
-      "labels": [
-        "Issue-Bug",
-        "Needs-Author-Feedback",
-        "Needs-Triage",
-        "Product-CommandNotFound"
-      ],
-      "created_at": "2026-08-25T23:10:07Z",
-      "updated_at": "2026-08-25T23:14:27Z",
-      "comments": 1,
-      "priority": null
     },
     {
       "id": "issue-50117",
