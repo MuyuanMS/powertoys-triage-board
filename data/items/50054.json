@@ -5,7 +5,7 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T02:47:08.8176454Z",
+  "generated_at": "2026-08-26T07:09:33.6594668Z",
   "evaluated_at": "08/24/2026 08:55:13",
   "source_updated_at": "08/21/2026 17:57:05",
   "head_sha": "bd1c09f8af79d496b3d1aadc4f7a464d936038c8",
@@ -14,7 +14,7 @@
   "status": {
     "glyph": "...",
     "label": "Review in progress",
-    "detail": "A whitespace-tokenization correction and regression coverage resolved the active finding. Targeted validation remains blocked because required project restore assets are unavailable, and a fresh automated review is required for the updated change."
+    "detail": "The confirmed interactive-scoring finding is resolved with batched whole-query and token evaluation that preserves existing per-window scores and result order, plus equivalence coverage. A fresh automated review is required for the updated change. Targeted validation remains blocked by unavailable project restore assets."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-26T02:47:08.8176454Z"
+    "checkpoint_at": "2026-08-26T07:09:33.6594668Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 08:55:13",
-    "checkpoint_at": "2026-08-26T02:47:08.8176454Z"
+    "checkpoint_at": "2026-08-26T07:09:33.6594668Z"
   }
 }
