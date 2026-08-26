@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T03:26:44.1005034Z",
+  "generated_at": "2026-08-26T19:03:57.0416089Z",
   "evaluated_at": "08/24/2026 07:39:25",
-  "source_updated_at": "08/21/2026 01:03:26",
+  "source_updated_at": "2026-08-21T01:03:26.0000000Z",
   "head_sha": "cd0777003e8c62939b51465297b971726505c284",
   "title": "CmdPal JS/TS Extensions - Phase 3: adapters + proxies",
   "url": "https://github.com/microsoft/PowerToys/pull/49324",
   "status": {
     "glyph": "...",
     "label": "Reviewing findings",
-    "detail": "Eight valid findings remain across notification ordering, lifecycle races, atomic page registration, and item-property routing. They require one coordinated concurrency and registry design with focused regression coverage; a partial correction risks dropping or preserving stale UI state."
+    "detail": "Direct inspection confirms eight unresolved review threads spanning notification ordering, host lifetime, atomic page registration, and item-property routing. In-progress remediation overlaps part of this coordinated area but is not yet reconciled, complete, or validated; remaining routing issues must be addressed with the same design before a safe publication. The latest automated review still requests changes. Reported upstream checks pass."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T03:26:44.1005034Z"
+    "checkpoint_at": "2026-08-26T19:03:57.0416089Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 07:39:25",
-    "checkpoint_at": "2026-08-26T03:26:44.1005034Z"
+    "checkpoint_at": "2026-08-26T19:03:57.0416089Z"
   }
 }
