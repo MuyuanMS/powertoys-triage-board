@@ -5,18 +5,18 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-24T15:55:00Z",
-  "evaluated_at": "2026-08-24T15:55:00Z",
-  "source_updated_at": "2026-08-21T01:28:47Z",
+  "generated_at": "2026-08-26T02:22:57.6916185Z",
+  "evaluated_at": "08/24/2026 15:55:00",
+  "source_updated_at": "2026-08-20T17:28:47.0000000+00:00",
   "head_sha": "0303fa8137a56fb97adb76fb3c8f9d4751dbfef8",
   "title": "CmdPal JS/TS Extensions - Phase 7: details size, prefix-select, image fix (+ design proposals)",
   "url": "https://github.com/microsoft/PowerToys/pull/49364",
   "status": {
-    "glyph": "!",
-    "label": "Review blocked",
-    "detail": "Fork fixes are pushed and both addressed Copilot threads are resolved, but a fresh Copilot request was not accepted and the pre-existing build lock is not owned by this session."
+    "glyph": "...",
+    "label": "Reviewing findings",
+    "detail": "The latest automated review is clean with no unresolved findings. Targeted validation is pending until the active build activity completes."
   },
-  "next_action": "Enable or restore Copilot review on the fork, rerun a fresh zero-comment review, and build after the lock owner releases the build lock.",
+  "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
   "actions": [
     {
@@ -28,11 +28,11 @@
     }
   ],
   "workflow": {
-    "phase": "blocked",
-    "checkpoint_at": "2026-08-24T15:55:00Z"
+    "phase": "reviewing_findings",
+    "checkpoint_at": "2026-08-26T02:22:57.6916185Z"
   },
   "freshness": {
-    "queued_at": "2026-08-24T15:49:25.9794867Z",
-    "checkpoint_at": "2026-08-24T15:55:00Z"
+    "queued_at": "08/24/2026 15:49:25",
+    "checkpoint_at": "2026-08-26T02:22:57.6916185Z"
   }
 }

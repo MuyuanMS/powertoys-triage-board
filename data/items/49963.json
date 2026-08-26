@@ -5,33 +5,34 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-20T18:00:08.5542308+08:00",
-  "evaluated_at": "2026-08-20T18:00:08.5542308+08:00",
-  "source_updated_at": "2026-08-20T07:49:25Z",
+  "generated_at": "2026-08-26T02:32:57.4236427Z",
+  "evaluated_at": "08/20/2026 18:00:08",
+  "source_updated_at": "08/21/2026 07:50:46",
   "head_sha": "4c4c3a66d200e23b0496240dbbec1c7d890da2e6",
   "title": "[Peek] Enable reusable previewers for Peek to fix flicker",
   "url": "https://github.com/microsoft/PowerToys/pull/49963",
   "status": {
-    "glyph": "🔄",
-    "label": "Local validation done — fresh Copilot rerun blocked",
-    "detail": "Process review is clear for this collaborator-authored PR, the resumed fork branch builds locally and the Peek unit tests pass, and all existing fork review threads are resolved. The mandatory fresh request to copilot-pull-request-reviewer[bot] on fork PR 415 returned an empty requested_reviewers list, so the loop cannot be marked ready yet."
+    "glyph": "...",
+    "label": "Review in progress",
+    "detail": "Current source is unchanged, all reported checks pass, the latest automated review found no new comments, and no review threads remain. Final module validation has not been reconfirmed in this drain run."
   },
-  "next_action": null,
+  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "proposed_comments": [],
   "actions": [
     {
-      "id": "retry-copilot-review-49963",
+      "id": "continue-review-49963",
       "type": "continue_review",
-      "label": "Retry fresh Copilot fork review",
+      "label": "Continue review loop",
       "primary": true,
-      "note": "Fork PR 415 on branch pr-iterate/49963-v2 is at commit 6bf4de1cba687cea7ed08da9f674bab5ab6238bc with all prior review threads resolved, but the latest Copilot review request returned an empty requested_reviewers list."
+      "note": "Review progress is checkpointed; no upstream action has been posted."
     }
   ],
-  "needs_revalidation": true,
-  "confidence": "High",
-  "fork_pr": {
-    "number": 415,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/415"
+  "workflow": {
+    "phase": "review_in_progress",
+    "checkpoint_at": "2026-08-26T02:32:57.4236427Z"
   },
-  "fork_branch": "pr-iterate/49963-v2",
-  "proposed_comments": []
+  "freshness": {
+    "queued_at": "2026-08-26T02:32:57.4236427Z",
+    "checkpoint_at": "2026-08-26T02:32:57.4236427Z"
+  }
 }

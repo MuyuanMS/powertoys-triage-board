@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-25T15:45:32.7646664Z",
+  "generated_at": "2026-08-26T02:21:24.5853664Z",
   "evaluated_at": "08/24/2026 16:00:14",
-  "source_updated_at": "2026-08-24T06:40:24.0000000+00:00",
+  "source_updated_at": "08/24/2026 14:40:24",
   "head_sha": "9cb18c61c8e9d160bad825b696c6910ed5b7380e",
   "title": "fix(ci): correct issue and PR triage automation",
   "url": "https://github.com/microsoft/PowerToys/pull/50052",
   "status": {
     "glyph": "...",
-    "label": "Preparing fork review",
-    "detail": "Current source has been reconciled for review; four findings require validation and resolution before review can advance."
+    "label": "Reviewing findings",
+    "detail": "Four coordinated automation-lifecycle findings remain: current issue freshness before agent execution, execution gating for closed issues, closure checks before every label mutation, and request-specific closure rollback attribution. They require an end-to-end workflow update and regenerated generated artifacts."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -28,11 +28,11 @@
     }
   ],
   "workflow": {
-    "phase": "mirroring",
-    "checkpoint_at": "2026-08-25T15:45:32.7646664Z"
+    "phase": "reviewing_findings",
+    "checkpoint_at": "2026-08-26T02:21:24.5853664Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 08:55:13",
-    "checkpoint_at": "2026-08-25T15:45:32.7646664Z"
+    "checkpoint_at": "2026-08-26T02:21:24.5853664Z"
   }
 }

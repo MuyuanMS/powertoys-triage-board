@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-26T10:20:05.4498618+08:00",
+  "generated_at": "2026-08-26T10:35:59.2926309+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -82,12 +82,12 @@ window.BOARD_INDEX = {
   },
   "counts": {
     "open_prs": 117,
-    "open_issues": 7409,
-    "community": 6862,
+    "open_issues": 7408,
+    "community": 6861,
     "artifacts": 3193
   },
   "impact": {
-    "as_of": "2026-08-26T10:20:05.4498618+08:00",
+    "as_of": "2026-08-26T10:35:59.2926309+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -3988,8 +3988,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "rerun",
-        "label": "Re-run review"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Area-User Interface",
@@ -7821,40 +7821,6 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-25T06:43:59Z",
       "updated_at": "2026-08-25T06:52:24Z",
       "comments": 1,
-      "priority": null
-    },
-    {
-      "id": "issue-50103",
-      "kind": "issue",
-      "number": 50103,
-      "url": "https://github.com/microsoft/PowerToys/issues/50103",
-      "title": "Powertoys run ran into an issue. Something went wrong.",
-      "author": "Kryptonite399",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "bug",
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_triage",
-        "label": "Check bug"
-      },
-      "labels": [
-        "Issue-Bug",
-        "Resolution-Duplicate",
-        "Needs-Author-Feedback",
-        "Product-General"
-      ],
-      "created_at": "2026-08-25T04:16:13Z",
-      "updated_at": "2026-08-25T04:24:23Z",
-      "comments": 3,
       "priority": null
     },
     {
