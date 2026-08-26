@@ -5,7 +5,7 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T02:17:01.3300393Z",
+  "generated_at": "2026-08-26T06:09:49.3183256Z",
   "evaluated_at": "08/20/2026 08:48:18",
   "source_updated_at": "08/20/2026 23:31:19",
   "head_sha": "2e76bba3750503fe718785844aa325b50d1e2336",
@@ -14,7 +14,7 @@
   "status": {
     "glyph": "...",
     "label": "Reviewing findings",
-    "detail": "A lifecycle race remains: child initialization lacks cancellation and ownership tracking while tab updates can dispose the child. Fixing it safely requires coordinated lifecycle and shell-side-effect changes; the related non-searchable-tab focus issue also remains."
+    "detail": "Two valid findings remain. Child initialization needs cancellation, ownership tracking, and active-child gating for shell-side effects before cleanup; the related initial-focus path must follow the active search host for non-searchable tabs. These UI lifecycle changes require coordinated regression coverage and are not safe for a partial drain patch."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T02:17:01.3300393Z"
+    "checkpoint_at": "2026-08-26T06:09:49.3183256Z"
   },
   "freshness": {
     "queued_at": "08/20/2026 08:48:18",
-    "checkpoint_at": "2026-08-26T02:17:01.3300393Z"
+    "checkpoint_at": "2026-08-26T06:09:49.3183256Z"
   }
 }

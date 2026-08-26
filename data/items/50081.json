@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-24T08:54:12.7024752Z",
+  "generated_at": "2026-08-26T06:38:34.6849528Z",
   "evaluated_at": "08/24/2026 08:47:19",
-  "source_updated_at": "2026-08-23T16:43:10Z",
+  "source_updated_at": "2026-08-23T08:43:10.0000000+00:00",
   "head_sha": "a877c02e63252545404b69398e4521867a1d7a29",
-  "title": "[AdvancedPaste] Add Paste as .jpg file action with configurable JPEG quality",
+  "title": "[AdvancedPaste] Add \"Paste as .jpg file\" action with configurable JPEG quality",
   "url": "https://github.com/microsoft/PowerToys/pull/50081",
   "status": {
     "glyph": "...",
-    "label": "Review in progress",
-    "detail": "Local fallback review found no actionable defect. Copilot reviewer assignment is unavailable (empty requested_reviewers), and local validation did not start because the shared review-build lock remains owned by another review. Resume by acquiring the lock, building PR 440, and enabling/re-requesting fork Copilot review."
+    "label": "Reviewing findings",
+    "detail": "The JPEG Shortcut Guide visibility correction is published. Transparent-image JPEG compositing remains unresolved. Targeted native validation is blocked by an unavailable package dependency, a fresh automated review request was not accepted, and upstream build checks have not run."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -28,16 +28,11 @@
     }
   ],
   "workflow": {
-    "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-24T08:54:12.7024752Z"
+    "phase": "reviewing_findings",
+    "checkpoint_at": "2026-08-26T06:38:34.6849528Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 08:47:19",
-    "checkpoint_at": "2026-08-24T08:54:12.7024752Z"
-  },
-  "fork_pr": {
-    "number": 440,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/440"
-  },
-  "fork_branch": "pr-iterate/50081-v2"
+    "checkpoint_at": "2026-08-26T06:38:34.6849528Z"
+  }
 }

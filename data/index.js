@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-26T13:07:43.9318694+08:00",
+  "generated_at": "2026-08-26T14:42:29.5403842+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -82,12 +82,12 @@ window.BOARD_INDEX = {
   },
   "counts": {
     "open_prs": 117,
-    "open_issues": 7409,
-    "community": 6862,
+    "open_issues": 7411,
+    "community": 6864,
     "artifacts": 3193
   },
   "impact": {
-    "as_of": "2026-08-26T13:07:43.9318694+08:00",
+    "as_of": "2026-08-26T14:42:29.5403842+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -7498,6 +7498,70 @@ window.BOARD_INDEX = {
       }
     },
     {
+      "id": "issue-50124",
+      "kind": "issue",
+      "number": 50124,
+      "url": "https://github.com/microsoft/PowerToys/issues/50124",
+      "title": "Window Hopper - Supports selecting window with the mouse",
+      "author": "hjtgh",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [
+        "Needs-Triage",
+        "Product-Window Hopper"
+      ],
+      "created_at": "2026-08-26T06:32:57Z",
+      "updated_at": "2026-08-26T06:37:48Z",
+      "comments": 1,
+      "priority": null
+    },
+    {
+      "id": "issue-50123",
+      "kind": "issue",
+      "number": 50123,
+      "url": "https://github.com/microsoft/PowerToys/issues/50123",
+      "title": "openmeta alternative in the filesystem",
+      "author": "Openhuman2",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [
+        "Product-File Explorer",
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-26T06:31:14Z",
+      "updated_at": "2026-08-26T06:36:51Z",
+      "comments": 1,
+      "priority": null
+    },
+    {
       "id": "issue-50121",
       "kind": "issue",
       "number": 50121,
@@ -7586,8 +7650,8 @@ window.BOARD_INDEX = {
         "Product-Mouse Without Borders"
       ],
       "created_at": "2026-08-25T16:05:00Z",
-      "updated_at": "2026-08-25T17:09:21Z",
-      "comments": 1,
+      "updated_at": "2026-08-26T05:59:40Z",
+      "comments": 3,
       "priority": null
     },
     {
@@ -7981,8 +8045,8 @@ window.BOARD_INDEX = {
         "Product-Text Extractor"
       ],
       "created_at": "2026-08-24T07:08:28Z",
-      "updated_at": "2026-08-24T07:13:06Z",
-      "comments": 1,
+      "updated_at": "2026-08-26T05:55:54Z",
+      "comments": 2,
       "priority": null
     },
     {
@@ -9281,8 +9345,8 @@ window.BOARD_INDEX = {
         "0.100.2"
       ],
       "created_at": "2026-08-17T13:37:46Z",
-      "updated_at": "2026-08-17T13:54:30Z",
-      "comments": 1,
+      "updated_at": "2026-08-26T05:55:22Z",
+      "comments": 2,
       "priority": null
     },
     {
