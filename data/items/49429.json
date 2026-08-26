@@ -5,7 +5,7 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T14:52:42.1561327Z",
+  "generated_at": "2026-08-26T16:57:13.4133048Z",
   "evaluated_at": "08/20/2026 08:48:18",
   "source_updated_at": "2026-08-20T23:31:19.0000000Z",
   "head_sha": "2e76bba3750503fe718785844aa325b50d1e2336",
@@ -14,7 +14,7 @@
   "status": {
     "glyph": "...",
     "label": "Reviewing findings",
-    "detail": "Published the nested tabbed-page navigation correction with regression coverage; the focused tabbed-page tests pass. The nested-navigation thread is resolved. One cached-child lifecycle finding remains: initialization must be canceled or owned through replacement and cleanup, and shell-side effects must be gated to the active child. This coordinated UI lifecycle change is not safe as a partial patch. No new automated review has posted for the updated head."
+    "detail": "Direct inspection of the latest automated review on the current head reports no new review threads but classifies the change as needing closer review. One cached-child lifecycle thread remains open. Related search-state, selection, and command/details replay concerns require the same activation-scoped state ownership, cancellation or generation handling, and coordinated regression coverage. No partial correction was published. Focused tabbed-page tests and reported upstream checks pass."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T14:52:42.1561327Z"
+    "checkpoint_at": "2026-08-26T16:57:13.4133048Z"
   },
   "freshness": {
     "queued_at": "08/20/2026 08:48:18",
-    "checkpoint_at": "2026-08-26T14:52:42.1561327Z"
+    "checkpoint_at": "2026-08-26T16:57:13.4133048Z"
   }
 }
