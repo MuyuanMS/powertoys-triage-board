@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T12:29:38.7583684Z",
-  "evaluated_at": "2026-08-26T12:29:38.7583684Z",
-  "source_updated_at": "08/26/2026 09:32:30",
+  "generated_at": "2026-08-26T14:03:20.1919986Z",
+  "evaluated_at": "08/26/2026 12:29:38",
+  "source_updated_at": "2026-08-26T09:32:30.0000000Z",
   "head_sha": "1186a230846c55043bfdcd21e765e5862417b0d4",
   "title": "fix(release): reconcile preview deltas against full history",
   "url": "https://github.com/microsoft/PowerToys/pull/50132",
   "status": {
     "glyph": "...",
     "label": "Review in progress",
-    "detail": "A scoped review has started for the current three-file change. Initial automated review was requested; the immediate direct review and thread check has no result yet. Targeted regression coverage passes, and reported upstream checks pass."
+    "detail": "Published full-history identity resolution for cherry-pick metadata and GitHub-associated commits using bounded per-PR lookup, with regression coverage. All current review threads are resolved. No new automated review has posted for the updated head. The release-note regression suite passes, and the reported upstream checks pass."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-26T12:29:38.7583684Z"
+    "checkpoint_at": "2026-08-26T14:03:20.1919986Z"
   },
   "freshness": {
-    "queued_at": "2026-08-26T12:29:38.7583684Z",
-    "checkpoint_at": "2026-08-26T12:29:38.7583684Z"
+    "queued_at": "08/26/2026 12:29:38",
+    "checkpoint_at": "2026-08-26T14:03:20.1919986Z"
   }
 }
