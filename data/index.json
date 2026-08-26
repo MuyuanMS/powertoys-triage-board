@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T01:59:03.8143214+08:00",
+  "generated_at": "2026-08-27T03:02:21.9281542+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -82,12 +82,12 @@
   },
   "counts": {
     "open_prs": 116,
-    "open_issues": 7423,
-    "community": 6874,
+    "open_issues": 7424,
+    "community": 6875,
     "artifacts": 3192
   },
   "impact": {
-    "as_of": "2026-08-27T01:59:03.8143214+08:00",
+    "as_of": "2026-08-27T03:02:21.9281542+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -5746,7 +5746,7 @@
         "Ready for review"
       ],
       "created_at": "2026-07-15T02:40:33Z",
-      "updated_at": "2026-08-21T01:02:16Z",
+      "updated_at": "2026-08-26T18:50:17Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -7492,6 +7492,38 @@
       }
     },
     {
+      "id": "issue-50148",
+      "kind": "issue",
+      "number": 50148,
+      "url": "https://github.com/microsoft/PowerToys/issues/50148",
+      "title": "[Shortcut Guide] Default \"Hold Windows key\" behavior interferes with Win+V and Win+H",
+      "author": "MichaelGHUser",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Check bug"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-26T18:48:02Z",
+      "updated_at": "2026-08-26T18:54:13Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
       "id": "issue-50147",
       "kind": "issue",
       "number": 50147,
@@ -7547,13 +7579,13 @@
       },
       "labels": [
         "Issue-Bug",
-        "Needs-Author-Feedback",
         "Needs-Triage",
+        "Needs-Team-Response",
         "Product-General"
       ],
       "created_at": "2026-08-26T16:50:28Z",
-      "updated_at": "2026-08-26T17:14:27Z",
-      "comments": 1,
+      "updated_at": "2026-08-26T18:35:03Z",
+      "comments": 2,
       "priority": null
     },
     {
