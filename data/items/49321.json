@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-25T08:40:30.9516790Z",
+  "generated_at": "2026-08-26T18:00:53.0248820Z",
   "evaluated_at": "08/24/2026 07:31:39",
-  "source_updated_at": "08/21/2026 00:03:58",
+  "source_updated_at": "2026-08-21T00:03:58.0000000Z",
   "head_sha": "6fa225e04b4568e6c1e5ea89212f4cfa0a195e20",
   "title": "CmdPal JS/TS Extensions - Phase 1: TypeScript SDK",
   "url": "https://github.com/microsoft/PowerToys/pull/49321",
   "status": {
     "glyph": "...",
-    "label": "Review in progress",
-    "detail": "The requested reviewer was not accepted, and the single immediate status check found no newly submitted review. All current review threads are resolved."
+    "label": "Reviewing findings",
+    "detail": "Direct review inspection finds two unresolved issues: EOF finalization must await serialized pending requests, and generated form IDs must reserve explicit IDs before deterministic allocation, including nested forms. The active change state requires reconciliation before these corrections can be isolated and safely published. The latest automated review still requests changes. Reported upstream checks pass."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -28,16 +28,11 @@
     }
   ],
   "workflow": {
-    "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-25T08:40:30.9516790Z"
+    "phase": "reviewing_findings",
+    "checkpoint_at": "2026-08-26T18:00:53.0248820Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 07:31:39",
-    "checkpoint_at": "2026-08-25T08:40:30.9516790Z"
-  },
-  "fork_pr": {
-    "number": 429,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/429"
-  },
-  "fork_branch": "pr-iterate/49321-v2"
+    "checkpoint_at": "2026-08-26T18:00:53.0248820Z"
+  }
 }
