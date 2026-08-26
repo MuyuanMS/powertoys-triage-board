@@ -1,0 +1,38 @@
+{
+  "number": 50151,
+  "kind": "pr",
+  "track": "review",
+  "stage": "review_in_progress",
+  "owes": "us",
+  "pending_author": false,
+  "generated_at": "2026-08-26T22:15:32.4892540Z",
+  "evaluated_at": "2026-08-26T22:15:32.4892540Z",
+  "source_updated_at": "2026-08-26T22:09:36.0000000Z",
+  "head_sha": "98264012386b9b75e62c891d117dc86a39b82a4c",
+  "title": "Fix 49435: re-render adaptive cards on ActualThemeChanged",
+  "url": "https://github.com/microsoft/PowerToys/pull/50151",
+  "status": {
+    "glyph": "...",
+    "label": "Waiting for Copilot review",
+    "detail": "The one-file theme-refresh change was mirrored at the current upstream head. An initial automated review request was made; the single immediate direct inspection found zero submitted automated reviews and zero unresolved threads. The change still needs review and targeted validation, including confirmation of theme-transition behavior. The contributor is a first-time contributor; the documented issue provides repro media, and the upstream CLA check remains queued while the other reported checks pass."
+  },
+  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "proposed_comments": [],
+  "actions": [
+    {
+      "id": "continue-review-50151",
+      "type": "continue_review",
+      "label": "Continue review loop",
+      "primary": true,
+      "note": "Review progress is checkpointed; no upstream action has been posted."
+    }
+  ],
+  "workflow": {
+    "phase": "waiting_copilot",
+    "checkpoint_at": "2026-08-26T22:15:32.4892540Z"
+  },
+  "freshness": {
+    "queued_at": "2026-08-26T22:15:32.4892540Z",
+    "checkpoint_at": "2026-08-26T22:15:32.4892540Z"
+  }
+}
