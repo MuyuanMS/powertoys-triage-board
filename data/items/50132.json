@@ -1,0 +1,38 @@
+{
+  "number": 50132,
+  "kind": "pr",
+  "track": "review",
+  "stage": "review_in_progress",
+  "owes": "us",
+  "pending_author": false,
+  "generated_at": "2026-08-26T12:29:38.7583684Z",
+  "evaluated_at": "2026-08-26T12:29:38.7583684Z",
+  "source_updated_at": "08/26/2026 09:32:30",
+  "head_sha": "1186a230846c55043bfdcd21e765e5862417b0d4",
+  "title": "fix(release): reconcile preview deltas against full history",
+  "url": "https://github.com/microsoft/PowerToys/pull/50132",
+  "status": {
+    "glyph": "...",
+    "label": "Review in progress",
+    "detail": "A scoped review has started for the current three-file change. Initial automated review was requested; the immediate direct review and thread check has no result yet. Targeted regression coverage passes, and reported upstream checks pass."
+  },
+  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "proposed_comments": [],
+  "actions": [
+    {
+      "id": "continue-review-50132",
+      "type": "continue_review",
+      "label": "Continue review loop",
+      "primary": true,
+      "note": "Review progress is checkpointed; no upstream action has been posted."
+    }
+  ],
+  "workflow": {
+    "phase": "review_in_progress",
+    "checkpoint_at": "2026-08-26T12:29:38.7583684Z"
+  },
+  "freshness": {
+    "queued_at": "2026-08-26T12:29:38.7583684Z",
+    "checkpoint_at": "2026-08-26T12:29:38.7583684Z"
+  }
+}

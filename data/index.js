@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-26T20:25:12.6305552+08:00",
+  "generated_at": "2026-08-26T20:33:40.0787442+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -84,16 +84,17 @@ window.BOARD_INDEX = {
     "open_prs": 118,
     "open_issues": 7417,
     "community": 6868,
-    "artifacts": 3192
+    "artifacts": 3194
   },
   "impact": {
-    "as_of": "2026-08-26T20:25:12.6305552+08:00",
+    "as_of": "2026-08-26T20:33:40.0787442+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
     "comments_drafted": 24
   },
   "artifact_numbers": [
+    50132,
     50114,
     50100,
     50098,
@@ -121,6 +122,7 @@ window.BOARD_INDEX = {
     49825,
     49804,
     49759,
+    49751,
     49736,
     49726,
     49724,
@@ -3298,18 +3300,18 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Ready for review"
@@ -3317,7 +3319,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-26T09:22:06Z",
       "updated_at": "2026-08-26T09:32:30Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 461,
+        "fork_title": "[PR 50132] fix(release): reconcile preview deltas against full history",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/50132",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/461"
+      }
     },
     {
       "id": "pr-50114",
@@ -3612,7 +3622,7 @@ window.BOARD_INDEX = {
         "Ready for review"
       ],
       "created_at": "2026-08-21T13:42:33Z",
-      "updated_at": "2026-08-24T14:40:24Z",
+      "updated_at": "2026-08-26T12:26:28Z",
       "comments": 0,
       "priority": null,
       "mirror": {
@@ -4566,18 +4576,18 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": true,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Product-Command Palette",
@@ -4586,7 +4596,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-07T14:01:01Z",
       "updated_at": "2026-08-26T07:44:53Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 460,
+        "fork_title": "Review: parameter text box styling",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49751",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/460"
+      }
     },
     {
       "id": "pr-49748",

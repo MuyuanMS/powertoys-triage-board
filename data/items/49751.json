@@ -1,0 +1,38 @@
+{
+  "number": 49751,
+  "kind": "pr",
+  "track": "review",
+  "stage": "review_in_progress",
+  "owes": "us",
+  "pending_author": false,
+  "generated_at": "2026-08-26T12:28:30.4404665Z",
+  "evaluated_at": "2026-08-26T12:28:30.4404665Z",
+  "source_updated_at": "2026-08-25T23:44:53.0000000+00:00",
+  "head_sha": "dea2046bf72c597a87a7f3b32d36963bbeb6cc51",
+  "title": "CmdPal: Update parameter text box style and makes its brushes themeable",
+  "url": "https://github.com/microsoft/PowerToys/pull/49751",
+  "status": {
+    "glyph": "...",
+    "label": "Review in progress",
+    "detail": "A current-head review is in progress. Direct review inspection shows no automated review and zero unresolved threads. Targeted validation is blocked by an unavailable native package dependency."
+  },
+  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "proposed_comments": [],
+  "actions": [
+    {
+      "id": "continue-review-49751",
+      "type": "continue_review",
+      "label": "Continue review loop",
+      "primary": true,
+      "note": "Review progress is checkpointed; no upstream action has been posted."
+    }
+  ],
+  "workflow": {
+    "phase": "review_in_progress",
+    "checkpoint_at": "2026-08-26T12:28:30.4404665Z"
+  },
+  "freshness": {
+    "queued_at": "2026-08-26T12:28:30.4404665Z",
+    "checkpoint_at": "2026-08-26T12:28:30.4404665Z"
+  }
+}
