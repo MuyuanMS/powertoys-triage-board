@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-26T20:33:40.0787442+08:00",
+  "generated_at": "2026-08-26T21:43:34.4726405+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -81,13 +81,13 @@ window.BOARD_INDEX = {
     ]
   },
   "counts": {
-    "open_prs": 118,
-    "open_issues": 7417,
-    "community": 6868,
-    "artifacts": 3194
+    "open_prs": 116,
+    "open_issues": 7420,
+    "community": 6871,
+    "artifacts": 3192
   },
   "impact": {
-    "as_of": "2026-08-26T20:33:40.0787442+08:00",
+    "as_of": "2026-08-26T21:43:34.4726405+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -112,7 +112,6 @@ window.BOARD_INDEX = {
     50002,
     49966,
     49963,
-    49961,
     49926,
     49891,
     49863,
@@ -120,7 +119,6 @@ window.BOARD_INDEX = {
     49860,
     49826,
     49825,
-    49804,
     49759,
     49751,
     49736,
@@ -3622,7 +3620,7 @@ window.BOARD_INDEX = {
         "Ready for review"
       ],
       "created_at": "2026-08-21T13:42:33Z",
-      "updated_at": "2026-08-26T12:26:28Z",
+      "updated_at": "2026-08-26T13:17:08Z",
       "comments": 0,
       "priority": null,
       "mirror": {
@@ -4049,45 +4047,6 @@ window.BOARD_INDEX = {
       }
     },
     {
-      "id": "pr-49961",
-      "kind": "pr",
-      "number": 49961,
-      "url": "https://github.com/microsoft/PowerToys/pull/49961",
-      "title": "Fix triage automation state handling",
-      "author": "niels9001",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": "review",
-      "stage": "awaiting_review_approval",
-      "owes": "maintainer",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": true,
-      "agent_status": "review",
-      "issue_type": null,
-      "proposed_open": 2,
-      "primary_action": {
-        "type": "review",
-        "label": "Post comments"
-      },
-      "labels": [
-        "Needs-Author-Feedback"
-      ],
-      "created_at": "2026-08-16T21:36:14Z",
-      "updated_at": "2026-08-24T14:38:46Z",
-      "comments": 0,
-      "priority": null,
-      "mirror": {
-        "kind": "pr",
-        "fork_number": 404,
-        "fork_title": "[PR 49961] Fix triage automation state handling",
-        "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/49961-v2",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/404"
-      }
-    },
-    {
       "id": "pr-49956",
       "kind": "pr",
       "number": 49956,
@@ -4498,35 +4457,6 @@ window.BOARD_INDEX = {
       ],
       "created_at": "2026-08-11T03:21:10Z",
       "updated_at": "2026-08-13T14:58:08Z",
-      "comments": 0,
-      "priority": null
-    },
-    {
-      "id": "pr-49804",
-      "kind": "pr",
-      "number": 49804,
-      "url": "https://github.com/microsoft/PowerToys/pull/49804",
-      "title": "Add release channel to issue templates",
-      "author": "niels9001",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": "review",
-      "stage": "owned_elsewhere",
-      "owes": "maintainer",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": true,
-      "agent_status": "review",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "monitor",
-        "label": "Owned elsewhere"
-      },
-      "labels": [],
-      "created_at": "2026-08-10T13:33:23Z",
-      "updated_at": "2026-08-10T15:48:52Z",
       "comments": 0,
       "priority": null
     },
@@ -7554,6 +7484,100 @@ window.BOARD_INDEX = {
       }
     },
     {
+      "id": "issue-50142",
+      "kind": "issue",
+      "number": 50142,
+      "url": "https://github.com/microsoft/PowerToys/issues/50142",
+      "title": "[aw] Failed jobs: AI Issue Triage",
+      "author": "github-actions[bot]",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [
+        "agentic-workflows"
+      ],
+      "created_at": "2026-08-26T13:20:36Z",
+      "updated_at": "2026-08-26T13:20:36Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
+      "id": "issue-50141",
+      "kind": "issue",
+      "number": 50141,
+      "url": "https://github.com/microsoft/PowerToys/issues/50141",
+      "title": "can't update",
+      "author": "sunbohong",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Check bug"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-26T13:15:33Z",
+      "updated_at": "2026-08-26T13:15:33Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
+      "id": "issue-50140",
+      "kind": "issue",
+      "number": 50140,
+      "url": "https://github.com/microsoft/PowerToys/issues/50140",
+      "title": "[aw] Failed jobs: AI Issue Triage",
+      "author": "github-actions[bot]",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "other",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Start triage"
+      },
+      "labels": [
+        "agentic-workflows"
+      ],
+      "created_at": "2026-08-26T12:48:51Z",
+      "updated_at": "2026-08-26T12:48:51Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
       "id": "issue-50138",
       "kind": "issue",
       "number": 50138,
@@ -7807,7 +7831,7 @@ window.BOARD_INDEX = {
         "Needs-Triage"
       ],
       "created_at": "2026-08-26T07:03:19Z",
-      "updated_at": "2026-08-26T08:04:04Z",
+      "updated_at": "2026-08-26T13:39:46Z",
       "comments": 1,
       "priority": null
     },
@@ -250227,8 +250251,8 @@ window.BOARD_INDEX = {
         "Product-File Explorer"
       ],
       "created_at": "2019-08-04T10:27:51Z",
-      "updated_at": "2026-06-11T19:24:01Z",
-      "comments": 41,
+      "updated_at": "2026-08-26T13:30:57Z",
+      "comments": 42,
       "priority": null
     },
     {

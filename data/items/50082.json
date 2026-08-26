@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-25T17:50:16.5432868Z",
+  "generated_at": "2026-08-26T13:39:35.9384104Z",
   "evaluated_at": "08/25/2026 17:50:03",
-  "source_updated_at": "08/25/2026 17:13:09",
+  "source_updated_at": "2026-08-25T17:13:09Z",
   "head_sha": "7a9fd4838a7ae48d2ffb920773dd6aa643e752bc",
   "title": "GrabAndMove refactor",
   "url": "https://github.com/microsoft/PowerToys/pull/50082",
   "status": {
     "glyph": "...",
     "label": "Review in progress",
-    "detail": "The current head has been refreshed. A fresh review is pending reviewer availability; upstream author feedback and reported platform CI remain pending."
+    "detail": "Both current automated findings are resolved. Targeted module validation is blocked by missing C++/WinRT package assets, and a new automated review could not be queued because the reviewer request was not retained."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-25T17:50:16.5432868Z"
+    "checkpoint_at": "2026-08-26T13:39:35.9384104Z"
   },
   "freshness": {
     "queued_at": "08/25/2026 17:50:03",
-    "checkpoint_at": "2026-08-25T17:50:16.5432868Z"
+    "checkpoint_at": "2026-08-26T13:39:35.9384104Z"
   }
 }
