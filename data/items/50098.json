@@ -5,7 +5,7 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-25T12:39:06.6518435Z",
+  "generated_at": "2026-08-26T12:39:17.0155879Z",
   "evaluated_at": "08/25/2026 12:38:32",
   "source_updated_at": "08/25/2026 02:31:19",
   "head_sha": "2ab89513111914cb2e73b7664bac397be16c04f4",
@@ -14,7 +14,7 @@
   "status": {
     "glyph": "...",
     "label": "Review in progress",
-    "detail": "The fork-side Copilot reviewer request was not accepted after validating that the fork diff matches the upstream scope. The single immediate status check found no newly submitted review."
+    "detail": "Five automated findings are resolved: reload coordination preserves pending changes, images publish only after an atomic cache write, Markdown fence generation is linear, the worker cannot delay process exit, and test naming is accurate. A fresh automated review was requested; the immediate direct check has no current-head result. Targeted validation is blocked by missing native extension-SDK prerequisites."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,15 +29,10 @@
   ],
   "workflow": {
     "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-25T12:39:06.6518435Z"
+    "checkpoint_at": "2026-08-26T12:39:17.0155879Z"
   },
   "freshness": {
     "queued_at": "08/25/2026 12:38:32",
-    "checkpoint_at": "2026-08-25T12:39:06.6518435Z"
-  },
-  "fork_pr": {
-    "number": 451,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/451"
-  },
-  "fork_branch": "pr-iterate/50098"
+    "checkpoint_at": "2026-08-26T12:39:17.0155879Z"
+  }
 }
