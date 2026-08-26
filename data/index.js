@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-27T03:02:21.9281542+08:00",
+  "generated_at": "2026-08-27T04:05:43.8087379+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -82,12 +82,12 @@ window.BOARD_INDEX = {
   },
   "counts": {
     "open_prs": 116,
-    "open_issues": 7424,
-    "community": 6875,
-    "artifacts": 3192
+    "open_issues": 7422,
+    "community": 6873,
+    "artifacts": 3190
   },
   "impact": {
-    "as_of": "2026-08-27T03:02:21.9281542+08:00",
+    "as_of": "2026-08-27T04:05:43.8087379+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -102,7 +102,6 @@ window.BOARD_INDEX = {
     50082,
     50081,
     50054,
-    50052,
     50044,
     50043,
     50029,
@@ -431,7 +430,6 @@ window.BOARD_INDEX = {
     48694,
     48692,
     48691,
-    48680,
     48676,
     48675,
     48674,
@@ -3602,45 +3600,6 @@ window.BOARD_INDEX = {
       }
     },
     {
-      "id": "pr-50052",
-      "kind": "pr",
-      "number": 50052,
-      "url": "https://github.com/microsoft/PowerToys/pull/50052",
-      "title": "fix(ci): correct issue and PR triage automation",
-      "author": "niels9001",
-      "is_community": false,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": true,
-      "agent_status": "review",
-      "issue_type": null,
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
-      },
-      "labels": [
-        "Ready for review"
-      ],
-      "created_at": "2026-08-21T13:42:33Z",
-      "updated_at": "2026-08-26T13:17:08Z",
-      "comments": 0,
-      "priority": null,
-      "mirror": {
-        "kind": "pr",
-        "fork_number": 444,
-        "fork_title": "[PR 50052] [CI] Skip issue triage for closed issues",
-        "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/50052-v2",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/444"
-      }
-    },
-    {
       "id": "pr-50044",
       "kind": "pr",
       "number": 50044,
@@ -4306,7 +4265,7 @@ window.BOARD_INDEX = {
         "Ready for review"
       ],
       "created_at": "2026-08-13T11:29:21Z",
-      "updated_at": "2026-08-19T14:48:01Z",
+      "updated_at": "2026-08-26T19:17:26Z",
       "comments": 0,
       "priority": null,
       "mirror": {
@@ -4465,6 +4424,38 @@ window.BOARD_INDEX = {
       ],
       "created_at": "2026-08-11T03:21:10Z",
       "updated_at": "2026-08-13T14:58:08Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
+      "id": "pr-49793",
+      "kind": "pr",
+      "number": 49793,
+      "url": "https://github.com/microsoft/PowerToys/pull/49793",
+      "title": "CmdPal: Add command deep links",
+      "author": "jiripolasek",
+      "is_community": false,
+      "mine": false,
+      "is_cmdpal": true,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": null,
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_review",
+        "label": "Start review"
+      },
+      "labels": [
+        "Product-Command Palette",
+        "Ready for review"
+      ],
+      "created_at": "2026-08-09T23:26:48Z",
+      "updated_at": "2026-08-26T19:11:13Z",
       "comments": 0,
       "priority": null
     },
@@ -5705,7 +5696,7 @@ window.BOARD_INDEX = {
         "Ready for review"
       ],
       "created_at": "2026-07-15T03:48:43Z",
-      "updated_at": "2026-08-21T01:03:26Z",
+      "updated_at": "2026-08-26T19:59:50Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -6571,7 +6562,7 @@ window.BOARD_INDEX = {
         "Product-Command Palette"
       ],
       "created_at": "2026-06-19T14:24:57Z",
-      "updated_at": "2026-08-19T19:32:18Z",
+      "updated_at": "2026-08-26T19:50:44Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -7516,11 +7507,12 @@ window.BOARD_INDEX = {
       },
       "labels": [
         "Issue-Bug",
+        "Product-Shortcut Guide",
         "Needs-Triage"
       ],
       "created_at": "2026-08-26T18:48:02Z",
-      "updated_at": "2026-08-26T18:54:13Z",
-      "comments": 0,
+      "updated_at": "2026-08-26T19:01:52Z",
+      "comments": 1,
       "priority": null
     },
     {
@@ -7586,40 +7578,6 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-26T16:50:28Z",
       "updated_at": "2026-08-26T18:35:03Z",
       "comments": 2,
-      "priority": null
-    },
-    {
-      "id": "issue-50145",
-      "kind": "issue",
-      "number": 50145,
-      "url": "https://github.com/microsoft/PowerToys/issues/50145",
-      "title": "Command Palette dock leaves 1-pixel gap at top of screen",
-      "author": "kei-kusanagi",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": true,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "bug",
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_triage",
-        "label": "Check bug"
-      },
-      "labels": [
-        "Issue-Bug",
-        "Needs-Author-Feedback",
-        "Needs-Triage",
-        "Product-Command Palette"
-      ],
-      "created_at": "2026-08-26T16:33:28Z",
-      "updated_at": "2026-08-26T16:54:59Z",
-      "comments": 1,
       "priority": null
     },
     {
@@ -26038,36 +25996,6 @@ window.BOARD_INDEX = {
       "created_at": "2026-06-16T19:22:32Z",
       "updated_at": "2026-08-14T17:14:37Z",
       "comments": 0,
-      "priority": null
-    },
-    {
-      "id": "issue-48680",
-      "kind": "issue",
-      "number": 48680,
-      "url": "https://github.com/microsoft/PowerToys/issues/48680",
-      "title": "CmdPal: Dock performance meter breaks after restart - shows only ???",
-      "author": "CeelB-2055440",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": true,
-      "track": "fix",
-      "stage": "triaged",
-      "owes": "maintainer",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": true,
-      "agent_status": "fix",
-      "issue_type": "bug",
-      "proposed_open": 0,
-      "primary_action": null,
-      "labels": [
-        "Issue-Bug",
-        "Product-Command Palette",
-        "CmdPal - Dock"
-      ],
-      "created_at": "2026-06-16T16:56:33Z",
-      "updated_at": "2026-08-10T15:21:40Z",
-      "comments": 5,
       "priority": null
     },
     {
