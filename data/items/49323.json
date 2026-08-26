@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-25T09:04:45.5964529Z",
+  "generated_at": "2026-08-26T19:07:08.2708965Z",
   "evaluated_at": "08/24/2026 07:31:39",
-  "source_updated_at": "2026-08-21T01:02:16.0000000Z",
+  "source_updated_at": "2026-08-26T18:50:17Z",
   "head_sha": "6fd82385fc6376a430f65ef0439b4ddd42653365",
   "title": "CmdPal JS/TS Extensions - Phase 2: JSON-RPC transport + manifest",
   "url": "https://github.com/microsoft/PowerToys/pull/49323",
   "status": {
     "glyph": "...",
-    "label": "Reviewing findings",
-    "detail": "Queued sends now terminate when the connection closes; final automated review was unavailable, and validation is blocked by unrelated style diagnostics."
+    "label": "Review in progress",
+    "detail": "The confirmed JSON-RPC rejection-response memory bound is resolved with regression coverage, and all Copilot review threads are resolved. Targeted validation is blocked by unrelated style diagnostics. A fresh automated reviewer request was not retained, and the immediate direct check found no new review."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -28,11 +28,11 @@
     }
   ],
   "workflow": {
-    "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-25T09:04:45.5964529Z"
+    "phase": "review_in_progress",
+    "checkpoint_at": "2026-08-26T19:07:08.2708965Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 07:31:39",
-    "checkpoint_at": "2026-08-25T09:04:45.5964529Z"
+    "checkpoint_at": "2026-08-26T19:07:08.2708965Z"
   }
 }
