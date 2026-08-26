@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-24T07:41:09.4229676Z",
-  "evaluated_at": "2026-08-24T07:41:09.4229676Z",
-  "source_updated_at": "2026-08-21T01:21:46Z",
+  "generated_at": "2026-08-26T03:21:11.1280220Z",
+  "evaluated_at": "08/24/2026 07:41:09",
+  "source_updated_at": "2026-08-20T17:21:46.0000000+00:00",
   "head_sha": "f6f2f919dab21abcce30ec1bc7eb8c5875aaa045",
   "title": "CmdPal JS/TS Extensions - Phase 4: extension service, wrapper, discovery + host wiring",
   "url": "https://github.com/microsoft/PowerToys/pull/49325",
   "status": {
     "glyph": "...",
-    "label": "Waiting for Copilot review",
-    "detail": "Fork PR 434 has no newly published Copilot review after its 2026-08-24T04:20:40Z update; seven unresolved Copilot threads remain. The next run must inspect the result and resume the review loop."
+    "label": "Reviewing findings",
+    "detail": "Four localized findings are corrected with regression coverage. Three broader concerns remain in notification saturation, extension enable-disable lifecycle, and directory reconciliation. Targeted validation is blocked by an unavailable native package dependency, and a fresh automated review request was not accepted."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -28,16 +28,11 @@
     }
   ],
   "workflow": {
-    "phase": "waiting_copilot",
-    "checkpoint_at": "2026-08-24T07:41:09.4229676Z"
+    "phase": "reviewing_findings",
+    "checkpoint_at": "2026-08-26T03:21:11.1280220Z"
   },
   "freshness": {
-    "queued_at": "2026-08-24T07:41:09.4229676Z",
-    "checkpoint_at": "2026-08-24T07:41:09.4229676Z"
-  },
-  "fork_pr": {
-    "number": 434,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/434"
-  },
-  "fork_branch": "pr-iterate/49325"
+    "queued_at": "08/24/2026 07:41:09",
+    "checkpoint_at": "2026-08-26T03:21:11.1280220Z"
+  }
 }

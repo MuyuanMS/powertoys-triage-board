@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T10:50:44.1569485+08:00",
+  "generated_at": "2026-08-26T11:25:15.5128049+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -87,7 +87,7 @@
     "artifacts": 3193
   },
   "impact": {
-    "as_of": "2026-08-26T10:50:44.1569485+08:00",
+    "as_of": "2026-08-26T11:25:15.5128049+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -3708,11 +3708,11 @@
       "priority": null,
       "mirror": {
         "kind": "pr",
-        "fork_number": 449,
-        "fork_title": "[PR 50029] Add CursorWrap Game Mode setting",
+        "fork_number": 458,
+        "fork_title": "Keep Game Mode polling off the hook thread",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/50029",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/449"
+        "fork_branch": "pr-iterate/50029-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/458"
       }
     },
     {
@@ -5650,11 +5650,11 @@
       "priority": 60,
       "mirror": {
         "kind": "pr",
-        "fork_number": 434,
-        "fork_title": "[PR 49325] CmdPal JS/TS Extensions - Phase 4: extension service, wrapper, discovery + host wiring",
+        "fork_number": 459,
+        "fork_title": "Fix localized JS extension review findings",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/49325",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/434"
+        "fork_branch": "pr-iterate/49325-v2",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/459"
       }
     },
     {
@@ -6280,11 +6280,10 @@
         "label": "Continue review"
       },
       "labels": [
-        "Needs-Author-Feedback",
         "Product-Command Palette"
       ],
       "created_at": "2026-07-02T21:59:18Z",
-      "updated_at": "2026-08-23T21:15:55Z",
+      "updated_at": "2026-08-26T03:03:13Z",
       "comments": 0,
       "priority": 60,
       "mirror": {

@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-24T08:00:05.1255592Z",
+  "generated_at": "2026-08-26T03:16:12.0145475Z",
   "evaluated_at": "08/24/2026 07:41:45",
-  "source_updated_at": "2026-08-21T01:21:57Z",
+  "source_updated_at": "08/21/2026 01:21:57",
   "head_sha": "a56a390e94316205a1b62b728858a0a6fe230c7c",
   "title": "CmdPal JS/TS Extensions - Phase 5: gallery npm install/uninstall",
   "url": "https://github.com/microsoft/PowerToys/pull/49326",
   "status": {
     "glyph": "...",
-    "label": "Review in progress",
-    "detail": "Four valid Copilot findings were fixed and committed locally as cdbf994f7. The fork push was rejected because pr-iterate/49326 advanced remotely; no thread replies or resolutions were posted. The shared build lock also remained unavailable through the cutoff, so validation and a fresh Copilot pass are pending."
+    "label": "Reviewing findings",
+    "detail": "Four valid findings remain: provider lifecycle event ordering, prerelease package-version parsing, and observable item property updates. Their remediation requires a clean isolated reconciliation with the current source before it can be validated and applied; the existing accumulated change set is not safe to publish as-is."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -28,16 +28,11 @@
     }
   ],
   "workflow": {
-    "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-24T08:00:05.1255592Z"
+    "phase": "reviewing_findings",
+    "checkpoint_at": "2026-08-26T03:16:12.0145475Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 07:41:45",
-    "checkpoint_at": "2026-08-24T08:00:05.1255592Z"
-  },
-  "fork_pr": {
-    "number": 433,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/433"
-  },
-  "fork_branch": "pr-iterate/49326"
+    "checkpoint_at": "2026-08-26T03:16:12.0145475Z"
+  }
 }
