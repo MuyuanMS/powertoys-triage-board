@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-26T21:43:34.4726405+08:00",
+  "generated_at": "2026-08-26T23:52:21.5096825+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -87,7 +87,7 @@ window.BOARD_INDEX = {
     "artifacts": 3192
   },
   "impact": {
-    "as_of": "2026-08-26T21:43:34.4726405+08:00",
+    "as_of": "2026-08-26T23:52:21.5096825+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -3395,7 +3395,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-24T18:41:42Z",
       "updated_at": "2026-08-24T20:29:51Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 462,
+        "fork_title": "Shortcut Guide: add Ableton Live shortcut manifest",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/50100",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/462"
+      }
     },
     {
       "id": "pr-50098",
@@ -7484,12 +7492,12 @@ window.BOARD_INDEX = {
       }
     },
     {
-      "id": "issue-50142",
+      "id": "issue-50144",
       "kind": "issue",
-      "number": 50142,
-      "url": "https://github.com/microsoft/PowerToys/issues/50142",
-      "title": "[aw] Failed jobs: AI Issue Triage",
-      "author": "github-actions[bot]",
+      "number": 50144,
+      "url": "https://github.com/microsoft/PowerToys/issues/50144",
+      "title": "Render svg preview images in File Explorer is too slow",
+      "author": "sebasav182",
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
@@ -7500,18 +7508,53 @@ window.BOARD_INDEX = {
       "waiting_since": null,
       "has_artifact": false,
       "agent_status": "none",
-      "issue_type": "other",
+      "issue_type": "bug",
       "proposed_open": 0,
       "primary_action": {
         "type": "start_triage",
-        "label": "Start triage"
+        "label": "Check bug"
       },
       "labels": [
-        "agentic-workflows"
+        "Issue-Bug",
+        "Needs-Triage"
       ],
-      "created_at": "2026-08-26T13:20:36Z",
-      "updated_at": "2026-08-26T13:20:36Z",
+      "created_at": "2026-08-26T15:24:16Z",
+      "updated_at": "2026-08-26T15:24:16Z",
       "comments": 0,
+      "priority": null
+    },
+    {
+      "id": "issue-50143",
+      "kind": "issue",
+      "number": 50143,
+      "url": "https://github.com/microsoft/PowerToys/issues/50143",
+      "title": "BSOD triggered when AlwaysOnTop module is enabled, especially around display sleep/reconfiguration",
+      "author": "MickyLangello",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Check bug"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Needs-Author-Feedback",
+        "Product-Always On Top",
+        "Needs-Triage"
+      ],
+      "created_at": "2026-08-26T14:29:07Z",
+      "updated_at": "2026-08-26T14:35:20Z",
+      "comments": 1,
       "priority": null
     },
     {
@@ -7547,37 +7590,6 @@ window.BOARD_INDEX = {
       "priority": null
     },
     {
-      "id": "issue-50140",
-      "kind": "issue",
-      "number": 50140,
-      "url": "https://github.com/microsoft/PowerToys/issues/50140",
-      "title": "[aw] Failed jobs: AI Issue Triage",
-      "author": "github-actions[bot]",
-      "is_community": true,
-      "mine": false,
-      "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
-      "pending_author": false,
-      "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
-      "issue_type": "other",
-      "proposed_open": 0,
-      "primary_action": {
-        "type": "start_triage",
-        "label": "Start triage"
-      },
-      "labels": [
-        "agentic-workflows"
-      ],
-      "created_at": "2026-08-26T12:48:51Z",
-      "updated_at": "2026-08-26T12:48:51Z",
-      "comments": 0,
-      "priority": null
-    },
-    {
       "id": "issue-50138",
       "kind": "issue",
       "number": 50138,
@@ -7606,8 +7618,8 @@ window.BOARD_INDEX = {
         "Needs-Triage"
       ],
       "created_at": "2026-08-26T11:26:19Z",
-      "updated_at": "2026-08-26T11:32:07Z",
-      "comments": 1,
+      "updated_at": "2026-08-26T13:47:30Z",
+      "comments": 2,
       "priority": null
     },
     {
@@ -7831,7 +7843,7 @@ window.BOARD_INDEX = {
         "Needs-Triage"
       ],
       "created_at": "2026-08-26T07:03:19Z",
-      "updated_at": "2026-08-26T13:39:46Z",
+      "updated_at": "2026-08-26T15:19:03Z",
       "comments": 1,
       "priority": null
     },
@@ -7864,8 +7876,8 @@ window.BOARD_INDEX = {
         "Product-ZoomIt"
       ],
       "created_at": "2026-08-26T06:40:26Z",
-      "updated_at": "2026-08-26T07:03:18Z",
-      "comments": 1,
+      "updated_at": "2026-08-26T14:42:06Z",
+      "comments": 2,
       "priority": null
     },
     {
@@ -179071,8 +179083,8 @@ window.BOARD_INDEX = {
         "Product-General"
       ],
       "created_at": "2023-09-26T03:37:17Z",
-      "updated_at": "2026-08-21T05:48:36Z",
-      "comments": 423,
+      "updated_at": "2026-08-26T15:48:59Z",
+      "comments": 422,
       "priority": null
     },
     {
