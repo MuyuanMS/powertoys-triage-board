@@ -5,7 +5,7 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-25T21:55:41.7828487Z",
+  "generated_at": "2026-08-26T00:01:43.6082626Z",
   "evaluated_at": "08/25/2026 09:16:05",
   "source_updated_at": "2026-08-20T06:07:50.0000000+00:00",
   "head_sha": "a616ec6747d1df9342dcb996caec1e1d27dd7399",
@@ -14,7 +14,7 @@
   "status": {
     "glyph": "...",
     "label": "Reviewing findings",
-    "detail": "The current automated review has one unresolved finding; final validation remains required before the review can advance."
+    "detail": "The valid review finding has been corrected and syntax validation passed; a fresh automated review is unavailable."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-25T21:55:41.7828487Z"
+    "checkpoint_at": "2026-08-26T00:01:43.6082626Z"
   },
   "freshness": {
     "queued_at": "08/25/2026 09:16:05",
-    "checkpoint_at": "2026-08-25T21:55:41.7828487Z"
+    "checkpoint_at": "2026-08-26T00:01:43.6082626Z"
   }
 }

@@ -5,7 +5,7 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-25T21:55:51.6542965Z",
+  "generated_at": "2026-08-25T23:59:28.0513334Z",
   "evaluated_at": "08/25/2026 02:17:29",
   "source_updated_at": "08/19/2026 19:32:18",
   "head_sha": "a08915f5ae1a93504b2f76fd7a754e48e9261566",
@@ -14,7 +14,7 @@
   "status": {
     "glyph": "...",
     "label": "Review in progress",
-    "detail": "The latest review is clean with no unresolved findings. Final targeted validation remains blocked by an unavailable native dependency, and the upstream intake check is failing."
+    "detail": "The latest review is clean with no unresolved findings. Targeted validation remains blocked by an unavailable native dependency, and the upstream intake check is failing."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-25T21:55:51.6542965Z"
+    "checkpoint_at": "2026-08-25T23:59:28.0513334Z"
   },
   "freshness": {
     "queued_at": "08/20/2026 08:48:18",
-    "checkpoint_at": "2026-08-25T21:55:51.6542965Z"
+    "checkpoint_at": "2026-08-25T23:59:28.0513334Z"
   }
 }
