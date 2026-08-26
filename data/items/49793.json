@@ -1,0 +1,43 @@
+{
+  "number": 49793,
+  "kind": "pr",
+  "track": "review",
+  "stage": "review_in_progress",
+  "owes": "us",
+  "pending_author": false,
+  "generated_at": "2026-08-26T20:10:44.3835797Z",
+  "evaluated_at": "08/26/2026 20:10:35",
+  "source_updated_at": "2026-08-26T19:11:13.0000000Z",
+  "head_sha": "16356cc2dd56e2bc1018883495df8d8af05c1403",
+  "title": "CmdPal: Add command deep links",
+  "url": "https://github.com/microsoft/PowerToys/pull/49793",
+  "status": {
+    "glyph": "...",
+    "label": "Copilot review requested",
+    "detail": "Initialized the scoped review on the current 60-file change. Immediate direct review inspection shows no posted automated review and zero review threads. The Command Palette build is blocked before compilation by the missing Microsoft.Windows.CppWinRT.props dependency. Required upstream x64 and toolkit checks succeeded; aggregate and arm64 checks remain in progress."
+  },
+  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "proposed_comments": [],
+  "actions": [
+    {
+      "id": "continue-review-49793",
+      "type": "continue_review",
+      "label": "Continue review loop",
+      "primary": true,
+      "note": "Review progress is checkpointed; no upstream action has been posted."
+    }
+  ],
+  "workflow": {
+    "phase": "review_requested",
+    "checkpoint_at": "2026-08-26T20:10:44.3835797Z"
+  },
+  "freshness": {
+    "queued_at": "08/26/2026 20:10:35",
+    "checkpoint_at": "2026-08-26T20:10:44.3835797Z"
+  },
+  "fork_pr": {
+    "number": 463,
+    "url": "https://github.com/MuyuanMS/PowerToys/pull/463"
+  },
+  "fork_branch": "pr-iterate/49793"
+}
