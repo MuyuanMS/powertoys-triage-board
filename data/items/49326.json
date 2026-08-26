@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T03:16:12.0145475Z",
+  "generated_at": "2026-08-26T21:11:07.4966573Z",
   "evaluated_at": "08/24/2026 07:41:45",
-  "source_updated_at": "08/21/2026 01:21:57",
+  "source_updated_at": "2026-08-21T01:21:57.0000000Z",
   "head_sha": "a56a390e94316205a1b62b728858a0a6fe230c7c",
   "title": "CmdPal JS/TS Extensions - Phase 5: gallery npm install/uninstall",
   "url": "https://github.com/microsoft/PowerToys/pull/49326",
   "status": {
     "glyph": "...",
     "label": "Reviewing findings",
-    "detail": "Four valid findings remain: provider lifecycle event ordering, prerelease package-version parsing, and observable item property updates. Their remediation requires a clean isolated reconciliation with the current source before it can be validated and applied; the existing accumulated change set is not safe to publish as-is."
+    "detail": "Direct inspection confirms four unresolved review threads: two provider lifecycle notifications must share the FIFO dispatcher, prerelease package metadata must be stripped before numeric version mapping, and observable command/list item properties must route through the property-change registry. Existing unpublished remediation is accumulated rather than isolated to these findings, so it cannot be safely published or reviewed as-is. The latest automated review still requests changes. Reported upstream checks pass."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T03:16:12.0145475Z"
+    "checkpoint_at": "2026-08-26T21:11:07.4966573Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 07:41:45",
-    "checkpoint_at": "2026-08-26T03:16:12.0145475Z"
+    "checkpoint_at": "2026-08-26T21:11:07.4966573Z"
   }
 }
