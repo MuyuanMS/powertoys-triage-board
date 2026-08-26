@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T03:21:11.1280220Z",
+  "generated_at": "2026-08-26T21:12:21.8324510Z",
   "evaluated_at": "08/24/2026 07:41:09",
-  "source_updated_at": "2026-08-20T17:21:46.0000000+00:00",
+  "source_updated_at": "2026-08-26T21:07:54Z",
   "head_sha": "f6f2f919dab21abcce30ec1bc7eb8c5875aaa045",
   "title": "CmdPal JS/TS Extensions - Phase 4: extension service, wrapper, discovery + host wiring",
   "url": "https://github.com/microsoft/PowerToys/pull/49325",
   "status": {
     "glyph": "...",
     "label": "Reviewing findings",
-    "detail": "Four localized findings are corrected with regression coverage. Three broader concerns remain in notification saturation, extension enable-disable lifecycle, and directory reconciliation. Targeted validation is blocked by an unavailable native package dependency, and a fresh automated review request was not accepted."
+    "detail": "Four localized findings are resolved with regression coverage: Node runtime canonicalization, command-name synchronization, dynamic list search-text synchronization, and complete node_modules path-segment matching. Three coordinated concerns remain open in stateful-notification delivery, extension enable-disable lifecycle, and directory reconciliation. Targeted validation remains blocked by an unavailable native package dependency."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T03:21:11.1280220Z"
+    "checkpoint_at": "2026-08-26T21:12:21.8324510Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 07:41:09",
-    "checkpoint_at": "2026-08-26T03:21:11.1280220Z"
+    "checkpoint_at": "2026-08-26T21:12:21.8324510Z"
   }
 }
