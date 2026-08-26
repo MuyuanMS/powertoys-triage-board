@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T12:50:03.7903829Z",
+  "generated_at": "2026-08-26T14:49:41.6656373Z",
   "evaluated_at": "08/25/2026 09:34:26",
-  "source_updated_at": "08/20/2026 14:08:59",
+  "source_updated_at": "2026-08-20T14:08:59Z",
   "head_sha": "40a0e8b21d39cb624edb1312dc2d6b9eca975a8e",
   "title": "Add setting to disable cursor wrap in Game Mode (full screen D3D application).",
   "url": "https://github.com/microsoft/PowerToys/pull/50029",
   "status": {
     "glyph": "...",
     "label": "Review in progress",
-    "detail": "The latest automated finding is resolved: polling-thread startup failures release their stop event and prevent hook activation. Cursor tracking is reset while Game Mode suppresses wrapping, and the setting label now describes that behavior accurately. A fresh automated review was requested; the immediate direct check has no current-head result. Targeted native validation remains blocked by the required C++ package restore assets."
+    "detail": "The automated review loop is complete: the latest review reported zero new comments and all review threads are resolved. Final runtime validation remains blocked by unavailable C++/WinRT package assets."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-26T12:50:03.7903829Z"
+    "checkpoint_at": "2026-08-26T14:49:41.6656373Z"
   },
   "freshness": {
     "queued_at": "08/25/2026 09:34:26",
-    "checkpoint_at": "2026-08-26T12:50:03.7903829Z"
+    "checkpoint_at": "2026-08-26T14:49:41.6656373Z"
   }
 }
