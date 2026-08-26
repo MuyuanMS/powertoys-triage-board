@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-27T04:05:43.8087379+08:00",
+  "generated_at": "2026-08-27T05:09:05.3611213+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -84,10 +84,10 @@ window.BOARD_INDEX = {
     "open_prs": 116,
     "open_issues": 7422,
     "community": 6873,
-    "artifacts": 3190
+    "artifacts": 3191
   },
   "impact": {
-    "as_of": "2026-08-27T04:05:43.8087379+08:00",
+    "as_of": "2026-08-27T05:09:05.3611213+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -118,6 +118,7 @@ window.BOARD_INDEX = {
     49860,
     49826,
     49825,
+    49793,
     49759,
     49751,
     49736,
@@ -4247,8 +4248,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "review_ready",
-      "owes": "maintainer",
+      "stage": "review_in_progress",
+      "owes": "us",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -4256,8 +4257,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "approve",
-        "label": "Approve"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "dependencies",
@@ -4270,11 +4271,11 @@ window.BOARD_INDEX = {
       "priority": null,
       "mirror": {
         "kind": "pr",
-        "fork_number": 416,
-        "fork_title": "[PR 49863] build(deps): bump actions/setup-node from 6.5.0 to 7.0.0",
+        "fork_number": 464,
+        "fork_title": "build(deps): bump actions/setup-node from 6.5.0 to 7.0.0",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/49863-v3",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/416"
+        "fork_branch": "pr-iterate/49863-v4",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/464"
       }
     },
     {
@@ -4437,18 +4438,18 @@ window.BOARD_INDEX = {
       "is_community": false,
       "mine": false,
       "is_cmdpal": true,
-      "track": null,
-      "stage": null,
+      "track": "review",
+      "stage": "review_in_progress",
       "owes": "us",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "continue_review",
+        "label": "Continue review"
       },
       "labels": [
         "Product-Command Palette",
@@ -4457,7 +4458,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-09T23:26:48Z",
       "updated_at": "2026-08-26T19:11:13Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 463,
+        "fork_title": "[PR 49793] CmdPal: Add command deep links",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/49793",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/463"
+      }
     },
     {
       "id": "pr-49759",
