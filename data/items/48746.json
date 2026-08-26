@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T13:38:28.0023996Z",
+  "generated_at": "2026-08-26T15:54:15.8699682Z",
   "evaluated_at": "08/25/2026 02:17:29",
-  "source_updated_at": "2026-08-19T11:32:18.0000000+00:00",
+  "source_updated_at": "2026-08-19T19:32:18Z",
   "head_sha": "a08915f5ae1a93504b2f76fd7a754e48e9261566",
-  "title": "Fix CmdPal extension installed state detection for Store-only package…",
+  "title": "Fix CmdPal extension installed state detection for Store-only packages",
   "url": "https://github.com/microsoft/PowerToys/pull/48746",
   "status": {
     "glyph": "...",
-    "label": "Reviewing findings",
-    "detail": "The Store lookup timeout correction and non-cancelable-operation regression coverage are published. Direct review inspection shows zero unresolved threads; no new automated review has posted for the updated head. Targeted validation remains blocked by an unavailable native package dependency. The current upstream intake check is failing while the listed build, CLA, dependency, and telemetry checks are successful."
+    "label": "Review in progress",
+    "detail": "The automated review loop is complete: the latest current-head review reported zero new comments and all review threads are resolved. Final targeted validation remains blocked by unavailable C++/WinRT package assets."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -28,11 +28,11 @@
     }
   ],
   "workflow": {
-    "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T13:38:28.0023996Z"
+    "phase": "review_in_progress",
+    "checkpoint_at": "2026-08-26T15:54:15.8699682Z"
   },
   "freshness": {
     "queued_at": "08/20/2026 08:48:18",
-    "checkpoint_at": "2026-08-26T13:38:28.0023996Z"
+    "checkpoint_at": "2026-08-26T15:54:15.8699682Z"
   }
 }

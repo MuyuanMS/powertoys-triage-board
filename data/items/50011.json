@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T11:46:58.6152275Z",
+  "generated_at": "2026-08-26T15:54:26.4936328Z",
   "evaluated_at": "08/25/2026 09:16:05",
-  "source_updated_at": "08/20/2026 14:07:50",
+  "source_updated_at": "2026-08-20T14:07:50.0000000Z",
   "head_sha": "a616ec6747d1df9342dcb996caec1e1d27dd7399",
   "title": "fix(ui-tests): avoid plaintext SecureString conversion",
   "url": "https://github.com/microsoft/PowerToys/pull/50011",
   "status": {
     "glyph": "...",
     "label": "Review in progress",
-    "detail": "Direct review inspection confirms the latest automated review recommends approval for the current change and has no review threads. Reported checks pass. End-to-end validation in the intended UI-test virtual-machine scenario remains required before completion."
+    "detail": "Direct API inspection confirms the current automated review recommends approval with zero comments and zero unresolved threads. Reported upstream checks succeeded. End-to-end validation of UI-test VM account provisioning remains required in the intended virtual-machine scenario; no unsuitable local substitute was run."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-26T11:46:58.6152275Z"
+    "checkpoint_at": "2026-08-26T15:54:26.4936328Z"
   },
   "freshness": {
     "queued_at": "08/25/2026 09:16:05",
-    "checkpoint_at": "2026-08-26T11:46:58.6152275Z"
+    "checkpoint_at": "2026-08-26T15:54:26.4936328Z"
   }
 }
