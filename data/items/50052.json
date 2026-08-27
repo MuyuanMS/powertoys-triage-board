@@ -2,37 +2,37 @@
   "number": 50052,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
+  "stage": "upstream_merged_before_review_converged",
+  "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-26T13:48:54.7293469Z",
-  "evaluated_at": "2026-08-26T13:48:54.7293469Z",
-  "source_updated_at": "2026-08-26T13:17:08Z",
+  "generated_at": "2026-08-27T02:55:22.3940861Z",
+  "evaluated_at": "2026-08-27T02:55:22.3940861Z",
+  "source_updated_at": "2026-08-26T19:30:28.0000000Z",
   "head_sha": "6781a44fdad3c48cb9a68966b197e0010e7727a8",
   "title": "fix(ci): correct issue and PR triage automation",
   "url": "https://github.com/microsoft/PowerToys/pull/50052",
   "status": {
-    "glyph": "...",
-    "label": "Reviewing findings",
-    "detail": "Four coordinated closed-issue safety findings remain open: refresh current issue state before agent execution, gate agent execution, recheck immediately before every label mutation, and require request-specific duplicate-closure attribution. They require one end-to-end workflow update with regenerated artifacts and regression coverage; a partial correction would leave unsafe paths."
+    "glyph": "!",
+    "label": "Merged before review converged",
+    "detail": "The upstream change merged with unresolved automation-safety findings. No final validation occurred after closure."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "Assess whether a separate follow-up is needed for the unresolved automation-safety findings.",
   "proposed_comments": [],
   "actions": [
     {
-      "id": "continue-review-50052",
-      "type": "continue_review",
-      "label": "Continue review loop",
-      "primary": true,
-      "note": "Review progress is checkpointed; no upstream action has been posted."
+      "id": "review-closed-50052",
+      "type": "hold",
+      "label": "Review closed",
+      "primary": false,
+      "note": "No upstream review action is proposed for the merged change."
     }
   ],
   "workflow": {
-    "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T13:48:54.7293469Z"
+    "phase": "upstream_merged_before_review_converged",
+    "checkpoint_at": "2026-08-27T02:55:22.3940861Z"
   },
   "freshness": {
-    "queued_at": "2026-08-26T13:48:54.7293469Z",
-    "checkpoint_at": "2026-08-26T13:48:54.7293469Z"
+    "queued_at": "2026-08-27T02:55:22.3940861Z",
+    "checkpoint_at": "2026-08-27T02:55:22.3940861Z"
   }
 }

@@ -2,37 +2,37 @@
   "number": 50096,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
+  "stage": "upstream_merged_before_review_converged",
+  "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-25T19:51:43.4985944Z",
-  "evaluated_at": "2026-08-25T19:51:43.4985944Z",
-  "source_updated_at": "2026-08-25T10:11:37.0000000+00:00",
+  "generated_at": "2026-08-27T02:55:19.6765796Z",
+  "evaluated_at": "08/25/2026 19:51:43",
+  "source_updated_at": "2026-08-25T22:26:13.0000000Z",
   "head_sha": "f6514e6e615a1c0c5261adf78d0ef0d286595747",
   "title": "[UITests][PowerRename] Migrate to new .Next and add more UI tests",
   "url": "https://github.com/microsoft/PowerToys/pull/50096",
   "status": {
-    "glyph": "...",
-    "label": "Preparing fork review",
-    "detail": "Initial review is selected; a clean review base is required before assessing the current changes."
+    "glyph": "!",
+    "label": "Merged before review converged",
+    "detail": "The upstream change merged before a review could be started. No active review or unresolved review thread remains, and no final validation occurred after closure."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "No review action is proposed for the merged change.",
   "proposed_comments": [],
   "actions": [
     {
-      "id": "continue-review-50096",
-      "type": "continue_review",
-      "label": "Continue review loop",
-      "primary": true,
-      "note": "Review progress is checkpointed; no upstream action has been posted."
+      "id": "review-closed-50096",
+      "type": "hold",
+      "label": "Review closed",
+      "primary": false,
+      "note": "No upstream review action is proposed for the merged change."
     }
   ],
   "workflow": {
-    "phase": "mirroring",
-    "checkpoint_at": "2026-08-25T19:51:43.4985944Z"
+    "phase": "upstream_merged_before_review_converged",
+    "checkpoint_at": "2026-08-27T02:55:19.6765796Z"
   },
   "freshness": {
-    "queued_at": "2026-08-25T19:51:43.4985944Z",
-    "checkpoint_at": "2026-08-25T19:51:43.4985944Z"
+    "queued_at": "08/25/2026 19:51:43",
+    "checkpoint_at": "2026-08-27T02:55:19.6765796Z"
   }
 }
