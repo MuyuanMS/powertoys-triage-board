@@ -2,37 +2,37 @@
   "number": 49324,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
+  "stage": "review_blocked",
+  "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-27T00:23:55.1933419Z",
-  "evaluated_at": "2026-08-27T00:23:55.1933419Z",
-  "source_updated_at": "2026-08-27T00:02:33Z",
+  "generated_at": "2026-08-27T03:29:04.9705713Z",
+  "evaluated_at": "08/27/2026 00:23:55",
+  "source_updated_at": "08/27/2026 00:02:33",
   "head_sha": "7fc8c8b422e698774feb156feb0f40f96d17c095",
   "title": "CmdPal JS/TS Extensions - Phase 3: adapters + proxies",
   "url": "https://github.com/microsoft/PowerToys/pull/49324",
   "status": {
-    "glyph": "...",
-    "label": "Review in progress",
-    "detail": "The current source scope is prepared for review. Earlier findings target superseded file paths and are retained as historical trace. A fresh automated review request was not retained; no current-head review object or unresolved review thread is present. No new validation was started before the scheduled cutoff."
+    "glyph": "!",
+    "label": "Review blocked on current-head reconciliation",
+    "detail": "Current source head is newer than the fork review mirror and requires a deliberate freshness-and-ownership reconciliation before any correction can be published. Eight unresolved stale-mirror findings concern notification replay ordering, status-disposal coordination, page-registration races, and property-change routing for command and fallback items. Two automated-review iterations are already consumed; no third iteration was requested because there is no clean current-head correction to review. One iteration remains under the cap."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "Manually establish clean current-head ownership and resolve the coordinated findings before resuming review.",
   "proposed_comments": [],
   "actions": [
     {
-      "id": "continue-review-49324",
-      "type": "continue_review",
-      "label": "Continue review loop",
-      "primary": true,
-      "note": "Review progress is checkpointed; no upstream action has been posted."
+      "id": "review-blocked-49324",
+      "type": "hold",
+      "label": "Review blocked",
+      "primary": false,
+      "note": "No upstream review action is proposed until current-head ownership is reconciled."
     }
   ],
   "workflow": {
-    "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-27T00:23:55.1933419Z"
+    "phase": "review_blocked",
+    "checkpoint_at": "2026-08-27T03:29:04.9705713Z"
   },
   "freshness": {
-    "queued_at": "2026-08-27T00:23:55.1933419Z",
-    "checkpoint_at": "2026-08-27T00:23:55.1933419Z"
+    "queued_at": "08/27/2026 00:23:55",
+    "checkpoint_at": "2026-08-27T03:29:04.9705713Z"
   }
 }
