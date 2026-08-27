@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-25T09:11:24.8278042Z",
-  "evaluated_at": "2026-08-25T09:11:24.8278042Z",
-  "source_updated_at": "2026-08-24T03:02:34.0000000Z",
+  "generated_at": "2026-08-27T02:52:01.9915435Z",
+  "evaluated_at": "08/25/2026 09:11:24",
+  "source_updated_at": "2026-08-24T03:02:34Z",
   "head_sha": "1eb022b1d52658d61317098f14a5a877ceb56ad1",
-  "title": "[Keyboard Manager] Add \"alone\" (tap) condition for single-key remaps (dual-key / to_if_alone)",
+  "title": "Keyboard Manager dual-key tap condition for single-key remaps",
   "url": "https://github.com/microsoft/PowerToys/pull/49136",
   "status": {
     "glyph": "...",
-    "label": "Preparing fork review",
-    "detail": "The upstream change set advanced after the prior review; existing findings and draft actions require reconciliation against the current head."
+    "label": "Reviewing findings",
+    "detail": "The three-iteration limit has already been exceeded: nine automated reviews were submitted. Four findings remain unresolved: native boolean-result marshaling, resetting a hidden editor condition, publishing reload-state reset before leaving reload bypass, and resolving numpad key release by scan identity during reload. No additional review request was made; validation remains incomplete and the review is not marked converged."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -28,11 +28,11 @@
     }
   ],
   "workflow": {
-    "phase": "mirroring",
-    "checkpoint_at": "2026-08-25T09:11:24.8278042Z"
+    "phase": "reviewing_findings",
+    "checkpoint_at": "2026-08-27T02:52:01.9915435Z"
   },
   "freshness": {
-    "queued_at": "2026-08-25T09:11:24.8278042Z",
-    "checkpoint_at": "2026-08-25T09:11:24.8278042Z"
+    "queued_at": "08/25/2026 09:11:24",
+    "checkpoint_at": "2026-08-27T02:52:01.9915435Z"
   }
 }
