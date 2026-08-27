@@ -2,37 +2,37 @@
   "number": 49429,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
+  "stage": "review_iteration_cap_reached",
+  "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-26T16:57:13.4133048Z",
+  "generated_at": "2026-08-27T03:24:13.3600575Z",
   "evaluated_at": "08/20/2026 08:48:18",
-  "source_updated_at": "2026-08-20T23:31:19.0000000Z",
+  "source_updated_at": "2026-08-20T23:31:19Z",
   "head_sha": "2e76bba3750503fe718785844aa325b50d1e2336",
   "title": "[CmdPal] Add tabbed pages to Command Palette",
   "url": "https://github.com/microsoft/PowerToys/pull/49429",
   "status": {
-    "glyph": "...",
-    "label": "Reviewing findings",
-    "detail": "Direct inspection of the latest automated review on the current head reports no new review threads but classifies the change as needing closer review. One cached-child lifecycle thread remains open. Related search-state, selection, and command/details replay concerns require the same activation-scoped state ownership, cancellation or generation handling, and coordinated regression coverage. No partial correction was published. Focused tabbed-page tests and reported upstream checks pass."
+    "glyph": "!",
+    "label": "Review iteration limit reached",
+    "detail": "Seven automated reviews have already been submitted, exceeding the three-iteration limit. One current lifecycle finding remains: cached child initialization can outlive removal and allow an inactive tab to overwrite active command state. A safe correction requires coordinated activation ownership, cancellation or awaiting, and regression coverage; no partial correction or additional review request was made. Focused tabbed-page tests and reported checks remain passing."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "Manually resolve the cached-child lifecycle design before any upstream action.",
   "proposed_comments": [],
   "actions": [
     {
-      "id": "continue-review-49429",
-      "type": "continue_review",
-      "label": "Continue review loop",
-      "primary": true,
-      "note": "Review progress is checkpointed; no upstream action has been posted."
+      "id": "review-iteration-cap-49429",
+      "type": "hold",
+      "label": "Review iteration limit reached",
+      "primary": false,
+      "note": "No upstream review action is proposed until the lifecycle design is resolved."
     }
   ],
   "workflow": {
-    "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T16:57:13.4133048Z"
+    "phase": "review_iteration_cap_reached",
+    "checkpoint_at": "2026-08-27T03:24:13.3600575Z"
   },
   "freshness": {
     "queued_at": "08/20/2026 08:48:18",
-    "checkpoint_at": "2026-08-26T16:57:13.4133048Z"
+    "checkpoint_at": "2026-08-27T03:24:13.3600575Z"
   }
 }
