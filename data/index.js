@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-27T08:19:08.7530911+08:00",
+  "generated_at": "2026-08-27T09:22:16.5483017+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -81,13 +81,13 @@ window.BOARD_INDEX = {
     ]
   },
   "counts": {
-    "open_prs": 117,
+    "open_prs": 118,
     "open_issues": 7424,
-    "community": 6876,
+    "community": 6877,
     "artifacts": 3192
   },
   "impact": {
-    "as_of": "2026-08-27T08:19:08.7530911+08:00",
+    "as_of": "2026-08-27T09:22:16.5483017+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -3289,6 +3289,38 @@ window.BOARD_INDEX = {
   ],
   "items": [
     {
+      "id": "pr-50153",
+      "kind": "pr",
+      "number": 50153,
+      "url": "https://github.com/microsoft/PowerToys/pull/50153",
+      "title": "Fix WebSearch plugin dropping multi-word search queries (unquoted %1 substitution)",
+      "author": "LordSnowflaker",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": null,
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_review",
+        "label": "Start review"
+      },
+      "labels": [
+        "Product-PowerToys Run",
+        "Ready for review"
+      ],
+      "created_at": "2026-08-27T01:10:20Z",
+      "updated_at": "2026-08-27T01:10:39Z",
+      "comments": 0,
+      "priority": null
+    },
+    {
       "id": "pr-50151",
       "kind": "pr",
       "number": 50151,
@@ -5750,11 +5782,11 @@ window.BOARD_INDEX = {
       "priority": 60,
       "mirror": {
         "kind": "pr",
-        "fork_number": 430,
-        "fork_title": "[PR 49324] CmdPal JS/TS Extensions - Phase 3: adapters + proxies",
+        "fork_number": 467,
+        "fork_title": "CmdPal JS/TS Extensions - Phase 3: adapters + proxies",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/49324",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/430"
+        "fork_branch": "pr-iterate/49324-v3",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/467"
       }
     },
     {
