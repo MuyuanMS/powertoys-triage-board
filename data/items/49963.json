@@ -2,37 +2,37 @@
   "number": 49963,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
+  "stage": "review_iteration_cap_reached",
+  "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-26T18:02:48.2984417Z",
+  "generated_at": "2026-08-27T03:21:44.9537997Z",
   "evaluated_at": "08/20/2026 18:00:08",
   "source_updated_at": "2026-08-21T07:50:46Z",
   "head_sha": "4c4c3a66d200e23b0496240dbbec1c7d890da2e6",
   "title": "[Peek] Enable reusable previewers for Peek to fix flicker",
   "url": "https://github.com/microsoft/PowerToys/pull/49963",
   "status": {
-    "glyph": "...",
-    "label": "Review in progress",
-    "detail": "The automated review loop is complete: the latest current-head review reported zero new comments and all review threads are resolved. Targeted Peek project and unit-test project builds succeeded; runtime and UI validation remain outstanding."
+    "glyph": "!",
+    "label": "Review iteration limit reached",
+    "detail": "The three-iteration automated-review limit has been reached. The third current-head review reported zero comments, all review threads are resolved, and targeted project and unit-test builds succeeded. Runtime and UI validation remain outstanding; no additional review was requested."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "Complete runtime and UI validation before any upstream action.",
   "proposed_comments": [],
   "actions": [
     {
-      "id": "continue-review-49963",
-      "type": "continue_review",
-      "label": "Continue review loop",
-      "primary": true,
-      "note": "Review progress is checkpointed; no upstream action has been posted."
+      "id": "review-iteration-cap-49963",
+      "type": "hold",
+      "label": "Review iteration limit reached",
+      "primary": false,
+      "note": "No upstream review action is proposed until runtime and UI validation complete."
     }
   ],
   "workflow": {
-    "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-26T18:02:48.2984417Z"
+    "phase": "review_iteration_cap_reached",
+    "checkpoint_at": "2026-08-27T03:21:44.9537997Z"
   },
   "freshness": {
     "queued_at": "08/26/2026 02:32:57",
-    "checkpoint_at": "2026-08-26T18:02:48.2984417Z"
+    "checkpoint_at": "2026-08-27T03:21:44.9537997Z"
   }
 }
