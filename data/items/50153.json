@@ -1,0 +1,38 @@
+{
+  "number": 50153,
+  "kind": "pr",
+  "track": "review",
+  "stage": "review_in_progress",
+  "owes": "us",
+  "pending_author": false,
+  "generated_at": "2026-08-27T01:24:45.5405997Z",
+  "evaluated_at": "2026-08-27T01:24:45.5405997Z",
+  "source_updated_at": "2026-08-27T01:10:39Z",
+  "head_sha": "d31a64df8c34303e85de5325d7186073a4bfce4e",
+  "title": "Fix WebSearch plugin dropping multi-word search queries",
+  "url": "https://github.com/microsoft/PowerToys/pull/50153",
+  "status": {
+    "glyph": "...",
+    "label": "Review in progress",
+    "detail": "The current one-file change is prepared for review. A fresh automated review request was not retained; the immediate direct check found no current-head review object or unresolved review thread. No upstream action has been taken."
+  },
+  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "proposed_comments": [],
+  "actions": [
+    {
+      "id": "continue-review-50153",
+      "type": "continue_review",
+      "label": "Continue review loop",
+      "primary": true,
+      "note": "Review progress is checkpointed; no upstream action has been posted."
+    }
+  ],
+  "workflow": {
+    "phase": "review_in_progress",
+    "checkpoint_at": "2026-08-27T01:24:45.5405997Z"
+  },
+  "freshness": {
+    "queued_at": "2026-08-27T01:24:45.5405997Z",
+    "checkpoint_at": "2026-08-27T01:24:45.5405997Z"
+  }
+}
