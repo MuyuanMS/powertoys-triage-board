@@ -2,37 +2,37 @@
   "number": 49326,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
+  "stage": "review_blocked",
+  "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-26T21:11:07.4966573Z",
-  "evaluated_at": "08/24/2026 07:41:45",
+  "generated_at": "2026-08-27T03:27:21.4163674Z",
+  "evaluated_at": "2026-08-27T03:27:21.4163674Z",
   "source_updated_at": "2026-08-21T01:21:57.0000000Z",
   "head_sha": "a56a390e94316205a1b62b728858a0a6fe230c7c",
   "title": "CmdPal JS/TS Extensions - Phase 5: gallery npm install/uninstall",
   "url": "https://github.com/microsoft/PowerToys/pull/49326",
   "status": {
-    "glyph": "...",
-    "label": "Reviewing findings",
-    "detail": "Direct inspection confirms four unresolved review threads: two provider lifecycle notifications must share the FIFO dispatcher, prerelease package metadata must be stripped before numeric version mapping, and observable command/list item properties must route through the property-change registry. Existing unpublished remediation is accumulated rather than isolated to these findings, so it cannot be safely published or reviewed as-is. The latest automated review still requests changes. Reported upstream checks pass."
+    "glyph": "!",
+    "label": "Review blocked on isolated remediation",
+    "detail": "Four confirmed findings remain in provider lifecycle ordering, prerelease version mapping, and observable item updates. A safe, isolated correction and validation are still required."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "Prepare and validate an isolated remediation for the remaining findings before resuming review.",
   "proposed_comments": [],
   "actions": [
     {
-      "id": "continue-review-49326",
-      "type": "continue_review",
-      "label": "Continue review loop",
-      "primary": true,
-      "note": "Review progress is checkpointed; no upstream action has been posted."
+      "id": "review-blocked-49326",
+      "type": "hold",
+      "label": "Review blocked",
+      "primary": false,
+      "note": "No upstream review action is proposed until the remaining findings have an isolated, validated correction."
     }
   ],
   "workflow": {
-    "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T21:11:07.4966573Z"
+    "phase": "review_blocked",
+    "checkpoint_at": "2026-08-27T03:27:21.4163674Z"
   },
   "freshness": {
-    "queued_at": "08/24/2026 07:41:45",
-    "checkpoint_at": "2026-08-26T21:11:07.4966573Z"
+    "queued_at": "2026-08-27T03:27:21.4163674Z",
+    "checkpoint_at": "2026-08-27T03:27:21.4163674Z"
   }
 }
