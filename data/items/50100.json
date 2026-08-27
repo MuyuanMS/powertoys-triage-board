@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T13:55:48.8931675Z",
+  "generated_at": "2026-08-27T02:47:15.1141075Z",
   "evaluated_at": "08/25/2026 10:34:35",
-  "source_updated_at": "2026-08-24T20:29:51Z",
+  "source_updated_at": "2026-08-24T20:29:51.0000000Z",
   "head_sha": "0e9d50766a69b9e2e583296232771860e918c724",
   "title": "Shortcut Guide: add Ableton Live shortcut manifest",
   "url": "https://github.com/microsoft/PowerToys/pull/50100",
   "status": {
     "glyph": "...",
     "label": "Reviewing findings",
-    "detail": "The literal digit shortcut is corrected. The semicolon-delimited WindowFilter does not match the single-executable filter contract, so the intended process mapping requires confirmation and correction. Targeted validation is blocked by missing C++/WinRT package assets, and a new automated review could not be queued because the reviewer request was not retained."
+    "detail": "One of the three permitted Copilot review iterations has completed. Nine unresolved threads remain: the manifest declares a semicolon-separated list of Ableton executables, but the current schema and matcher support only one exact executable or *. Replacing it with one executable would silently exclude editions; enabling lists requires a coordinated schema and matcher design with coverage. The package-less identifier, section casing, and spelling notices remain coupled to this unfinalized manifest correction. No fresh review was requested."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T13:55:48.8931675Z"
+    "checkpoint_at": "2026-08-27T02:47:15.1141075Z"
   },
   "freshness": {
     "queued_at": "08/25/2026 10:34:35",
-    "checkpoint_at": "2026-08-26T13:55:48.8931675Z"
+    "checkpoint_at": "2026-08-27T02:47:15.1141075Z"
   }
 }
