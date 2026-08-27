@@ -2,37 +2,37 @@
   "number": 48639,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
+  "stage": "review_iteration_cap_reached",
+  "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-25T08:56:24.3790030Z",
+  "generated_at": "2026-08-27T02:59:04.1595030Z",
   "evaluated_at": "08/25/2026 02:14:55",
-  "source_updated_at": "08/14/2026 16:05:15",
+  "source_updated_at": "2026-08-25T15:55:58Z",
   "head_sha": "c45eee286b58fc857064486b2a5bf7292f332c7a",
   "title": "[CmdPal][PerfMon] Add CPU temperature widget via ACPI thermal zone",
   "url": "https://github.com/microsoft/PowerToys/pull/48639",
   "status": {
-    "glyph": "...",
-    "label": "Waiting for Copilot review",
-    "detail": "The current review findings are addressed and no review threads remain unresolved. A fresh automated review request was not accepted, so convergence remains pending; the upstream source still reports merge conflicts. No upstream public action has been taken."
+    "glyph": "!",
+    "label": "Review iteration limit reached",
+    "detail": "Two current compile findings were corrected and all reported review threads are resolved. The third permitted automated-review request did not produce a review object in the immediate status check. Extension validation is blocked before compilation because required restore assets are unavailable, and the source currently reports merge conflicts."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "Manually assess the unavailable restore assets and merge conflicts before any upstream action.",
   "proposed_comments": [],
   "actions": [
     {
-      "id": "continue-review-48639",
-      "type": "continue_review",
-      "label": "Continue review loop",
-      "primary": true,
-      "note": "Review progress is checkpointed; no upstream action has been posted."
+      "id": "review-iteration-cap-48639",
+      "type": "hold",
+      "label": "Review iteration limit reached",
+      "primary": false,
+      "note": "No upstream review action is proposed until the remaining blockers are assessed."
     }
   ],
   "workflow": {
-    "phase": "waiting_copilot",
-    "checkpoint_at": "2026-08-25T08:56:24.3790030Z"
+    "phase": "review_iteration_cap_reached",
+    "checkpoint_at": "2026-08-27T02:59:04.1595030Z"
   },
   "freshness": {
     "queued_at": "08/20/2026 08:48:18",
-    "checkpoint_at": "2026-08-25T08:56:24.3790030Z"
+    "checkpoint_at": "2026-08-27T02:59:04.1595030Z"
   }
 }
