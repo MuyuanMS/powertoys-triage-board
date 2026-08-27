@@ -2,37 +2,37 @@
   "number": 50011,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
+  "stage": "review_blocked",
+  "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-26T15:54:26.4936328Z",
+  "generated_at": "2026-08-27T03:07:02.0528769Z",
   "evaluated_at": "08/25/2026 09:16:05",
-  "source_updated_at": "2026-08-20T14:07:50.0000000Z",
+  "source_updated_at": "08/20/2026 14:07:50",
   "head_sha": "a616ec6747d1df9342dcb996caec1e1d27dd7399",
   "title": "fix(ui-tests): avoid plaintext SecureString conversion",
   "url": "https://github.com/microsoft/PowerToys/pull/50011",
   "status": {
-    "glyph": "...",
-    "label": "Review in progress",
-    "detail": "Direct API inspection confirms the current automated review recommends approval with zero comments and zero unresolved threads. Reported upstream checks succeeded. End-to-end validation of UI-test VM account provisioning remains required in the intended virtual-machine scenario; no unsuitable local substitute was run."
+    "glyph": "!",
+    "label": "Review blocked on runtime validation",
+    "detail": "Current source head remains unchanged. The submitted automated review on the final reviewed change reported zero new comments, and there are zero unresolved threads. Targeted PowerShell syntax validation passed. The UI-test account-provisioning scenario still requires environment-backed runtime validation. No additional review iteration was needed; two remain under the three-iteration cap."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "Run the UI-test account-provisioning scenario in its required environment before any upstream action.",
   "proposed_comments": [],
   "actions": [
     {
-      "id": "continue-review-50011",
-      "type": "continue_review",
-      "label": "Continue review loop",
-      "primary": true,
-      "note": "Review progress is checkpointed; no upstream action has been posted."
+      "id": "review-blocked-50011",
+      "type": "hold",
+      "label": "Review blocked",
+      "primary": false,
+      "note": "No upstream review action is proposed until environment-backed validation runs."
     }
   ],
   "workflow": {
-    "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-26T15:54:26.4936328Z"
+    "phase": "review_blocked",
+    "checkpoint_at": "2026-08-27T03:07:02.0528769Z"
   },
   "freshness": {
     "queued_at": "08/25/2026 09:16:05",
-    "checkpoint_at": "2026-08-26T15:54:26.4936328Z"
+    "checkpoint_at": "2026-08-27T03:07:02.0528769Z"
   }
 }
