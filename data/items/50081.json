@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T06:47:46.4586450Z",
+  "generated_at": "2026-08-27T02:28:35.2047277Z",
   "evaluated_at": "08/24/2026 08:47:19",
-  "source_updated_at": "2026-08-23T08:43:10.0000000+00:00",
+  "source_updated_at": "2026-08-23T16:43:10.0000000Z",
   "head_sha": "a877c02e63252545404b69398e4521867a1d7a29",
   "title": "[AdvancedPaste] Add \"Paste as .jpg file\" action with configurable JPEG quality",
   "url": "https://github.com/microsoft/PowerToys/pull/50081",
   "status": {
     "glyph": "...",
-    "label": "Reviewing findings",
-    "detail": "Both confirmed JPEG findings are corrected: shortcut visibility respects the action setting, and transparent images are flattened onto white before JPEG encoding with regression coverage. Direct review inspection shows zero unresolved threads. Targeted native validation remains blocked by an unavailable package dependency; upstream build checks have not run."
+    "label": "Waiting for Copilot review",
+    "detail": "Three confirmed findings are resolved: persisted telemetry enum values are stable, opaque images bypass the JPEG alpha-flattening allocation path while transparent images retain white-background flattening, and JPEG-quality settings cover both legacy defaults and non-default round-trips. Direct inspection of the updated review head shows zero unresolved threads and no newly submitted automated review. Focused native validation remains blocked by the missing CppWinRT native props dependency before test execution."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -28,11 +28,11 @@
     }
   ],
   "workflow": {
-    "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T06:47:46.4586450Z"
+    "phase": "waiting_copilot",
+    "checkpoint_at": "2026-08-27T02:28:35.2047277Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 08:47:19",
-    "checkpoint_at": "2026-08-26T06:47:46.4586450Z"
+    "checkpoint_at": "2026-08-27T02:28:35.2047277Z"
   }
 }
