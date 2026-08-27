@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-27T07:15:45.8296819+08:00",
+  "generated_at": "2026-08-27T08:19:08.7530911+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -82,12 +82,12 @@ window.BOARD_INDEX = {
   },
   "counts": {
     "open_prs": 117,
-    "open_issues": 7423,
-    "community": 6875,
+    "open_issues": 7424,
+    "community": 6876,
     "artifacts": 3192
   },
   "impact": {
-    "as_of": "2026-08-27T07:15:45.8296819+08:00",
+    "as_of": "2026-08-27T08:19:08.7530911+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
@@ -5704,7 +5704,7 @@ window.BOARD_INDEX = {
         "Ready for review"
       ],
       "created_at": "2026-07-15T04:38:04Z",
-      "updated_at": "2026-08-26T21:07:54Z",
+      "updated_at": "2026-08-27T00:02:07Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -5740,12 +5740,12 @@ window.BOARD_INDEX = {
         "label": "Continue review"
       },
       "labels": [
+        "Needs-Author-Feedback",
         "Product-Command Palette",
-        "0.102",
-        "Ready for review"
+        "0.102"
       ],
       "created_at": "2026-07-15T03:48:43Z",
-      "updated_at": "2026-08-26T19:59:50Z",
+      "updated_at": "2026-08-27T00:02:33Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -7530,6 +7530,39 @@ window.BOARD_INDEX = {
         "fork_branch": "pr-iterate/41003-v3",
         "url": "https://github.com/MuyuanMS/PowerToys/pull/378"
       }
+    },
+    {
+      "id": "issue-50152",
+      "kind": "issue",
+      "number": 50152,
+      "url": "https://github.com/microsoft/PowerToys/issues/50152",
+      "title": "Advanced Paste: Paste with AI can't find Foundry Local models",
+      "author": "jacktose",
+      "is_community": true,
+      "mine": false,
+      "is_cmdpal": false,
+      "track": null,
+      "stage": null,
+      "owes": "us",
+      "pending_author": false,
+      "waiting_since": null,
+      "has_artifact": false,
+      "agent_status": "none",
+      "issue_type": "bug",
+      "proposed_open": 0,
+      "primary_action": {
+        "type": "start_triage",
+        "label": "Check bug"
+      },
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage",
+        "Product-Advanced Paste"
+      ],
+      "created_at": "2026-08-26T23:23:57Z",
+      "updated_at": "2026-08-26T23:33:31Z",
+      "comments": 1,
+      "priority": null
     },
     {
       "id": "issue-50149",
