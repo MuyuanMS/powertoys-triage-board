@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T07:09:33.6594668Z",
+  "generated_at": "2026-08-27T00:23:31.1276914Z",
   "evaluated_at": "08/24/2026 08:55:13",
-  "source_updated_at": "08/21/2026 17:57:05",
+  "source_updated_at": "2026-08-21T17:57:05.0000000Z",
   "head_sha": "bd1c09f8af79d496b3d1aadc4f7a464d936038c8",
   "title": "[CmdPal] Window Walker: match app name and window title together",
   "url": "https://github.com/microsoft/PowerToys/pull/50054",
   "status": {
     "glyph": "...",
-    "label": "Review in progress",
-    "detail": "The confirmed interactive-scoring finding is resolved with batched whole-query and token evaluation that preserves existing per-window scores and result order, plus equivalence coverage. A fresh automated review is required for the updated change. Targeted validation remains blocked by unavailable project restore assets."
+    "label": "Waiting for Copilot review",
+    "detail": "Both confirmed findings are resolved: the batched Window Walker scorer now imports LINQ explicitly, and whitespace coverage no longer contains a spelling-sensitive token. Direct inspection of the updated review head shows zero unresolved threads and no newly submitted automated review. Targeted project restore completed, but its build remains blocked by the missing CppWinRT native props dependency before the target project compiles."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -28,11 +28,11 @@
     }
   ],
   "workflow": {
-    "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-26T07:09:33.6594668Z"
+    "phase": "waiting_copilot",
+    "checkpoint_at": "2026-08-27T00:23:31.1276914Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 08:55:13",
-    "checkpoint_at": "2026-08-26T07:09:33.6594668Z"
+    "checkpoint_at": "2026-08-27T00:23:31.1276914Z"
   }
 }
