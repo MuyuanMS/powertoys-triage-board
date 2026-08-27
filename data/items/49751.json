@@ -2,37 +2,37 @@
   "number": 49751,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
+  "stage": "review_blocked",
+  "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-26T12:28:30.4404665Z",
-  "evaluated_at": "2026-08-26T12:28:30.4404665Z",
-  "source_updated_at": "2026-08-25T23:44:53.0000000+00:00",
+  "generated_at": "2026-08-27T03:27:03.1629630Z",
+  "evaluated_at": "08/26/2026 12:28:30",
+  "source_updated_at": "08/26/2026 07:44:53",
   "head_sha": "dea2046bf72c597a87a7f3b32d36963bbeb6cc51",
   "title": "CmdPal: Update parameter text box style and makes its brushes themeable",
   "url": "https://github.com/microsoft/PowerToys/pull/49751",
   "status": {
-    "glyph": "...",
-    "label": "Review in progress",
-    "detail": "A current-head review is in progress. Direct review inspection shows no automated review and zero unresolved threads. Targeted validation is blocked by an unavailable native package dependency."
+    "glyph": "!",
+    "label": "Review blocked on validation",
+    "detail": "Current source head remains unchanged. Three confirmed findings were corrected: light-theme parameter focus borders now use the adaptive focused border resource, and caret synchronization remains attached across parameter-view unload and reload. Edited markup is well-formed. Targeted build validation remains blocked by a missing required native build dependency. A second automated-review iteration was requested; the single immediate check found no submitted response and no unresolved threads. One iteration remains under the three-iteration cap."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "Provide the required native build dependency and complete targeted validation before any upstream action.",
   "proposed_comments": [],
   "actions": [
     {
-      "id": "continue-review-49751",
-      "type": "continue_review",
-      "label": "Continue review loop",
-      "primary": true,
-      "note": "Review progress is checkpointed; no upstream action has been posted."
+      "id": "review-blocked-49751",
+      "type": "hold",
+      "label": "Review blocked",
+      "primary": false,
+      "note": "No upstream review action is proposed until targeted validation can run."
     }
   ],
   "workflow": {
-    "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-26T12:28:30.4404665Z"
+    "phase": "review_blocked",
+    "checkpoint_at": "2026-08-27T03:27:03.1629630Z"
   },
   "freshness": {
-    "queued_at": "2026-08-26T12:28:30.4404665Z",
-    "checkpoint_at": "2026-08-26T12:28:30.4404665Z"
+    "queued_at": "08/26/2026 12:28:30",
+    "checkpoint_at": "2026-08-27T03:27:03.1629630Z"
   }
 }
