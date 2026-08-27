@@ -1,5 +1,5 @@
 window.BOARD_INDEX = {
-  "generated_at": "2026-08-27T09:22:16.5483017+08:00",
+  "generated_at": "2026-08-27T11:36:06.1334797+08:00",
   "window_since": "2026-07-30",
   "upstream": "microsoft/PowerToys",
   "fork": "MuyuanMS/PowerToys",
@@ -84,16 +84,17 @@ window.BOARD_INDEX = {
     "open_prs": 118,
     "open_issues": 7424,
     "community": 6877,
-    "artifacts": 3192
+    "artifacts": 3193
   },
   "impact": {
-    "as_of": "2026-08-27T09:22:16.5483017+08:00",
+    "as_of": "2026-08-27T11:36:06.1334797+08:00",
     "issues_helped": 10,
     "prs_iterated": 49,
     "constructive_comments_posted": 3,
     "comments_drafted": 24
   },
   "artifact_numbers": [
+    50153,
     50151,
     50132,
     50114,
@@ -3298,18 +3299,18 @@ window.BOARD_INDEX = {
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
-      "track": null,
-      "stage": null,
-      "owes": "us",
+      "track": "review",
+      "stage": "review_blocked",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
-      "has_artifact": false,
-      "agent_status": "none",
+      "has_artifact": true,
+      "agent_status": "review",
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "start_review",
-        "label": "Start review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Product-PowerToys Run",
@@ -3318,7 +3319,15 @@ window.BOARD_INDEX = {
       "created_at": "2026-08-27T01:10:20Z",
       "updated_at": "2026-08-27T01:10:39Z",
       "comments": 0,
-      "priority": null
+      "priority": null,
+      "mirror": {
+        "kind": "pr",
+        "fork_number": 468,
+        "fork_title": "Fix WebSearch multi-word query substitution",
+        "fork_state": "OPEN",
+        "fork_branch": "pr-iterate/50153",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/468"
+      }
     },
     {
       "id": "pr-50151",
@@ -3331,8 +3340,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_blocked",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -3340,8 +3349,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Product-Command Palette"
@@ -3370,8 +3379,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_iteration_cap_reached",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -3379,8 +3388,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Ready for review"
@@ -3409,8 +3418,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_iteration_cap_reached",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -3418,8 +3427,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Product-Cursor Wrap"
@@ -3448,8 +3457,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_blocked",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -3457,8 +3466,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Ready for review"
@@ -3487,8 +3496,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_ready",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -3496,8 +3505,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Product-Command Palette",
@@ -3527,8 +3536,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_ready",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -3536,8 +3545,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Ready for review"
@@ -3566,8 +3575,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_ready",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -3575,8 +3584,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Needs-Author-Feedback"
@@ -3605,8 +3614,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_iteration_cap_reached",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -3614,8 +3623,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Ready for review"
@@ -3644,8 +3653,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_ready",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -3653,8 +3662,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Ready for review"
@@ -3683,8 +3692,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_blocked",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -3692,8 +3701,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Needs-Author-Feedback",
@@ -3724,8 +3733,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_ready",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -3733,8 +3742,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Product-Command Palette",
@@ -3765,8 +3774,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_iteration_cap_reached",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -3774,8 +3783,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "0.102"
@@ -3879,8 +3888,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_blocked",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -3888,8 +3897,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Ready for review"
@@ -4057,8 +4066,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_iteration_cap_reached",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -4066,8 +4075,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Area-User Interface",
@@ -4320,8 +4329,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_ready",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -4329,8 +4338,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "dependencies",
@@ -4511,8 +4520,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_blocked",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -4520,8 +4529,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Product-Command Palette",
@@ -4587,8 +4596,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_blocked",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -4596,8 +4605,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Product-Command Palette",
@@ -4865,8 +4874,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_iteration_cap_reached",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -4874,8 +4883,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Ready for review"
@@ -5262,8 +5271,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_iteration_cap_reached",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -5271,8 +5280,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Product-Command Palette",
@@ -5527,8 +5536,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_ready",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -5536,8 +5545,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Product-Command Palette",
@@ -5568,17 +5577,17 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "awaiting_review_approval",
+      "stage": "review_iteration_cap_reached",
       "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
       "agent_status": "review",
       "issue_type": null,
-      "proposed_open": 4,
+      "proposed_open": 0,
       "primary_action": {
-        "type": "review",
-        "label": "Post comments"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Product-File Explorer",
@@ -5636,8 +5645,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_iteration_cap_reached",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -5645,8 +5654,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Needs-Author-Feedback",
@@ -5677,8 +5686,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_blocked",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -5686,8 +5695,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Needs-Author-Feedback",
@@ -5695,7 +5704,7 @@ window.BOARD_INDEX = {
         "0.102"
       ],
       "created_at": "2026-07-15T05:30:46Z",
-      "updated_at": "2026-08-21T01:21:57Z",
+      "updated_at": "2026-08-27T02:16:41Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -5718,8 +5727,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_iteration_cap_reached",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -5727,25 +5736,24 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Product-Command Palette",
-        "0.102",
-        "Ready for review"
+        "0.102"
       ],
       "created_at": "2026-07-15T04:38:04Z",
-      "updated_at": "2026-08-27T00:02:07Z",
+      "updated_at": "2026-08-27T02:17:12Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
         "kind": "pr",
-        "fork_number": 459,
-        "fork_title": "Fix localized JS extension review findings",
+        "fork_number": 469,
+        "fork_title": "CmdPal JS/TS Extensions - Phase 4: extension service and discovery",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/49325-v2",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/459"
+        "fork_branch": "pr-iterate/49325-v4",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/469"
       }
     },
     {
@@ -5759,8 +5767,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_blocked",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -5768,8 +5776,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Needs-Author-Feedback",
@@ -5800,8 +5808,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_iteration_cap_reached",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -5809,8 +5817,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Product-Command Palette",
@@ -5818,7 +5826,7 @@ window.BOARD_INDEX = {
         "Ready for review"
       ],
       "created_at": "2026-07-15T02:40:33Z",
-      "updated_at": "2026-08-26T22:10:26Z",
+      "updated_at": "2026-08-27T02:17:35Z",
       "comments": 0,
       "priority": 60,
       "mirror": {
@@ -5841,8 +5849,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_iteration_cap_reached",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -5850,8 +5858,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Product-Command Palette",
@@ -6285,8 +6293,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": false,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_iteration_cap_reached",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -6294,8 +6302,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Needs-Triage",
@@ -6359,8 +6367,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_iteration_cap_reached",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -6368,8 +6376,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Product-Command Palette"
@@ -6380,11 +6388,11 @@ window.BOARD_INDEX = {
       "priority": 60,
       "mirror": {
         "kind": "pr",
-        "fork_number": 431,
-        "fork_title": "[PR 49093] [CmdPal][TimeDate] Add optional week number to the Clock dock band",
+        "fork_number": 470,
+        "fork_title": "CmdPal TimeDate Clock dock-band week numbers",
         "fork_state": "OPEN",
-        "fork_branch": "pr-iterate/49093-v2",
-        "url": "https://github.com/MuyuanMS/PowerToys/pull/431"
+        "fork_branch": "pr-iterate/49093-v3",
+        "url": "https://github.com/MuyuanMS/PowerToys/pull/470"
       }
     },
     {
@@ -6627,8 +6635,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_iteration_cap_reached",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -6636,8 +6644,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Product-Command Palette"
@@ -6745,8 +6753,8 @@ window.BOARD_INDEX = {
       "mine": false,
       "is_cmdpal": true,
       "track": "review",
-      "stage": "review_in_progress",
-      "owes": "us",
+      "stage": "review_iteration_cap_reached",
+      "owes": "maintainer",
       "pending_author": false,
       "waiting_since": null,
       "has_artifact": true,
@@ -6754,8 +6762,8 @@ window.BOARD_INDEX = {
       "issue_type": null,
       "proposed_open": 0,
       "primary_action": {
-        "type": "continue_review",
-        "label": "Continue review"
+        "type": "approve",
+        "label": "Approve"
       },
       "labels": [
         "Needs-Author-Feedback",
@@ -8047,7 +8055,7 @@ window.BOARD_INDEX = {
         "Product-Advanced Paste"
       ],
       "created_at": "2026-08-26T07:54:42Z",
-      "updated_at": "2026-08-26T08:00:27Z",
+      "updated_at": "2026-08-27T03:30:39Z",
       "comments": 1,
       "priority": null
     },
@@ -58646,7 +58654,7 @@ window.BOARD_INDEX = {
       "number": 45929,
       "url": "https://github.com/microsoft/PowerToys/issues/45929",
       "title": "[CmdPal] Outline icons for custom CmdPal menus",
-      "author": "quietrobot",
+      "author": "QuietRobot",
       "is_community": true,
       "mine": false,
       "is_cmdpal": true,
@@ -62147,7 +62155,7 @@ window.BOARD_INDEX = {
       "number": 45509,
       "url": "https://github.com/microsoft/PowerToys/issues/45509",
       "title": "CmdPal: PowerToys titles and shortcuts are not localized",
-      "author": "quietrobot",
+      "author": "QuietRobot",
       "is_community": true,
       "mine": false,
       "is_cmdpal": true,
@@ -80327,7 +80335,7 @@ window.BOARD_INDEX = {
       "number": 42445,
       "url": "https://github.com/microsoft/PowerToys/issues/42445",
       "title": "Peek cannot play .MOV files",
-      "author": "quietrobot",
+      "author": "QuietRobot",
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
@@ -97511,7 +97519,7 @@ window.BOARD_INDEX = {
       "number": 40204,
       "url": "https://github.com/microsoft/PowerToys/issues/40204",
       "title": "Warning when opening Task Manager",
-      "author": "quietrobot",
+      "author": "QuietRobot",
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
@@ -149015,7 +149023,7 @@ window.BOARD_INDEX = {
       "number": 33676,
       "url": "https://github.com/microsoft/PowerToys/issues/33676",
       "title": "Change the old Segoe font to the new Segoe Variable",
-      "author": "quietrobot",
+      "author": "QuietRobot",
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
@@ -160736,7 +160744,7 @@ window.BOARD_INDEX = {
       "number": 31728,
       "url": "https://github.com/microsoft/PowerToys/issues/31728",
       "title": "Color picker -  enable scrolling mouse in color picker",
-      "author": "quietrobot",
+      "author": "QuietRobot",
       "is_community": true,
       "mine": false,
       "is_cmdpal": false,
