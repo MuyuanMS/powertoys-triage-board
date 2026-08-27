@@ -2,42 +2,37 @@
   "number": 49793,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
+  "stage": "review_blocked",
+  "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-26T20:10:44.3835797Z",
-  "evaluated_at": "08/26/2026 20:10:35",
-  "source_updated_at": "2026-08-26T19:11:13.0000000Z",
+  "generated_at": "2026-08-27T03:21:03Z",
+  "evaluated_at": "2026-08-27T03:21:03Z",
+  "source_updated_at": "2026-08-26T19:11:13Z",
   "head_sha": "16356cc2dd56e2bc1018883495df8d8af05c1403",
   "title": "CmdPal: Add command deep links",
   "url": "https://github.com/microsoft/PowerToys/pull/49793",
   "status": {
-    "glyph": "...",
-    "label": "Copilot review requested",
-    "detail": "Initialized the scoped review on the current 60-file change. Immediate direct review inspection shows no posted automated review and zero review threads. The Command Palette build is blocked before compilation by the missing Microsoft.Windows.CppWinRT.props dependency. Required upstream x64 and toolkit checks succeeded; aggregate and arm64 checks remain in progress."
+    "glyph": "!",
+    "label": "Review blocked on authorization design",
+    "detail": "One of three permitted automated review iterations is complete. Three confirmed concerns remain: page-link consent text, delivery of redirected activation during startup, and focused coverage for the authorization coordinator. Local validation has not completed because required package assets are unavailable. No upstream review or comment has been posted."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "Manually resolve the consent, startup activation, and authorization-coordinator design before resuming review.",
   "proposed_comments": [],
   "actions": [
     {
-      "id": "continue-review-49793",
-      "type": "continue_review",
-      "label": "Continue review loop",
-      "primary": true,
-      "note": "Review progress is checkpointed; no upstream action has been posted."
+      "id": "review-blocked-49793",
+      "type": "hold",
+      "label": "Review blocked",
+      "primary": false,
+      "note": "No upstream review action is proposed until the authorization design is resolved."
     }
   ],
   "workflow": {
-    "phase": "review_requested",
-    "checkpoint_at": "2026-08-26T20:10:44.3835797Z"
+    "phase": "review_blocked",
+    "checkpoint_at": "2026-08-27T03:21:03Z"
   },
   "freshness": {
-    "queued_at": "08/26/2026 20:10:35",
-    "checkpoint_at": "2026-08-26T20:10:44.3835797Z"
-  },
-  "fork_pr": {
-    "number": 463,
-    "url": "https://github.com/MuyuanMS/PowerToys/pull/463"
-  },
-  "fork_branch": "pr-iterate/49793"
+    "queued_at": "2026-08-26T19:11:13Z",
+    "checkpoint_at": "2026-08-27T03:21:03Z"
+  }
 }

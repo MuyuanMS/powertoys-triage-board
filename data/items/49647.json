@@ -2,37 +2,37 @@
   "number": 49647,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
+  "stage": "review_iteration_cap_reached",
+  "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-27T01:24:32.7238073Z",
-  "evaluated_at": "08/25/2026 09:11:28",
+  "generated_at": "2026-08-27T03:21:59.9851121Z",
+  "evaluated_at": "2026-08-27T03:21:59.9851121Z",
   "source_updated_at": "2026-08-22T10:15:24.0000000Z",
   "head_sha": "589a669bad9231c17908568bbd8ae73c628e75a8",
   "title": "[Advanced Paste] Add single-line paste formatting",
   "url": "https://github.com/microsoft/PowerToys/pull/49647",
   "status": {
-    "glyph": "...",
-    "label": "Preparing fork review",
-    "detail": "The prior reviewed mirror has zero code-review threads, but it predates the current upstream head. The current source advances its mainline base and changes related Advanced Paste implementation and UI-test integration, so the existing correction stack cannot be carried forward mechanically without reconciling equivalent current coverage and interop ordering. Seven historical spelling notices remain only on the stale mirror. Upstream CLA and reported checks pass. No current-head automated review has been requested."
+    "glyph": "!",
+    "label": "Review iteration limit reached",
+    "detail": "The prior review completed without unresolved findings, but it does not cover the current upstream head. All three automated-review iterations have been used; current-head validation is incomplete."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "Manually assess the current-head changes before any upstream action.",
   "proposed_comments": [],
   "actions": [
     {
-      "id": "continue-review-49647",
-      "type": "continue_review",
-      "label": "Continue review loop",
-      "primary": true,
-      "note": "Review progress is checkpointed; no upstream action has been posted."
+      "id": "review-iteration-cap-49647",
+      "type": "hold",
+      "label": "Review iteration limit reached",
+      "primary": false,
+      "note": "No upstream review action is proposed until the current head is manually assessed."
     }
   ],
   "workflow": {
-    "phase": "mirroring",
-    "checkpoint_at": "2026-08-27T01:24:32.7238073Z"
+    "phase": "review_iteration_cap_reached",
+    "checkpoint_at": "2026-08-27T03:21:59.9851121Z"
   },
   "freshness": {
-    "queued_at": "08/25/2026 09:11:28",
-    "checkpoint_at": "2026-08-27T01:24:32.7238073Z"
+    "queued_at": "2026-08-27T03:21:59.9851121Z",
+    "checkpoint_at": "2026-08-27T03:21:59.9851121Z"
   }
 }
