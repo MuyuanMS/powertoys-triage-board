@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T21:12:21.8324510Z",
-  "evaluated_at": "08/24/2026 07:41:09",
-  "source_updated_at": "2026-08-26T21:07:54Z",
-  "head_sha": "f6f2f919dab21abcce30ec1bc7eb8c5875aaa045",
+  "generated_at": "2026-08-27T02:27:45.6792189Z",
+  "evaluated_at": "2026-08-27T02:27:45.6792189Z",
+  "source_updated_at": "2026-08-27T02:17:12Z",
+  "head_sha": "9c9098f341998738dc26a1e04ac27fda92372073",
   "title": "CmdPal JS/TS Extensions - Phase 4: extension service, wrapper, discovery + host wiring",
   "url": "https://github.com/microsoft/PowerToys/pull/49325",
   "status": {
     "glyph": "...",
     "label": "Reviewing findings",
-    "detail": "Four localized findings are resolved with regression coverage: Node runtime canonicalization, command-name synchronization, dynamic list search-text synchronization, and complete node_modules path-segment matching. Three coordinated concerns remain open in stateful-notification delivery, extension enable-disable lifecycle, and directory reconciliation. Targeted validation remains blocked by an unavailable native package dependency."
+    "detail": "The current source incorporates the prior filter, notification ordering, and directory-reconciliation corrections. The disable-enable lifecycle remains a coordinated concern: an active extension must be removed and stopped when disabled, then restored symmetrically when enabled. A fresh automated review request was not retained; no current-head review object or unresolved review thread is present."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -29,10 +29,10 @@
   ],
   "workflow": {
     "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T21:12:21.8324510Z"
+    "checkpoint_at": "2026-08-27T02:27:45.6792189Z"
   },
   "freshness": {
-    "queued_at": "08/24/2026 07:41:09",
-    "checkpoint_at": "2026-08-26T21:12:21.8324510Z"
+    "queued_at": "2026-08-27T02:27:45.6792189Z",
+    "checkpoint_at": "2026-08-27T02:27:45.6792189Z"
   }
 }
