@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T07:12:56.3695571Z",
+  "generated_at": "2026-08-27T02:45:27.4697800Z",
   "evaluated_at": "08/25/2026 02:11:23",
-  "source_updated_at": "2026-08-24T09:24:21.0000000+00:00",
+  "source_updated_at": "2026-08-24T17:24:21Z",
   "head_sha": "8f87bcddb4c11868663219807de515f072c9dc92",
   "title": "CmdPal: Fix dock items not activating with keyboard",
   "url": "https://github.com/microsoft/PowerToys/pull/50044",
   "status": {
     "glyph": "...",
-    "label": "Reviewing findings",
-    "detail": "Direct review inspection shows the latest automated review is clean with zero new comments and zero unresolved threads. The focused Command Palette UI-test build remains blocked by an unavailable native package dependency before test execution. Upstream CI checks are successful."
+    "label": "Review in progress",
+    "detail": "Two automated review iterations have completed. The latest current-head review has zero comments and there are zero unresolved review threads, so no additional review request was made. Final focused validation remains blocked by an unavailable native package dependency before test execution."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -28,11 +28,11 @@
     }
   ],
   "workflow": {
-    "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T07:12:56.3695571Z"
+    "phase": "review_in_progress",
+    "checkpoint_at": "2026-08-27T02:45:27.4697800Z"
   },
   "freshness": {
     "queued_at": "08/25/2026 02:03:48",
-    "checkpoint_at": "2026-08-26T07:12:56.3695571Z"
+    "checkpoint_at": "2026-08-27T02:45:27.4697800Z"
   }
 }
