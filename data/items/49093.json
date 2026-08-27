@@ -2,37 +2,37 @@
   "number": 49093,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
+  "stage": "review_iteration_cap_reached",
+  "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-27T02:50:27.2863292Z",
+  "generated_at": "2026-08-27T03:31:48.0130734Z",
   "evaluated_at": "08/24/2026 16:04:33",
-  "source_updated_at": "2026-08-26T03:03:13Z",
+  "source_updated_at": "08/26/2026 03:03:13",
   "head_sha": "00f74705e0ee9c6649e5a272b772575cb2f999f6",
   "title": "CmdPal TimeDate Clock dock-band week numbers",
   "url": "https://github.com/microsoft/PowerToys/pull/49093",
   "status": {
-    "glyph": "...",
-    "label": "Review in progress",
-    "detail": "All three permitted automated review iterations have been used: two reviews were submitted, and the final current-head request was not retained. Four prior findings are addressed with regression coverage; the current head has no review object or unresolved review thread. Focused validation remains blocked by an existing compiler diagnostic in an unrelated settings file; the review is not marked converged."
+    "glyph": "!",
+    "label": "Review iteration limit reached",
+    "detail": "Current source head remains open but diverges materially from the existing reviewed remediation, so the prior fixes cannot be safely carried forward mechanically. Four unresolved stale-head findings require current-source reconciliation: dock-band metadata preservation, escaped ISO token handling, timer lifecycle synchronization, and malformed custom-format fallback. The three-iteration cap is exhausted (two submitted reviews and one prior no-response request), so no further automated-review request will be made. Targeted validation must follow a clean current-head reconciliation."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "Manually reconcile the current source head and validate the affected behavior before any upstream action.",
   "proposed_comments": [],
   "actions": [
     {
-      "id": "continue-review-49093",
-      "type": "continue_review",
-      "label": "Continue review loop",
-      "primary": true,
-      "note": "Review progress is checkpointed; no upstream action has been posted."
+      "id": "review-iteration-cap-49093",
+      "type": "hold",
+      "label": "Review iteration limit reached",
+      "primary": false,
+      "note": "No upstream review action is proposed until the current head is reconciled and validated."
     }
   ],
   "workflow": {
-    "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-27T02:50:27.2863292Z"
+    "phase": "review_iteration_cap_reached",
+    "checkpoint_at": "2026-08-27T03:31:48.0130734Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 15:58:24",
-    "checkpoint_at": "2026-08-27T02:50:27.2863292Z"
+    "checkpoint_at": "2026-08-27T03:31:48.0130734Z"
   }
 }

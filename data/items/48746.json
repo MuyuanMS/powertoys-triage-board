@@ -2,37 +2,37 @@
   "number": 48746,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
+  "stage": "review_iteration_cap_reached",
+  "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-26T15:54:15.8699682Z",
+  "generated_at": "2026-08-27T03:30:39.2560732Z",
   "evaluated_at": "08/25/2026 02:17:29",
-  "source_updated_at": "2026-08-19T19:32:18Z",
+  "source_updated_at": "2026-08-26T21:19:18Z",
   "head_sha": "a08915f5ae1a93504b2f76fd7a754e48e9261566",
   "title": "Fix CmdPal extension installed state detection for Store-only packages",
   "url": "https://github.com/microsoft/PowerToys/pull/48746",
   "status": {
-    "glyph": "...",
-    "label": "Review in progress",
-    "detail": "The automated review loop is complete: the latest current-head review reported zero new comments and all review threads are resolved. Final targeted validation remains blocked by unavailable C++/WinRT package assets."
+    "glyph": "!",
+    "label": "Review iteration limit reached",
+    "detail": "Five automated reviews have already been submitted, exceeding the three-iteration limit. The latest current-head review reported zero comments and all review threads are resolved. Final targeted native validation remains blocked by unavailable C++/WinRT package assets; no additional review was requested, and the review is not marked fully validated."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "Provide the required native package assets and complete final validation before any upstream action.",
   "proposed_comments": [],
   "actions": [
     {
-      "id": "continue-review-48746",
-      "type": "continue_review",
-      "label": "Continue review loop",
-      "primary": true,
-      "note": "Review progress is checkpointed; no upstream action has been posted."
+      "id": "review-iteration-cap-48746",
+      "type": "hold",
+      "label": "Review iteration limit reached",
+      "primary": false,
+      "note": "No upstream review action is proposed until final validation can run."
     }
   ],
   "workflow": {
-    "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-26T15:54:15.8699682Z"
+    "phase": "review_iteration_cap_reached",
+    "checkpoint_at": "2026-08-27T03:30:39.2560732Z"
   },
   "freshness": {
     "queued_at": "08/20/2026 08:48:18",
-    "checkpoint_at": "2026-08-26T15:54:15.8699682Z"
+    "checkpoint_at": "2026-08-27T03:30:39.2560732Z"
   }
 }

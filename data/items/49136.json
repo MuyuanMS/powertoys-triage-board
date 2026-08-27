@@ -2,37 +2,37 @@
   "number": 49136,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
+  "stage": "review_iteration_cap_reached",
+  "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-27T02:52:01.9915435Z",
-  "evaluated_at": "08/25/2026 09:11:24",
+  "generated_at": "2026-08-27T03:30:01Z",
+  "evaluated_at": "2026-08-27T03:30:01Z",
   "source_updated_at": "2026-08-24T03:02:34Z",
   "head_sha": "1eb022b1d52658d61317098f14a5a877ceb56ad1",
   "title": "Keyboard Manager dual-key tap condition for single-key remaps",
   "url": "https://github.com/microsoft/PowerToys/pull/49136",
   "status": {
-    "glyph": "...",
-    "label": "Reviewing findings",
-    "detail": "The three-iteration limit has already been exceeded: nine automated reviews were submitted. Four findings remain unresolved: native boolean-result marshaling, resetting a hidden editor condition, publishing reload-state reset before leaving reload bypass, and resolving numpad key release by scan identity during reload. No additional review request was made; validation remains incomplete and the review is not marked converged."
+    "glyph": "!",
+    "label": "Review iteration limit reached",
+    "detail": "The three-iteration automated review limit had already been exceeded before this policy took effect: nine reviews were submitted. Four confirmed findings remain unresolved: native boolean-result marshaling, resetting a hidden editor condition, publishing reload-state reset before leaving reload bypass, and resolving numpad key release by scan identity during reload. Validation is incomplete; this review has not converged."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "Maintainer decision required: hold the review at the iteration cap or authorize a separately scoped follow-up.",
   "proposed_comments": [],
   "actions": [
     {
-      "id": "continue-review-49136",
-      "type": "continue_review",
-      "label": "Continue review loop",
+      "id": "hold-review-49136",
+      "type": "hold",
+      "label": "Hold at review cap",
       "primary": true,
-      "note": "Review progress is checkpointed; no upstream action has been posted."
+      "note": "The three-iteration cap prohibits further automated review requests."
     }
   ],
   "workflow": {
-    "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-27T02:52:01.9915435Z"
+    "phase": "review_iteration_cap_reached",
+    "checkpoint_at": "2026-08-27T03:30:01Z"
   },
   "freshness": {
-    "queued_at": "08/25/2026 09:11:24",
-    "checkpoint_at": "2026-08-27T02:52:01.9915435Z"
+    "queued_at": "2026-08-24T03:02:34Z",
+    "checkpoint_at": "2026-08-27T03:30:01Z"
   }
 }
