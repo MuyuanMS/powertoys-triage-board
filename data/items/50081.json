@@ -2,37 +2,37 @@
   "number": 50081,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
+  "stage": "review_iteration_cap_reached",
+  "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-27T02:28:35.2047277Z",
+  "generated_at": "2026-08-27T03:06:30.4689853Z",
   "evaluated_at": "08/24/2026 08:47:19",
-  "source_updated_at": "2026-08-23T16:43:10.0000000Z",
+  "source_updated_at": "2026-08-23T16:43:10Z",
   "head_sha": "a877c02e63252545404b69398e4521867a1d7a29",
   "title": "[AdvancedPaste] Add \"Paste as .jpg file\" action with configurable JPEG quality",
   "url": "https://github.com/microsoft/PowerToys/pull/50081",
   "status": {
-    "glyph": "...",
-    "label": "Waiting for Copilot review",
-    "detail": "Three confirmed findings are resolved: persisted telemetry enum values are stable, opaque images bypass the JPEG alpha-flattening allocation path while transparent images retain white-background flattening, and JPEG-quality settings cover both legacy defaults and non-default round-trips. Direct inspection of the updated review head shows zero unresolved threads and no newly submitted automated review. Focused native validation remains blocked by the missing CppWinRT native props dependency before test execution."
+    "glyph": "!",
+    "label": "Review iteration limit reached",
+    "detail": "Four automated reviews have already been submitted, exceeding the three-iteration limit. The remaining legacy hotkey-order finding was corrected by reserving the JPEG action slot when older settings omit it; all reported review threads are resolved. Native validation is blocked before compilation because the required CppWinRT package asset is unavailable. No additional review was requested, so the review is not marked converged."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "Provide the required native package asset and complete validation before any upstream action.",
   "proposed_comments": [],
   "actions": [
     {
-      "id": "continue-review-50081",
-      "type": "continue_review",
-      "label": "Continue review loop",
-      "primary": true,
-      "note": "Review progress is checkpointed; no upstream action has been posted."
+      "id": "review-iteration-cap-50081",
+      "type": "hold",
+      "label": "Review iteration limit reached",
+      "primary": false,
+      "note": "No upstream review action is proposed until validation can run."
     }
   ],
   "workflow": {
-    "phase": "waiting_copilot",
-    "checkpoint_at": "2026-08-27T02:28:35.2047277Z"
+    "phase": "review_iteration_cap_reached",
+    "checkpoint_at": "2026-08-27T03:06:30.4689853Z"
   },
   "freshness": {
     "queued_at": "08/24/2026 08:47:19",
-    "checkpoint_at": "2026-08-27T02:28:35.2047277Z"
+    "checkpoint_at": "2026-08-27T03:06:30.4689853Z"
   }
 }
