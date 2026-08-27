@@ -2,37 +2,37 @@
   "number": 50029,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
+  "stage": "review_iteration_cap_reached",
+  "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-26T14:49:41.6656373Z",
+  "generated_at": "2026-08-27T03:05:11.3723720Z",
   "evaluated_at": "08/25/2026 09:34:26",
-  "source_updated_at": "2026-08-20T14:08:59Z",
+  "source_updated_at": "08/20/2026 14:08:59",
   "head_sha": "40a0e8b21d39cb624edb1312dc2d6b9eca975a8e",
   "title": "Add setting to disable cursor wrap in Game Mode (full screen D3D application).",
   "url": "https://github.com/microsoft/PowerToys/pull/50029",
   "status": {
-    "glyph": "...",
-    "label": "Review in progress",
-    "detail": "The automated review loop is complete: the latest review reported zero new comments and all review threads are resolved. Final runtime validation remains blocked by unavailable C++/WinRT package assets."
+    "glyph": "!",
+    "label": "Review iteration limit reached",
+    "detail": "Current source head remains unchanged. All confirmed automated-review findings were addressed, and the latest automated review reported zero new comments with zero unresolved threads. Four historical review iterations already exceed the maximum of three, so no further review request will be made. Native validation cannot start because a required CppWinRT build dependency is unavailable; runtime validation remains required for the hook and polling lifecycle."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "Provide the missing native build dependency and complete runtime validation before any upstream action.",
   "proposed_comments": [],
   "actions": [
     {
-      "id": "continue-review-50029",
-      "type": "continue_review",
-      "label": "Continue review loop",
-      "primary": true,
-      "note": "Review progress is checkpointed; no upstream action has been posted."
+      "id": "review-iteration-cap-50029",
+      "type": "hold",
+      "label": "Review iteration limit reached",
+      "primary": false,
+      "note": "No upstream review action is proposed until validation can run."
     }
   ],
   "workflow": {
-    "phase": "review_in_progress",
-    "checkpoint_at": "2026-08-26T14:49:41.6656373Z"
+    "phase": "review_iteration_cap_reached",
+    "checkpoint_at": "2026-08-27T03:05:11.3723720Z"
   },
   "freshness": {
     "queued_at": "08/25/2026 09:34:26",
-    "checkpoint_at": "2026-08-26T14:49:41.6656373Z"
+    "checkpoint_at": "2026-08-27T03:05:11.3723720Z"
   }
 }
