@@ -2,37 +2,37 @@
   "number": 50093,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
+  "stage": "review_ready",
+  "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-26T07:16:51.1906031Z",
-  "evaluated_at": "08/25/2026 10:34:44",
-  "source_updated_at": "2026-08-24T05:47:15.0000000+00:00",
+  "generated_at": "2026-08-27T02:44:19.9316603Z",
+  "evaluated_at": "2026-08-27T02:44:19.9316603Z",
+  "source_updated_at": "2026-08-24T13:47:15.0000000+00:00",
   "head_sha": "8027dc646a28359c576dbd1ea172343e67a7b9e1",
   "title": "[Screen Ruler] Fix edge detection at index 0 and SAD truncation in bounds mode",
   "url": "https://github.com/microsoft/PowerToys/pull/50093",
   "status": {
-    "glyph": "...",
-    "label": "Reviewing findings",
-    "detail": "Direct review inspection shows an approval with zero comments and zero unresolved threads. The focused Screen Ruler UI-test build is blocked by an unavailable native package dependency before compilation. Current upstream intake, CLA, dependency, and telemetry checks are successful."
+    "glyph": "OK",
+    "label": "Review complete",
+    "detail": "Current-head review converged with no proposed changes or comments."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "No upstream review action is proposed for the current head.",
   "proposed_comments": [],
   "actions": [
     {
-      "id": "continue-review-50093",
-      "type": "continue_review",
-      "label": "Continue review loop",
-      "primary": true,
-      "note": "Review progress is checkpointed; no upstream action has been posted."
+      "id": "review-complete-50093",
+      "type": "hold",
+      "label": "Review complete",
+      "primary": false,
+      "note": "No upstream review action is proposed for the current head."
     }
   ],
   "workflow": {
-    "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T07:16:51.1906031Z"
+    "phase": "review_ready",
+    "checkpoint_at": "2026-08-27T02:44:19.9316603Z"
   },
   "freshness": {
-    "queued_at": "08/25/2026 10:34:44",
-    "checkpoint_at": "2026-08-26T07:16:51.1906031Z"
+    "queued_at": "2026-08-27T02:44:19.9316603Z",
+    "checkpoint_at": "2026-08-27T02:44:19.9316603Z"
   }
 }
