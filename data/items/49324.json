@@ -5,16 +5,16 @@
   "stage": "review_in_progress",
   "owes": "us",
   "pending_author": false,
-  "generated_at": "2026-08-26T19:03:57.0416089Z",
-  "evaluated_at": "08/24/2026 07:39:25",
-  "source_updated_at": "2026-08-21T01:03:26.0000000Z",
-  "head_sha": "cd0777003e8c62939b51465297b971726505c284",
+  "generated_at": "2026-08-27T00:23:55.1933419Z",
+  "evaluated_at": "2026-08-27T00:23:55.1933419Z",
+  "source_updated_at": "2026-08-27T00:02:33Z",
+  "head_sha": "7fc8c8b422e698774feb156feb0f40f96d17c095",
   "title": "CmdPal JS/TS Extensions - Phase 3: adapters + proxies",
   "url": "https://github.com/microsoft/PowerToys/pull/49324",
   "status": {
     "glyph": "...",
-    "label": "Reviewing findings",
-    "detail": "Direct inspection confirms eight unresolved review threads spanning notification ordering, host lifetime, atomic page registration, and item-property routing. In-progress remediation overlaps part of this coordinated area but is not yet reconciled, complete, or validated; remaining routing issues must be addressed with the same design before a safe publication. The latest automated review still requests changes. Reported upstream checks pass."
+    "label": "Review in progress",
+    "detail": "The current source scope is prepared for review. Earlier findings target superseded file paths and are retained as historical trace. A fresh automated review request was not retained; no current-head review object or unresolved review thread is present. No new validation was started before the scheduled cutoff."
   },
   "next_action": "Resume the saved review stage in the next dashboard update.",
   "proposed_comments": [],
@@ -28,11 +28,11 @@
     }
   ],
   "workflow": {
-    "phase": "reviewing_findings",
-    "checkpoint_at": "2026-08-26T19:03:57.0416089Z"
+    "phase": "review_in_progress",
+    "checkpoint_at": "2026-08-27T00:23:55.1933419Z"
   },
   "freshness": {
-    "queued_at": "08/24/2026 07:39:25",
-    "checkpoint_at": "2026-08-26T19:03:57.0416089Z"
+    "queued_at": "2026-08-27T00:23:55.1933419Z",
+    "checkpoint_at": "2026-08-27T00:23:55.1933419Z"
   }
 }
