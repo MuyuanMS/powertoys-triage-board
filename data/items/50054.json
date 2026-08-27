@@ -2,37 +2,37 @@
   "number": 50054,
   "kind": "pr",
   "track": "review",
-  "stage": "review_in_progress",
-  "owes": "us",
+  "stage": "review_ready",
+  "owes": "maintainer",
   "pending_author": false,
-  "generated_at": "2026-08-27T00:23:31.1276914Z",
-  "evaluated_at": "08/24/2026 08:55:13",
+  "generated_at": "2026-08-27T03:16:18.5444493Z",
+  "evaluated_at": "2026-08-27T03:16:18.5444493Z",
   "source_updated_at": "2026-08-21T17:57:05.0000000Z",
   "head_sha": "bd1c09f8af79d496b3d1aadc4f7a464d936038c8",
   "title": "[CmdPal] Window Walker: match app name and window title together",
   "url": "https://github.com/microsoft/PowerToys/pull/50054",
   "status": {
-    "glyph": "...",
-    "label": "Waiting for Copilot review",
-    "detail": "Both confirmed findings are resolved: the batched Window Walker scorer now imports LINQ explicitly, and whitespace coverage no longer contains a spelling-sensitive token. Direct inspection of the updated review head shows zero unresolved threads and no newly submitted automated review. Targeted project restore completed, but its build remains blocked by the missing CppWinRT native props dependency before the target project compiles."
+    "glyph": "OK",
+    "label": "Review complete",
+    "detail": "Current-head review converged with no proposed changes or comments. The targeted build completed."
   },
-  "next_action": "Resume the saved review stage in the next dashboard update.",
+  "next_action": "No upstream review action is proposed for the current head.",
   "proposed_comments": [],
   "actions": [
     {
-      "id": "continue-review-50054",
-      "type": "continue_review",
-      "label": "Continue review loop",
-      "primary": true,
-      "note": "Review progress is checkpointed; no upstream action has been posted."
+      "id": "review-complete-50054",
+      "type": "hold",
+      "label": "Review complete",
+      "primary": false,
+      "note": "No upstream review action is proposed for the current head."
     }
   ],
   "workflow": {
-    "phase": "waiting_copilot",
-    "checkpoint_at": "2026-08-27T00:23:31.1276914Z"
+    "phase": "review_ready",
+    "checkpoint_at": "2026-08-27T03:16:18.5444493Z"
   },
   "freshness": {
-    "queued_at": "08/24/2026 08:55:13",
-    "checkpoint_at": "2026-08-27T00:23:31.1276914Z"
+    "queued_at": "2026-08-27T03:16:18.5444493Z",
+    "checkpoint_at": "2026-08-27T03:16:18.5444493Z"
   }
 }
